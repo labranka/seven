@@ -1,0 +1,10 @@
+.announcement a,
+.announcement a:hover{
+color: var(--colorAnnouncementText);
+text-decoration: underline;
+}
+
+  .announcement__text p{
+    margin-bottom: 0;
+    font-size: 10px
+  }
