@@ -20,6 +20,24 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "megamenu_Qdewjj": {
+          "type": "megamenu",
+          "settings": {
+            "menu_item": "home",
+            "promo_image_1": "shopify://shop_images/image10.png",
+            "promo_heading_1": "",
+            "promo_text_1": "",
+            "promo_url_1": "",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "megamenu_Qdewjj"
+      ],
       "settings": {
         "desktop_logo_width": 200,
         "mobile_logo_width": 140,
