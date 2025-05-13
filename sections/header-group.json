@@ -21,8 +21,10 @@
     "header": {
       "type": "header",
       "settings": {
-        "desktop_logo_width": 200,
-        "mobile_logo_width": 140,
+        "logo": "shopify://shop_images/vektor_2.svg",
+        "logo-inverted": "shopify://shop_images/vektor_2.svg",
+        "desktop_logo_width": 100,
+        "mobile_logo_width": 70,
         "main_menu_link_list": "main-menu",
         "hover_menu": true,
         "main_menu_alignment": "left-center",
