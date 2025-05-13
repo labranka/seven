@@ -29,6 +29,10 @@ color: var(--colorBody);
   .header-wrapper--overlay .site-header:not(.site-header--stuck) img{
     filter: brightness(0) invert(1);
   }
+
+  .btn, .rte .btn, .shopify-payment-button .shopify-payment-button__button--unbranded{
+    border-radius: 10px!important;
+  }
   @media only screen and (max-width: 589px) {
     .site-nav__link--icon .icon {
         height: 22px!important;
