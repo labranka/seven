@@ -26,7 +26,7 @@ color: var(--colorBody);
     display: none;
   }
 
-  .header-wrapper--overlay .site-header:not(.site-header--stuck) image-element{
+  .header-wrapper--overlay .site-header:not(.site-header--stuck) img{
     filter: brightness(0) invert(1);
   }
   @media only screen and (max-width: 589px) {
