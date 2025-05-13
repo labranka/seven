@@ -430,7 +430,7 @@
         "default": "5px",
         "options": [
           {
-            "value": "2px",
+            "value": "1.5px",
             "label": "t:settings_schema.icons.settings.icon_weight.options.2px.label"
           },
           {

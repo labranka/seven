@@ -11,8 +11,16 @@ color: var(--colorBody);
     margin-bottom: 0;
     font-size: 10px
   }
+  .announcement__text{
+    padding: 16px 0;
+  }
+  .site-header__logo{
+    margin: 0!important;
+  }
 
-
+  .page-full, .page-width{
+    padding: 0 16px;
+  }
 
   @media screen and (min-width: 1025px) {
     .announcement__text p{

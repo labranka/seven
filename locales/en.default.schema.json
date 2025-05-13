@@ -1044,7 +1044,7 @@
           "label": "Menu"
         },
         "main_menu_alignment": {
-          "label": "Layout",
+          "label": "Layout mobile",
           "options": {
             "left": {
               "label": "Logo left, menu left"
