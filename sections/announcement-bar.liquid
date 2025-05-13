@@ -1,15 +1,11 @@
 <div class="announcement{% if section.settings.announcement_closable %} announcement--closeable announcement--closed{% endif %}">
-  {%- if section.settings.announcement_link != blank -%}
-    <a href="{{ section.settings.announcement_link }}" class="announcement__link">
-  {%- endif -%}
+
 
     <span class="announcement__text{% unless section.settings.announcement_closable %} announcement__text--open{% endunless %}" data-text="{{ section.settings.announcement_text | strip_html | handle }}">
-      {{ section.settings.announcement_text | strip_html }}
+      {{ section.settings.announcement_text  }}
     </span>
 
-  {%- if section.settings.announcement_link != blank -%}
-    </a>
-  {%- endif -%}
+
 
   {%- if section.settings.announcement_closable -%}
     <button type="button" class="text-link announcement__close">
@@ -30,11 +26,7 @@
         "default": "<p>5% SVAKE KUPOVINE IDE U HUMANITARNE SVRHE – SAZNAJTE VIŠE</p>",
         "info": "t:sections.header.settings.announcement_text.info"
       },
-      {
-        "type": "url",
-        "id": "announcement_link",
-        "label": "t:sections.header.settings.announcement_link.label"
-      },
+  
       {
         "type": "checkbox",
         "id": "announcement_closable",
