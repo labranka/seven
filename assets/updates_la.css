@@ -22,11 +22,36 @@ color: var(--colorBody);
     padding: 0 16px;
   }
 
-  @media screen and (min-width: 1025px) {
+  .not_mobile{
+    display: none;
+  }
+  @media only screen and (min-width: 590px) {
+    .site-header {
+         padding: 5px 0; 
+    }
+
+    .site-nav__link--icon .icon{
+    width: 22px;
+    height: 22px;
+    }
+
+    .header-layout[data-logo-align=center] .header-item--logo{
+      margin-left: 0;
+    }
+}
+  @media screen and (min-width: 769px) {
     .announcement__text p{
         font-size: 14px;
        
       }
+      .not_mobile{
+        display: flex;
+      }
+    .not_desktop{
+      display: none;
+    }
 
- 
+    .site-nav__icons{
+      display: flex;
+    }
   }
