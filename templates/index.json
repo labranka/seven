@@ -24,24 +24,10 @@
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
-        },
-        "image_WRD94R": {
-          "type": "image",
-          "settings": {
-            "title": "Two line\nslide titles.",
-            "title_size": 80,
-            "subheading": "And big, beautiful imagery",
-            "link": "",
-            "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
         }
       },
       "block_order": [
-        "image_49pGBH",
-        "image_WRD94R"
+        "image_49pGBH"
       ],
       "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
       "settings": {
