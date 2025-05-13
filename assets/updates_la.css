@@ -25,6 +25,10 @@ color: var(--colorBody);
   .not_mobile{
     display: none;
   }
+
+  .header-wrapper--overlay .site-header:not(.site-header--stuck){
+    filter: brightness(0) invert(1);
+  }
   @media only screen and (max-width: 589px) {
     .site-nav__link--icon .icon {
         height: 22px!important;
