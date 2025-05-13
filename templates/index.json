@@ -9,6 +9,51 @@
  */
 {
   "sections": {
+    "slideshow_XU9nJ4": {
+      "type": "slideshow",
+      "blocks": {
+        "image_49pGBH": {
+          "type": "image",
+          "settings": {
+            "title": "Endless\npossibilities.",
+            "title_size": 80,
+            "subheading": "Bring your brand to life",
+            "link": "",
+            "link_text": "Optional button",
+            "text_align": "vertical-bottom horizontal-left",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_WRD94R": {
+          "type": "image",
+          "settings": {
+            "title": "Two line\nslide titles.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "text_align": "vertical-bottom horizontal-left",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_49pGBH",
+        "image_WRD94R"
+      ],
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
     "hero-video": {
       "type": "hero-video",
       "settings": {
@@ -206,6 +251,7 @@
     }
   },
   "order": [
+    "slideshow_XU9nJ4",
     "hero-video",
     "featured-collection-switcher",
     "rich-text",
