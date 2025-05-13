@@ -15,14 +15,12 @@
         "image_49pGBH": {
           "type": "image",
           "settings": {
-            "title": "<h1><em><strong>777 Oversized – nosimo sreću i delimo je</strong></em></h1>",
-            "title_size": 40,
+            "title": "",
+            "title_size": 80,
             "subheading": "Bring your brand to life",
             "link": "",
-            "link_text": "Optional button",
+            "link_text": "POGLEDAJ ASORTIMAN",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/pexels-rdne-6923359.jpg",
-            "image_mobile": "shopify://shop_images/pexels-wendywei-1656684.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
