@@ -39,6 +39,8 @@
         "megamenu_Qdewjj"
       ],
       "settings": {
+        "logo": "shopify://shop_images/vektor_2.svg",
+        "logo-inverted": "shopify://shop_images/vektor_2.svg",
         "desktop_logo_width": 200,
         "mobile_logo_width": 140,
         "main_menu_link_list": "main-menu",
