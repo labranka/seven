@@ -45,7 +45,7 @@
     "animate_sections_text_style": "rise-up",
     "animate_images": true,
     "animate_images_style": "zoom-fade",
-    "animate_buttons": true,
+    "animate_buttons": false,
     "animate_underlines": true,
     "cart_type": "drawer",
     "checkout_header_image": "",
