@@ -21,6 +21,8 @@
             "link": "",
             "link_text": "Optional button",
             "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/pexels-rdne-6923359.jpg",
+            "image_mobile": "shopify://shop_images/pexels-wendywei-1656684.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
