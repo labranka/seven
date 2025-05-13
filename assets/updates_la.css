@@ -25,6 +25,12 @@ color: var(--colorBody);
   .not_mobile{
     display: none;
   }
+  @media only screen and (max-width: 589px) {
+    .site-nav__link--icon .icon {
+        height: 22px!important;
+        width: 22px!important;
+    }
+}
   @media only screen and (min-width: 590px) {
     .site-header {
          padding: 5px 0; 
