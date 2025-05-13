@@ -24,9 +24,9 @@
         "megamenu_Qdewjj": {
           "type": "megamenu",
           "settings": {
-            "menu_item": "home",
+            "menu_item": "Home",
             "promo_image_1": "shopify://shop_images/image10.png",
-            "promo_heading_1": "",
+            "promo_heading_1": "Hey test",
             "promo_text_1": "",
             "promo_url_1": "",
             "promo_heading_2": "",
