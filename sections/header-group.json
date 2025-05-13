@@ -1,0 +1,22 @@
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "header": {
+      "type": "header",
+      "settings": {
+        "main_menu_link_list": "main-menu",
+        "sticky_index": true,
+        "sticky_collection": false
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {}
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
