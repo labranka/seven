@@ -15,12 +15,16 @@
         "image_49pGBH": {
           "type": "image",
           "settings": {
+            "image_icon": "shopify://shop_images/Group_5936.png",
+            "review_txt": "<p><strong>4.7 (152 recenzije)</strong></p>",
             "title": "<h1><em><strong>777 Oversized – nosimo sreću i delimo je</strong></em></h1>",
             "title_size": 79,
-            "subheading": "Bring your brand to life",
+            "subheading": "<ul><li><strong>Od igle do etikete – made in Serbia</strong></li><li><strong>Od igle do etikete – made in Serbia.</strong></li><li><strong>High - Print Tehnologija</strong></li></ul>",
             "link": "",
             "link_text": "POGLEDAJ ASORTIMAN",
             "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/western-capsule-hero-f_1.png",
+            "image_mobile": "shopify://shop_images/image_11.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -32,7 +36,7 @@
       "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
       "settings": {
         "section_height": "650px",
-        "mobile_height": "auto",
+        "mobile_height": "100vh",
         "parallax": true,
         "style": "arrows",
         "autoplay": true,
