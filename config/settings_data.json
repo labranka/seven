@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "color_body_text": "#1a1a1a",
     "color_borders": "#e8e8e1",
     "color_button": "#111111",
     "color_button_text": "#ffffff",
