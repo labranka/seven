@@ -55,19 +55,6 @@
         </div>
       {%- assign row_width = 0 -%}
       {%- for block in section.blocks -%}
-        {%- assign row_width = row_width | plus: block.settings.container_width -%}
-        {%- style -%}
-        @media only screen and (min-width: 769px) {
-          .footer__item--{{ block.id }} {
-            width: {{ block.settings.container_width }}%;
-          }
-        }
-        {%- endstyle -%}
-
-        {%- if row_width > 100 -%}
-          <div class="footer__clear small--hide"></div>
-          {%- assign row_width = row_width | minus: 100 -%}
-        {%- endif -%}
 
         {%- case block.type -%}
         {%- when 'logo_social' -%}
@@ -82,10 +69,6 @@
           <div {{ block.shopify_attributes }} class="grid__item grid-newsletter footer__item--{{ block.id }}">
             {%- render 'footer-newsletter', block: block -%}
           </div>
-       {% comment %}  {%- when 'menu' -%}
-          <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}">
-            {%- render 'footer-menu', block: block -%}
-          </div> {% endcomment %}
         {%- when 'follow_shop_cta' -%}
           <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}">
             {%- render 'follow-shop-cta', block: block -%}
@@ -268,15 +251,6 @@
         {
           "type": "paragraph",
           "content": "t:sections.footer.blocks.logo_and_social.settings.content"
-        },
-        {
-          "type": "range",
-          "id": "container_width",
-          "label": "t:sections.footer.blocks.logo_and_social.settings.container_width.label",
-          "default": 20,
-          "min": 15,
-          "max": 95,
-          "unit": "%"
         }
       ]
     },
@@ -314,15 +288,6 @@
           "label": "t:sections.footer.blocks.menu.settings.menu.label",
           "default": "footer",
           "info": "t:sections.footer.blocks.menu.settings.menu.info"
-        },
-        {
-          "type": "range",
-          "id": "container_width",
-          "label": "t:sections.footer.blocks.menu.settings.container_width.label",
-          "default": 20,
-          "min": 15,
-          "max": 95,
-          "unit": "%"
         }
       ]
     },
