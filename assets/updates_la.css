@@ -107,7 +107,7 @@ aspect-ratio: 0.9;
 }
 
 .counddown-section__wrapper{
-  background-color: var(--colorBackground);
+  background-color: var(--color_background);
 }
 .countdown-wrapper{
   padding: 16px;
