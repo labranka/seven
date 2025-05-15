@@ -4141,7 +4141,7 @@ button[disabled],html input[disabled]{
 }
 
 .btn--inverse{
-  background-color:transparent !important;
+ background-color: var(--colorHeroText);
 }
 
 .btn--inverse{

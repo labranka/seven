@@ -33,6 +33,13 @@ color: var(--colorBody);
   .btn, .rte .btn, .shopify-payment-button .shopify-payment-button__button--unbranded{
     border-radius: 10px!important;
   }
+
+  .hero__link .btn--inverse{
+    border-color:var(--colorHeroText);
+    color:var(--colorHeroText);
+    background-color: var(--colorHeroText)!important;
+}
+
   @media only screen and (max-width: 589px) {
     .site-nav__link--icon .icon {
         height: 22px!important;
