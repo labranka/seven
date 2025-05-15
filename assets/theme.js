@@ -31,7 +31,7 @@ if (theme.config.isTouch) {
 }
 
 if (console && console.log) {
-  console.log('Motion theme ('+theme.settings.themeVersion+') by ARCHΞTYPE | Learn more at https://archetypethemes.co');
+  console.log('%cMade by Labranka | https://github.com/labranka', 'font-size:24px; font-weight:bold; color:#ffffff; text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;');
 }
 
 (function(){
