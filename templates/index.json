@@ -95,10 +95,10 @@
       "settings": {
         "layout": "banner",
         "full_width": false,
-        "background_image": "shopify://shop_images/western-capsule-hero-f_1.png",
+        "background_image": "shopify://shop_images/image_7.png",
         "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "mobile_image": "shopify://shop_images/western-capsule-hero-f_1.png",
+        "mobile_image": "shopify://shop_images/image_7.png",
         "lazyload_images": true
       }
     }
