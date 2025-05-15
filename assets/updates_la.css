@@ -38,6 +38,7 @@ color: var(--colorBody);
     border-color:var(--colorHeroText);
     color:var(--colorBtnPrimary);
     background-color: var(--colorHeroText)!important;
+    
 }
 
 
@@ -93,6 +94,8 @@ color: var(--colorBody);
 .hero__icon-plu-txt p{
   margin-bottom: 0;
 }
+
+
   @media only screen and (max-width: 589px) {
     .site-nav__link--icon .icon {
         height: 22px!important;
@@ -107,6 +110,10 @@ color: var(--colorBody);
     .site-nav__link--icon .icon{
     width: 22px!important;
     height: 22px!important;
+    }
+
+    .hero__link .btn--inverse{
+      margin-top: 24px;
     }
 
     .header-layout[data-logo-align=center] .header-item--logo{
