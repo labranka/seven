@@ -1,1 +1,130 @@
-{"type":"footer","name":"t:sections.footer-group.name","sections":{"footer":{"type":"footer","blocks":{"footer-0":{"type":"logo_social","settings":{"container_width":20}},"footer-1":{"type":"menu","settings":{"menu":"main-menu","container_width":20}},"footer-2":{"type":"newsletter","settings":{"container_width":33}},"footer-3":{"type":"menu","settings":{"menu":"footer","container_width":20}}},"block_order":["footer-3","footer-1","footer-2","footer-0"],"settings":{}},"footer-promotions":{"type":"footer-promotions","blocks":{"footer-promotions0":{"type":"promotion","settings":{}},"footer-promotions1":{"type":"promotion","settings":{}},"footer-promotions2":{"type":"promotion","settings":{}}},"block_order":["footer-promotions0","footer-promotions1","footer-promotions2"],"settings":{}}},"order":["footer-promotions","footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer-group.name",
+  "sections": {
+    "footer-promotions": {
+      "type": "footer-promotions",
+      "blocks": {
+        "footer-promotions0": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "footer-promotions1": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "footer-promotions2": {
+          "type": "promotion",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Site-wide promotion",
+            "text": "<p>Use this section to promote content throughout every page of your site. Add images for further impact.</p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "footer-promotions0",
+        "footer-promotions1",
+        "footer-promotions2"
+      ],
+      "settings": {
+        "hide_homepage": false,
+        "align_text": "left"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-3": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "footer",
+            "container_width": 20
+          }
+        },
+        "footer-1": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "informacije",
+            "container_width": 20
+          }
+        },
+        "menu_rP3m3B": {
+          "type": "menu",
+          "settings": {
+            "show_footer_title": true,
+            "menu": "footer",
+            "container_width": 20
+          }
+        },
+        "footer-2": {
+          "type": "newsletter",
+          "settings": {
+            "show_footer_title": true,
+            "title": "Sign up and save",
+            "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>",
+            "container_width": 33
+          }
+        },
+        "footer-0": {
+          "type": "logo_social",
+          "settings": {
+            "desktop_logo_height": 50,
+            "container_width": 20
+          }
+        }
+      },
+      "block_order": [
+        "footer-3",
+        "footer-1",
+        "menu_rP3m3B",
+        "footer-2",
+        "footer-0"
+      ],
+      "settings": {
+        "show_locale_selector": true,
+        "show_currency_selector": true,
+        "show_currency_flags": true,
+        "show_payment_icons": false,
+        "colorize_payment_icons": false,
+        "show_copyright": false,
+        "copyright_text": ""
+      }
+    }
+  },
+  "order": [
+    "footer-promotions",
+    "footer"
+  ]
+}
