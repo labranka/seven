@@ -32,8 +32,30 @@ color: var(--colorBody);
 
   .btn, .rte .btn, .shopify-payment-button .shopify-payment-button__button--unbranded{
     border-radius: 10px!important;
+    padding: 12px 32px;
+    font-size: 18px;
+    text-transform: uppercase;
   }
 
+  .countdown__display-block{
+    border-right: none;
+    align-items: center;
+  }
+
+  .countdown__display-block h2{
+    font-family: var(--typeHeaderPrimary);
+    font-size: 36px;
+    font-style: italic;
+    letter-spacing: 2.2px;
+    line-height: 44px;
+    color: var(--colorSaleTag);
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .countdown__display-block span{
+    font-size: 14px;
+  }
   .hero__link .btn--inverse{
     border-color:var(--colorHeroText);
     color:var(--colorBtnPrimary);
@@ -116,10 +138,33 @@ aspect-ratio: 0.9;
 
 .countdown-layout--banner .countdown__content{
   padding: 16px;
+  max-height: none;
 }
 
 .countdown__content{
  border-radius: 10px;
+ text-align: left;
+}
+
+.countdown__display-block{
+  padding: 0;
+}
+.countdown__display{
+  justify-content: start;
+}
+.countdown__heading, .countdown__heading>*{
+  font-family: var(--typeHeaderPrimary);
+  font-size: 28px;
+  font-style: italic;
+  letter-spacing: -0.8px;
+  line-height: 130%;
+}
+
+.countdown__richtext p {
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.8px;
+  margin-bottom: 0;
 }
 
   @media only screen and (max-width: 589px) {

@@ -5810,7 +5810,7 @@ if (console && console.log) {
       this.day = this.el.dataset.day;
       this.hour = this.el.dataset.hour;
       this.minute = this.el.dataset.minute;
-      this.daysPlaceholder = this.querySelector('[date-days-placeholder]');
+      this.daysPlaceholder = this.querySelector('[date-days-placeholder]'); 
       this.hoursPlaceholder = this.querySelector('[date-hours-placeholder]');
       this.minutesPlaceholder = this.querySelector('[date-minutes-placeholder]');
       this.secondsPlaceholder = this.querySelector('[date-seconds-placeholder]');
@@ -5844,10 +5844,11 @@ if (console && console.log) {
           seconds: Math.floor((timeDifference / 1000) % 60),
         };
   
-        this.daysPlaceholder.innerHTML = intervals.days;
-        this.hoursPlaceholder.innerHTML = intervals.hours;
-        this.minutesPlaceholder.innerHTML = intervals.minutes;
-        this.secondsPlaceholder.innerHTML = intervals.seconds;
+       // Append colon on all but seconds
+    this.daysPlaceholder.innerHTML    = intervals.days    + ":";
+    this.hoursPlaceholder.innerHTML   = intervals.hours   + ":";
+    this.minutesPlaceholder.innerHTML = intervals.minutes + ":";
+    this.secondsPlaceholder.innerHTML = intervals.seconds;  // no colon here
   
         setTimeout(() => {
           this.display.classList.add('countdown__display--loaded');
