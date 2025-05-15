@@ -201,7 +201,26 @@
                 <div class="hero__text-wrap">
                   <div class="page-width">
                     <div class="hero__text-content {{ block.settings.text_align }}">
-
+                       <div class="hero__subtitle">
+                            <div class="animation-cropper">
+                          <div class="animation-contents">
+                            <div class="hero__icon-plu-txt ">
+                              {% assign icon_class = 'icon-reviews--'| append: block.id %}
+                              {%- render 'image-element',
+                                img: block.settings.image_icon,
+                                img_width: 100,
+                                loading: loading,
+                                classes: icon_class,
+                              -%}
+                
+                                {{ block.settings.review_txt }}
+                          
+                            </div>
+                          </div>
+              
+                    
+                      </div>
+                       </div>
                       {%- unless block.settings.title == blank -%}
                         <h2 class="h1 hero__title">
                           <div class="animation-cropper"><div class="animation-contents">
@@ -378,11 +397,26 @@
       "name": "t:sections.slideshow.blocks.slide.name",
       "settings": [
         {
+          "type": "paragraph",
+          "content": "Icon and text for reviews info"
+        },
+         {
+          "type": "image_picker",
+          "id": "image_icon",
+          "label": "Icon"
+        },
+         {
+          "type": "richtext",
+          "id": "review_txt",
+          "label": "Text"
+        },
+          {
           "type": "richtext",
           "id": "title",
           "label": "t:sections.slideshow.blocks.slide.settings.title.label",
           "default": "<p>777 Oversized – nosimo sreću i delimo je</p>"
         },
+ 
         {
           "type": "range",
           "id": "title_size",
