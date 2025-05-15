@@ -228,6 +228,10 @@
 .countdown-block-wrapper>*{
   width: 100%;
 }
+
+.countdown__block>*{
+  width: 100%;
+}
   .countdown__background-image-wrapper {
     border-radius: 10px;
     overflow: hidden;
