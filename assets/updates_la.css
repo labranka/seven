@@ -23,7 +23,10 @@
 .page-width {
   padding: 0 16px;
 }
-
+.page-width{
+  margin:0 auto;
+  max-width:1500px;
+}
 .not_mobile {
   display: none;
 }

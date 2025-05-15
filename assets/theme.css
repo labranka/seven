@@ -3121,10 +3121,7 @@ body,html{
     }
 }
 
-.page-width{
-  margin:0 auto;
-  max-width:1440px;
-}
+
 
 .page-width--narrow{
   margin:0 auto;
