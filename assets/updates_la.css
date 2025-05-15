@@ -328,3 +328,9 @@
     padding: 32px 24px;
   }
 }
+
+@media screen and (min-width: 1025px) {
+  .countdown-layout--banner .countdown__content{
+    gap: 200px;
+  }
+}

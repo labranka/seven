@@ -135,9 +135,11 @@
         {% if block.type == 'content' %}
           <div class="countdown__block countdown__block--{{ block.type }}" {{ block.shopify_attributes }}>
             <div class="countdown__text-wrapper countdown__text-wrapper--content-alignment-{{ block.settings.content_alignment }}">
-              <div class="countdown__heading">
+             {% if block.settings.heading != blank %}
+            <div class="countdown__heading">
                 <h2 class="{{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>
               </div>
+             {% endif %}
               <div class="countdown__richtext">
                 {{ block.settings.text }}
               </div>
