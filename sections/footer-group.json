@@ -80,12 +80,11 @@
             "container_width": 20
           }
         },
-        "menu_rP3m3B": {
-          "type": "menu",
+        "menu_info_cgYEWB": {
+          "type": "menu_info",
           "settings": {
-            "show_footer_title": true,
-            "menu": "footer",
-            "container_width": 20
+            "meny_title": "Custom text",
+            "menu_txt": "<p>VILIMONOVIC DOO 36000 Kraljevo, </p><p>Cara Lazara 8G </p><p>Matični broj: 21685968 </p><p>PIB: 112492308</p>"
           }
         },
         "footer-2": {
@@ -108,7 +107,7 @@
       "block_order": [
         "footer-3",
         "footer-1",
-        "menu_rP3m3B",
+        "menu_info_cgYEWB",
         "footer-2",
         "footer-0"
       ],
