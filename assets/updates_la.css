@@ -272,8 +272,12 @@
   text-transform: none;
 }
 
-.grid__item{
+.site-footer .grid__item{
   padding-left: 0;
+}
+
+.site-footer .grid{
+  margin-left: 0;
 }
 /*FOOTER STYLE END*/
 
@@ -291,12 +295,24 @@
 }
 
 @media only screen and (min-width: 590px) {
-
+.footer__title{
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.8px;
+  font-family: var(--typeHeaderPrimary);
+  font-style: italic;
+  color: var(--colorInputText);
+}
   /*Count down section*/
   .countdown-layout--banner .countdown__block {
     width: fit-content;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .site-footer .grid__item.grid-newsletter{
+    max-width: 400px;
+    margin-top: 32px;
   }
 
   .countdown-block-wrapper{
