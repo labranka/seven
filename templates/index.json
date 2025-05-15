@@ -88,8 +88,10 @@
         "full_width": false,
         "text_color": "#000",
         "background_color": "#FFF",
+        "background_image": "shopify://shop_images/image_7.png",
         "overlay_color": "#000",
         "overlay_opacity": 0,
+        "mobile_image": "shopify://shop_images/image_7.png",
         "lazyload_images": true
       }
     }
