@@ -107,7 +107,8 @@
   align-items: start;
 }
 
-.countdown__display-block span {
+.countdown__display-block span,
+.footer__hover-link {
   font-size: 14px;
 }
 
@@ -468,7 +469,9 @@
   .grid:after{
     content: none;
   }
-
+.site-footer .grid__item.grid-newsletter{
+  margin-top: 0;
+}
   .footer__link-group{
     gap: 48px;
   }
