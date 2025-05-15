@@ -18,6 +18,12 @@
         "type": "color",
         "id": "color_body_bg",
         "label": "t:settings_schema.colors.settings.color_body_bg.label",
+        "default": "#F2F2F2"
+      },
+       {
+        "type": "color",
+        "id": "color_body_bg_2",
+        "label": "Background 2",
         "default": "#ffffff"
       },
       {

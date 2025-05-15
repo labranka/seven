@@ -95,6 +95,32 @@ color: var(--colorBody);
   margin-bottom: 0;
 }
 
+/* countdown_section */
+.countdown__mobile-image-wrapper{
+  position: static;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.countdown__mobile-image-wrapper img{
+aspect-ratio: 0.9;
+}
+
+.counddown-section__wrapper{
+  background-color: var(--colorBackground);
+}
+.countdown-wrapper{
+  padding: 16px;
+ 
+}
+
+.countdown-layout--banner .countdown__content{
+  padding: 16px;
+}
+
+.countdown__content{
+ border-radius: 10px;
+}
 
   @media only screen and (max-width: 589px) {
     .site-nav__link--icon .icon {
