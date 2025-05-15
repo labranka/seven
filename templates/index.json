@@ -24,7 +24,6 @@
             "link_text": "POGLEDAJ ASORTIMAN",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify://shop_images/western-capsule-hero-f_1.png",
-            "image_mobile": "shopify://shop_images/image_11.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -86,12 +85,12 @@
       "settings": {
         "layout": "banner",
         "full_width": false,
-        "text_color": "#000",
-        "background_color": "#FFF",
-        "background_image": "shopify://shop_images/image_7.png",
-        "overlay_color": "#000",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_image": "shopify://shop_images/western-capsule-hero-f_1.png",
+        "overlay_color": "#000000",
         "overlay_opacity": 0,
-        "mobile_image": "shopify://shop_images/image_7.png",
+        "mobile_image": "shopify://shop_images/western-capsule-hero-f_1.png",
         "lazyload_images": true
       }
     }
