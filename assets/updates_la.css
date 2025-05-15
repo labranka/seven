@@ -36,8 +36,48 @@ color: var(--colorBody);
 
   .hero__link .btn--inverse{
     border-color:var(--colorHeroText);
-    color:var(--colorHeroText);
+    color:var(--colorBtnPrimary);
     background-color: var(--colorHeroText)!important;
+}
+
+
+.hero__link{
+  display: block;
+}
+/*lists css*/
+
+.hero__subtitle .animation-contents ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__subtitle .animation-contents ul li {
+  position: relative;
+  padding-left: 24px;    /* space for the icon */
+  margin-bottom: 0.5em;
+}
+
+.hero__subtitle .animation-contents ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;            /* adjust to vertically center */
+  left: 0;
+  width: 20px;
+  height: 20px;
+   background: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'>\<circle cx='8' cy='8' r='7' fill='none' stroke='%23ffffff' stroke-width='2'/>\<path d='M5 8 L7 10 L11 6' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round'/>\</svg>") no-repeat center center;
+  background-size: contain;
+}
+.hero__subtitle{
+  width: 100%;
+}
+.hero__subtitle strong {
+  font-size: 16px;
+  letter-spacing: 0;
+}
+.hero__text-content.vertical-bottom.horizontal-left,
+.hero__text-content.vertical-bottom.horizontal-left>*{
+  max-width: 700px;
 }
 
   @media only screen and (max-width: 589px) {

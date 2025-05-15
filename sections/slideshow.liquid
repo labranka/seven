@@ -212,9 +212,11 @@
                       {%- if block.settings.subheading or block.settings.link -%}
                         {%- unless block.settings.subheading == blank -%}
                           <div class="hero__subtitle">
-                            <div class="animation-cropper"><div class="animation-contents">
-                              {{ block.settings.subheading | escape }}
-                            </div></div>
+                            <div class="animation-cropper">
+                              <div class="animation-contents">
+                              {{ block.settings.subheading  }}
+                            </div>
+                            </div>
                           </div>
                         {%- endunless -%}
                         {%- if block.settings.link_text != blank -%}
@@ -391,10 +393,10 @@
           "unit": "px"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "subheading",
           "label": "t:sections.slideshow.blocks.slide.settings.subheading.label",
-          "default": "And an optional subheading"
+          "default": "<p>777 Oversized – nosimo sreću i delimo je</p>"
         },
         {
           "type": "url",
@@ -490,15 +492,13 @@
         {
           "type": "image",
           "settings": {
-            "title": "<p>777 Oversized – nosimo sreću i delimo je</p>",
-            "subheading": "Bring your brand to life"
+            "title": "<p>777 Oversized – nosimo sreću i delimo je</p>"
           }
         },
         {
           "type": "image",
           "settings": {
-            "title": "<p>777 Oversized – nosimo sreću i delimo je</p>",
-            "subheading": "And big, beautiful imagery"
+            "title": "<p>777 Oversized – nosimo sreću i delimo je</p>"
           }
         }
       ]
