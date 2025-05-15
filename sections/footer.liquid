@@ -53,7 +53,7 @@
                 {% endcase %}
         {% endfor %}
         </div>
-      {%- assign row_width = 0 -%}
+   <div class="footer-left-part__wrapper">
       {%- for block in section.blocks -%}
 
         {%- case block.type -%}
@@ -75,6 +75,18 @@
           </div>
         {%- endcase -%}
       {%- endfor -%}
+       <div class="footer__copyright site-footer__bottom-block only-desktop">
+        {%- if section.settings.show_copyright -%}
+          <span>
+            &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
+            {%- if section.settings.copyright_text != blank -%}
+              {{ section.settings.copyright_text }}
+            {%- endif -%}
+          </span>
+        {%- endif -%}
+        <span class="footer__powered_by">© 2025, 777.</span>
+      </div>
+      </div>
     </div>
 
     <div class="site-footer__bottom">
