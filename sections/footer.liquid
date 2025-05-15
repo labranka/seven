@@ -20,6 +20,39 @@
   <div class="page-width">
 
     <div class="grid">
+       <div class="footer__link-group">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+        {%- when 'menu' -%}
+              <div class="footer__menu-wrapper" >
+              <div class="footer__link-list">
+                <h5 class="">{{ block.settings.menu.title }}</h5>
+
+                <div class="footer__links-wrapper">
+                  {% for link in block.settings.menu.links %}
+                    <a class="footer__hover-link" href="{{ link.url }}">
+                      {{ link.title }}
+                    </a>
+                  {% endfor %}
+                </div>
+              </div>
+              </div>
+
+              {%- when 'menu_info' -%}
+                 <div class="footer__menu-wrapper" >
+              <div class="footer__link-list">
+                <h5 class="">{{ block.settings.meny_title }}</h5>
+
+                <div class="footer__menu_txt">
+                      {{ block.settings.menu_txt  }}
+                 
+                </div>
+              </div>
+              </div>
+
+                {% endcase %}
+        {% endfor %}
+        </div>
       {%- assign row_width = 0 -%}
       {%- for block in section.blocks -%}
         {%- assign row_width = row_width | plus: block.settings.container_width -%}
@@ -49,10 +82,10 @@
           <div {{ block.shopify_attributes }} class="grid__item grid-newsletter footer__item--{{ block.id }}">
             {%- render 'footer-newsletter', block: block -%}
           </div>
-        {%- when 'menu' -%}
+       {% comment %}  {%- when 'menu' -%}
           <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}">
             {%- render 'footer-menu', block: block -%}
-          </div>
+          </div> {% endcomment %}
         {%- when 'follow_shop_cta' -%}
           <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}">
             {%- render 'follow-shop-cta', block: block -%}
@@ -246,6 +279,24 @@
           "unit": "%"
         }
       ]
+    },
+    {
+    "type": "menu_info",
+    "name": "Menu text info",
+    "settings": [
+       {
+          "type": "text",
+          "id": "meny_title",
+          "label": "t:sections.footer.blocks.custom_text.settings.title.label",
+          "default": "Custom text"
+        },
+        {
+          "type": "richtext",
+          "id": "menu_txt",
+          "label": "t:sections.footer.blocks.custom_text.settings.text.label",
+          "default": "<p>Add your own custom text here.</p>"
+        },
+    ]
     },
     {
       "type": "menu",
