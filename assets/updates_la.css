@@ -227,8 +227,11 @@
   }
 .countdown-block-wrapper>*{
   width: 100%;
+  max-width: unset;
 }
-
+.countdown__mobile-image-wrapper{
+  display: none;
+}
 .countdown__block>*{
   width: 100%;
 }
@@ -239,7 +242,7 @@
 
   .countdown-layout--banner .countdown__content {
     flex-direction: column;
-    gap: unset;
+    gap: 100px;
     padding: 24px;
 
   }
