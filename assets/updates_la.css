@@ -1,11 +1,19 @@
 /*FONTS*/
-
+.footer__newsletter-btn svg path{
+  stroke: var(--colorInputText);
+}
 .site-footer .collapsible-content p{
   font-size: 16px;
   line-height: 130%;
   letter-spacing: 0;
 }
+.site-footer .faux-select:active, .site-footer .faux-select:focus, .site-footer input:active, .site-footer input:focus, .site-footer select:active, .site-footer select:focus, .site-footer textarea:active, .site-footer textarea:focus{
+  border-color: var(--colorSaleTag);
+}
 
+.footer__social{
+  justify-content: start;
+}
 .site-footer .faux-select, .site-footer input, .site-footer select, .site-footer textarea{
   border-radius: 10px;
   background-color: transparent;
@@ -274,7 +282,9 @@
     height: 22px !important;
     width: 22px !important;
   }
-
+.footer__logo-social{
+  padding: 0;
+}
   .site-footer .grid{
     margin: 0;
   }
