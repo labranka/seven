@@ -461,9 +461,14 @@
     grid-auto-flow: column; /* ← fill left-to-right into columns */
     gap: 24px;
   }
+  .site-footer .grid__item.grid-newsletter{
+    max-width: 546px;
+  }
   .site-footer .grid > :first-child {
   grid-column: 2;
   grid-row: 1; /* force every child into that single row */
+  margin-left: auto;
+  max-width: 500px;
 }
   .site-footer .grid > :last-child {
     grid-column: 1;
@@ -477,5 +482,6 @@
 }
   .footer__link-group{
     gap: 48px;
+  
   }
 }
