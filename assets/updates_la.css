@@ -225,6 +225,12 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .countdown-block-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
 .countdown-block-wrapper>*{
   width: 100%;
   max-width: unset;
@@ -242,7 +248,7 @@
 
   .countdown-layout--banner .countdown__content {
     flex-direction: column;
-    gap: 100px;
+    gap: 32px;
     padding: 24px;
 
   }
@@ -312,6 +318,7 @@
 
   .countdown-layout--banner .countdown__content {
     padding: 32px;
+    gap: 100px;
   }
 
   .countdown-wrapper {
