@@ -90,6 +90,7 @@
           {% endif %}
         </div>
       {% endif %}
+      <div class="countdown-block-wrapper">
       {% for block in section.blocks %}
         {% if block.type == '@app' %}
           <div class="countdown__block countdown__block--{{ block.type }}" {{ block.shopify_attributes }}>
@@ -164,6 +165,7 @@
           </div>
         {% endif %}
       {% endfor %}
+      </div>
     </div>
   </div>
 </div>
