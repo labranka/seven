@@ -222,6 +222,8 @@
   /*Count down section*/
   .countdown-layout--banner .countdown__block {
     width: fit-content;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .countdown__background-image-wrapper {
