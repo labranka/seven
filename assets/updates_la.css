@@ -225,7 +225,9 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-
+.countdown-block-wrapper>*{
+  width: 100%;
+}
   .countdown__background-image-wrapper {
     border-radius: 10px;
     overflow: hidden;
