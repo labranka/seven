@@ -67,6 +67,15 @@
             "text": ""
           }
         },
+        "content_xXerxh": {
+          "type": "content",
+          "settings": {
+            "heading": "Više od mode - Srcem za zajednicu",
+            "heading_size": "h1",
+            "text": "<p><strong>Use this timer to create urgency and boost sales.</strong></p>",
+            "content_alignment": "left"
+          }
+        },
         "button_d3RDti": {
           "type": "button",
           "settings": {
@@ -79,6 +88,7 @@
       "block_order": [
         "content_mVMWpC",
         "timer_CwGFDq",
+        "content_xXerxh",
         "button_d3RDti"
       ],
       "name": "t:sections.countdown.presets.countdown.name",
