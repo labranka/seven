@@ -49,9 +49,9 @@
         "content_mVMWpC": {
           "type": "content",
           "settings": {
-            "heading": "Countdown",
+            "heading": "",
             "heading_size": "h2",
-            "text": "<p>Use this timer to create urgency and boost sales.</p>",
+            "text": "<p>Do prve humanitarne uplate ostalo je jos:</p>",
             "content_alignment": "left"
           }
         },
