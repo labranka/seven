@@ -1,3 +1,28 @@
+/*FONTS*/
+
+.site-footer .collapsible-content p{
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0;
+}
+
+.site-footer .faux-select, .site-footer input, .site-footer select, .site-footer textarea{
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--colorInputText);
+  width: 100%;
+  border-color:  var(--colorInputText);
+  padding: 10px;
+  max-width: unset;
+  padding-left: 48px;
+}
+
+.site-footer .faux-select::placeholder, .site-footer input::placeholder, .site-footer select::placeholder, .site-footer textarea::placeholder{
+  color: var(--colorInputText);
+}
+.site-footer .collapsible-content p{
+  opacity: 0.5;
+}
 .announcement a,
 .announcement a:hover {
   color: var(--colorAnnouncementText);
@@ -186,7 +211,8 @@
 }
 
 .countdown__heading,
-.countdown__heading>* {
+.countdown__heading>*,
+.grid-newsletter .collapsible-trigger-btn {
   font-family: var(--typeHeaderPrimary);
   font-size: 28px;
   font-style: italic;
@@ -236,6 +262,10 @@
   line-height: 25px;
   letter-spacing: 0;
   text-transform: none;
+}
+
+.grid__item{
+  padding-left: 0;
 }
 /*FOOTER STYLE END*/
 
