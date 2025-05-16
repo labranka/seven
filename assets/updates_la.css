@@ -1,6 +1,10 @@
 
 
 /*FONTS*/
+
+.index-section{
+  margin: 0!important;
+}
 .footer__newsletter-btn svg path{
   stroke: var(--colorInputText);
 }

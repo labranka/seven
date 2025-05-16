@@ -1283,9 +1283,7 @@ newsletter-reminder .color-scheme-none{
 
 @media only screen and (max-width:589px){
 
-.hotspots-section .index-section{
-    margin-bottom:10px;
-}
+
   }
 
 .hotspots-section .hotspots-wrapper{
@@ -8256,9 +8254,7 @@ html[dir=rtl] .social-sharing__title{
 }
   }
 
-.index-section{
-  margin:34px 0;
-}
+
 
 .index-section--small{
   margin:24px 0;
@@ -8305,9 +8301,7 @@ html[dir=rtl] .social-sharing__title{
 }
 
 @media only screen and (min-width:590px){
-  .index-section{
-    margin:100px 0;
-  }
+
 
   .index-section--small{
     margin:40px 0;
