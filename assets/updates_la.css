@@ -1,7 +1,42 @@
 
 
 /*FONTS*/
+.text-with-icons__block-title h3{
+  font-size: 18px;
+  font-family: var(--typeHeaderPrimary);
+  font-style: italic;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
 
+.site-footer .collapsible-content p{
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0;
+}
+.countdown__display-block h2 {
+  font-family: var(--typeHeaderPrimary);
+  font-size: 36px;
+  font-style: italic;
+  letter-spacing: 2.2px;
+  line-height: 44px;
+}
+
+.countdown__heading,
+.countdown__heading>*,
+.grid-newsletter .collapsible-trigger-btn {
+  font-family: var(--typeHeaderPrimary);
+  font-size: 28px;
+  font-style: italic;
+  letter-spacing: -0.8px;
+  line-height: 130%;
+}
+/*FONTS END*/
+
+.text-with-icons__block-icon{
+  width: 72px;
+}
 .index-section{
   margin: 0!important;
 }
@@ -20,11 +55,7 @@
 .footer__copyright.site-footer__bottom-block.only-desktop span{
   padding: 0;
 }
-.site-footer .collapsible-content p{
-  font-size: 16px;
-  line-height: 130%;
-  letter-spacing: 0;
-}
+
 .site-footer .faux-select:active, .site-footer .faux-select:focus, .site-footer input:active, .site-footer input:focus, .site-footer select:active, .site-footer select:focus, .site-footer textarea:active, .site-footer textarea:focus{
   border-color: var(--colorSaleTag);
 }
@@ -105,11 +136,7 @@
 }
 
 .countdown__display-block h2 {
-  font-family: var(--typeHeaderPrimary);
-  font-size: 36px;
-  font-style: italic;
-  letter-spacing: 2.2px;
-  line-height: 44px;
+
   color: var(--colorSaleTag);
   text-transform: uppercase;
   margin-bottom: 0;
@@ -242,15 +269,7 @@
   justify-content: start;
 }
 
-.countdown__heading,
-.countdown__heading>*,
-.grid-newsletter .collapsible-trigger-btn {
-  font-family: var(--typeHeaderPrimary);
-  font-size: 28px;
-  font-style: italic;
-  letter-spacing: -0.8px;
-  line-height: 130%;
-}
+
 
 .countdown__richtext p {
   font-size: 20px;
@@ -316,6 +335,8 @@
   .text-with-icons__blocks{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 16px;
 }
 
   .site-nav__link--icon .icon {
