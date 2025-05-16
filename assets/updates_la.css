@@ -126,6 +126,7 @@
 }
 .text-with-icons{
   margin: 0;
+  background-color: var(--color_background);
 }
 .btn,
 .rte .btn,
