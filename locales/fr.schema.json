@@ -3423,7 +3423,7 @@
         }
       },
       "newsletter_form": {
-        "newsletter_email": "Entrez votre e-mail",
+        "newsletter_email": "Vaša email adresa...",
         "newsletter_confirmation": "Merci de votre inscription",
         "submit": "S'inscrire"
       },

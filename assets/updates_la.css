@@ -39,6 +39,7 @@
 
 .site-footer .faux-select::placeholder, .site-footer input::placeholder, .site-footer select::placeholder, .site-footer textarea::placeholder{
   color: var(--colorInputText);
+  opacity: 0.5;
 }
 .site-footer .collapsible-content p{
   opacity: 0.5;

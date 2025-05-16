@@ -3429,7 +3429,7 @@
         }
       },
       "newsletter_form": {
-        "newsletter_email": "Introduzca su correo electrónico",
+        "newsletter_email": "Vaša email adresa...",
         "newsletter_confirmation": "Gracias por suscribirte",
         "submit": "Suscribirse"
       },
