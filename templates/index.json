@@ -108,6 +108,7 @@
         "text_block_36aVfw": {
           "type": "text_block",
           "settings": {
+            "image": "shopify://shop_images/free_returns_4dc0507e-7e1a-42f2-b16a-5207cfbac06a_png.png",
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
@@ -115,6 +116,7 @@
         "text_block_LMCWqQ": {
           "type": "text_block",
           "settings": {
+            "image": "shopify://shop_images/Free_shipping_over_100_png.png",
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
@@ -122,6 +124,7 @@
         "text_block_L6g7xL": {
           "type": "text_block",
           "settings": {
+            "image": "shopify://shop_images/made_to_order_sustainably_98c4a2e6-7b7d-4659-95b7-e1ddcc3ae989_png.png",
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
