@@ -33,6 +33,10 @@
 }
 
 /*FONTS END*/
+
+.text-with-icons__blocks .text-with-icons__block{
+  padding-bottom: 0;
+}
 .has-3-per-row .text-with-icons__block {
   width: 100%;
 }
