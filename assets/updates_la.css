@@ -76,7 +76,10 @@
 .not_mobile {
   display: none;
 }
-
+.megamenu__promo-image{
+  border-radius: 10px;
+  overflow: hidden;
+}
 .header-wrapper--overlay .site-header:not(.site-header--stuck) .site-header__logo-link img {
   filter: brightness(0) invert(1);
 }
