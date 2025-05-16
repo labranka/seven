@@ -136,11 +136,33 @@
       "settings": {
         "title": "FAQs"
       }
+    },
+    "text_and_image_XjcX8m": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
     }
   },
   "order": [
     "slideshow_XU9nJ4",
     "countdown_z7Qbef",
+    "text_and_image_XjcX8m",
     "faq_LWwNdV"
   ]
 }
