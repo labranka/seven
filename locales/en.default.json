@@ -53,7 +53,7 @@
       }
     },
     "newsletter_form": {
-      "newsletter_email": "Enter your email",
+      "newsletter_email": "Vaša email adresa...",
       "newsletter_confirmation": "Thanks for subscribing",
       "submit": "Subscribe"
     },
