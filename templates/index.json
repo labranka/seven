@@ -109,8 +109,8 @@
           "type": "text_block",
           "settings": {
             "image": "shopify://shop_images/Dreamy_Quality_USP_png.png",
-            "title": "Example title",
-            "text": ""
+            "title": "",
+            "text": "<p>Vrhunski kvalitet</p>"
           }
         },
         "text_block_mYAECG": {
@@ -118,7 +118,7 @@
           "settings": {
             "image": "shopify://shop_images/free_returns_4dc0507e-7e1a-42f2-b16a-5207cfbac06a_png.png",
             "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+            "text": "<h1><em><strong>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</strong></em></h1>"
           }
         },
         "text_block_6hhj9y": {
