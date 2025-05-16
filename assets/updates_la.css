@@ -494,4 +494,8 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .footer__hover-link:hover{
+    opacity: 0.8;
+  }
 }
