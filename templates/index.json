@@ -101,10 +101,52 @@
         "mobile_image": "shopify://shop_images/image_7.png",
         "lazyload_images": true
       }
+    },
+    "text_with_icons_HegXiX": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_36aVfw": {
+          "type": "text_block",
+          "settings": {
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+          }
+        },
+        "text_block_LMCWqQ": {
+          "type": "text_block",
+          "settings": {
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+          }
+        },
+        "text_block_L6g7xL": {
+          "type": "text_block",
+          "settings": {
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_36aVfw",
+        "text_block_LMCWqQ",
+        "text_block_L6g7xL"
+      ],
+      "name": "t:common.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
     }
   },
   "order": [
     "slideshow_XU9nJ4",
-    "countdown_z7Qbef"
+    "countdown_z7Qbef",
+    "text_with_icons_HegXiX"
   ]
 }
