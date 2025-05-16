@@ -108,6 +108,7 @@
         "text_block_jptpYN": {
           "type": "text_block",
           "settings": {
+            "image": "shopify://shop_images/Dreamy_Quality_USP_png.png",
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
@@ -115,6 +116,7 @@
         "text_block_mYAECG": {
           "type": "text_block",
           "settings": {
+            "image": "shopify://shop_images/free_returns_4dc0507e-7e1a-42f2-b16a-5207cfbac06a_png.png",
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
@@ -122,6 +124,15 @@
         "text_block_6hhj9y": {
           "type": "text_block",
           "settings": {
+            "image": "shopify://shop_images/Dreamy_Quality_USP_png.png",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+          }
+        },
+        "text_block_WeKRVU": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/Free_shipping_over_100_png.png",
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
@@ -130,7 +141,8 @@
       "block_order": [
         "text_block_jptpYN",
         "text_block_mYAECG",
-        "text_block_6hhj9y"
+        "text_block_6hhj9y",
+        "text_block_WeKRVU"
       ],
       "name": "t:common.text_with_icons.presets.text_with_icons.name",
       "settings": {
@@ -177,66 +189,12 @@
       "settings": {
         "title": "FAQs"
       }
-    },
-    "text_with_icons_MCtYGz": {
-      "type": "text-with-icons",
-      "blocks": {
-        "text_block_aY8Lbp": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/Free_shipping_over_100_png.png",
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
-          }
-        },
-        "text_block_Df6UXy": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/Dreamy_Quality_USP_png.png",
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
-          }
-        },
-        "text_block_aPPGYg": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/made_to_order_sustainably_98c4a2e6-7b7d-4659-95b7-e1ddcc3ae989_png.png",
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
-          }
-        },
-        "text_block_JNtrLF": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/Free_shipping_over_100_png.png",
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_block_aY8Lbp",
-        "text_block_Df6UXy",
-        "text_block_aPPGYg",
-        "text_block_JNtrLF"
-      ],
-      "name": "t:common.text_with_icons.presets.text_with_icons.name",
-      "settings": {
-        "title": "",
-        "align_text": "center",
-        "desktop_columns_per_row": 3,
-        "icon_color": "#000",
-        "button_label": "",
-        "button_link": "",
-        "divider": false
-      }
     }
   },
   "order": [
     "slideshow_XU9nJ4",
     "countdown_z7Qbef",
     "text_with_icons_U8WQKe",
-    "faq_LWwNdV",
-    "text_with_icons_MCtYGz"
+    "faq_LWwNdV"
   ]
 }
