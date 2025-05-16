@@ -117,7 +117,7 @@
           "type": "text_block",
           "settings": {
             "image": "shopify://shop_images/free_returns_4dc0507e-7e1a-42f2-b16a-5207cfbac06a_png.png",
-            "title": "Brza dostava 1-2 radna dana",
+            "title": "Brza dostava  1-2 radna dana",
             "text": ""
           }
         },
@@ -133,8 +133,8 @@
           "type": "text_block",
           "settings": {
             "image": "shopify://shop_images/Free_shipping_over_100_png.png",
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+            "title": "100% pamuk",
+            "text": ""
           }
         }
       },
