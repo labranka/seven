@@ -128,19 +128,28 @@
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
+        },
+        "text_block_WeKRVU": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/Free_shipping_over_100_png.png",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+          }
         }
       },
       "block_order": [
         "text_block_jptpYN",
         "text_block_mYAECG",
-        "text_block_6hhj9y"
+        "text_block_6hhj9y",
+        "text_block_WeKRVU"
       ],
       "name": "t:common.text_with_icons.presets.text_with_icons.name",
       "settings": {
         "title": "",
         "align_text": "center",
         "desktop_columns_per_row": 3,
-        "icon_color": "#000",
+        "icon_color": "#000000",
         "button_label": "",
         "button_link": "",
         "divider": false
