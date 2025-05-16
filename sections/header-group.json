@@ -20,6 +20,24 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "megamenu_HxLKLD": {
+          "type": "megamenu",
+          "settings": {
+            "menu_item": "Home",
+            "promo_image_1": "shopify://shop_images/pexels-rdne-7362919.jpg",
+            "promo_heading_1": "Branka test",
+            "promo_text_1": "test",
+            "promo_url_1": "",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_url_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "megamenu_HxLKLD"
+      ],
       "settings": {
         "logo": "shopify://shop_images/vektor_2.svg",
         "logo-inverted": "shopify://shop_images/vektor_2.svg",
