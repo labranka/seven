@@ -36,6 +36,8 @@
 
 .text-with-icons__block-icon{
   width: 72px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .index-section{
   margin: 0!important;
