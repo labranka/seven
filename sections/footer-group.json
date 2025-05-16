@@ -68,16 +68,14 @@
           "type": "menu",
           "settings": {
             "show_footer_title": true,
-            "menu": "footer",
-            "container_width": 20
+            "menu": "footer"
           }
         },
         "footer-1": {
           "type": "menu",
           "settings": {
             "show_footer_title": true,
-            "menu": "informacije",
-            "container_width": 20
+            "menu": "footer-menu-2"
           }
         },
         "menu_info_cgYEWB": {
@@ -99,15 +97,13 @@
           "settings": {
             "show_footer_title": true,
             "title": "Sign up and save",
-            "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>",
-            "container_width": 33
+            "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
           }
         },
         "footer-0": {
           "type": "logo_social",
           "settings": {
-            "desktop_logo_height": 50,
-            "container_width": 20
+            "desktop_logo_height": 50
           }
         }
       },
