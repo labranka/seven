@@ -1,4 +1,4 @@
 # ignore all generated CSS, JS & SVG files
 assets/*theme.css
 assets/*.svg
-assets/country-flags.css
+assets/*country-flags.css
