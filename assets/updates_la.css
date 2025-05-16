@@ -77,7 +77,7 @@
   display: none;
 }
 
-.header-wrapper--overlay .site-header:not(.site-header--stuck) img {
+.header-wrapper--overlay .site-header:not(.site-header--stuck) .site-header__logo-link img {
   filter: brightness(0) invert(1);
 }
 
