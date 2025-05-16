@@ -489,4 +489,9 @@
   .footer__collapsible{
     padding-bottom: 48px;
   }
+
+ footer .page-width{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
