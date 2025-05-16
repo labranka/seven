@@ -283,7 +283,8 @@
   gap: 16px;
 }
 
-.footer__link-list h5 {
+.footer__link-list h5,
+.footer__menu_txt p {
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0;
