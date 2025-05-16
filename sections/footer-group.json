@@ -96,8 +96,8 @@
           "type": "newsletter",
           "settings": {
             "show_footer_title": true,
-            "title": "Sign up and save",
-            "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
+            "title": "Nosi sreću, deli je!",
+            "richtext": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
           }
         },
         "footer-0": {
