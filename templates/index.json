@@ -102,54 +102,45 @@
         "lazyload_images": true
       }
     },
-    "text_with_icons_HegXiX": {
-      "type": "text-with-icons",
+    "faq_LWwNdV": {
+      "type": "faq",
       "blocks": {
-        "text_block_36aVfw": {
-          "type": "text_block",
+        "question_iWqMe3": {
+          "type": "question",
           "settings": {
-            "image": "shopify://shop_images/free_returns_4dc0507e-7e1a-42f2-b16a-5207cfbac06a_png.png",
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
           }
         },
-        "text_block_LMCWqQ": {
-          "type": "text_block",
+        "question_MHQ6Lp": {
+          "type": "question",
           "settings": {
-            "image": "shopify://shop_images/Free_shipping_over_100_png.png",
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
           }
         },
-        "text_block_L6g7xL": {
-          "type": "text_block",
+        "question_6ARdKP": {
+          "type": "question",
           "settings": {
-            "image": "shopify://shop_images/made_to_order_sustainably_98c4a2e6-7b7d-4659-95b7-e1ddcc3ae989_png.png",
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
           }
         }
       },
       "block_order": [
-        "text_block_36aVfw",
-        "text_block_LMCWqQ",
-        "text_block_L6g7xL"
+        "question_iWqMe3",
+        "question_MHQ6Lp",
+        "question_6ARdKP"
       ],
-      "name": "t:common.text_with_icons.presets.text_with_icons.name",
+      "name": "t:sections.faq.presets.faq.name",
       "settings": {
-        "title": "",
-        "align_text": "center",
-        "desktop_columns_per_row": 3,
-        "icon_color": "#000",
-        "button_label": "",
-        "button_link": "",
-        "divider": false
+        "title": "FAQs"
       }
     }
   },
   "order": [
     "slideshow_XU9nJ4",
     "countdown_z7Qbef",
-    "text_with_icons_HegXiX"
+    "faq_LWwNdV"
   ]
 }
