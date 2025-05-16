@@ -50,6 +50,8 @@
     "animate_buttons": true,
     "animate_underlines": true,
     "cart_type": "drawer",
+    "social_facebook_link": "https://www.facebook.com/",
+    "social_twitter_link": "",
     "social_pinterest_link": "https://www.pinterest.com/",
     "social_instagram_link": "https://www.instagram.com/srebro.rs/?hl=en",
     "checkout_header_image": "",
