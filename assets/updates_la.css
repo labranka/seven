@@ -456,6 +456,7 @@ details>.site-nav__dropdown{
   }
 .text-with-icons__blocks{
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
 }
   .not_mobile {
     display: flex;
