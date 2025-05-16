@@ -109,8 +109,8 @@
           "type": "text_block",
           "settings": {
             "image": "shopify://shop_images/Dreamy_Quality_USP_png.png",
-            "title": "",
-            "text": "<p>Vrhunski kvalitet</p>"
+            "title": "Vrhunski kvalitet",
+            "text": ""
           }
         },
         "text_block_mYAECG": {
