@@ -1,4 +1,3 @@
 # ignore all generated CSS, JS & SVG files
-assets/*.css
-assets/*.js
+assets/*theme.css
 assets/*.svg
