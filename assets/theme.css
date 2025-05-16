@@ -925,20 +925,11 @@ tool-tip[data-tool-tip-open=true] .tool-tip__inner{
   }
 
 .text-with-icons__blocks{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  margin-left:-30px;
-  margin-right:-30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-@media only screen and (max-width:589px){
 
-.text-with-icons__blocks{
-    flex-direction:column;
-    margin:0;
-}
-  }
 
 .has-1-per-row .text-with-icons__block{
   width:100%;

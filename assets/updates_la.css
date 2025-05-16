@@ -1,3 +1,5 @@
+
+
 /*FONTS*/
 .footer__newsletter-btn svg path{
   stroke: var(--colorInputText);
@@ -306,6 +308,12 @@
 /*FOOTER STYLE END*/
 
 @media only screen and (max-width: 589px) {
+
+  .text-with-icons__blocks{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
   .site-nav__link--icon .icon {
     height: 22px !important;
     width: 22px !important;
