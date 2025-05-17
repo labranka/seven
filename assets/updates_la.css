@@ -56,6 +56,10 @@
   border-radius: 10px!important;
 }
 /*FONTS END*/
+
+.hero__link .btn{
+  margin-top: 16px;
+}
 .shopify-pc__banner__dialog button.shopify-pc__banner__btn-accept,
 .shopify-pc__banner__dialog button.shopify-pc__banner__btn-decline,
 .shopify-pc__prefs__header-actions button{
