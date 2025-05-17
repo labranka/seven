@@ -52,34 +52,13 @@
       {% endfor %}
     </div>
 
-    {%- if section.settings.button_label != blank -%}
-      <div class="text-with-icons__button">
-        <a href="{{ section.settings.button_link }}" class="btn btn--secondary">
-          {{ section.settings.button_label }}
-        </a>
-      </div>
-    {%- endif -%}
+
   </div>
 </div>
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
 
-{% style %}
-  #shopify-section-{{ section.id }} .icon {
-    color: {{ section.settings.icon_color }};
-  }
 
-  #shopify-section-{{ section.id }} .icon path,
-  #shopify-section-{{ section.id }} .icon polygon,
-  #shopify-section-{{ section.id }} .icon rect,
-  #shopify-section-{{ section.id }} .icon circle,
-  #shopify-section-{{ section.id }} .icon ellipse,
-  #shopify-section-{{ section.id }} .icon line,
-  #shopify-section-{{ section.id }} .icon polyline,
-  #shopify-section-{{ section.id }} .icon g {
-    stroke-width: {{ settings.icon_weight | replace: 'px', '' | minus: 1 }}px;
-  }
-{% endstyle %}
 
 {% schema %}
 {
@@ -106,37 +85,6 @@
           "label": "t:common.text_with_icons.settings.align_text.options.center.label"
         }
       ]
-    },
-    {
-      "type": "range",
-      "id": "desktop_columns_per_row",
-      "label": "t:common.text_with_icons.settings.desktop_columns_per_row.label",
-      "default": 3,
-      "min": 2,
-      "max": 4,
-      "step": 1
-    },
-    {
-      "type": "color",
-      "id": "icon_color",
-      "label": "t:common.text_with_icons.settings.icon_color.label",
-      "default": "#000"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "t:common.text_with_icons.settings.button_label.label"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "t:common.text_with_icons.settings.button_link.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "divider",
-      "label": "t:common.text_with_icons.settings.divider.label",
-      "default": false
     }
   ],
   "blocks": [
