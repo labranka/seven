@@ -113,4 +113,7 @@
 .faq-dropdown__content-wrapper{
     padding: 20px 0;
 }
+.faq__main-wrapper .image-wrap{
+    margin-top: 8px;
+}
 }
