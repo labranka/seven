@@ -109,4 +109,8 @@
 .faq__wrapper{
   padding: 32px;
 }
+
+.faq-dropdown__content-wrapper{
+    padding: 20px 0;
+}
 }
