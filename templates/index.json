@@ -184,7 +184,7 @@
           "type": "faq-dropdown",
           "name": "FAQ Dropdown",
           "settings": {
-            "title": "Shopping list",
+            "title": "Od kog materijala su majice napravljene?",
             "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
           },
           "blocks": {}
@@ -193,7 +193,7 @@
           "type": "faq-dropdown",
           "name": "FAQ Dropdown",
           "settings": {
-            "title": "Shopping list",
+            "title": "Da li imate personalizovane majice?",
             "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
           },
           "blocks": {}
