@@ -1,18 +1,37 @@
-<div>
-              <button
-                type="button"
-                class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left"
-                aria-controls="FAQ-content-{{ block.id }}"
-              >
-                {%- render 'collapsible-icons-alt', no_circle: true -%}
-                <span>{{ block.settings.title }}</span>
-              </button>
-              <div id="FAQ-content-{{ block.id }}" class="collapsible-content collapsible-content--all">
-                <div class="collapsible-content__inner collapsible-content__inner--faq rte">
-                  {{ block.settings.text }}
-                </div>
-              </div>
-</div>
+<!-- Mobile -->
+<faq-dropdown class='not_desktop faq-dropdown__content-wrapper'>
+  <button
+    type="button"
+    class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left"
+    aria-controls="FAQ-content-{{ section.id }}-{{ block.id }}"
+  >
+    <span>{{ block.settings.title }}</span>
+    {% render 'collapsible-icons-alt', no_circle: true %}
+  </button>
+  <div id="FAQ-content-{{ section.id }}-{{ block.id }}" class="collapsible-content collapsible-content--all">
+    <div class="collapsible-content__inner collapsible-content__inner--faq rte">
+      {{ block.settings.text }}
+    </div>
+  </div>
+</faq-dropdown>
+<!-- Desktop -->
+<faq-dropdown class='faq-dropdown__content-wrapper not_mobile'>
+  <button
+    type="button"
+    class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left"
+    aria-controls="FAQ-content-{{ section.id }}-{{ block.id }}-desktop"
+  >
+    <span>{{ block.settings.title }}</span>
+    {% render 'collapsible-icons-alt', no_circle: true %}
+  </button>
+  <div id="FAQ-content-{{ section.id }}-{{ block.id }}-desktop" class="collapsible-content collapsible-content--all">
+    <div class="collapsible-content__inner collapsible-content__inner--faq rte desktop">
+      {{ block.settings.text }}
+    </div>
+  </div>
+</faq-dropdown>
+
+
 
 {% schema %}
     {

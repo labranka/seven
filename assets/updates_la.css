@@ -8,7 +8,9 @@
   text-transform: uppercase;
 }
 
-.site-footer .collapsible-content p {
+.site-footer .collapsible-content p,
+.collapsible-trigger span,
+.faq__txt p {
   font-size: 16px;
   line-height: 130%;
   letter-spacing: 0;
@@ -24,12 +26,14 @@
 
 .countdown__heading,
 .countdown__heading>*,
-.grid-newsletter .collapsible-trigger-btn {
+.grid-newsletter .collapsible-trigger-btn,
+.big-heading p{
   font-family: var(--typeHeaderPrimary);
   font-size: 28px;
   font-style: italic;
   letter-spacing: -0.8px;
   line-height: 130%;
+  font-weight: bold;
 }
 
 /*FONTS END*/
@@ -143,7 +147,7 @@
 }
 
 .not_mobile {
-  display: none;
+  display: none!important;
 }
 
 .megamenu__promo-image {
@@ -354,7 +358,8 @@
 }
 
 .footer__link-list h5,
-.footer__menu_txt p {
+.footer__menu_txt p,
+.collapsible-content__inner {
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0;
@@ -431,7 +436,8 @@
     border-bottom-right-radius: 4px;
   }
 
-  .footer__title {
+  .footer__title,
+  .big-heading {
     font-size: 36px;
     line-height: 44px;
     letter-spacing: -0.8px;
@@ -521,11 +527,11 @@
   }
 
   .not_mobile {
-    display: flex;
+    display: flex!important;
   }
 
   .not_desktop {
-    display: none;
+    display: none!important;
   }
 
   .site-nav__icons {
@@ -562,6 +568,7 @@
 }
 
 @media screen and (min-width: 1025px) {
+
   .countdown-layout--banner .countdown__content {
     gap: 200px;
   }

@@ -1,3 +1,112 @@
 .faq__wrapper {
     padding: 32px 16px;
+    display: block;
+    background-color: var(--colorBody);
+}
+.faq-dropdown__content-wrapper{
+    width: 100%;
+}
+.faq__dropdown--wrapper  {
+    background-color: var(--color_background);
+    border-radius: 12px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.faq__main-wrapper .image-wrap{
+    width: 100%;
+    max-width: 160px;
+    margin: 16px 0;
+}
+
+.faq__dropdown--wrapper div{
+    width: 100%;
+}
+
+.collapsible-trigger__icon{
+    position: static;
+    left: unset;
+    right: unset;
+    transform: none;
+}
+.collapsible-trigger__icon  svg,
+.collapsible-trigger--inline .collapsible-trigger__icon{
+    width: 20px;
+    height: 20px;
+}
+
+.collapsible-trigger svg{
+    transition: transform 0.2s ease-in-out;
+}
+
+.collapsible-trigger[aria-expanded='true'] svg{
+    transform: rotate(180deg);
+}
+
+.faq-dropdown__content-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 0;
+    border-bottom: 1px solid var(--colorBorder);
+    padding: 16px 0;
+    flex-direction: column;
+
+}
+.collapsible-trigger--inline{
+  display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 0;
+}
+    .faq-dropdown__content-wrapper .collapsible-trigger:last-of-type{
+    border-bottom: none;
+    }
+
+.rte.collapsible-content__inner--faq{
+    padding: 24px 0;
+}
+
+.faq__txt strong{
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.faq__title p{
+    margin-bottom: 0;
+}
+
+.faq__title{
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1025px) {
+    .faq__main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    padding: 48px;
+     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+     border-radius: 10px;
+     max-width: 1329px;
+     margin-left: auto;
+     margin-right: auto;
+     align-items: center;
+  }
+  .faq__content--wrapper,
+  .faq__dropdown--wrapper{
+    max-width: 572px;
+  }
+
+  .faq__dropdown--wrapper.right-side{
+    margin-left: auto;
+  }
+
+.faq__wrapper{
+  padding: 32px;
+}
 }

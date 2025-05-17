@@ -5,32 +5,45 @@
   onload="this.media='all'">
 <noscript>{{ 'section-faq.css' | asset_url | stylesheet_tag }}</noscript>
 
+{% capture blocks_dropdown %}
+    {% content_for 'blocks' %}
+{% endcapture %}
+
+
 <faq-section class="faq__wrapper " >
   <div class="faq__main-wrapper ">
     <div class="faq__content--wrapper left-side">
         {% if section.settings.title != blank %}
-             <div class="faq__title">
+             <div class="faq__title big-heading">
                 {{ section.settings.title }}
             </div>
         {% endif %}  
+        <div class="faq__dropdown--wrapper right-side not_desktop">
+             {{ blocks_dropdown }}
+            </div>
          {% if section.settings.text != blank %}
-             <div class="faq__txt">
+             <div class="faq__txt not_mobile">
                 {{ section.settings.text }}
             </div>
         {% endif %}
-          {% if section.settings.icon != blank %}
-            <div class="image-wrap aos-animate faq__icon" style="aspect-ratio:{{ section.settings.icon.aspect_ratio }};">
+          {% if section.settings.image != blank %}
+            <div class="image-wrap aos-animate faq__icon" style="aspect-ratio:{{ section.settings.image.aspect_ratio }};">
                 {%- render 'image-element',
-                    img: section.settings.icon,
+                    img: section.settings.image,
                     widths: '360, 540, 750, 900, 1080, 1600',
                     sizeVariable: '300px',
                 -%}
                 </div>
         {% endif %}    
+            {% if section.settings.text_2 != blank %}
+             <div class="faq__txt ">
+                {{ section.settings.text_2 }}
+            </div>
+        {% endif %}
    
     </div>
-     <div class="faq__content--wrapper right-side">
-      {% content_for 'blocks' %}
+     <div class="faq__dropdown--wrapper right-side not_mobile">
+      {{ blocks_dropdown }}
     </div>
   </div>
 </faq-section>
