@@ -152,6 +152,60 @@
     },
     "section_faq_qwhqL4": {
       "type": "section-faq",
+      "blocks": {
+        "faq_dropdown_Nywf3Q": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Shopping list",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_zGQQPB": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Shopping list",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_QtAE4g": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Shopping list",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_AXGVjw": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Shopping list",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_zQd8Vh": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Koliko traje dostava i koja je cena?",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "faq_dropdown_Nywf3Q",
+        "faq_dropdown_zGQQPB",
+        "faq_dropdown_QtAE4g",
+        "faq_dropdown_AXGVjw",
+        "faq_dropdown_zQd8Vh"
+      ],
       "name": "FAQ section",
       "settings": {
         "title": "<p><em><strong>IMAŠ PITANJE? TU SMO DA ODGOVORIMO</strong></em></p>",
