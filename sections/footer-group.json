@@ -56,6 +56,7 @@
         "footer-promotions1",
         "footer-promotions2"
       ],
+      "disabled": true,
       "settings": {
         "hide_homepage": false,
         "align_text": "left"
