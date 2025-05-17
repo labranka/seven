@@ -35,9 +35,26 @@
   line-height: 130%;
   font-weight: bold;
 }
-
+.shopify-pc__banner__body-title{
+    font-family: var(--typeHeaderPrimary)!important;
+    font-size: 28px!important;
+    font-style: italic!important;
+    letter-spacing: -0.8px!important;
+    line-height: 130%!important;
+    font-weight: bold!important;
+}
+.shopify-pc__banner__body{
+  font-family: var(--typeHeaderPrimary)!important;
+}
 /*FONTS END*/
-
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-accept,
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-decline{
+  border-radius: 10px;
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback)!important;
+  font-weight: var(--typeHeaderWeight)!important;
+  letter-spacing: var(--typeHeaderSpacing)!important;
+  line-height: var(--typeHeaderLineHeight)!important;
+}
 .text-with-icons__blocks .text-with-icons__block{
   padding-bottom: 0;
 }
