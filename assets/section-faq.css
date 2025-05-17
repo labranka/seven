@@ -61,7 +61,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    padding-left: 0;
+    padding: 0;
 }
     .faq-dropdown__content-wrapper .collapsible-trigger:last-of-type{
     border-bottom: none;
