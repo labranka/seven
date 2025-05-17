@@ -53,8 +53,9 @@
 }
 /*FONTS END*/
 .shopify-pc__banner__dialog button.shopify-pc__banner__btn-accept,
-.shopify-pc__banner__dialog button.shopify-pc__banner__btn-decline{
-  border-radius: 10px;
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-decline,
+.shopify-pc__prefs__header-actions button{
+  border-radius: 10px!important;
   font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback)!important;
   font-weight: var(--typeHeaderWeight)!important;
   letter-spacing: var(--typeHeaderSpacing)!important;
