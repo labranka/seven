@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="{{ 'section-faq.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'section-faq.css' | asset_url | stylesheet_tag }}</noscript>
+
+<faq-section class="faq__wrapper " >
+  <div class="faq__main-wrapper ">
+    <div class="faq__content--wrapper left-side">
+        {% if section.settings.title != blank %}
+             <div class="faq__title">
+                {{ section.settings.title }}
+            </div>
+        {% endif %}  
+         {% if section.settings.text != blank %}
+             <div class="faq__txt">
+                {{ section.settings.text }}
+            </div>
+        {% endif %}
+          {% if section.settings.icon != blank %}
+            <div class="image-wrap aos-animate faq__icon" style="aspect-ratio:{{ section.settings.icon.aspect_ratio }};">
+                {%- render 'image-element',
+                    img: section.settings.icon,
+                    widths: '360, 540, 750, 900, 1080, 1600',
+                    sizeVariable: '300px',
+                -%}
+                </div>
+        {% endif %}    
+   
+    </div>
+     <div class="faq__content--wrapper right-side">
+      {% content_for 'blocks' %}
+    </div>
+  </div>
+</faq-section>
+
+{% schema %}
+  {
+    "name": "FAQ section",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title",
+            "default": "<p>IMAŠ PITANJE? TU SMO DA ODGOVORIMO</p>"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Proveri koja su najčešća pitanja koja su nam korisnici postavljali i pronadji odgovor!</p>"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Icon"
+           
+        },
+        {
+            "type": "richtext",
+            "id": "text_2",
+            "label": "text",
+            "default": "<p>Naša podrška je dostupna od Ponedeljka do Petka od : 08:00-16:00. Odgovaramo u roku od 24h</p>"
+        }
+     
+     
+    ],
+    "blocks": [
+     {
+        "type": "faq-dropdown"
+      }
+    ],
+    "presets": [
+    {
+      "name": "FAQ section",
+      "blocks": [
+
+      
+      ]
+    }
+  ]
+  }
+{% endschema %}

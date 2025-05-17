@@ -27,11 +27,11 @@
           <div class="text-with-icons__block-icon">
     
              {%- if block.settings.image != blank -%}
-                        <div class="image-wrap " style="aspect-ratio: {{ block.settings.image.aspect_ratio }};">
+                        <div class="image-wrap aos-animate" style="aspect-ratio: {{ block.settings.image.aspect_ratio }};">
                           {%- render 'image-element',
                             img: block.settings.image,
                             widths: '180, 360, 540, 720, 900, 1080'
-                           
+                            sizeVariable: '1000px',
                           -%}
                         </div>
                       {%- else -%}

@@ -1,0 +1,42 @@
+<div>
+              <button
+                type="button"
+                class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left"
+                aria-controls="FAQ-content-{{ block.id }}"
+              >
+                {%- render 'collapsible-icons-alt', no_circle: true -%}
+                <span>{{ block.settings.title }}</span>
+              </button>
+              <div id="FAQ-content-{{ block.id }}" class="collapsible-content collapsible-content--all">
+                <div class="collapsible-content__inner collapsible-content__inner--faq rte">
+                  {{ block.settings.text }}
+                </div>
+              </div>
+</div>
+
+{% schema %}
+    {
+      "name": "FAQ Dropdown",
+      "tag": null,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "Title must match faq tab text.",
+          "default": "Shopping list"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Content inside",
+          "default": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+        }
+      ],
+      "presets": [
+        {
+          "name": "FAQ Dropdown"
+        }
+      ]
+    }
+{% endschema %}
