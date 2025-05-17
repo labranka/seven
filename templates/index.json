@@ -378,6 +378,15 @@
         "color_background": "#f9f9f9",
         "color_text": "#1c1d1d"
       }
+    },
+    "featured_video_TqLE3n": {
+      "type": "featured-video",
+      "name": "t:sections.featured-video.presets.video.name",
+      "settings": {
+        "title": "",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "divider": false
+      }
     }
   },
   "order": [
@@ -388,6 +397,7 @@
     "featured_video_LQMgrn",
     "featured_collections_pwaVd9",
     "blog_posts_jiiBKb",
-    "testimonials_GKAHQy"
+    "testimonials_GKAHQy",
+    "featured_video_TqLE3n"
   ]
 }
