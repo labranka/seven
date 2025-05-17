@@ -48,7 +48,11 @@
 .shopify-pc__banner__dialog p{
   font-family: var(--typeHeaderPrimary)!important;
 }
-.shopify-pc__banner__dialog{
+.shopify-pc__prefs__header-close:focus{
+  box-shadow: none!important;
+}
+.shopify-pc__banner__dialog,
+.shopify-pc__prefs__dialog{
   border-radius: 10px!important;
 }
 /*FONTS END*/
