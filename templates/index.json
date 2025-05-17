@@ -156,6 +156,7 @@
       "settings": {
         "title": "<p><em><strong>IMAŠ PITANJE? TU SMO DA ODGOVORIMO</strong></em></p>",
         "text": "<p>Proveri koja su najčešća pitanja koja su nam korisnici postavljali i pronadji odgovor!</p>",
+        "image": "shopify://shop_images/team-fff_png.png",
         "text_2": "<p>Naša podrška je dostupna od Ponedeljka do Petka od : 08:00-16:00. Odgovaramo u roku od 24h</p>"
       }
     }
