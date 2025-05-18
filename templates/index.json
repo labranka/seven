@@ -247,13 +247,13 @@
           },
           "blocks": {}
         },
-        "video_BUyKPd": {
-          "type": "_video",
-          "name": "Video youtube/vimeo",
+        "video_shopify_kH36a6": {
+          "type": "_video-shopify",
+          "name": "Video shopify",
           "settings": {
             "slide_index": 3,
-            "video_url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
-            "product": "testni-produkt"
+            "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
+            "product": "zovi-mog-advokata-oversized-majica"
           },
           "blocks": {}
         },
@@ -331,7 +331,7 @@
       "block_order": [
         "video_shopify_yzQetA",
         "video_shopify_zT3gLd",
-        "video_BUyKPd",
+        "video_shopify_kH36a6",
         "video_shopify_hW8nGx",
         "video_shopify_ikbRVm",
         "video_shopify_jyHAne",
