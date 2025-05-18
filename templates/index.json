@@ -104,9 +104,10 @@
     },
     "featured_collection_PkRkqy": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.featured_collection.name",
       "settings": {
-        "title": "Featured collection",
+        "title": "Majice",
         "home_featured_products": "frontpage",
         "per_row": 4,
         "rows": 2,
