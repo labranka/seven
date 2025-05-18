@@ -1,13 +1,6 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-{% style %}
-  {% if section.settings.top_padding == false %}
-    .newsletter-{{ section.id }} .newsletter-section { padding-top: 0 !important; }
-  {% endif %}
-  {% if section.settings.bottom_padding == false %}
-    .newsletter-{{ section.id }} .newsletter-section { padding-bottom: 0 !important; }
-  {% endif %}
-{% endstyle %}
+
 
 <div class="index-section newsletter-container newsletter-{{ section.id }} color-scheme-{{ section.settings.color_scheme }}">
   {%- if section.settings.color_scheme and section.settings.color_scheme != 'none' -%}
@@ -43,7 +36,7 @@
         {%- endfor -%}
       </div>
       {% if section.settings.image != blank %}
-        <div class="newsletter-section__image newsletter-section__image--{{ section.settings.image_width }}">
+        <div class="newsletter-section__image ">
           <div
             class="image-wrap {% if section.settings.image_mask != 'none' %}svg-mask svg-mask--{{ section.settings.image_mask }}{% endif %}"
             style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image.aspect_ratio }}%;"
