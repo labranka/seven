@@ -55,7 +55,32 @@ class VideoSlideshow extends HTMLElement {
       } else {
         this.initSlider();
       }
+
+      this.handleResize = this.handleResize.bind(this);
+      window.addEventListener('resize', this.handleResize);
   }
+
+  disconnectedCallback() {
+  if (this.flickityInstance) {
+    this.flickityInstance.destroy();
+  }
+  window.removeEventListener('resize', this.handleResize);
+}
+
+  handleResize() {
+  const totalSlideWidth = this.slides.length * 238;
+  const containerWidth = this.slider.offsetWidth;
+
+  if (this.flickityInstance && totalSlideWidth <= containerWidth) {
+    this.flickityInstance.destroy();
+    this.flickityInstance = null;
+    this.slider.classList.add('no-slider');
+  } else if (!this.flickityInstance && totalSlideWidth > containerWidth) {
+    this.slider.classList.remove('no-slider');
+    this.initSlider();
+  }
+}
+
 
   initSlider() {
       const slideWidth = 238;
@@ -63,15 +88,17 @@ class VideoSlideshow extends HTMLElement {
     this.slides.forEach(slide => {
       slide.style.width = `${slideWidth}px`;
     });
-
     this.flickityInstance = new Flickity(this.slider, {
-      cellAlign: 'left',
-      contain: true,
-      pageDots: true,
-      wrapAround: true,
-      prevNextButtons: true,
-      draggable: true
-    });
+        cellAlign: 'left',
+        contain: true,
+        pageDots: true,
+        wrapAround: true,
+        prevNextButtons: true,
+        draggable: false, // 👈 disables dragging completely
+        dragThreshold: 9999 // extra-safe
+      });
+
+   
   }
 
   disconnectedCallback() {

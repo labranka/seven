@@ -2,15 +2,22 @@
 <div class="video-slide video-slide--{{ block.id }}" data-index="{{ block.settings.slide_index }}" {{ block.shopify_attributes }}>
  
  <div class="video-wrapper" style='aspect-ratio: 0.8;'>
+  
     {% if block.settings.video_url == blank %}
+       <div class="iframe-overlay-wrapper">
             <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
-        {% else %}
+        </div>
+            {% else %}
         {% if block.settings.video_url.type == 'youtube' %}
+           <div class="iframe-overlay-wrapper">
         <iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
-        {% endif %}
+      </div>  
+      {% endif %}
         {% if block.settings.video_url.type == 'vimeo' %}
+            <div class="iframe-overlay-wrapper">
         <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?color={{ block.color_button | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
-        {% endif %}
+      </div>  
+      {% endif %}
     {% endif %}
   </div>
 

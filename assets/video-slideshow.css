@@ -11,12 +11,21 @@
 
 .video-slider.flickity-enabled{ 
     display: block;
+   
+  touch-action: pan-y; /* prevents scroll lock on iOS */
+
+}
+/* Allow Flickity to drag over iframe by default */
+.video-wrapper iframe {
+  pointer-events: auto;
 }
 
-.video-slide {
-  width: 100%; /* or a fixed value like 400px if you want visible partial slides */
-  max-width: 100%;
-  box-sizing: border-box;
+.iframe-overlay-wrapper {
+  pointer-events: auto;
+}
+
+.flickity-dragging .iframe-overlay-wrapper {
+  pointer-events: none;
 }
 
 .video-slideshow-section .flickity-slider {
@@ -39,9 +48,29 @@ border-radius: 10px;
   border-radius: 10px;
   overflow: hidden;
   padding-right: 16px;
+    width: 100%; /* or a fixed value like 400px if you want visible partial slides */
+  max-width: 100%;
+  box-sizing: border-box;
+  position: relative;
  
 }
 
+.video-drag-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: transparent;
+  cursor: grab;
+  pointer-events: auto;
+  transition: opacity 0.2s;
+}
+
+.flickity-enabled:not(.flickity-dragging) .video-drag-overlay {
+  pointer-events: none;
+}
 .video-slideshow-section .video-wrapper iframe,
 .video-slideshow-section .video-wrapper video {
   max-width: 100%;
