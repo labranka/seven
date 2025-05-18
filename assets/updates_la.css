@@ -654,6 +654,9 @@ p {
   .newsletter-section--image-left{
     direction: rtl;
   }
+  .newsletter-section--image-left > * {
+  direction: ltr; /* Reset direction for direct children only */
+}
   .text-with-icons__blocks {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     display: grid;
