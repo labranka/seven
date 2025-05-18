@@ -416,7 +416,7 @@
           "type": "_video",
           "name": "Video youtube/vimeo",
           "settings": {
-            "slide_index": 0,
+            "slide_index": 3,
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "product": ""
           },
@@ -426,7 +426,7 @@
           "type": "_video",
           "name": "Video youtube/vimeo",
           "settings": {
-            "slide_index": 0,
+            "slide_index": 4,
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "product": ""
           },
