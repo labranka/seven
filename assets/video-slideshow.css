@@ -21,6 +21,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  height: 100%;
+  padding-bottom: 100%;
 }
 
 .video-slide {
@@ -36,4 +38,13 @@
 
 .video-slideshow-section .video-wrapper{
     padding-bottom: 0;
+}
+
+.video-slide .video-wrapper iframe,
+.video-slide .video-wrapper video{
+    height: 100%;
+}
+
+video-slideshow .flickity-page-dots{
+    bottom: 8px;
 }
