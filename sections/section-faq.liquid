@@ -10,7 +10,9 @@
 {% endcapture %}
 
 
-<faq-section class="faq__wrapper " >
+<faq-section class="faq__wrapper  faq-section-{{ section.id }} aos-init aos-animate"  
+data-aos="fade-up"
+  data-aos-duration="800">
   <div class="faq__main-wrapper ">
     <div class="faq__content--wrapper left-side">
         {% if section.settings.title != blank %}
