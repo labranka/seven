@@ -822,4 +822,14 @@ p {
   .footer__hover-link:hover {
     opacity: 0.8;
   }
+.newsletter-container .newsletter-section{
+  gap: 0;
+}
+
+.newsletter-section__content .enlarge-text p{
+  margin-bottom: 0;
+}
+  .newsletter-container .page-width{
+    padding: 48px 32px;
+  }
 }
