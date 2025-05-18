@@ -8,6 +8,11 @@
   text-transform: uppercase;
 }
 
+.testimonials-slide .testimonials-slider__text{
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .site-footer .collapsible-content p,
 .collapsible-trigger span,
 .faq__txt p {

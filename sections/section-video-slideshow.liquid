@@ -9,7 +9,8 @@
   class=" video-slideshow-section video-slideshow-{{ section.id }} aos-init aos-animate"
   data-section-id="{{ section.id }}"
   data-section-type="video-slideshow"
-  data-aos>
+  data-aos="fade-up"
+  data-aos-duration="800">
   {%- if section.settings.title != blank -%}
       <div class="video-slideshow-title">
         <h2>{{ section.settings.title }}</h2>
