@@ -105,7 +105,7 @@ border-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
 video-slideshow .flickity-page-dots{
-    bottom: -16px;
+    bottom: -8px;
 }
 .product-small-link{
     display: flex;
