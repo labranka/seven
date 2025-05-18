@@ -173,6 +173,7 @@ video-slideshow .flickity-page-dots{
   }
   .flickity-enabled .video-slide.is-selected .video-slide-inner .product-small-link{
   opacity: 1;
+  pointer-events: all;
 }
     .video-slideshow-section{
         padding: 48px;
