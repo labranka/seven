@@ -282,6 +282,7 @@
           "name": "Video shopify",
           "settings": {
             "slide_index": 6,
+            "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
             "product": ""
           },
           "blocks": {}
