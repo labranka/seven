@@ -85,10 +85,15 @@ p {
 .newsletter-section__content form{
   flex-direction: column;
 }
-.input-group .input-group-btn:first-child, .input-group .input-group-btn:first-child>.btn, .input-group .input-group-field:first-child, .input-group input[type=hidden]:first-child+.input-group-btn>.btn, .input-group input[type=hidden]:first-child+.input-group-field{
+.input-group .input-group-btn-overidde-override:first-child, .input-group .input-group-btn-overidde:first-child>.btn, .input-group .input-group-field:first-child, .input-group input[type=hidden]:first-child+.input-group-btn-overidde>.btn, .input-group input[type=hidden]:first-child+.input-group-field{
   border-radius: 10px;
 }
-.input-group-btn .btn{
+.input-group-btn-overidde-overidde button{
+  width: 100%;
+  margin-top: 8px;
+}
+
+.input-group-btn-overidde .btn{
   display: flex;
   width: 100%;
   justify-content: center;
@@ -102,7 +107,7 @@ p {
   border-radius: 10px;
   overflow: hidden;
 }
-.input-group-btn .form__submit--small{
+.input-group-btn-overidde .form__submit--small{
   display: none;
 }
 .input-group .input-group-field{
@@ -111,7 +116,7 @@ p {
 .input-group .input-group-field::placeholder{
   opacity: 0.5;
 }
-.input-group-btn{
+.input-group-btn-overidde{
   background-color: transparent!important;
    margin-bottom: 24px;
 }
