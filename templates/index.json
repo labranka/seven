@@ -307,6 +307,16 @@
           },
           "blocks": {}
         },
+        "video_shopify_rdbr43": {
+          "type": "_video-shopify",
+          "name": "Video shopify",
+          "settings": {
+            "slide_index": 9,
+            "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
+            "product": "testni-produkt"
+          },
+          "blocks": {}
+        },
         "video_shopify_nLA8BE": {
           "type": "_video-shopify",
           "name": "Video shopify",
@@ -327,6 +337,7 @@
         "video_shopify_jyHAne",
         "video_shopify_RdJE7Y",
         "video_shopify_WLEj9U",
+        "video_shopify_rdbr43",
         "video_shopify_nLA8BE"
       ],
       "name": "Video slideshow",
