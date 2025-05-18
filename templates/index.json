@@ -446,8 +446,8 @@
       "settings": {
         "align_text": "left",
         "image_position": "left",
-        "color_background": "#f9f9f9",
-        "color_text": "#1c1d1d"
+        "color_background": "#f2f2f2",
+        "color_text": "#1a1a1a"
       }
     }
   },
