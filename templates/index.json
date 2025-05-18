@@ -438,6 +438,7 @@
       "name": "t:sections.newsletter.presets.email_signup.name",
       "settings": {
         "align_text": "center",
+        "image": "shopify://shop_images/pexels-ryutaro-5745380.jpg",
         "image_width": "33",
         "image_mask": "none",
         "image_position": "right",
