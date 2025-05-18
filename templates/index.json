@@ -379,13 +379,70 @@
         "color_text": "#1c1d1d"
       }
     },
-    "featured_video_TqLE3n": {
-      "type": "featured-video",
-      "name": "t:sections.featured-video.presets.video.name",
+    "section_video_slideshow_kTBPAb": {
+      "type": "section-video-slideshow",
+      "blocks": {
+        "video_shopify_3yfkjA": {
+          "type": "_video-shopify",
+          "name": "Video shopify",
+          "settings": {
+            "slide_index": 0,
+            "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
+            "product": ""
+          },
+          "blocks": {}
+        },
+        "video_bRtNC3": {
+          "type": "_video",
+          "name": "Video youtube/vimeo",
+          "settings": {
+            "slide_index": 0,
+            "video_url": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+            "product": ""
+          },
+          "blocks": {}
+        },
+        "video_q8thtV": {
+          "type": "_video",
+          "name": "Video youtube/vimeo",
+          "settings": {
+            "slide_index": 0,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "product": ""
+          },
+          "blocks": {}
+        },
+        "video_HpEiPc": {
+          "type": "_video",
+          "name": "Video youtube/vimeo",
+          "settings": {
+            "slide_index": 0,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "product": ""
+          },
+          "blocks": {}
+        },
+        "video_NgH7Ke": {
+          "type": "_video",
+          "name": "Video youtube/vimeo",
+          "settings": {
+            "slide_index": 0,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "product": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "video_shopify_3yfkjA",
+        "video_bRtNC3",
+        "video_q8thtV",
+        "video_HpEiPc",
+        "video_NgH7Ke"
+      ],
+      "name": "Video slideshow",
       "settings": {
-        "title": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "divider": false
+        "title": "<p>SHOP THE LOOK</p>"
       }
     }
   },
@@ -398,6 +455,6 @@
     "featured_collections_pwaVd9",
     "blog_posts_jiiBKb",
     "testimonials_GKAHQy",
-    "featured_video_TqLE3n"
+    "section_video_slideshow_kTBPAb"
   ]
 }
