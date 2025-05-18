@@ -4702,9 +4702,7 @@ label.error{
     vertical-align:initial;
   }
 
-.input-group-btn .btn{
-  background-image:none !important;
-}
+
 
 .input-group-btn .btn{
   height:100%;
