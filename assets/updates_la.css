@@ -574,6 +574,10 @@ p {
     border-bottom-right-radius: 4px;
   }
 
+  .newsletter__input-group{
+    max-width: unset;
+  }
+
   .footer__title,
   .big-heading,
   .video-slideshow-title h2,
