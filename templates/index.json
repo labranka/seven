@@ -102,6 +102,18 @@
         "lazyload_images": true
       }
     },
+    "featured_collection_PkRkqy": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "frontpage",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "text_with_icons_U8WQKe": {
       "type": "text-with-icons",
       "blocks": {
@@ -391,6 +403,7 @@
   "order": [
     "slideshow_XU9nJ4",
     "countdown_z7Qbef",
+    "featured_collection_PkRkqy",
     "text_with_icons_U8WQKe",
     "section_video_slideshow_agEVtq",
     "newsletter_z8Q8cK",
