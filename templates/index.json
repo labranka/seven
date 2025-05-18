@@ -1,1 +1,230 @@
-{"sections":{"hero-video":{"type":"hero-video","settings":{"title":"Bring your\nbrand to life.","title_size":80,"subheading":"","link_text":"Watch","link":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc","section_height":"650px"}},"featured-collection-switcher":{"type":"featured-collection-switcher","settings":{}},"rich-text":{"type":"rich-text","blocks":{"heading":{"type":"heading","settings":{}},"text":{"type":"text","settings":{}}},"block_order":["heading","text"],"settings":{}},"featured-collections":{"type":"featured-collections","blocks":{"1499789718857-0":{"type":"collection","settings":{"collection":"","size":"wide"}},"1499789718857-1":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-2":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-3":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-4":{"type":"collection","settings":{"collection":"","size":"square-small"}},"1499789718857-5":{"type":"collection","settings":{"collection":"","size":"wide"}}},"block_order":["1499789718857-0","1499789718857-1","1499789718857-2","1499789718857-3","1499789718857-4","1499789718857-5"],"settings":{"title":"","divider":false}},"fading-images":{"type":"fading-images","blocks":{"1498501481980-0":{"type":"image","settings":{"image":"","slide_title1":"Beautifully animated","slide_title2":"titles and images"}},"1498501481980-1":{"type":"image","settings":{"image":"","slide_title1":"Use this section","slide_title2":"to impress"}},"1498501481980-2":{"type":"image","settings":{"image":"","slide_title1":"And highlight","slide_title2":"important details"}}},"block_order":["1498501481980-0","1498501481980-1","1498501481980-2"],"settings":{"slide_speed":5,"color_overlay":"#000000","color_overlay_opacity":30}},"collection-callout":{"type":"collection-callout","settings":{"collection":"","subtitle":"Brand new","title":"Collection callout","text":"Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.","cta_text1":"Shop Jackets","cta_link1":"","cta_text2":"Shop All","cta_link2":"","divider":false}},"background-image-text":{"type":"background-image-text","settings":{"subtitle":"Impressive","title":"Large image and text","text":"<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>","button_label":"","button_link":"","image":"","layout":"left","height":650}}},"order":["hero-video","featured-collection-switcher","rich-text","featured-collections","fading-images","collection-callout","background-image-text"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero-video": {
+      "type": "hero-video",
+      "settings": {
+        "title": "Bring your\nbrand to life.",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "Watch",
+        "link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "overlay_opacity": 0,
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "featured-collection-switcher": {
+      "type": "featured-collection-switcher",
+      "settings": {
+        "title": "Most popular",
+        "collection1": "",
+        "collection2": "",
+        "per_row": 4,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "1499789718857-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "1499789718857-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1499789718857-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1499789718857-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1499789718857-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1499789718857-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        }
+      },
+      "block_order": [
+        "1499789718857-0",
+        "1499789718857-1",
+        "1499789718857-2",
+        "1499789718857-3",
+        "1499789718857-4",
+        "1499789718857-5"
+      ],
+      "settings": {
+        "title": "",
+        "divider": false,
+        "enable_gutter": false
+      }
+    },
+    "fading-images": {
+      "type": "fading-images",
+      "blocks": {
+        "1498501481980-0": {
+          "type": "image",
+          "settings": {
+            "slide_title1": "Beautifully animated",
+            "slide_title2": "titles and images"
+          }
+        },
+        "1498501481980-1": {
+          "type": "image",
+          "settings": {
+            "slide_title1": "Use this section",
+            "slide_title2": "to impress"
+          }
+        },
+        "1498501481980-2": {
+          "type": "image",
+          "settings": {
+            "slide_title1": "And highlight",
+            "slide_title2": "important details"
+          }
+        }
+      },
+      "block_order": [
+        "1498501481980-0",
+        "1498501481980-1",
+        "1498501481980-2"
+      ],
+      "settings": {
+        "title_lines": "2",
+        "title_font": "body",
+        "title_size": 45,
+        "title_color": "#ffffff",
+        "title_bg_color": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "link": "",
+        "slide_speed": 5,
+        "color_overlay": "#000000",
+        "color_overlay_opacity": 30,
+        "desktop_height": "650px",
+        "mobile_height": "auto",
+        "lazyload_images": true
+      }
+    },
+    "collection-callout": {
+      "type": "collection-callout",
+      "settings": {
+        "collection": "",
+        "subtitle": "Brand new",
+        "title": "Collection callout",
+        "text": "Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.",
+        "cta_text1": "Shop Jackets",
+        "cta_link1": "",
+        "cta_text2": "Shop All",
+        "cta_link2": "",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "background-image-text": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Impressive",
+        "title": "Large image and text",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.</p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "height": 650,
+        "parallax": true,
+        "parallax_direction": "top",
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_tM7djx": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "hero-video",
+    "featured-collection-switcher",
+    "rich-text",
+    "featured-collections",
+    "fading-images",
+    "collection-callout",
+    "background-image-text",
+    "featured_collection_tM7djx"
+  ]
+}
