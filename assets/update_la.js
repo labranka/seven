@@ -43,7 +43,18 @@ class VideoSlideshow extends HTMLElement {
   connectedCallback() {
     if (!this.slider || this.slides.length === 0) return;
 
-    this.initSlider();
+      const totalSlideWidth = this.slides.length * 238;
+      const containerWidth = this.slider.offsetWidth;
+
+      if (totalSlideWidth <= containerWidth) {
+        // Center slides with CSS only
+        this.slider.classList.add('no-slider');
+        this.slides.forEach(slide => {
+          slide.style.width = `238px`;
+        });
+      } else {
+        this.initSlider();
+      }
   }
 
   initSlider() {
