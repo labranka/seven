@@ -1,6 +1,10 @@
 .video-slideshow-section .flickity-viewport{
   height: 400px!important;
 }
+.video-slideshow-section{
+  background-color: var(--color-body);
+  color: var(--colorInputText);
+}
 .video-slideshow-title{
 max-width: 1329px;
 width: 100%;
