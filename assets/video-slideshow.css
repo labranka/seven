@@ -26,7 +26,7 @@
 }
 
 .video-slide {
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 .video-slideshow-section .video-wrapper iframe,
@@ -55,4 +55,11 @@ video-slideshow .flickity-page-dots{
     display: flex;
     flex-direction: column;
     background-color: var(--color-body);
+
+}
+
+@media screen and (min-width: 1025px) {
+    .video-slideshow-section{
+        padding: 48px;
+    }
 }
