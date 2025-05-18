@@ -129,6 +129,7 @@ video-slideshow .flickity-page-dots{
     border: 1px solid var(--colorBorder);
     border-radius: 10px;
     margin-top: 8px;
+    color: var(--colorInputText);
 }
 .product-img{
     width: 40px;
