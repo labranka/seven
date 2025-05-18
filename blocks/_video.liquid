@@ -1,6 +1,6 @@
 
 <div class="video-slide video-slide--{{ block.id }}" data-index="{{ block.settings.slide_index }}" {{ block.shopify_attributes }}>
- 
+ <div class="video-slide-inner">
  <div class="video-wrapper" style='aspect-ratio: 0.8;'>
   
     {% if block.settings.video_url == blank %}
@@ -22,7 +22,9 @@
       </div>  
       {% endif %}
     {% endif %}
-  </div>
+
+    </div>
+
 
   {% if block.settings.product != blank %}
         <a href='{{ block.settings.product.url }}' class="product-small-link">
@@ -45,7 +47,7 @@
              </a>
   {% endif %}
 </div>
-
+  </div>
 
 {% schema %}
     {

@@ -1,6 +1,6 @@
 
 <div class="video-slide video-slide--{{ block.id }}" data-index="{{ block.settings.slide_index }}" {{ block.shopify_attributes }}>
- 
+ <div class="video-slide-inner">
  <div class="video-wrapper" style='aspect-ratio: 0.8;'>
     {% if block.settings.video != blank %}
     {{ block.settings.video | video_tag: image_size: "1024x", controls: true, autoplay: false, loop: false, muted: false }}
@@ -25,6 +25,7 @@
           </svg>
             </div>
              </a>
+</div>
 </div>
 
 

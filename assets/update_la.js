@@ -101,6 +101,10 @@ class VideoSlideshow extends HTMLElement {
       });
 
 
+      this.flickityInstance.on('select', () => {
+      this.updateActiveSlide();
+    });
+
       // Prevent Flickity drag when clicking on videos or iframes
     const viewport = this.slider.querySelector('.flickity-viewport');
 
@@ -110,6 +114,16 @@ class VideoSlideshow extends HTMLElement {
     }
    
   }
+
+  updateActiveSlide() {
+  this.slides.forEach((slide, index) => {
+    if (index === this.flickityInstance.selectedIndex) {
+      slide.classList.add('is-selected');
+    } else {
+      slide.classList.remove('is-selected');
+    }
+  });
+}
 
    pauseDragOnInteractive(event) {
     const target = event.target;

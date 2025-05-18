@@ -149,7 +149,25 @@ video-slideshow .flickity-page-dots{
 .slideshow-wrapper .flickity-button{
     display: none;
 }
+
+.video-slide-inner {
+  transition: transform 0.3s ease;
+  transform: scale(0.85); /* default smaller scale */
+  
+}
+
+.video-slide.is-selected .video-slide-inner {
+  transform: scale(1); /* scale in active one to normal size */
+}
+
 @media screen and (min-width: 1025px) {
+  .video-slide-inner .product-small-link{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .video-slide.is-selected .video-slide-inner .product-small-link{
+  opacity: 1;
+}
     .video-slideshow-section{
         padding: 48px;
     }
