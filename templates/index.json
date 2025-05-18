@@ -344,6 +344,70 @@
       "settings": {
         "title": "<p><em><strong>SHOP THE LOOK</strong></em></p>"
       }
+    },
+    "testimonials_kei8HB": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_wig3na": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_rCGT4U": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_NzYFUJ": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_Mbh9Eb": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_GRNYir": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_wig3na",
+        "testimonial_rCGT4U",
+        "testimonial_NzYFUJ",
+        "testimonial_Mbh9Eb",
+        "testimonial_GRNYir"
+      ],
+      "name": "t:sections.testimonials.presets.customer_testimonials.name",
+      "settings": {
+        "title": "Don't take our word for it",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
     }
   },
   "order": [
@@ -351,6 +415,7 @@
     "countdown_z7Qbef",
     "text_with_icons_U8WQKe",
     "section_faq_qwhqL4",
-    "section_video_slideshow_agEVtq"
+    "section_video_slideshow_agEVtq",
+    "testimonials_kei8HB"
   ]
 }
