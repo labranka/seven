@@ -44,7 +44,7 @@
     "animate_page_transitions": true,
     "animate_page_transition_style": "page-slow-fade",
     "animate_sections": true,
-    "animate_sections_background_style": "fade-in",
+    "animate_sections_background_style": "zoom-fade",
     "animate_sections_text_style": "rise-up",
     "animate_images": true,
     "animate_images_style": "zoom-fade",
