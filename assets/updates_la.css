@@ -576,7 +576,8 @@ p {
 
   .footer__title,
   .big-heading,
-  .video-slideshow-title h2 {
+  .video-slideshow-title h2,
+  .newsletter-section__content .h2 {
     font-size: 36px;
     line-height: 44px;
     letter-spacing: -0.8px;
