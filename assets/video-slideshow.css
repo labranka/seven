@@ -167,7 +167,7 @@ video-slideshow .flickity-page-dots{
 
 @media screen and (min-width: 1025px) {
   .flickity-enabled .video-slide-inner .product-small-link{
-    opacity: 0;
+    opacity: 0.1;
     transition: opacity 0.2s ease-in-out;
     pointer-events: none;
   }
