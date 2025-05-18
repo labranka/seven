@@ -271,8 +271,9 @@
           "type": "_video-shopify",
           "name": "Video shopify",
           "settings": {
-            "slide_index": 0,
-            "product": ""
+            "slide_index": 5,
+            "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
+            "product": "testni-produkt"
           },
           "blocks": {}
         },
@@ -280,7 +281,7 @@
           "type": "_video-shopify",
           "name": "Video shopify",
           "settings": {
-            "slide_index": 0,
+            "slide_index": 6,
             "product": ""
           },
           "blocks": {}
