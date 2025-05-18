@@ -277,8 +277,7 @@
         "title_iNFyGT": {
           "type": "title",
           "settings": {
-            "title": "Nosi sreću, deli je!",
-            "heading_size": "h2"
+            "title": "Nosi sreću, deli je!"
           }
         },
         "text_4RJezp": {
@@ -307,8 +306,8 @@
       "name": "t:sections.newsletter.presets.email_signup.name",
       "settings": {
         "align_text": "left",
-        "image": "shopify://shop_images/image_11_7ed17f53-7f42-4be5-b56b-d7ed70361a01.png",
-        "image_d": "shopify://shop_images/image_11_7ed17f53-7f42-4be5-b56b-d7ed70361a01.png",
+        "image": "shopify://shop_images/pexels-rdne-7362919.jpg",
+        "image_d": "shopify://shop_images/pexels-rdne-7362919.jpg",
         "image_position": "left",
         "color_background": "#f2f2f2",
         "color_text": "#1a1a1a"
