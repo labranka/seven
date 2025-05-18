@@ -86,9 +86,11 @@ border-radius: 10px;
 .video-slide .video-wrapper video{
     height: 100%;
 }
-
+.flickity-prev-next-button{
+    transition: all 0.2s ease-in-out;
+}
 video-slideshow .flickity-page-dots{
-    bottom: 0px;
+    bottom: -8px;
 }
 
 .video-slideshow-section{
