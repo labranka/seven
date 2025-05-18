@@ -7,3 +7,29 @@
     background-color: var(--colorBody);
     color: var(--colorInputText)
 }
+
+ .grid-product__tag{
+    border-radius: 10px;
+    top: 4px;
+    left: 50%;
+    right: unset;
+    width: calc(100% - 8px);
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1024px) {
+.collection-showcase__wrapper .grid--uniform{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    margin: 0;
+    gap: 24px 16px;
+}
+.grid-overflow-wrapper .grid__item:first-child{
+    margin-left: 0;
+}
+.grid-overflow-wrapper .grid__item{
+    width: 100%;
+    padding: 0;
+}
+}
