@@ -428,12 +428,19 @@
         "form_AHUt7k": {
           "type": "form",
           "settings": {}
+        },
+        "text_atzj9m": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
+          }
         }
       },
       "block_order": [
         "title_iNFyGT",
         "text_4RJezp",
-        "form_AHUt7k"
+        "form_AHUt7k",
+        "text_atzj9m"
       ],
       "name": "t:sections.newsletter.presets.email_signup.name",
       "settings": {
