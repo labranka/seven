@@ -1,8 +1,9 @@
 .video-slideshow-section .flickity-viewport{
   height: 400px!important;
 }
-.video-slideshow-section{
+.video-slideshow-title{
 max-width: 1329px;
+width: 100%;
 margin-left: auto;
 margin-right: auto;
 }
