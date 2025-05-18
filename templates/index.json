@@ -150,80 +150,6 @@
         "align_text": "center"
       }
     },
-    "section_faq_qwhqL4": {
-      "type": "section-faq",
-      "blocks": {
-        "faq_dropdown_zQd8Vh": {
-          "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
-          "settings": {
-            "title": "Koliko traje dostava i koja je cena?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
-          },
-          "blocks": {}
-        },
-        "faq_dropdown_Nywf3Q": {
-          "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
-          "settings": {
-            "title": "Mogu li vratiti ili zameniti majicu ako mi ne odgovara?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
-          },
-          "blocks": {}
-        },
-        "faq_dropdown_zGQQPB": {
-          "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
-          "settings": {
-            "title": "Koje veličine su dostupne i kako da izaberem pravu?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
-          },
-          "blocks": {}
-        },
-        "faq_dropdown_QtAE4g": {
-          "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
-          "settings": {
-            "title": "Od kog materijala su majice napravljene?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
-          },
-          "blocks": {}
-        },
-        "faq_dropdown_AXGVjw": {
-          "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
-          "settings": {
-            "title": "Da li imate personalizovane majice?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
-          },
-          "blocks": {}
-        },
-        "faq_dropdown_KeTLzP": {
-          "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
-          "settings": {
-            "title": "Kako da perem majicu da se ne upropasti?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "faq_dropdown_zQd8Vh",
-        "faq_dropdown_Nywf3Q",
-        "faq_dropdown_zGQQPB",
-        "faq_dropdown_QtAE4g",
-        "faq_dropdown_AXGVjw",
-        "faq_dropdown_KeTLzP"
-      ],
-      "name": "FAQ section",
-      "settings": {
-        "title": "<p><em><strong>IMAŠ PITANJE? TU SMO DA </strong></em></p><p><em><strong>ODGOVORIMO</strong></em></p>",
-        "text": "<p>Proveri koja su najčešća pitanja koja su nam korisnici postavljali i pronadji odgovor!</p>",
-        "image": "shopify://shop_images/team-fff_png.png",
-        "text_2": "<p>Naša podrška je dostupna od Ponedeljka do Petka od : 08:00-16:00. </p><p><strong>Odgovaramo u roku od 24h</strong></p>"
-      }
-    },
     "section_video_slideshow_agEVtq": {
       "type": "section-video-slideshow",
       "blocks": {
@@ -387,14 +313,88 @@
         "color_background": "#f2f2f2",
         "color_text": "#1a1a1a"
       }
+    },
+    "section_faq_qwhqL4": {
+      "type": "section-faq",
+      "blocks": {
+        "faq_dropdown_zQd8Vh": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Koliko traje dostava i koja je cena?",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_Nywf3Q": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Mogu li vratiti ili zameniti majicu ako mi ne odgovara?",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_zGQQPB": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Koje veličine su dostupne i kako da izaberem pravu?",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_QtAE4g": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Od kog materijala su majice napravljene?",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_AXGVjw": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Da li imate personalizovane majice?",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_KeTLzP": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Kako da perem majicu da se ne upropasti?",
+            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "faq_dropdown_zQd8Vh",
+        "faq_dropdown_Nywf3Q",
+        "faq_dropdown_zGQQPB",
+        "faq_dropdown_QtAE4g",
+        "faq_dropdown_AXGVjw",
+        "faq_dropdown_KeTLzP"
+      ],
+      "name": "FAQ section",
+      "settings": {
+        "title": "<p><em><strong>IMAŠ PITANJE? TU SMO DA </strong></em></p><p><em><strong>ODGOVORIMO</strong></em></p>",
+        "text": "<p>Proveri koja su najčešća pitanja koja su nam korisnici postavljali i pronadji odgovor!</p>",
+        "image": "shopify://shop_images/team-fff_png.png",
+        "text_2": "<p>Naša podrška je dostupna od Ponedeljka do Petka od : 08:00-16:00. </p><p><strong>Odgovaramo u roku od 24h</strong></p>"
+      }
     }
   },
   "order": [
     "slideshow_XU9nJ4",
     "countdown_z7Qbef",
     "text_with_icons_U8WQKe",
-    "section_faq_qwhqL4",
     "section_video_slideshow_agEVtq",
-    "newsletter_z8Q8cK"
+    "newsletter_z8Q8cK",
+    "section_faq_qwhqL4"
   ]
 }
