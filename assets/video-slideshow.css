@@ -1,5 +1,5 @@
 .video-slideshow-section .flickity-viewport{
-  
+  height: 400px!important;
 }
 
 .video-slider {
@@ -22,6 +22,8 @@
 
 .iframe-overlay-wrapper {
   pointer-events: auto;
+  overflow: hidden;
+  height: fit-content;
 }
 
 .flickity-dragging .iframe-overlay-wrapper {
@@ -30,6 +32,7 @@
 
 .video-slideshow-section .flickity-slider {
   display: flex;
+  height: fit-content;
 }
 
 .video-slideshow-section .video-wrapper {
@@ -44,6 +47,17 @@ border-radius: 10px;
   background-color: var(--color_background);
 }
 
+.video-slideshow-section .video-wrapper,
+.video-slideshow-section .iframe-overlay-wrapper,
+.video-slideshow-section .video-slide iframe,
+.video-slideshow-section .video-slide video {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .video-slide {
   border-radius: 10px;
   overflow: hidden;
@@ -52,7 +66,8 @@ border-radius: 10px;
   max-width: 100%;
   box-sizing: border-box;
   position: relative;
- 
+  z-index: 1;
+   
 }
 
 .video-drag-overlay {
@@ -90,7 +105,7 @@ border-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
 video-slideshow .flickity-page-dots{
-    bottom: -8px;
+    bottom: -32px;
 }
 .product-small-link{
     display: flex;

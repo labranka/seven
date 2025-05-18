@@ -89,14 +89,14 @@ class VideoSlideshow extends HTMLElement {
       slide.style.width = `${slideWidth}px`;
     });
     this.flickityInstance = new Flickity(this.slider, {
-        cellAlign: 'left',
+        cellAlign: 'center',
         contain: true,
         pageDots: true,
         wrapAround: true,
         prevNextButtons: true,
         draggable: false, // 👈 disables dragging completely
         dragThreshold: 9999, // extra-safe
-        adaptiveHeight: true // 👈 This is key
+       adaptiveHeight: false // 👈 This is key
       });
 
    
