@@ -1,3 +1,11 @@
+
+<link
+  rel="stylesheet"
+  href="{{ 'featured-collection.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+<noscript>{{ 'featured-collection.css' | asset_url | stylesheet_tag }}</noscript>
+
 {%- liquid
   assign per_row = section.settings.per_row
   assign product_limit = per_row | times: section.settings.rows

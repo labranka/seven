@@ -175,6 +175,11 @@ p {
 
 .index-section {
   margin: 0 !important;
+  display: flex;
+  width: 100%;
+}
+.index-section>*{
+  width: 100%;
 }
 
 .footer__newsletter-btn svg path {
