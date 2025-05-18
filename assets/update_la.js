@@ -94,12 +94,35 @@ class VideoSlideshow extends HTMLElement {
         pageDots: true,
         wrapAround: true,
         prevNextButtons: true,
-        draggable: false, // 👈 disables dragging completely
-        dragThreshold: 9999, // extra-safe
+        axis: 'x',
+        draggable: true, // 👈 disables dragging completely
+        dragThreshold: 10, // extra-safe
        adaptiveHeight: false // 👈 This is key
       });
 
+
+      // Prevent Flickity drag when clicking on videos or iframes
+    const viewport = this.slider.querySelector('.flickity-viewport');
+
+    if (viewport) {
+      viewport.addEventListener('mousedown', this.pauseDragOnInteractive.bind(this), true);
+      viewport.addEventListener('touchstart', this.pauseDragOnInteractive.bind(this), true);
+    }
    
+  }
+
+   pauseDragOnInteractive(event) {
+    const target = event.target;
+
+  if (target.tagName === 'IFRAME' || target.tagName === 'VIDEO') {
+    if (this.flickityInstance) {
+      this.flickityInstance.options.draggable = false;
+
+      setTimeout(() => {
+        this.flickityInstance.options.draggable = true;
+      }, 500);
+    }
+  }
   }
 
   disconnectedCallback() {
