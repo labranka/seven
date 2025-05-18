@@ -1,0 +1,58 @@
+<link
+  rel="stylesheet"
+  href="{{ 'video-slideshow.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+<noscript>{{ 'video-slideshow.css' | asset_url | stylesheet_tag }}</noscript>
+
+<video-slideshow
+  class=" video-slideshow-section video-slideshow-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="video-slideshow"
+  data-aos>
+  {%- if section.settings.title != blank -%}
+      <div class="section-header">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="slideshow-wrapper">
+      <div class="video-slider" id="Video-slider-{{ section.id }}" data-count="{{ section.blocks.size }}">
+        {% content_for 'blocks' %}
+      </div>
+    </div>
+  {%- endif -%}
+</video-slideshow>
+
+
+{% schema %}
+  {
+    "name": "Video slideshow",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title",
+            "default": "<p>SHOP THE LOOK</p>"
+        }
+    ],
+    "blocks": [
+     {
+        "type": "_video"
+      },
+       {
+        "type": "_video-shopify"
+      }
+    ],
+    "presets": [
+    {
+      "name": "Video slideshow",
+      "blocks": [
+
+      
+      ]
+    }
+  ]
+  }
+{% endschema %}

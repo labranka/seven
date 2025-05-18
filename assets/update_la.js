@@ -30,3 +30,38 @@ class FAQDropdown extends HTMLElement {
 }
 
 customElements.define('faq-dropdown', FAQDropdown);
+
+
+class VideoSlideshow extends HTMLElement {
+  constructor() {
+    super();
+    this.slider = this.querySelector('.video-slider');
+    this.slides = this.querySelectorAll('.video-slide');
+    this.flickityInstance = null;
+  }
+
+  connectedCallback() {
+    if (!this.slider || this.slides.length === 0) return;
+
+    this.initSlider();
+  }
+
+  initSlider() {
+    this.flickityInstance = new Flickity(this.slider, {
+      cellAlign: 'left',
+      contain: true,
+      pageDots: true,
+      wrapAround: true,
+      prevNextButtons: true,
+      draggable: true
+    });
+  }
+
+  disconnectedCallback() {
+    if (this.flickityInstance) {
+      this.flickityInstance.destroy();
+    }
+  }
+}
+
+customElements.define('video-slideshow', VideoSlideshow);
