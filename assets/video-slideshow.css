@@ -81,7 +81,7 @@ border-radius: 10px;
 .video-slide {
   border-radius: 10px;
   overflow: hidden;
-  padding-right: 16px;
+  padding-right: 0px;
     width: 100%; /* or a fixed value like 400px if you want visible partial slides */
   max-width: 100%;
   box-sizing: border-box;
@@ -169,6 +169,7 @@ video-slideshow .flickity-page-dots{
   .flickity-enabled .video-slide-inner .product-small-link{
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
   }
   .flickity-enabled .video-slide.is-selected .video-slide-inner .product-small-link{
   opacity: 1;
