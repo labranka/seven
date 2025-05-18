@@ -78,6 +78,7 @@
             img: section.settings.mobile_image,
             loading: section.settings.lazyload_images,
             classes: 'countdown__mobile-image medium-up--hide',
+            sizeVariable: '100px',
           -%}
           {% if section.settings.overlay_opacity > 0 %}
             {% assign overlay_alpha = section.settings.overlay_opacity | divided_by: 100.0 %}

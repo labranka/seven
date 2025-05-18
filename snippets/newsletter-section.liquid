@@ -36,14 +36,28 @@
         {%- endfor -%}
       </div>
       {% if section.settings.image != blank %}
-        <div class="newsletter-section__image ">
+        <div class="newsletter-section__image not_desktop">
           <div
-            class="image-wrap {% if section.settings.image_mask != 'none' %}svg-mask svg-mask--{{ section.settings.image_mask }}{% endif %}"
-            style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image.aspect_ratio }}%;"
+            class="image-wrap "
+            style=" aspect-ratio: 1;"
           >
             {%- render 'image-element',
               img: section.settings.image,
-              sizeVariable: section.settings.image_width,
+              sizeVariable: '500px',
+              widths: '360, 540, 720, 1020',
+            -%}
+          </div>
+        </div>
+      {% endif %}
+        {% if section.settings.image_d != blank %}
+        <div class="newsletter-section__image not_mobile">
+          <div
+            class="image-wrap"
+            style=" aspect-ratio: 1.2;"
+          >
+            {%- render 'image-element',
+              img: section.settings.image_d,
+              sizeVariable: '1000px',
               widths: '360, 540, 720, 1020',
             -%}
           </div>
