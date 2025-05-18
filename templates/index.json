@@ -34,7 +34,7 @@
       ],
       "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
       "settings": {
-        "section_height": "750px",
+        "section_height": "650px",
         "mobile_height": "500px",
         "parallax": true,
         "style": "arrows",
@@ -408,6 +408,44 @@
         "color_background": "#f9f9f9",
         "color_text": "#1c1d1d"
       }
+    },
+    "newsletter_z8Q8cK": {
+      "type": "newsletter",
+      "blocks": {
+        "title_iNFyGT": {
+          "type": "title",
+          "settings": {
+            "title": "Sign up and save",
+            "heading_size": "h2"
+          }
+        },
+        "text_4RJezp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
+          }
+        },
+        "form_AHUt7k": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_iNFyGT",
+        "text_4RJezp",
+        "form_AHUt7k"
+      ],
+      "name": "t:sections.newsletter.presets.email_signup.name",
+      "settings": {
+        "align_text": "center",
+        "image_width": "33",
+        "image_mask": "none",
+        "image_position": "right",
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d",
+        "top_padding": true,
+        "bottom_padding": true
+      }
     }
   },
   "order": [
@@ -416,6 +454,7 @@
     "text_with_icons_U8WQKe",
     "section_faq_qwhqL4",
     "section_video_slideshow_agEVtq",
-    "testimonials_kei8HB"
+    "testimonials_kei8HB",
+    "newsletter_z8Q8cK"
   ]
 }
