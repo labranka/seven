@@ -1,0 +1,9 @@
+.grid-product__image-mask{
+    border-radius: 10px;
+}
+
+.collection-showcase__wrapper {
+    padding: 24px 0;
+    background-color: var(--colorBody);
+    color: var(--colorInputText)
+}

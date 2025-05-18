@@ -51,6 +51,8 @@ p {
 .countdown__heading>*,
 .grid-newsletter .collapsible-trigger-btn,
 .big-heading p,
+.big-heading,
+h2,
 .newsletter-section__content .h2 {
   font-family: var(--typeHeaderPrimary);
   font-size: 28px;
@@ -396,6 +398,10 @@ p {
   height: fit-content;
 }
 
+[data-type_header_text_alignment=true] .section-header{
+  text-align: start;
+}
+
 .hero__icon-plu-txt {
   display: flex;
   align-items: center;
@@ -585,14 +591,16 @@ p {
 
   .footer__title,
   .big-heading,
+  h2,
+   .big-heading p,
   .video-slideshow-title h2,
   .newsletter-section__content .h2 {
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: -0.8px;
-    font-family: var(--typeHeaderPrimary);
-    font-style: italic;
-    color: var(--colorInputText);
+     font-family: var(--typeHeaderPrimary);
+  font-size: 36px;
+  font-style: italic;
+  letter-spacing: -0.8px;
+  line-height: 44px;
+    font-weight: bold;
   }
 
   /*Count down section*/
