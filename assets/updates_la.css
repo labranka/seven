@@ -41,7 +41,7 @@ p {
   font-family: var(--typeHeaderPrimary);
   font-size: 36px;
   font-style: italic;
-  letter-spacing: 2.2px;
+  letter-spacing: -0.8px;
   line-height: 44px;
 }
 
