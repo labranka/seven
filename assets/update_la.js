@@ -95,7 +95,8 @@ class VideoSlideshow extends HTMLElement {
         wrapAround: true,
         prevNextButtons: true,
         draggable: false, // 👈 disables dragging completely
-        dragThreshold: 9999 // extra-safe
+        dragThreshold: 9999, // extra-safe
+        adaptiveHeight: true // 👈 This is key
       });
 
    

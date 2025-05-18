@@ -137,4 +137,8 @@ video-slideshow .flickity-page-dots{
     .video-slideshow .flickity-page-dots{
         bottom: 0;
     }
+
+    .video-slideshow-title{
+        padding: 0;
+    }
 }
