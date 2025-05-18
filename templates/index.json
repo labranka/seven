@@ -223,12 +223,181 @@
         "image": "shopify://shop_images/team-fff_png.png",
         "text_2": "<p>Naša podrška je dostupna od Ponedeljka do Petka od : 08:00-16:00. </p><p><strong>Odgovaramo u roku od 24h</strong></p>"
       }
+    },
+    "featured_video_LQMgrn": {
+      "type": "featured-video",
+      "name": "t:sections.featured-video.presets.video.name",
+      "settings": {
+        "title": "",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "divider": false
+      }
+    },
+    "featured_collections_pwaVd9": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_jdbQgH": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        },
+        "collection_WyPjY4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_p9TKtk": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_pcVPdE": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_gG9DCk": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_Fmafhe": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "wide"
+          }
+        }
+      },
+      "block_order": [
+        "collection_jdbQgH",
+        "collection_WyPjY4",
+        "collection_p9TKtk",
+        "collection_pcVPdE",
+        "collection_gG9DCk",
+        "collection_Fmafhe"
+      ],
+      "name": "t:sections.featured-collections.presets.collection_list.name",
+      "settings": {
+        "title": "Collection list",
+        "divider": false,
+        "enable_gutter": false
+      }
+    },
+    "blog_posts_jiiBKb": {
+      "type": "blog-posts",
+      "name": "t:sections.blog-posts.presets.blog_posts.name",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "news",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "testimonials_GKAHQy": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_YBFH4h": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_Ep7ema": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_cNwM9H": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_MzPG8J": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_qgQrXy": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YBFH4h",
+        "testimonial_Ep7ema",
+        "testimonial_cNwM9H",
+        "testimonial_MzPG8J",
+        "testimonial_qgQrXy"
+      ],
+      "name": "t:sections.testimonials.presets.customer_testimonials.name",
+      "settings": {
+        "title": "Don't take our word for it",
+        "round_images": true,
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "featured_video_TqLE3n": {
+      "type": "featured-video",
+      "name": "t:sections.featured-video.presets.video.name",
+      "settings": {
+        "title": "",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "divider": false
+      }
     }
   },
   "order": [
     "slideshow_XU9nJ4",
     "countdown_z7Qbef",
     "text_with_icons_U8WQKe",
-    "section_faq_qwhqL4"
+    "section_faq_qwhqL4",
+    "featured_video_LQMgrn",
+    "featured_collections_pwaVd9",
+    "blog_posts_jiiBKb",
+    "testimonials_GKAHQy",
+    "featured_video_TqLE3n"
   ]
 }
