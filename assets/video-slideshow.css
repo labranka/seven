@@ -48,3 +48,11 @@
 video-slideshow .flickity-page-dots{
     bottom: 8px;
 }
+
+.video-slideshow-section{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-body);
+}

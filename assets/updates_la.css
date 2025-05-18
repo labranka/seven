@@ -16,7 +16,8 @@
   letter-spacing: 0;
 }
 
-.countdown__display-block h2 {
+.countdown__display-block h2,
+.video-slideshow-title h2 {
   font-family: var(--typeHeaderPrimary);
   font-size: 36px;
   font-style: italic;
@@ -468,7 +469,8 @@
   }
 
   .footer__title,
-  .big-heading {
+  .big-heading,
+  .video-slideshow-title h2 {
     font-size: 36px;
     line-height: 44px;
     letter-spacing: -0.8px;

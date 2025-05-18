@@ -47,6 +47,12 @@ class VideoSlideshow extends HTMLElement {
   }
 
   initSlider() {
+      const slideWidth = 238;
+
+    this.slides.forEach(slide => {
+      slide.style.width = `${slideWidth}px`;
+    });
+
     this.flickityInstance = new Flickity(this.slider, {
       cellAlign: 'left',
       contain: true,
