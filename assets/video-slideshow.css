@@ -1,7 +1,11 @@
 .video-slideshow-section .flickity-viewport{
   height: 400px!important;
 }
-
+.video-slideshow-section{
+max-width: 1329px;
+margin-left: auto;
+margin-right: auto;
+}
 .video-slider {
  width: 100%;
  height: 100%;
