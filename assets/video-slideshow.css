@@ -1,5 +1,5 @@
 .video-slideshow-section .flickity-viewport{
-    height: 400px;
+  
 }
 
 .video-slider {
@@ -96,8 +96,10 @@ video-slideshow .flickity-page-dots{
     display: flex;
     align-items: center;
     gap: 4px;
-    padding: 4px;
-    border: 1px solid var(--colorInputBg);
+    padding: 8px;
+    border: 1px solid var(--colorBorder);
+    border-radius: 10px;
+    margin-top: 8px;
 }
 .product-img{
     width: 40px;
