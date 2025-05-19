@@ -675,6 +675,10 @@ stroke-linecap: none;
  [data-animate_buttons=true] .modal--quick-shop .btn:not(.btn--no-animate):not(.btn--tertiary):not(.btn--static){
 background-color: var(--colorCartDot);
 }
+
+.color-swatch--small{
+  border-radius: 100%;
+}
 /*PRODUCT CARD MODULE END*/
 
 
