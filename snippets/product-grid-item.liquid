@@ -80,8 +80,10 @@
 
     {%- assign preview_image = product.featured_media.preview_image -%}
 
-    <a href="{{ product.url | within: collection }}" class="grid-product__link">
+    <div class='product-card__wrapper' >
+      
       <div class="grid-product__image-mask">
+         <a href="{{ product.url | within: collection }}"   class="grid-product__link">
         {%- if fixed_aspect_ratio -%}
           <div
             class="grid__image-ratio grid__image-ratio--{% if image_style == 'circle' %}square{% else %}{{ settings.product_grid_image_size }}{% endif %}"
@@ -146,7 +148,7 @@
             -%}
           </div>
         {%- endif -%}
-
+       </a>
           {%- if settings.quick_shop_enable and type != 'horizontal' -%}
       <button class="quick-product__btn js-modal-open-quick-modal-{{ product.id }} ">
         <span class="quick-product__label not_mobile">{{ settings.quick_shop_text }}</span>
@@ -157,7 +159,7 @@
     {%- endif -%}
       </div>
 
-      <div class="grid-product__meta">
+      <a href="{{ product.url | within: collection }}" class="grid-product__meta grid-product__link">
         <div class="grid-product__title">{{ product.title }}</div>
         {%- if settings.vendor_enable -%}
           <div class="grid-product__vendor">{{ product.vendor }}</div>
@@ -240,8 +242,8 @@
             {%- endfor -%}
           {%- endif -%}
         {%- endif -%}
-      </div>
-    </a>
+      </a>
+    </div>
 
     {% unless type == 'horizontal' %}
       {%- if settings.enable_swatches -%}

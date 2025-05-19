@@ -654,7 +654,7 @@ h2,
   align-items: center;
   transform: unset;
  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Added box shadow */
- z-index: 16;
+ z-index: 2;
  pointer-events: all;
  scale: none;
 }

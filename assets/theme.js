@@ -3028,6 +3028,8 @@ theme.collapsibles = (function() {
     products.forEach(product => {
       product.addEventListener('mouseover', productMouseover);
       product.addEventListener('focusin', productMouseover);
+
+      
     });
   
     function productMouseover(evt) {
