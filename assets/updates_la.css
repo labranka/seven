@@ -679,7 +679,7 @@ background-color: var(--colorCartDot);
 .color-swatch--small{
   border-radius: 100%;
 }
-.announcement__text{
+.grid-product__vendor{
   margin-top: 8px;
   margin-bottom: 8px;
 }
