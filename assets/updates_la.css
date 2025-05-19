@@ -1005,10 +1005,7 @@ background-color: var(--colorCartDot);
 }
 }
 @media screen and (min-width: 1025px) {
-  .collection-showcase__wrapper{
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
+ 
   .newsletter-section__content{
     padding: 0 48px;
     
