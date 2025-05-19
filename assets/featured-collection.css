@@ -7,7 +7,10 @@
     background-color: var(--colorBody);
     color: var(--colorInputText)
 }
-
+.featured-collection{
+    background-color: var(--colorBody);
+    color: var(--colorInputText);
+}
 
  [data-animate_buttons=true] .collection-showcase__wrapper .btn:not(.btn--no-animate):not(.btn--tertiary):not(.btn--static){
    border: 1px solid var(--colorInputText);
