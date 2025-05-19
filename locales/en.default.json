@@ -152,8 +152,8 @@
   },
   "collections": {
     "general": {
-      "catalog_title": "Catalog",
-      "all_of_collection": "View all",
+      "catalog_title": "Katalog",
+      "all_of_collection": "Pogledaj sve",
       "view_all_products_html": "View all<br>{{ count }} products",
       "see_more": "Show more",
       "see_less": "Show less",

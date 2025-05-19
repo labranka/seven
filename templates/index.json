@@ -104,7 +104,6 @@
     },
     "featured_collection_PkRkqy": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "t:sections.featured-collection.presets.featured_collection.name",
       "settings": {
         "title": "Majice",
