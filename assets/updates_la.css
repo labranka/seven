@@ -642,7 +642,13 @@ stroke-linecap: none;
   width: 52px;
   height: 52px;
 }
+.modal--quick-shop .product-single__meta{
+  padding-left: 0;
+}
 
+.modal--quick-shop .modal__inner{
+  max-width: 528px;
+}
 /*PRODUCT CARD MODULE END*/
 
 
