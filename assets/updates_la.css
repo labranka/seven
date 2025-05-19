@@ -649,6 +649,14 @@ stroke-linecap: none;
 .modal--quick-shop .modal__inner{
   max-width: 528px;
 }
+
+.grid-product__tag{
+  pointer-events: none;
+}
+
+.modal--quick-shop .grid__item{
+  padding-left: 0;
+}
 /*PRODUCT CARD MODULE END*/
 
 
