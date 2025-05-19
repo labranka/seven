@@ -583,6 +583,33 @@ h2,
 .modal--quick-shop .grid{
  margin: 0;
 }
+
+.grid-product__has-quick-shop .grid-product__content:hover .grid-product__tag{
+  opacity: 1;
+  transition: unset;
+}
+
+.grid-product__tag.grid-product__tag--custom{
+  background-color:var(--colorSaleTag);
+}
+
+ .grid-product__tag{
+    font-weight:bold;
+    border-radius: 10px;
+    top: 8px;
+    left: 50%;
+    right: unset;
+    max-width: calc(100% - 16px);
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    font-size: 9px;
+    line-height: 130%;
+    letter-spacing: 0;
+
+}
 /*PRODUCT CARD MODULE END*/
 
 
@@ -636,6 +663,8 @@ h2,
     right: unset;
     width: calc(100% - 16px);
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -674,6 +703,9 @@ h2,
 }
 
 @media only screen and (min-width: 590px) {
+ .grid-product__tag{
+  font-size: 10px;
+ }
   [data-type_header_accent_transform=true] .footer__title {
     font-size: 28px;
     line-height: 130%;
