@@ -10,9 +10,7 @@
 
 
  [data-animate_buttons=true] .collection-showcase__wrapper .btn:not(.btn--no-animate):not(.btn--tertiary):not(.btn--static){
-    background: transparent;
-    border: 1px solid var(--colorInputText);
-    color: var(--colorInputText);
+   border: 1px solid var(--colorInputText);
 }
 @media screen and (max-width: 1024px) {
     .grid-overflow-wrapper .grid__item.btn-view-all{
