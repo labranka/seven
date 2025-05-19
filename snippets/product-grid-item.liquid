@@ -150,7 +150,7 @@
         {%- endif -%}
        </a>
           {%- if settings.quick_shop_enable and type != 'horizontal' -%}
-      <button class="quick-product__btn js-modal-open-quick-modal-{{ product.id }} ">
+      <button class="quick-product__btn js-modal-open-quick-modal-{{ product.id }} not_desktop">
         <span class="quick-product__label not_mobile">{{ settings.quick_shop_text }}</span>
           <svg aria-hidden="true" focusable="false" role="presentation" class=" icon-product-atc"  viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10.9999 7.0498H3.57688C3.27193 7.04984 2.97103 7.11962 2.69718 7.25379C2.42333 7.38797 2.18379 7.58299 1.99688 7.82394C1.80996 8.06489 1.68062 8.3454 1.61875 8.64401C1.55687 8.94262 1.5641 9.25142 1.63988 9.5468L3.69088 17.5468C3.80127 17.9771 4.05177 18.3584 4.40287 18.6305C4.75396 18.9027 5.18567 19.0502 5.62988 19.0498H16.3699C16.8138 19.0497 17.245 18.902 17.5957 18.6299C17.9464 18.3578 18.1966 17.9768 18.3069 17.5468L20.3589 9.5468C20.4347 9.25142 20.4419 8.94262 20.38 8.64401C20.3181 8.3454 20.1888 8.06489 20.0019 7.82394C19.815 7.58299 19.5754 7.38797 19.3016 7.25379C19.0277 7.11962 18.7268 7.04984 18.4219 7.0498H10.9999ZM10.9999 7.0498V1.0498" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -286,7 +286,16 @@
               {%- endfor -%}
             </div>
           {%- endif -%}
+
+
         {%- endfor -%}
+
+        {%- if settings.quick_shop_enable and type != 'horizontal' -%}
+      <button class="quick-product__btn-desk btn js-modal-open-quick-modal-{{ product.id }} not_mobile">
+        <span class="quick-product__label not_mobile">{{ 'products.product.add_to_cart' | t }}</span>
+          
+      </button>
+    {%- endif -%}
       {%- endif -%}
     {% endunless %}
   </div>

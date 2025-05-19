@@ -3023,10 +3023,12 @@ theme.initQuickShop = function() {
   if (!products.length || !theme.settings.quickView) return;
 
   products.forEach(product => {
-    const btn = product.querySelector('.quick-product__btn');
-    if (!btn) return;
+    // select both mobile and desktop quick-shop buttons
+    const btns = product.querySelectorAll('.quick-product__btn, .quick-product__btn-desk');
+    if (!btns.length) return;
 
-    btn.addEventListener('click', function(e) {
+    // define your handler once
+    const onClickQuickShop = function(e) {
       e.preventDefault();
       e.stopPropagation();
 
@@ -3079,9 +3081,13 @@ theme.initQuickShop = function() {
             openModal();
           });
       }
-    });
+    };
+
+    // attach the same click handler to both buttons
+    btns.forEach(btn => btn.addEventListener('click', onClickQuickShop));
   });
 };
+
 
 
 

@@ -895,7 +895,18 @@ background-color: var(--colorCartDot);
     font-size: 14px;
 
   }
-
+.quick-product__label {
+  font-size: 14px;
+  line-height: 22.4px;
+  letter-spacing: 0;
+}
+.quick-product__btn-desk {
+  margin-top: 16px;
+  padding: 8px 32px;
+}
+.collection-showcase__wrapper{
+  padding: 48px 32px;
+}
 .modal--quick-shop.modal {
   justify-content: end;
 }
