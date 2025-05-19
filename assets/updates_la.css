@@ -684,6 +684,9 @@ background-color: var(--colorCartDot);
   opacity: 0.5;
   margin-bottom: 8px;
 }
+.grid-product__price--original{
+  opacity: 0.5;
+}
 /*PRODUCT CARD MODULE END*/
 
 
