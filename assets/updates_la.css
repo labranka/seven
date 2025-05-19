@@ -657,6 +657,21 @@ stroke-linecap: none;
 .modal--quick-shop .grid__item{
   padding-left: 0;
 }
+.variant-input-wrap label{
+  border-radius: 10px;
+  padding: 8px;
+}
+.variant-input-wrap label.color-swatch{
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+}
+
+.color-swatch:before{
+  border-radius: 100%;
+  border: none;
+}
 /*PRODUCT CARD MODULE END*/
 
 
@@ -745,6 +760,8 @@ stroke-linecap: none;
 .quick-product__btn svg path{
   stroke: var(--colorInputText);
 }
+
+
 /*PRODUCT CARD END*/
   
 }
@@ -876,7 +893,7 @@ stroke-linecap: none;
 
   }
 
-.modal--quick-shop .modal {
+.modal--quick-shop.modal {
   justify-content: end;
 }
 .newsletter-section{
