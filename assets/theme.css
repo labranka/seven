@@ -5388,11 +5388,7 @@ predictive-search .predictive__screen{
   margin-top:0;
 }
 
-.site-footer{
-  background-color:var(--colorFooter);
-  color:var(--colorFooterText);
-  padding-bottom:40px;
-}
+
 
 @media only screen and (min-width:590px){
 

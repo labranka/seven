@@ -150,6 +150,12 @@ h2,
 }
 
 /*NEWSLETTER SECTION END*/
+
+.site-footer{
+  background-color:var(--colorFooter);
+  color:var(--colorFooterText);
+  padding-bottom:40px;
+}
 .hero__link .btn{
   margin-top: 16px;
 }
@@ -473,9 +479,9 @@ h2,
 
 /*FOOTER STYLE*/
 .site-footer {
-  background-color: var(--color_background);
+ 
   padding: 32px 0px;
-  color: var(--colorInputText);
+
 }
 
 .footer__link-group {
