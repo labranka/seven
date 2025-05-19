@@ -522,9 +522,46 @@ h2,
 
 
 /*PRODUCT CARD MODULE START*/
-.modal .modal__inner{
+.product-img-module{
+  width: 96px;
   border-radius: 10px;
   overflow: hidden;
+  height: fit-content;
+}
+.product-img-module .image-wrap{
+  margin-bottom: 0;
+}
+.modal--quick-shop .modal__inner{
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal--quick-shop .product-single__vendor{
+  display: none;
+}
+.modal--quick-shop .product-block--header{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.modal--quick-shop .modal__inner .product-single__sticky{
+  display: none;
+}
+
+.modal--quick-shop .product-single__title{
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.modal--quick-shop .hide-for-modal,
+.modal--quick-shop .product-block--sales-point{
+  display: none;
+}
+
+.modal--quick-shop .shopify-payment-button{
+  display: none!important;
 }
 /*PRODUCT CARD MODULE END*/
 
