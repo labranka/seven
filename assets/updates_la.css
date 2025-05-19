@@ -563,6 +563,23 @@ h2,
 .modal--quick-shop .shopify-payment-button{
   display: none!important;
 }
+
+  .modal-open{
+   overflow: hidden !important;
+    height: 100vh;
+    position: relative;
+  }
+
+  .modal.modal--quick-shop {
+    align-items: flex-end;
+}
+.modal--square .modal__centered-content{
+  min-width: unset;
+}
+
+.modal--quick-shop .grid{
+ margin: 0;
+}
 /*PRODUCT CARD MODULE END*/
 
 

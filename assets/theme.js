@@ -2484,10 +2484,10 @@ theme.collapsibles = (function() {
       this.modal.classList.remove(this.config.openClass);
       this.modal.classList.add(this.config.closingClass);
   
-      document.documentElement.classList.remove(...this.config.bodyOpenClass);
-      document.documentElement.classList.add(this.config.bodyClosingClass);
+     document.documentElement.classList.add(this.config.bodyClosingClass);
   
       window.setTimeout(function() {
+       document.documentElement.classList.remove(...this.config.bodyOpenClass);
         document.documentElement.classList.remove(this.config.bodyClosingClass);
         this.modal.classList.remove(this.config.closingClass);
         if (this.activeSource && this.activeSource.getAttribute('aria-expanded')) {
