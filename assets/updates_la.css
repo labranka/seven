@@ -576,7 +576,10 @@ h2,
 .modal--square .modal__centered-content{
   min-width: unset;
 }
-
+.modal--quick-shop .product-buy-btns .product-block,
+.modal--quick-shop .product-block.product-buy-btns {
+  margin-bottom: 0;
+}
 .modal--quick-shop .grid{
  margin: 0;
 }
