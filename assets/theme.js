@@ -3017,74 +3017,114 @@ theme.collapsibles = (function() {
     return QtySelector;
   })();
   
-  theme.initQuickShop = function() {
-    var ids = [];
-    var products = document.querySelectorAll('.grid-product');
-  
-    if (!products.length || !theme.settings.quickView) {
-      return;
-    }
-  
-    products.forEach(product => {
-      product.addEventListener('mouseover', productMouseover);
-      product.addEventListener('focusin', productMouseover);
 
-      
+theme.initQuickShop = function() {
+  const products = document.querySelectorAll('.grid-product');
+  if (!products.length || !theme.settings.quickView) return;
+
+  products.forEach(product => {
+    const btn = product.querySelector('.quick-product__btn');
+    if (!btn) return;
+
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const handle    = product.dataset.productHandle;
+      const productId = product.dataset.productId;
+      const holderId  = 'QuickShopHolder-' + handle;
+      let holder      = document.getElementById(holderId);
+
+      // ensure we have a container to inject into
+      if (!holder) {
+        holder = document.createElement('div');
+        holder.id = holderId;
+        document.body.appendChild(holder);
+      }
+
+      const openModal = () => {
+        const modalId = 'QuickShopModal-' + productId;
+        const name    = 'quick-modal-' + productId;
+        
+        // instantiate and open immediately
+        const modal = new theme.Modals(modalId, name);
+        modal.open();
+      };
+
+      // if already loaded, just open
+      if (holder.innerHTML.trim() !== '') {
+        openModal();
+      } else {
+        // otherwise fetch, inject, then open
+        const url = (theme.routes.home + '/products/' + handle + '?view=modal')
+                      .replace('//','/');
+        fetch(url)
+          .then(r => r.text())
+          .then(text => {
+            const tmp = document.createElement('div');
+            tmp.innerHTML = text;
+            const div = tmp.querySelector(
+              `.product-section[data-product-handle="${handle}"]`
+            );
+            if (!div) return;
+
+            holder.innerHTML = '';
+            holder.append(div);
+
+            // re-register any JS your modal content needs
+            theme.sections.register('product', theme.Product, holder);
+            theme.collapsibles.init();
+            theme.videoModal();
+
+            openModal();
+          });
+      }
     });
-  
-    function productMouseover(evt) {
-      var el = evt.currentTarget;
-    
-        el.removeEventListener('mouseover', productMouseover);
-        el.removeEventListener('focusin', productMouseover);
-        if (!el || !el.dataset.productId) {
-          // Onboarding product, no real data
-          return;
-        }
-        var productId = el.dataset.productId;
-        var handle = el.dataset.productHandle;
-        var btn = el.querySelector('.quick-product__btn');
-        theme.preloadProductModal(handle, productId, btn);
-      
-    }
-  };
-  
-  theme.preloadProductModal = function(handle, productId, btn) {
-    var holder = document.getElementById('QuickShopHolder-' + handle);
-    var url = theme.routes.home + '/products/' + handle + '?view=modal';
-  
-    // remove double `/` in case shop might have /en or language in URL
-    url = url.replace('//', '/');
-  
-    fetch(url)
+  });
+};
+
+
+
+theme.preloadProductModal = function(handle, productId, btn) {
+  var holder = document.getElementById('QuickShopHolder-' + handle);
+  var url = theme.routes.home + '/products/' + handle + '?view=modal';
+
+  // remove double `/` in case shop might have /en or language in URL
+  url = url.replace('//', '/');
+
+  fetch(url)
     .then(response => response.text())
     .then(text => {
       const html = document.createElement('div');
       html.innerHTML = text;
-      const div = html.querySelector('.product-section[data-product-handle="'+handle+'"]');
-  
-      if (!holder) {
+      const div = html.querySelector('.product-section[data-product-handle="' + handle + '"]');
+
+      if (!holder || !div) {
         return;
       }
-  
+
       holder.innerHTML = '';
       holder.append(div);
-  
-      // Setup quick view modal
+
+      // 1️⃣ Instantiate the Modal
       var modalId = 'QuickShopModal-' + productId;
-      var name = 'quick-modal-' + productId;
-      new theme.Modals(modalId, name);
-  
+      var name    = 'quick-modal-' + productId;
+      var modal   = new theme.Modals(modalId, name);
+
+      // 2️⃣ Immediately open it
+      modal.open();
+
       // Register product template inside quick view
       theme.sections.register('product', theme.Product, holder);
-  
+
       // Register collapsible elements
       theme.collapsibles.init();
-  
+
       // Register potential video modal links (when video has sound)
       theme.videoModal();
     });
-  }
+};
+
   
   // theme.Slideshow handles all flickity based sliders
   // Child navigation is only setup to work on product images
