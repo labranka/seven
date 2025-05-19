@@ -100,12 +100,6 @@
             "title": "Nosi sreću, deli je!",
             "richtext": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
           }
-        },
-        "footer-0": {
-          "type": "logo_social",
-          "settings": {
-            "desktop_logo_height": 50
-          }
         }
       },
       "block_order": [
@@ -113,8 +107,7 @@
         "footer-1",
         "menu_info_cgYEWB",
         "menu_info_nLFH6d",
-        "footer-2",
-        "footer-0"
+        "footer-2"
       ],
       "settings": {
         "show_locale_selector": true,
