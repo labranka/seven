@@ -735,7 +735,7 @@ background-color: var(--colorCartDot);
 
 .quick-product__btn{
   opacity: 1;
-  bottom: 16px;
+  bottom: 20px;
   right: 16px;
   top: unset;
   background-color: var(--colorBody);
