@@ -3032,8 +3032,7 @@ theme.collapsibles = (function() {
   
     function productMouseover(evt) {
       var el = evt.currentTarget;
-      // No quick view on mobile breakpoint
-      if (!theme.config.bpSmall) {
+    
         el.removeEventListener('mouseover', productMouseover);
         el.removeEventListener('focusin', productMouseover);
         if (!el || !el.dataset.productId) {
@@ -3044,7 +3043,7 @@ theme.collapsibles = (function() {
         var handle = el.dataset.productHandle;
         var btn = el.querySelector('.quick-product__btn');
         theme.preloadProductModal(handle, productId, btn);
-      }
+      
     }
   };
   
