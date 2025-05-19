@@ -130,6 +130,11 @@ video-slideshow .flickity-page-dots{
     border-radius: 10px;
     margin-top: 8px;
     color: var(--colorInputText);
+    transition: all 0.2s ease-in-out;
+}
+
+.product-small-link:hover{
+  border-color: var(--colorInputText) ;
 }
 .product-img{
     width: 40px;
@@ -171,7 +176,7 @@ video-slideshow .flickity-page-dots{
 }
  .flickity-enabled .video-slide-inner .product-small-link {
     opacity: 0.1;
-    transition: opacity 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     pointer-events: none;
   }
 
