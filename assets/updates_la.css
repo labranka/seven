@@ -876,7 +876,9 @@ stroke-linecap: none;
 
   }
 
-
+.modal--quick-shop .modal {
+  justify-content: end;
+}
 .newsletter-section{
   display: grid;
   grid-template-columns: 1fr 1.2fr;
