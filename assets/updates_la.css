@@ -681,6 +681,7 @@ background-color: var(--colorCartDot);
 }
 .grid-product__vendor{
   margin-top: 8px;
+  opacity: 0.5;
   margin-bottom: 8px;
 }
 /*PRODUCT CARD MODULE END*/
