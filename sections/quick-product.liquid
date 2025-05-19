@@ -1,0 +1,36 @@
+{%- liquid
+  assign isModal = false
+  if template == 'product.modal'
+    assign isModal = true
+  endif
+-%}
+
+{%- render 'product-template-quick',
+  product: product,
+  section_id: section.id,
+  blocks: section.blocks,
+  image_container_width: section.settings.image_size,
+  product_zoom_enable: section.settings.product_zoom_enable,
+  sku_enable: section.settings.sku_enable,
+  isModal: isModal,
+  thumbnail_position: section.settings.thumbnail_position,
+  thumbnail_height: section.settings.thumbnail_height,
+  thumbnail_arrows: section.settings.thumbnail_arrows,
+  video_looping: section.settings.enable_video_looping,
+  video_style: section.settings.product_video_style,
+  context: 'main-product',
+-%}
+
+
+
+{% schema %}
+{
+  "name": "Quick Product",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Quick Product"
+    }
+  ]
+}
+{% endschema %}
