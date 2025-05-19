@@ -1,13 +1,28 @@
 <div id="QuickShopModal-{{ product.id }}" class="modal modal--square modal--quick-shop" data-product-id="{{ product.id }}">
-  <div class="modal__inner">
+
+<div class="modal__inner">
+  <div  class="modal__fake-close  modal__close js-modal-close text-link not_desktop">
+       
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.75 1.7998L12.4313 12.3311" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.4312 1.7998L1.74981 12.3311" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <span class="icon__fallback-text">{{ 'general.accessibility.close_modal' | t | json }}</span>
+      </div>
     <div class="modal__centered">
       <div class="modal__centered-content">
-       
+         
         <div id="QuickShopHolder-{{ product.handle }}"></div>
       </div>
 
-      <button type="button" class="modal__close js-modal-close text-link">
-        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><title>icon-X</title><path d="m19 17.61 27.12 27.13m0-27.12L19 44.74"/></svg>
+      <button type="button" class="modal__close js-modal-close text-link not_mobile">
+       
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.75 1.7998L12.4313 12.3311" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.4312 1.7998L1.74981 12.3311" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
         <span class="icon__fallback-text">{{ 'general.accessibility.close_modal' | t | json }}</span>
       </button>
     </div>

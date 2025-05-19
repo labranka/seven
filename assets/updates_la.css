@@ -610,6 +610,39 @@ h2,
     letter-spacing: 0;
 
 }
+.product__price--compare{
+  opacity: 0.5;
+}
+.modal__close .icon,
+.modal__fake-close .icon{
+  width: 16px;
+  height: 16px;
+}
+.modal__close .icon path,
+.modal__fake-close .icon path,
+svg.icon-close path{
+stroke-linecap: none;
+}
+.modal-open .modal .modal__inner{
+  overflow: visible;
+}
+
+.modal__fake-close{
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: var(--colorBody);
+  border-radius: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+}
+
 /*PRODUCT CARD MODULE END*/
 
 
