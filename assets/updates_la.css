@@ -4,7 +4,9 @@
   border-radius: 10px;
   overflow: hidden;
 }
-
+.grid__image-ratio img.grid__image-contain{
+  object-fit: cover;
+}
 
 /*FONTS*/
 .text-with-icons__block-title h3
