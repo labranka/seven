@@ -48,7 +48,7 @@
               </div>
             </h1>
             <div class="animation-cropper">
-                <div class="animation-contents collection-title">
+                <div class="animation-contents collection-description rte">
                   {{ collection.description }}
                 </div>
               </div>
@@ -86,11 +86,7 @@
             <hr class="hr--clear hr--medium" {{ block.shopify_attributes }}>
           {%- endunless -%}
 
-          <div class="collection-description rte" {{ block.shopify_attributes }}>
-            <div class="enlarge-text">
-              {{ collection.description }}
-            </div>
-          </div>
+
 
           {%- unless forloop.last -%}
             <hr class="hr--clear hr--small" {{ block.shopify_attributes }}>
