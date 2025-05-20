@@ -7,8 +7,9 @@
       </a>
     </span>
   {% endif %}
-
+ <div class="pagination-page__wrapper">
   {% for part in paginate.parts %}
+   
     {% if part.is_link %}
       <span class="page">
         <a href="{{ part.url | replace: 'view=ajax', '' }}{{ hash }}">{{ part.title }}</a>
@@ -20,7 +21,9 @@
         <span class="page">{{ part.title }}</span>
       {% endif %}
     {% endif %}
+    
   {% endfor %}
+  </div>
 
   {% if paginate.next %}
     <span class="next">

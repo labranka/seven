@@ -707,15 +707,22 @@ background-color: var(--colorCartDot);
 }
 
 .pagination .next, .pagination .prev{
-  border-radius: 999x;
+  border-radius: 10px;
   background-color: transparent;
-  border: 1px solid var(--colorInputText);
-  color: var(--colorInputText);
-  opacity: 0.5;
-}
+  border: 1px solid var(--colorBorder);
+  color: var(--colorBorder);
+  margin: 0;
 
+}
+.pagination{
+      display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
 .pagination .next .icon, .pagination .prev .icon{
-  color: var(--colorInputText);
+  color: var(--colorBorder);
 }
  .pagination a{
  height: fit-content;
@@ -728,6 +735,24 @@ padding: 0;
 .pagination .page.current{
   height: fit-content;
   opacity: 0.5;
+}
+.pagination .page.current{
+  padding: 10px;
+  background-color: var(--colorBorder);
+}
+
+.pagination .page{
+  padding: 10px 12px;
+
+}
+.pagination-page__wrapper{
+  border: 1px solid var(--colorBorder);
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+
+
+
 }
 /*Collecction section end*/
 @media only screen and (max-width: 589px) {
