@@ -621,7 +621,7 @@ h2,
 .modal__close .icon path,
 .modal__fake-close .icon path,
 svg.icon-close path{
-stroke-linecap: none;
+stroke-linecap: round;
 }
 .modal-open .modal .modal__inner{
   overflow: visible;
