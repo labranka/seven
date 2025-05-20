@@ -4,6 +4,9 @@
   border-radius: 10px;
   overflow: hidden;
 }
+[data-type_header_text_alignment=true] .collection-description{
+  text-align: start;
+}
 .grid__image-ratio img.grid__image-contain{
   object-fit: cover;
 }
