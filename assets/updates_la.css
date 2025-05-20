@@ -1,3 +1,9 @@
+
+.grid__image-ratio,
+.grid-product__secondary-image{
+  border-radius: 10px;
+  overflow: hidden;
+}
 /*FONTS*/
 .text-with-icons__block-title h3
 {
