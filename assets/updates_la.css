@@ -687,6 +687,12 @@ background-color: var(--colorCartDot);
 .grid-product__price--original{
   opacity: 0.5;
 }
+
+.grid__image-ratio--portrait,
+.grid__image-ratio--portrait:before{
+  padding-bottom: 0;
+  aspect-ratio: 0.8;
+}
 /*PRODUCT CARD MODULE END*/
 
 
