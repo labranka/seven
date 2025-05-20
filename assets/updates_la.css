@@ -4,6 +4,8 @@
   border-radius: 10px;
   overflow: hidden;
 }
+
+
 /*FONTS*/
 .text-with-icons__block-title h3
 {
@@ -1079,7 +1081,10 @@ padding: 0;
 }
 }
 @media screen and (min-width: 1025px) {
- 
+ .grid-product__tag{
+  width: 100%;
+  max-width: calc(100% - 32px);
+}
   .newsletter-section__content{
     padding: 0 48px;
     
