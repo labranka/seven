@@ -868,6 +868,10 @@ padding: 0;
 }
 
 @media only screen and (min-width: 590px) {
+  .grid-product__price{
+    margin-top: 16px;
+    margin-bottom: 6px;
+  }
  .grid-product__tag{
   font-size: 10px;
  }
