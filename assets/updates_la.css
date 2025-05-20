@@ -47,7 +47,8 @@ p {
 }
 .countdown__display-block h2,
 .video-slideshow-title h2,
-.video-slideshow-title strong {
+.video-slideshow-title strong,
+.collection-title {
   font-family: var(--typeHeaderPrimary);
   font-size: 36px;
   font-style: italic;
@@ -1083,6 +1084,11 @@ padding: 0;
 }
 }
 @media screen and (min-width: 1025px) {
+  .collection-title{
+    font-size: 42px;
+    letter-spacing: -0.96px;
+    line-height: 52.8px;
+  }
  .grid-product__tag{
   width: 100%;
   max-width: calc(100% - 32px);
