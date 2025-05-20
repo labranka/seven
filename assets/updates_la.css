@@ -626,7 +626,10 @@ stroke-linecap: round;
 .modal-open .modal .modal__inner{
   overflow: visible;
 }
-
+.drawer__close-button .icon{
+  height: 16px;
+  width: 16px;
+}
 .modal__fake-close{
   position: absolute;
   top: -60px;
