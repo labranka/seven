@@ -402,6 +402,14 @@
     "custom_comunity_QW8ctm": {
       "type": "custom_comunity",
       "blocks": {
+        "sticker_t43nHK": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
+            "sticker_x": 94,
+            "sticker_y": 6
+          }
+        },
         "sticker_yRAWfG": {
           "type": "sticker",
           "settings": {
@@ -428,6 +436,7 @@
         }
       },
       "block_order": [
+        "sticker_t43nHK",
         "sticker_yRAWfG",
         "sticker_tFmxrd",
         "sticker_NQaLwz"
