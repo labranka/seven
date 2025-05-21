@@ -21,20 +21,6 @@
         "social_sharing_blog": true
       }
     },
-    "blog-posts": {
-      "type": "blog-posts",
-      "settings": {
-        "title": "You may also like",
-        "blog": "",
-        "post_limit": 3,
-        "blog_show_tags": false,
-        "blog_show_date": true,
-        "blog_show_comments": false,
-        "blog_show_author": false,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "slideshow_BRaqCg": {
       "type": "slideshow",
       "blocks": {
@@ -95,7 +81,7 @@
           "settings": {
             "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
             "sticker_x": 10,
-            "sticker_y": 10,
+            "sticker_y": 96,
             "width_icon": 40
           }
         },
@@ -125,12 +111,26 @@
         "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
         "details": "#FFC1BF"
       }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "You may also like",
+        "blog": "",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "divider": false
+      }
     }
   },
   "order": [
     "main",
-    "blog-posts",
     "slideshow_BRaqCg",
-    "custom_comunity_A7DG7b"
+    "custom_comunity_A7DG7b",
+    "blog-posts"
   ]
 }
