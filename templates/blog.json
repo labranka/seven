@@ -65,10 +65,19 @@
             "sticker_x": 10,
             "sticker_y": 10
           }
+        },
+        "sticker_CrQb8P": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Group_6125.png",
+            "sticker_x": 42,
+            "sticker_y": 23
+          }
         }
       },
       "block_order": [
-        "sticker_kaUYFQ"
+        "sticker_kaUYFQ",
+        "sticker_CrQb8P"
       ],
       "name": "Community Section",
       "settings": {
