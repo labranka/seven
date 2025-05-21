@@ -9,7 +9,9 @@
     
 {% endstyle %}
 
-<section class="community-section" style="position: relative; padding: 60px 20px;">
+<section class="community-section aos-init aos-animate" style="position: relative; padding: 60px 20px;" data-section-id="{{ section.id }}"  
+data-aos="fade-up"
+  data-aos-duration="800">
   {%- comment -%} Stickers: absolutely positioned images based on block settings {%- endcomment -%}
   {% for block in section.blocks %}
     {% if block.settings.sticker_image %}
