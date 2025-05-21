@@ -439,7 +439,14 @@
           "settings": {
             "sticker_image": "shopify://shop_images/Group_6125.png",
             "sticker_x": 51,
-            "sticker_y": 4
+            "sticker_y": 2
+          }
+        },
+        "sticker_NBQqUC": {
+          "type": "sticker",
+          "settings": {
+            "sticker_x": 10,
+            "sticker_y": 10
           }
         }
       },
@@ -448,7 +455,8 @@
         "sticker_t43nHK",
         "sticker_yRAWfG",
         "sticker_tFmxrd",
-        "sticker_NQaLwz"
+        "sticker_NQaLwz",
+        "sticker_NBQqUC"
       ],
       "name": "Community Section",
       "settings": {
