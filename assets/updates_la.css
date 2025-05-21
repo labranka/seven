@@ -31,7 +31,8 @@
 .collapsible-trigger span,
 .faq__txt p,
 .enlarge-text p,
-p {
+p,
+.comunity-section__heading p {
   font-size: 16px;
   line-height: 130%;
   letter-spacing: 0;
@@ -67,7 +68,9 @@ p {
 .big-heading p,
 .big-heading,
 h2,
-.newsletter-section__content .h2 {
+.newsletter-section__content .h2,
+.community-section .section-header h2,
+.comunity-section__heading h3 {
   font-family: var(--typeHeaderPrimary);
   font-size: 28px;
   font-style: italic;
@@ -144,7 +147,7 @@ h2,
   flex-direction: column;
   width: 100%;
   background-color: transparent;
-  gap: 16pxinput-group-btn;
+  gap: 16px;
 }
 .newsletter-container .newsletter-section{
   background-color: var(--colorBody);
@@ -320,7 +323,9 @@ h2,
 
 .btn,
 .rte .btn,
-.shopify-payment-button .shopify-payment-button__button--unbranded {
+.shopify-payment-button .shopify-payment-button__button--unbranded,
+.community-section .section-header p,
+.community-section .right-text h3{
   border-radius: 10px !important;
   padding: 12px 32px;
   font-size: 18px;

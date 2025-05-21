@@ -1,0 +1,140 @@
+<link
+  rel="stylesheet"
+  href="{{ 'community-section.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+<noscript>{{ 'community-section.css' | asset_url | stylesheet_tag }}</noscript>
+
+<section class="community-section" style="position: relative; padding: 60px 20px;">
+  {%- comment -%} Stickers: absolutely positioned images based on block settings {%- endcomment -%}
+  {% for block in section.blocks %}
+    {% if block.settings.sticker_image %}
+      <img
+        src="{{ block.settings.sticker_image | img_url: '200x' }}"
+        alt="Sticker"
+        class="sticker"
+        style="position: absolute; top: {{ block.settings.sticker_y }}%; left: {{ block.settings.sticker_x }}%; width: 40px; height: auto; transform: translate(-50%, -50%);"
+      />
+    {% endif %}
+  {% endfor %}
+
+  <div class="container" style="max-width: 1200px; margin: 0 auto; position: relative;">
+    <!-- Section Header -->
+    <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+      <h2 style="">{{ section.settings.main_heading }}</h2>
+      <p style="">{{ section.settings.main_text }}</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="section-content" style="display: flex; flex-wrap: wrap; gap: 20px;">
+      <!-- Left Image -->
+      <div class="left-image" style="">
+        {% if section.settings.image %}
+          <div class="image-wrap " style='aspect-ratio: 1;'>
+                 
+                  {%- render 'image-element',
+                    img: section.settings.image,
+                    widths: '180, 360, 540, 750, 900, 1080',
+                    loading: loading,
+                    sizeVariable: '500px',
+                    fallback: fallback,
+                    classes: 'feature-row__image',
+                  -%}
+                </div>
+        {% endif %}
+      </div>
+
+      <!-- Donation Tracking -->
+      <div class="comunity-section__heading" style="">
+        <h3 style="">{{ section.settings.donation_heading }}</h3>
+        <p style="">{{ section.settings.donation_text }}</p>
+      </div>
+    </div>
+
+    <!-- Section Footer -->
+    <div class="section-footer-comuniry" style="">
+      <p style="">{{ section.settings.footer_text }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Community Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU"
+    },
+    {
+      "type": "richtext",
+      "id": "main_text",
+      "label": "Main Text",
+      "default": "<p>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami...</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Left Image"
+    },
+    {
+      "type": "richtext",
+      "id": "donation_heading",
+      "label": "Donation Heading",
+      "default": "<p>PRAĆENJE DONACIJE</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "donation_text",
+      "label": "Donation Text",
+      "default": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "footer_text",
+      "label": "Footer Text",
+      "default": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "sticker",
+      "name": "Heart Sticker",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "sticker_image",
+          "label": "Sticker Image"
+        },
+        {
+          "type": "range",
+          "id": "sticker_x",
+          "label": "Horizontal Position (%)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 10
+        },
+        {
+          "type": "range",
+          "id": "sticker_y",
+          "label": "Vertical Position (%)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 10
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Community Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
