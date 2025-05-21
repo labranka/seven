@@ -21,57 +21,43 @@
         "blog_show_author": false
       }
     },
-    "fading_images_JQbdVi": {
-      "type": "fading-images",
+    "slideshow_iiNwWB": {
+      "type": "slideshow",
       "blocks": {
-        "image_baEEpX": {
+        "image_MYNzgF": {
           "type": "image",
           "settings": {
+            "review_txt": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-bottom horizontal-left",
             "image": "shopify://shop_images/image_12.png",
-            "slide_title1": "",
-            "slide_title2": ""
-          }
-        },
-        "image_9dDnGc": {
-          "type": "image",
-          "settings": {
-            "slide_title1": "Use this section",
-            "slide_title2": "to impress customers"
-          }
-        },
-        "image_yHzFrP": {
-          "type": "image",
-          "settings": {
-            "slide_title1": "And highlight",
-            "slide_title2": "important details"
+            "image_mobile": "shopify://shop_images/image_12.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "image_baEEpX",
-        "image_9dDnGc",
-        "image_yHzFrP"
+        "image_MYNzgF"
       ],
-      "name": "t:sections.fading-images.presets.fading_image_hero.name",
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
       "settings": {
-        "title_lines": "2",
-        "title_font": "body",
-        "title_size": 45,
-        "title_color": "#ffffff",
-        "title_bg_color": "rgba(0,0,0,0)",
-        "text_align": "vertical-center horizontal-center",
-        "link": "",
-        "slide_speed": 5,
-        "color_overlay": "#000",
-        "color_overlay_opacity": 30,
-        "desktop_height": "650px",
+        "section_height": "450px",
         "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
         "lazyload_images": true
       }
     }
   },
   "order": [
     "main",
-    "fading_images_JQbdVi"
+    "slideshow_iiNwWB"
   ]
 }
