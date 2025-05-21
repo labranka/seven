@@ -1,1 +1,99 @@
-{"sections":{"main":{"type":"blog-template","settings":{}},"featured-collections":{"type":"featured-collections","blocks":{"collection1":{"type":"collection","settings":{}},"collection2":{"type":"collection","settings":{}},"collection3":{"type":"collection","settings":{}},"collection4":{"type":"collection","settings":{}}},"block_order":["collection1","collection2","collection3","collection4"],"settings":{"title":"You may also like"}}},"order":["main","featured-collections"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-template",
+      "disabled": true,
+      "settings": {
+        "blog_show_tag_filter": false,
+        "blog_show_rss": false,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": false
+      }
+    },
+    "slideshow_iiNwWB": {
+      "type": "slideshow",
+      "blocks": {
+        "image_MYNzgF": {
+          "type": "image",
+          "settings": {
+            "review_txt": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/image_12.png",
+            "image_mobile": "shopify://shop_images/image_12.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_MYNzgF"
+      ],
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "custom_comunity_ENqBPz": {
+      "type": "custom_comunity",
+      "blocks": {
+        "sticker_kaUYFQ": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Vector.png",
+            "sticker_x": 10,
+            "sticker_y": 10
+          }
+        },
+        "sticker_CrQb8P": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Group_6125.png",
+            "sticker_x": 42,
+            "sticker_y": 23
+          }
+        }
+      },
+      "block_order": [
+        "sticker_kaUYFQ",
+        "sticker_CrQb8P"
+      ],
+      "name": "Community Section",
+      "settings": {
+        "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
+        "main_text": "<p>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami...</p>",
+        "image": "shopify://shop_images/pexels-dtanpt-1129019.jpg",
+        "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
+        "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
+        "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
+        "details": "#FFC1BF"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_iiNwWB",
+    "custom_comunity_ENqBPz"
+  ]
+}
