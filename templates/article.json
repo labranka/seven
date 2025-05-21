@@ -109,14 +109,14 @@
         "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
         "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
         "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
-        "details": "#FFC1BF"
+        "details": "#ffc1bf"
       }
     },
     "blog-posts": {
       "type": "blog-posts",
       "settings": {
         "title": "You may also like",
-        "blog": "",
+        "blog": "news",
         "post_limit": 3,
         "blog_show_tags": false,
         "blog_show_date": true,
