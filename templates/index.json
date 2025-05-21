@@ -442,8 +442,8 @@
           "type": "sticker",
           "settings": {
             "sticker_image": "shopify://shop_images/Group_6125.png",
-            "sticker_x": 51,
-            "sticker_y": 2,
+            "sticker_x": 47,
+            "sticker_y": 3,
             "width_icon": 60
           }
         },
