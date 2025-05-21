@@ -36,10 +36,23 @@ data-aos="fade-up"
       <!-- Left Image -->
       <div class="left-image" style="">
         {% if section.settings.image %}
-          <div class="image-wrap " style='aspect-ratio: 1;'>
+          <div class="image-wrap not_desktop" style='aspect-ratio: 1;'>
                  
                   {%- render 'image-element',
                     img: section.settings.image,
+                    widths: '180, 360, 540, 750, 900, 1080',
+                    loading: loading,
+                    sizeVariable: '500px',
+                    fallback: fallback,
+                    classes: 'feature-row__image',
+                  -%}
+                </div>
+        {% endif %}
+          {% if section.settings.image_d %}
+          <div class="image-wrap not_mobile" style='aspect-ratio: 1.2;'>
+                 
+                  {%- render 'image-element',
+                    img: section.settings.image_d,
                     widths: '180, 360, 540, 750, 900, 1080',
                     loading: loading,
                     sizeVariable: '500px',
@@ -83,7 +96,12 @@ data-aos="fade-up"
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Left Image"
+      "label": "Left Image mobile"
+    },
+     {
+      "type": "image_picker",
+      "id": "image_d",
+      "label": "Left Image desktop"
     },
     {
       "type": "richtext",
