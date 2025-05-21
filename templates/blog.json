@@ -1,1 +1,77 @@
-{"sections":{"main":{"type":"blog-template","settings":{}},"featured-collections":{"type":"featured-collections","blocks":{"collection1":{"type":"collection","settings":{}},"collection2":{"type":"collection","settings":{}},"collection3":{"type":"collection","settings":{}},"collection4":{"type":"collection","settings":{}}},"block_order":["collection1","collection2","collection3","collection4"],"settings":{"title":"You may also like"}}},"order":["main","featured-collections"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-template",
+      "disabled": true,
+      "settings": {
+        "blog_show_tag_filter": false,
+        "blog_show_rss": false,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": false
+      }
+    },
+    "fading_images_JQbdVi": {
+      "type": "fading-images",
+      "blocks": {
+        "image_baEEpX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image_12.png",
+            "slide_title1": "",
+            "slide_title2": ""
+          }
+        },
+        "image_9dDnGc": {
+          "type": "image",
+          "settings": {
+            "slide_title1": "Use this section",
+            "slide_title2": "to impress customers"
+          }
+        },
+        "image_yHzFrP": {
+          "type": "image",
+          "settings": {
+            "slide_title1": "And highlight",
+            "slide_title2": "important details"
+          }
+        }
+      },
+      "block_order": [
+        "image_baEEpX",
+        "image_9dDnGc",
+        "image_yHzFrP"
+      ],
+      "name": "t:sections.fading-images.presets.fading_image_hero.name",
+      "settings": {
+        "title_lines": "2",
+        "title_font": "body",
+        "title_size": 45,
+        "title_color": "#ffffff",
+        "title_bg_color": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "link": "",
+        "slide_speed": 5,
+        "color_overlay": "#000",
+        "color_overlay_opacity": 30,
+        "desktop_height": "650px",
+        "mobile_height": "auto",
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fading_images_JQbdVi"
+  ]
+}
