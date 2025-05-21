@@ -31,8 +31,7 @@
 .collapsible-trigger span,
 .faq__txt p,
 .enlarge-text p,
-p,
-.comunity-section__heading p {
+p{
   font-size: 16px;
   line-height: 130%;
   letter-spacing: 0;
@@ -70,7 +69,8 @@ p,
 h2,
 .newsletter-section__content .h2,
 .community-section .section-header h2,
-.comunity-section__heading h3 {
+.comunity-section__heading h3,
+.comunity-section__heading h3 p{
   font-family: var(--typeHeaderPrimary);
   font-size: 28px;
   font-style: italic;
