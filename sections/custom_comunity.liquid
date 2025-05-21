@@ -19,7 +19,7 @@ data-aos="fade-up"
         src="{{ block.settings.sticker_image | img_url: '200x' }}"
         alt="Sticker"
         class="sticker"
-        style="position: absolute; top: {{ block.settings.sticker_y }}%; left: {{ block.settings.sticker_x }}%; width: 40px; height: auto; transform: translate(-50%, -50%);"
+        style="position: absolute; top: {{ block.settings.sticker_y }}%; left: {{ block.settings.sticker_x }}%; width: {{ block.settings.width_icon }}px; height: auto; transform: translate(-50%, -50%);"
       />
     {% endif %}
   {% endfor %}
@@ -140,7 +140,7 @@ data-aos="fade-up"
         },
         {
           "type": "range",
-          "id": "width",
+          "id": "width_icon",
           "label": "Width of icon",
           "min": 0,
           "max": 200,
