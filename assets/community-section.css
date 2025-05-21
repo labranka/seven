@@ -134,6 +134,8 @@
   }
 .section-header{
   max-width: 659px;
+  margin-left: auto;
+  margin-right: auto;
 }
   .left-image,
    .left-image image-element{
