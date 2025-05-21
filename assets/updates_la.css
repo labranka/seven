@@ -10,6 +10,7 @@
 
 .collection-description{
   font-style: normal!important;
+  text-transform: none!important;
 }
 .grid__image-ratio img.grid__image-contain{
   object-fit: cover;
