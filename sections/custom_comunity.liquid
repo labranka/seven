@@ -5,6 +5,10 @@
   onload="this.media='all'">
 <noscript>{{ 'community-section.css' | asset_url | stylesheet_tag }}</noscript>
 
+{% style %}
+    
+{% endstyle %}
+
 <section class="community-section" style="position: relative; padding: 60px 20px;">
   {%- comment -%} Stickers: absolutely positioned images based on block settings {%- endcomment -%}
   {% for block in section.blocks %}
@@ -53,7 +57,7 @@
 
     <!-- Section Footer -->
     <div class="section-footer-comuniry" style="">
-      <p style="">{{ section.settings.footer_text }}</p>
+      <p style="color: {{ section.settings.details }}">{{ section.settings.footer_text }}</p>
     </div>
   </div>
 </section>
@@ -96,6 +100,11 @@
       "id": "footer_text",
       "label": "Footer Text",
       "default": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>"
+    },
+    {
+        "type": "color",
+        "id": "details",
+        "label": "Details color"
     }
   ],
   "blocks": [
