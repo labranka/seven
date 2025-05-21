@@ -11,6 +11,7 @@
   padding: 60px 20px;
   overflow: hidden;
   background-color: var(--colorBody);
+  text-align: center;
 }
 
 .left-image{

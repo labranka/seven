@@ -51,13 +51,13 @@
       <!-- Donation Tracking -->
       <div class="comunity-section__heading" style="">
         <h3 style="">{{ section.settings.donation_heading }}</h3>
-        <p style="">{{ section.settings.donation_text }}</p>
+       {{ section.settings.donation_text }}
       </div>
     </div>
 
     <!-- Section Footer -->
-    <div class="section-footer-comuniry" style="">
-      <p style="color: {{ section.settings.details }}">{{ section.settings.footer_text }}</p>
+    <div class="section-footer-comuniry" style="color: {{ section.settings.details }}">
+     {{ section.settings.footer_text }}
     </div>
   </div>
 </section>
@@ -104,7 +104,8 @@
     {
         "type": "color",
         "id": "details",
-        "label": "Details color"
+        "label": "Details color",
+         "default":"#FFC1BF"
     }
   ],
   "blocks": [
