@@ -54,10 +54,24 @@
         "autoplay_speed": 5,
         "lazyload_images": true
       }
+    },
+    "custom_comunity_ENqBPz": {
+      "type": "custom_comunity",
+      "name": "Community Section",
+      "settings": {
+        "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
+        "main_text": "<p>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami...</p>",
+        "image": "shopify://shop_images/pexels-dtanpt-1129019.jpg",
+        "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
+        "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
+        "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
+        "details": "#FFC1BF"
+      }
     }
   },
   "order": [
     "main",
-    "slideshow_iiNwWB"
+    "slideshow_iiNwWB",
+    "custom_comunity_ENqBPz"
   ]
 }
