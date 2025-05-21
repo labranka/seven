@@ -68,11 +68,38 @@
         "autoplay_speed": 5,
         "lazyload_images": true
       }
+    },
+    "custom_comunity_A7DG7b": {
+      "type": "custom_comunity",
+      "blocks": {
+        "sticker_UVKg8i": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
+            "sticker_x": 10,
+            "sticker_y": 10,
+            "width_icon": 40
+          }
+        }
+      },
+      "block_order": [
+        "sticker_UVKg8i"
+      ],
+      "name": "Community Section",
+      "settings": {
+        "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
+        "main_text": "<p>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami...</p>",
+        "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
+        "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
+        "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
+        "details": "#FFC1BF"
+      }
     }
   },
   "order": [
     "main",
     "blog-posts",
-    "slideshow_BRaqCg"
+    "slideshow_BRaqCg",
+    "custom_comunity_A7DG7b"
   ]
 }
