@@ -132,7 +132,9 @@
 
 
   }
-
+.section-header{
+  max-width: 659px;
+}
   .left-image,
    .left-image image-element{
     background-color: var(--color_background);
