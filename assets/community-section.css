@@ -70,7 +70,7 @@
 }
 .community-section .left-image img {
   width: 100%;
-  border-radius: 8px;
+  border-radius:10px;
   display: block;
 }
 
@@ -134,7 +134,7 @@
   }
 
   .left-image,
-   .left-image img{
+   .left-image image-element{
     background-color: var(--color_background);
   }
 
