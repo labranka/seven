@@ -115,7 +115,7 @@
     "blog-posts": {
       "type": "blog-posts",
       "settings": {
-        "title": "You may also like",
+        "title": "Uskoro Naša prva humanitarna akcija",
         "blog": "news",
         "post_limit": 3,
         "blog_show_tags": true,
