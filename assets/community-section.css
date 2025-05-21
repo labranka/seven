@@ -50,10 +50,11 @@
   line-height: 1.2;
 }
 .community-section .section-header p {
-  font-size: 1rem;
+  font-size: 18px;
   margin: 0;
-  line-height: 1.5;
-  color: #333;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--colorInputText);
 }
 
 /* Main content wrapper */
@@ -116,5 +117,17 @@
   .community-section .left-image,
   .community-section .right-text {
     flex: 1 1 100%;
+  }
+
+
+}
+
+@media (min-width: 769px) {
+  .community-section .section-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 64px;
+    background-color: var(--color_background);
+    align-items: center;
   }
 }
