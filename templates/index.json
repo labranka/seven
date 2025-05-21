@@ -114,54 +114,6 @@
         "divider": false
       }
     },
-    "text_with_icons_U8WQKe": {
-      "type": "text-with-icons",
-      "blocks": {
-        "text_block_jptpYN": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/Dreamy_Quality_USP_png.png",
-            "title": "Vrhunski kvalitet",
-            "text": ""
-          }
-        },
-        "text_block_mYAECG": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/free_returns_4dc0507e-7e1a-42f2-b16a-5207cfbac06a_png.png",
-            "title": "Brza dostava  1-2 radna dana",
-            "text": ""
-          }
-        },
-        "text_block_6hhj9y": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/Dreamy_Quality_USP_png.png",
-            "title": "Povrat novca 15 dana",
-            "text": ""
-          }
-        },
-        "text_block_WeKRVU": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/Free_shipping_over_100_png.png",
-            "title": "100% pamuk",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_jptpYN",
-        "text_block_mYAECG",
-        "text_block_6hhj9y",
-        "text_block_WeKRVU"
-      ],
-      "name": "t:common.text_with_icons.presets.text_with_icons.name",
-      "settings": {
-        "title": "",
-        "align_text": "center"
-      }
-    },
     "section_video_slideshow_agEVtq": {
       "type": "section-video-slideshow",
       "blocks": {
@@ -281,6 +233,54 @@
       "name": "Video slideshow",
       "settings": {
         "title": "<p><em><strong>SHOP THE LOOK</strong></em></p>"
+      }
+    },
+    "text_with_icons_U8WQKe": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_jptpYN": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/Dreamy_Quality_USP_png.png",
+            "title": "Vrhunski kvalitet",
+            "text": ""
+          }
+        },
+        "text_block_mYAECG": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/free_returns_4dc0507e-7e1a-42f2-b16a-5207cfbac06a_png.png",
+            "title": "Brza dostava  1-2 radna dana",
+            "text": ""
+          }
+        },
+        "text_block_6hhj9y": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/Dreamy_Quality_USP_png.png",
+            "title": "Povrat novca 15 dana",
+            "text": ""
+          }
+        },
+        "text_block_WeKRVU": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/Free_shipping_over_100_png.png",
+            "title": "100% pamuk",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_jptpYN",
+        "text_block_mYAECG",
+        "text_block_6hhj9y",
+        "text_block_WeKRVU"
+      ],
+      "name": "t:common.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "title": "",
+        "align_text": "center"
       }
     },
     "newsletter_z8Q8cK": {
@@ -481,8 +481,8 @@
     "slideshow_XU9nJ4",
     "countdown_z7Qbef",
     "featured_collection_PkRkqy",
-    "text_with_icons_U8WQKe",
     "section_video_slideshow_agEVtq",
+    "text_with_icons_U8WQKe",
     "newsletter_z8Q8cK",
     "section_faq_qwhqL4",
     "custom_comunity_QW8ctm"
