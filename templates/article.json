@@ -86,13 +86,14 @@
           "settings": {
             "sticker_image": "shopify://shop_images/Group_6125.png",
             "sticker_x": 46,
-            "sticker_y": 10,
+            "sticker_y": 24,
             "width_icon": 40
           }
         },
         "sticker_zYW9Ye": {
           "type": "sticker",
           "settings": {
+            "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
             "sticker_x": 10,
             "sticker_y": 10,
             "width_icon": 40
