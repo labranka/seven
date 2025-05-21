@@ -407,7 +407,8 @@
           "settings": {
             "sticker_image": "shopify://shop_images/Vector.png",
             "sticker_x": 10,
-            "sticker_y": 92
+            "sticker_y": 92,
+            "width_icon": 40
           }
         },
         "sticker_t43nHK": {
@@ -415,7 +416,8 @@
           "settings": {
             "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
             "sticker_x": 94,
-            "sticker_y": 6
+            "sticker_y": 6,
+            "width_icon": 40
           }
         },
         "sticker_yRAWfG": {
@@ -423,7 +425,8 @@
           "settings": {
             "sticker_image": "shopify://shop_images/Vector.png",
             "sticker_x": 72,
-            "sticker_y": 10
+            "sticker_y": 10,
+            "width_icon": 40
           }
         },
         "sticker_tFmxrd": {
@@ -431,22 +434,25 @@
           "settings": {
             "sticker_image": "shopify://shop_images/Vector.png",
             "sticker_x": 10,
-            "sticker_y": 10
+            "sticker_y": 10,
+            "width_icon": 40
           }
         },
         "sticker_NQaLwz": {
           "type": "sticker",
           "settings": {
             "sticker_image": "shopify://shop_images/Group_6125.png",
-            "sticker_x": 51,
-            "sticker_y": 2
+            "sticker_x": 47,
+            "sticker_y": 3,
+            "width_icon": 60
           }
         },
         "sticker_NBQqUC": {
           "type": "sticker",
           "settings": {
             "sticker_x": 10,
-            "sticker_y": 10
+            "sticker_y": 10,
+            "width_icon": 40
           }
         }
       },
@@ -466,7 +472,7 @@
         "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
         "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
         "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
-        "details": "#FFC1BF"
+        "details": "#ffc1bf"
       }
     }
   },
