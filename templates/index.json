@@ -398,6 +398,31 @@
         "image": "shopify://shop_images/team-fff_png.png",
         "text_2": "<p>Naša podrška je dostupna od Ponedeljka do Petka od : 08:00-16:00. </p><p><strong>Odgovaramo u roku od 24h</strong></p>"
       }
+    },
+    "custom_comunity_QW8ctm": {
+      "type": "custom_comunity",
+      "blocks": {
+        "sticker_NQaLwz": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Group_6125.png",
+            "sticker_x": 51,
+            "sticker_y": 4
+          }
+        }
+      },
+      "block_order": [
+        "sticker_NQaLwz"
+      ],
+      "name": "Community Section",
+      "settings": {
+        "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
+        "main_text": "<p>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami...</p>",
+        "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
+        "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
+        "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
+        "details": "#FFC1BF"
+      }
     }
   },
   "order": [
@@ -407,6 +432,7 @@
     "text_with_icons_U8WQKe",
     "section_video_slideshow_agEVtq",
     "newsletter_z8Q8cK",
-    "section_faq_qwhqL4"
+    "section_faq_qwhqL4",
+    "custom_comunity_QW8ctm"
   ]
 }
