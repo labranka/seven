@@ -133,7 +133,8 @@
 
   }
 
-  .left-image{
+  .left-image,
+   .left-image img{
     background-color: var(--color_background);
   }
 
