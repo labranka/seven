@@ -46,6 +46,8 @@
     };
     theme.strings = {
       soldOut: {{ 'products.product.sold_out' | t | json }},
+       cartGeneralFreeShippingLeft: {{ 'cart.general.free_shipping_left' | t: left_money: '[left_money]' | json }},
+     cartGeneralFreeShipping: {{ 'cart.general.free_shipping' | t | json }},
       unavailable: {{ 'products.product.unavailable' | t | json }},
       inStockLabel: {{ 'products.product.in_stock_label' | t | json }},
       oneStockLabel: {{ 'products.product.stock_label.one' | t: count: '[count]' | json }},

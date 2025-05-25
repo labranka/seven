@@ -364,19 +364,19 @@ class ShippingBar extends HTMLElement {
     // Update text based on freeLimit
     if (this.textEl) {
       const leftToFree = Math.max(this.freeLimit - total, 0);
-      if (total < this.freeLimit) {
-        // Format left amount as money using theme's formatter if available
-        let money = leftToFree;
-        if (window.theme && theme.Currency) {
-          money = theme.Currency.formatMoney(leftToFree, theme.settings.moneyFormat);
-        }
-        // Use translation string 'cart.general.free_shipping_left'
-        let template = (theme && theme.strings && theme.strings.cartGeneralFreeShippingLeft) || '{{left_money}} until free shipping';
-        this.textEl.textContent = template.replace(/\{\{\s*left_money\s*\}\}/g, money);
-      } else {
-        // Use translation string 'cart.general.free_shipping'
-        this.textEl.textContent = (theme && theme.strings && theme.strings.cartGeneralFreeShipping) || 'Free shipping!';
-      }
+     if (total < this.freeLimit) {
+  // format the remaining money as a string
+  const leftToFree = Math.max(this.freeLimit - total, 0);
+  const money = theme.Currency
+    ? theme.Currency.formatMoney(leftToFree, theme.settings.moneyFormat)
+    : `$${(leftToFree/100).toFixed(2)}`;
+
+      // pluck the translation and replace the placeholder
+      this.textEl.textContent = theme.strings.cartGeneralFreeShippingLeft
+        .replace('[left_money]', money);
+    } else {
+      this.textEl.textContent = theme.strings.cartGeneralFreeShipping;
+    }
     }
   }
 }
