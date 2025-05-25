@@ -15,11 +15,30 @@ data-aos="fade-up"
   {%- comment -%} Stickers: absolutely positioned images based on block settings {%- endcomment -%}
   {% for block in section.blocks %}
     {% if block.settings.sticker_image %}
+      <style>
+          .block--{{ block.id }}{
+              position: absolute; 
+              top: {{ block.settings.sticker_y }}%; 
+              left: {{ block.settings.sticker_x }}%; 
+              width: {{ block.settings.width_icon }}px; 
+              height: auto; 
+              transform: translate(-50%, -50%);
+          }
+
+          @media screen and (min-width: 769px) {
+             .block--{{ block.id }}{
+             
+              top: {{ block.settings.sticker_y_d }}%; 
+              left: {{ block.settings.sticker_x_d }}%; 
+              width: {{ block.settings.width_icon_d }}px; 
+          }
+          }
+      </style>
       <img
         src="{{ block.settings.sticker_image | img_url: '200x' }}"
         alt="Sticker"
-        class="sticker"
-        style="position: absolute; top: {{ block.settings.sticker_y }}%; left: {{ block.settings.sticker_x }}%; width: {{ block.settings.width_icon }}px; height: auto; transform: translate(-50%, -50%);"
+        class="sticker block--{{ block.id }}"
+     
       />
     {% endif %}
   {% endfor %}
@@ -139,6 +158,10 @@ data-aos="fade-up"
           "label": "Sticker Image"
         },
         {
+          "type": "header",
+          "content": "Mobile settings"
+        },
+        {
           "type": "range",
           "id": "sticker_x",
           "label": "Horizontal Position (%)",
@@ -159,6 +182,37 @@ data-aos="fade-up"
         {
           "type": "range",
           "id": "width_icon",
+          "label": "Width of icon",
+          "min": 0,
+          "max": 200,
+          "step": 2,
+          "default": 40
+        },
+          {
+          "type": "header",
+          "content": "Desktop settings"
+        },
+             {
+          "type": "range",
+          "id": "sticker_x_d",
+          "label": "Horizontal Position (%)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 10
+        },
+        {
+          "type": "range",
+          "id": "sticker_y_d",
+          "label": "Vertical Position (%)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 10
+        },
+        {
+          "type": "range",
+          "id": "width_icon_d",
           "label": "Width of icon",
           "min": 0,
           "max": 200,

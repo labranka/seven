@@ -27,10 +27,7 @@
 
 /* Stickers (hearts) */
 .community-section .sticker {
-  position: absolute;
-  width: 40px;
-  height: auto;
-  transform: translate(-50%, -50%);
+ 
   pointer-events: none; /* so they don't block clicks */
   transition: transform 0.2s ease;
 }
