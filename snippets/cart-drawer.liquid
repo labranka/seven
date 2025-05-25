@@ -36,6 +36,25 @@
               <textarea name="note" class="input-full cart-notes" id="CartNoteDrawer">{{ cart.note }}</textarea>
             </div>
           {% endif %}
+
+
+          <div class="human-action-info__wrapper">
+                          <div class="image-wrap aos-animate" style="aspect-ratio: {{ settings.image_donacija.aspect_ratio }};">
+                                        {%- render 'image-element',
+                                          img:  settings.image_donacija,
+                                          widths: '180, 360, 540, 720, 900, 1080'
+                                          sizeVariable: '300px',
+                                        -%}
+                        </div>
+                          {% assign pct = settings.donacija_range | default: 0 %}
+                          {% assign donation_cents = cart.total_price | times: pct | divided_by: 100 %}
+                          {% assign donation_amount = donation_cents | money %}
+
+                          <div class="human-action-info__text">
+                            {{ 'cart.general.humanitarian_action_info' 
+                                | t: amount: donation_amount }}
+                          </div>
+          </div>
         </div>
 
         <div class="drawer__footer appear-animation appear-delay-4">

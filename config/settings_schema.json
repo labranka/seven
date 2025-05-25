@@ -796,7 +796,22 @@
         "unit": "%",
         "label": "Sale %",
         "default": 20
-      }
+      },
+      {
+        "type": "image_picker",
+        "id": "image_donacija",
+        "label": "Icon donacija"
+      },
+      {
+        "type": "range",
+        "id": "donacija_range",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Iznos donacije na porudzbinu %",
+        "default": 5
+      },
     ]
   },
   {

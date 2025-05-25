@@ -7,6 +7,11 @@
   padding-bottom: 64px;
   margin-bottom: 16px;
 }
+
+.human-action-info__wrapper .image-wrap{
+  max-width: 78px;
+  width: 78px;
+}
 .cart-drawer__shipping-text{
   padding-bottom: 32px;
   text-align: center;
@@ -120,7 +125,10 @@
 .drawer .js-qty__num{
   border-radius: 10px;
 }
-.cart__product-name{
+
+
+.cart__product-name,
+.human-action-info__text{
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0%;

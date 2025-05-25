@@ -132,6 +132,7 @@
         "free_shipping_left": "{{ left_money }} jos do besplatne dostave",
          "sale_left": "{{ left_money }} do popusta",
          "sale": "{{ popust }}% popusta",
+         "humanitarian_action_info": "Sa ovom porudžbinom, {{ amount }} dinara ide direktno u humanitarne svrhe",
       "note": "Order note",
       "subtotal": "Subtotal",
       "discounts": "Discounts",

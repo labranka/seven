@@ -88,7 +88,8 @@
         style="left: 100%;">
         {% render 'icon_pack' with 'progress-bar-sale' %}
       </span>
-{% assign sale_amount = settings.sale_range %}
+     {% assign sale_amount = settings.sale_range %}
+     
         <span class='sale-amount-txt'> {{ 'cart.general.sale' | t: popust: sale_amount }}</span>
     </div>
   </div>
