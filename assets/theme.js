@@ -7257,6 +7257,12 @@ theme.preloadProductModal = function(handle, productId, btn) {
           cartBtn.disabled = true;
           cartBtnText.textContent = theme.strings.unavailable;
         }
+          fetch('/cart.js', { headers: { 'Accept': 'application/json' } })
+        .then(res => res.json())
+        .then(cart => {
+          document.dispatchEvent(new CustomEvent('cart:updated', { detail: { cart } }));
+        })
+        .catch(console.error);
       },
   
       updatePrice: function(evt) {
