@@ -59,6 +59,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  background-color: var(--color_background);
 }
 
 /* Left image */
