@@ -14,22 +14,46 @@
     {%- endfor -%}
   {%- endif -%}
 
-  {%- assign sale_limit = free_limit | times: 120 | divided_by: 100 -%}   
-  {%- assign total_price  = cart.total_price -%}
+  {%- assign sale_limits = settings.limit_sale | split: ';' -%}
+{%- assign sale_limit = 0 -%}
+{%- for item in sale_limits -%}
+  {%- assign parts = item | split: ':' -%}
+  {%- if parts[0] == localization.country.iso_code -%}
+    {%- assign sale_limit = parts[1] | times: 100 -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if sale_limit == 0 -%}
+  {%- for item in sale_limits -%}
+    {%- assign parts = item | split: ':' -%}
+    {%- if parts[0] == cart.currency.iso_code -%}
+      {%- assign sale_limit = parts[1] | times: 100 -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
 
-  {%- comment -%} compute raw fill % toward sale_limit {%- endcomment -%}
-  {%- assign raw_fill_pct = total_price | times: 100 | divided_by: sale_limit | round: 2 -%}
+
+{%- assign total_price = cart.total_price -%}
+{%- assign left_to_free = free_limit | minus: total_price -%}
+{%- if left_to_free < 0 -%}
+  {%- assign left_to_free = 0 -%}
+{%- endif -%}
+{%- assign raw_fill_pct = total_price | times: 100 | divided_by: sale_limit | round: 2 -%}
+{%- if raw_fill_pct > 100 -%}
+  {%- assign fill_pct = 100 -%}
+{%- elsif raw_fill_pct < 0 -%}
+  {%- assign fill_pct = 0 -%}
+{%- else -%}
   {%- assign fill_pct = raw_fill_pct -%}
-  {%- if fill_pct > 100 -%}
-    {%- assign fill_pct = 100 -%}
-  {%- endif -%}
+{%- endif -%}
 
-  {%- comment -%} compute icon position for free_limit {%- endcomment -%}
-  {%- assign raw_free_pct = free_limit | times: 100 | divided_by: sale_limit | round: 2 -%}
+{%- assign raw_free_pct = free_limit | times: 100 | divided_by: sale_limit | round: 2 -%}
+{%- if raw_free_pct > 100 -%}
+  {%- assign free_pct = 100 -%}
+{%- elsif raw_free_pct < 0 -%}
+  {%- assign free_pct = 0 -%}
+{%- else -%}
   {%- assign free_pct = raw_free_pct -%}
-  {%- if free_pct > 100 -%}
-    {%- assign free_pct = 100 -%}
-  {%- endif -%}
+{%- endif -%}
 
   <div class="cart-drawer__shipping">
     
