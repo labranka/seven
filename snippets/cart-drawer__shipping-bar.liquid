@@ -76,15 +76,18 @@
         </div>
       </div>
 
+      <div class="shipping-progress__wrapper-icon-txt shipping-progress-icon--free">
       <span 
-        class="shipping-progress-icon shipping-progress-icon--free" 
+        class="shipping-progress-icon " 
         style="left: {{ free_pct }}%;">
         {% render 'icon_pack' with 'shipping-bar-free' %}
         
       </span>
       <span class='free-shipping-txt'> {{ 'cart.general.free_shipping' | t }}</span>
+      </div>
+      <div class='shipping-progress__wrapper-icon-txt shipping-progress-icon--sale'>
       <span 
-        class="shipping-progress-icon shipping-progress-icon--sale" 
+        class="shipping-progress-icon " 
         style="left: 100%;">
         {% render 'icon_pack' with 'progress-bar-sale' %}
       </span>
@@ -92,5 +95,6 @@
      
         <span class='sale-amount-txt'> {{ 'cart.general.sale' | t: popust: sale_amount }}</span>
     </div>
+        </div>
   </div>
 {%- endif -%}
