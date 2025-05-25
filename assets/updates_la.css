@@ -17,6 +17,7 @@
 
 .drawer__close-button{
   padding: 0;
+  right: 0;
 }
 .drawer__close{
   width: fit-content;
