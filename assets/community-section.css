@@ -59,7 +59,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: var(--color_background);
+  border-radius: 10px;
 }
 
 /* Left image */
@@ -125,7 +125,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 64px;
-    background-color: var(--color_background);
     align-items: center;
 
 

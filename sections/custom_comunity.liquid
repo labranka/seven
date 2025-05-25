@@ -6,7 +6,9 @@
 <noscript>{{ 'community-section.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% style %}
-    
+.community-section .section-content{
+    background_color: {{ section.settings.background_color }}
+}
 {% endstyle %}
 
 <section class="community-section aos-init aos-animate" style="position: relative; padding: 60px 20px;" data-section-id="{{ section.id }}"  
@@ -100,6 +102,11 @@ data-aos="fade-up"
 {
   "name": "Community Section",
   "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background"
+    },
     {
       "type": "text",
       "id": "main_heading",
