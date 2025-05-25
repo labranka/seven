@@ -1,1 +1,136 @@
-{"sections":{"main":{"type":"article-template","settings":{}},"blog-posts":{"type":"blog-posts","settings":{"title":"You may also like"}}},"order":["main","blog-posts"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "article-template",
+      "disabled": true,
+      "settings": {
+        "blog_show_image": true,
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": false,
+        "social_sharing_blog": true
+      }
+    },
+    "slideshow_BRaqCg": {
+      "type": "slideshow",
+      "blocks": {
+        "image_gRLaDf": {
+          "type": "image",
+          "settings": {
+            "review_txt": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/image_12.png",
+            "image_mobile": "shopify://shop_images/image_12.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_gRLaDf"
+      ],
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "custom_comunity_A7DG7b": {
+      "type": "custom_comunity",
+      "blocks": {
+        "sticker_UVKg8i": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
+            "sticker_x": 10,
+            "sticker_y": 10,
+            "width_icon": 40
+          }
+        },
+        "sticker_eAnaNM": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Group_6125.png",
+            "sticker_x": 46,
+            "sticker_y": 24,
+            "width_icon": 40
+          }
+        },
+        "sticker_zYW9Ye": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
+            "sticker_x": 10,
+            "sticker_y": 96,
+            "width_icon": 40
+          }
+        },
+        "sticker_LY79Bg": {
+          "type": "sticker",
+          "settings": {
+            "sticker_x": 10,
+            "sticker_y": 10,
+            "width_icon": 40
+          }
+        }
+      },
+      "block_order": [
+        "sticker_UVKg8i",
+        "sticker_eAnaNM",
+        "sticker_zYW9Ye",
+        "sticker_LY79Bg"
+      ],
+      "name": "Community Section",
+      "settings": {
+        "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
+        "main_text": "<p>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami...</p>",
+        "image": "shopify://shop_images/image_11_7ed17f53-7f42-4be5-b56b-d7ed70361a01.png",
+        "image_d": "shopify://shop_images/image_11_7ed17f53-7f42-4be5-b56b-d7ed70361a01.png",
+        "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
+        "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
+        "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
+        "details": "#ffc1bf"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Uskoro Naša prva humanitarna akcija",
+        "blog": "news",
+        "post_limit": 3,
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": false,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_BRaqCg",
+    "custom_comunity_A7DG7b",
+    "blog-posts"
+  ]
+}
