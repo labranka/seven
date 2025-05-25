@@ -378,6 +378,19 @@ class ShippingBar extends HTMLElement {
       this.textEl.textContent = theme.strings.cartGeneralFreeShipping;
     }
     }
+
+     // 🔔 PULSE LOGIC
+  if (total >= this.freeLimit) {
+    this.freeIcon.classList.add('pulse');
+  } else {
+    this.freeIcon.classList.remove('pulse');
+  }
+
+  if (total >= this.saleLimit) {
+    this.saleIcon.classList.add('pulse');
+  } else {
+    this.saleIcon.classList.remove('pulse');
+  }
   }
 }
 

@@ -37,6 +37,7 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+   transform-origin: center center;
   background: white;
   border-radius: 50%;
   padding: 0.25rem;
@@ -64,6 +65,16 @@
   max-width: 60px;
   text-align: center;
 }
+@keyframes pulse {
+  0%   { transform: translate(-50%, -50%) scale(1);   }
+  50%  { transform: translate(-50%, -50%) scale(1.1); }
+  100% { transform: translate(-50%, -50%) scale(1);   }
+}
+
+.shipping-progress-icon.pulse {
+  animation: pulse 1s ease-in-out infinite;
+}
+
 /*PROGRESS BAR CART END*/
 .free-shipping-txt,
 .sale-amount-txt{
