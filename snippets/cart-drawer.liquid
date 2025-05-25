@@ -49,11 +49,13 @@
                           {% assign pct = settings.donacija_range | default: 0 %}
                           {% assign donation_cents = cart.total_price | times: pct | divided_by: 100 %}
                           {% assign donation_amount = donation_cents | money %}
-
+                        <donation-info pct="{{ pct }}">
                           <div class="human-action-info__text">
                             {{ 'cart.general.humanitarian_action_info' 
                                 | t: amount: donation_amount }}
+                                   <span class="donation-amount" style="display:none;">{{ donation_amount }}</span>
                           </div>
+                          </donation-info>
           </div>
         </div>
 

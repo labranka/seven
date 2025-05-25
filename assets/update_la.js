@@ -309,42 +309,50 @@ class ShippingBar extends HTMLElement {
   }
 
   connectedCallback() {
-    // Elements inside the custom element
-    this.track          = this.querySelector('.shipping-progress-track');
-    this.fill           = this.querySelector('.shipping-progress-fill');
-    this.freeIcon       = this.querySelector('.shipping-progress-icon--free');
-    this.saleIcon       = this.querySelector('.shipping-progress-icon--sale');
-    this.textEl         = this.querySelector('.cart-drawer__shipping-text');
+       document.addEventListener('cart:updated', this._onCartUpdated);
+        document.addEventListener('cart:build', () => this._fetchAndUpdate());
 
-    // Read limits from attributes or data-attributes
-    this.freeLimit = parseInt(this.getAttribute('free-limit'), 10) ||
-                     parseInt(this.track.dataset.freeLimit, 10) || 0;
-    this.saleLimit = parseInt(this.getAttribute('sale-limit'), 10) ||
-                     parseInt(this.track.dataset.saleLimit, 10) || 0;
-
-    // Initial state
-    this._fetchAndUpdate();
-
-    // Listen for cart:updated events
-    document.addEventListener('cart:updated', this._onCartUpdated);
+            // 3) Grab elements if they already exist (on reload)
+    this._grabElements();
+    if (this.track) {
+      this._fetchAndUpdate();
+    }
   }
 
   disconnectedCallback() {
     document.removeEventListener('cart:updated', this._onCartUpdated);
+    document.removeEventListener('cart:build', this._onCartUpdated);
+  }
+
+    _grabElements() {
+    this.track    = this.querySelector('.shipping-progress-track');
+    this.fill     = this.querySelector('.shipping-progress-fill');
+    this.freeIcon = this.querySelector('.shipping-progress-icon--free');
+    this.saleIcon = this.querySelector('.shipping-progress-icon--sale');
+    this.textEl   = this.querySelector('.cart-drawer__shipping-text');
+
+    if (this.track) {
+      this.freeLimit = parseInt(this.getAttribute('free-limit'), 10)
+                     || parseInt(this.track.dataset.freeLimit, 10);
+      this.saleLimit = parseInt(this.getAttribute('sale-limit'), 10)
+                     || parseInt(this.track.dataset.saleLimit, 10);
+    }
   }
 
   _onCartUpdated(evt) {
-    const cart = evt.detail && evt.detail.cart;
-    if (cart) {
-      this._updateProgress(cart);
+     // ensure our elements are grabbed at least once
+    if (!this.track) this._grabElements();
+    if (evt.detail && evt.detail.cart) {
+      this._updateProgress(evt.detail.cart);
     } else {
       this._fetchAndUpdate();
     }
   }
 
   _fetchAndUpdate() {
+   if (!this.track) return;
     fetch('/cart.js', { headers: { 'Accept': 'application/json' } })
-      .then(res => res.json())
+      .then(r => r.json())
       .then(cart => this._updateProgress(cart))
       .catch(console.error);
   }
@@ -397,3 +405,60 @@ class ShippingBar extends HTMLElement {
 customElements.define('shipping-bar', ShippingBar);
 
 
+// assets/donation-info.js
+class DonationInfo extends HTMLElement {
+  constructor() {
+    super();
+    this._onCartChange = this._onCartChange.bind(this);
+  }
+
+  connectedCallback() {
+    // read the pct from an attribute, injected via Liquid
+    this.pct = parseFloat(this.getAttribute('pct')) || 0;
+    // grab our text container
+    this.textEl = this.querySelector('.human-action-info__text');
+    // wire up both events
+    document.addEventListener('cart:build', this._onCartChange);
+    document.addEventListener('cart:updated', this._onCartChange);
+    // if the drawer is already open with items, force an initial compute
+    this._onCartChange();
+  }
+
+  disconnectedCallback() {
+    document.removeEventListener('cart:build', this._onCartChange);
+    document.removeEventListener('cart:updated', this._onCartChange);
+  }
+
+  _onCartChange(evt) {
+    // prefer the JSON payload if available
+    const cart = (evt && evt.detail && evt.detail.cart)
+      ? evt.detail.cart
+      : null;
+
+    // either use the passed-in cart, or fetch fresh
+    if (cart) {
+      this._update(cart);
+    } else {
+      fetch('/cart.js', { headers: { 'Accept': 'application/json' } })
+        .then(r => r.json())
+        .then(c => this._update(c))
+        .catch(console.error);
+    }
+  }
+
+  _update(cart) {
+    const total   = cart.total_price;               // in cents
+    const cents   = Math.floor(total * this.pct / 100);
+    const money   = (window.theme && theme.Currency)
+      ? theme.Currency.formatMoney(cents, theme.settings.moneyFormat)
+      : `$${(cents/100).toFixed(2)}`;
+
+    // get the translation template string you set up in theme.strings
+    const tpl     = theme.strings.cartGeneralHumanitarianInfo;
+    const text    = tpl.replace('[amount]', money);
+
+    if (this.textEl) this.textEl.textContent = text;
+  }
+}
+
+customElements.define('donation-info', DonationInfo);

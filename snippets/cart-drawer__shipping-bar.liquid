@@ -1,4 +1,4 @@
-{%- if settings.limit_free_shipping != blank and cart != empty -%}
+{%- if settings.limit_free_shipping != blank-%}
   {%- assign limits = settings.limit_free_shipping | split: ';' -%}
   {%- assign free_limit = 0 -%}
   {%- for item in limits -%}
