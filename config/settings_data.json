@@ -55,6 +55,8 @@
     "quick_shop_enable": true,
     "enable_swatches": true,
     "cart_type": "drawer",
+    "limit_free_shipping": "EUR:150;USD:140;SEK:4000;DIN:2000;",
+    "limit_sale": "EUR:160;USD:150;SEK:5000;DIN:3000;",
     "social_facebook_link": "https://www.facebook.com/",
     "social_twitter_link": "",
     "social_pinterest_link": "https://www.pinterest.com/",
