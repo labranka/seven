@@ -299,6 +299,9 @@ customElements.define('video-slideshow', VideoSlideshow);
   customElements.define('quick-atc', QuickAtc);
 
 
+// assets/shipping-bar.js
+// Web Component: single track with two markers and dynamic text update
+
 class ShippingBar extends HTMLElement {
   constructor() {
     super();
@@ -306,11 +309,12 @@ class ShippingBar extends HTMLElement {
   }
 
   connectedCallback() {
-    // Grab elements inside this component
-    this.track    = this.querySelector('.shipping-progress-track');
-    this.fill     = this.querySelector('.shipping-progress-fill');
-    this.freeIcon = this.querySelector('.shipping-progress-icon--free');
-    this.saleIcon = this.querySelector('.shipping-progress-icon--sale');
+    // Elements inside the custom element
+    this.track          = this.querySelector('.shipping-progress-track');
+    this.fill           = this.querySelector('.shipping-progress-fill');
+    this.freeIcon       = this.querySelector('.shipping-progress-icon--free');
+    this.saleIcon       = this.querySelector('.shipping-progress-icon--sale');
+    this.textEl         = this.querySelector('.cart-drawer__shipping-text');
 
     // Read limits from attributes or data-attributes
     this.freeLimit = parseInt(this.getAttribute('free-limit'), 10) ||
@@ -318,10 +322,10 @@ class ShippingBar extends HTMLElement {
     this.saleLimit = parseInt(this.getAttribute('sale-limit'), 10) ||
                      parseInt(this.track.dataset.saleLimit, 10) || 0;
 
-    // Initial render
+    // Initial state
     this._fetchAndUpdate();
 
-    // Listen for global cart updates
+    // Listen for cart:updated events
     document.addEventListener('cart:updated', this._onCartUpdated);
   }
 
@@ -330,8 +334,9 @@ class ShippingBar extends HTMLElement {
   }
 
   _onCartUpdated(evt) {
-    if (evt.detail && evt.detail.cart) {
-      this._updateProgress(evt.detail.cart);
+    const cart = evt.detail && evt.detail.cart;
+    if (cart) {
+      this._updateProgress(cart);
     } else {
       this._fetchAndUpdate();
     }
@@ -346,18 +351,36 @@ class ShippingBar extends HTMLElement {
 
   _updateProgress(cart) {
     const total = cart.total_price;
-    // Fill percent toward saleLimit
-    const pct = Math.min((total / this.saleLimit) * 100, 100);
-    this.fill.style.width = pct + '%';
+
+    // Update fill width towards sale limit
+    const fillPct = Math.min((total / this.saleLimit) * 100, 100);
+    if (this.fill) this.fill.style.width = fillPct + '%';
 
     // Position free-limit marker
     const freePct = Math.min((this.freeLimit / this.saleLimit) * 100, 100);
-    this.freeIcon.style.left = freePct + '%';
-    // Sale icon always at end
-    this.saleIcon.style.left = '100%';
+    if (this.freeIcon) this.freeIcon.style.left = freePct + '%';
+    if (this.saleIcon) this.saleIcon.style.left = '100%';
+
+    // Update text based on freeLimit
+    if (this.textEl) {
+      const leftToFree = Math.max(this.freeLimit - total, 0);
+      if (total < this.freeLimit) {
+        // Format left amount as money using theme's formatter if available
+        let money = leftToFree;
+        if (window.theme && theme.Currency) {
+          money = theme.Currency.formatMoney(leftToFree, theme.settings.moneyFormat);
+        }
+        // Use translation string 'cart.general.free_shipping_left'
+        let template = (theme && theme.strings && theme.strings.cartGeneralFreeShippingLeft) || '{{left_money}} until free shipping';
+        this.textEl.textContent = template.replace(/\{\{\s*left_money\s*\}\}/g, money);
+      } else {
+        // Use translation string 'cart.general.free_shipping'
+        this.textEl.textContent = (theme && theme.strings && theme.strings.cartGeneralFreeShipping) || 'Free shipping!';
+      }
+    }
   }
 }
 
-// Define the custom element
 customElements.define('shipping-bar', ShippingBar);
+
 

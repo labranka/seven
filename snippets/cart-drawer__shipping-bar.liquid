@@ -31,7 +31,8 @@
     {%- assign free_pct = 100 -%}
   {%- endif -%}
 
-  <div class="cart-drawer__shipping u-p2">
+  <div class="cart-drawer__shipping">
+    
     <div class="cart-drawer__shipping-text">
       {%- if total_price < free_limit -%}
         {{ 'cart.general.free_shipping_left' | t: left_money: free_limit | minus: total_price | money }}
