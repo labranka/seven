@@ -1,4 +1,46 @@
 
+.drawer__title{
+  font-size: 16px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: var(--typeHeaderPrimary);
+  letter-spacing: -0.4px;
+  line-height: 28px;
+  width: fit-content;
+  font-weight: bold;
+}
+.drawer__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer__close-button{
+  padding: 0;
+}
+.drawer__close{
+  width: fit-content;
+  width: 24px;
+  height: 24px;
+}
+.cart__title-counter-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+}
+.cart__counter-wrapper{
+  font-size: 12px;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorCartDot);
+  color: var(--colorBody);
+}
+
 .page-width.section-blog-showcase{
   padding: 32px 16px;
   background: linear-gradient(to bottom, #f9f9f9, #ffffff);

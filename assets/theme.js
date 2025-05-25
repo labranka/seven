@@ -1908,6 +1908,11 @@ if (console && console.log) {
             });
           }
         }
+
+         var drawerCounter = document.querySelector('.drawer .cart__counter-wrapper');
+        if (drawerCounter) {
+          drawerCounter.textContent = count;
+        }
       }
     });
   
