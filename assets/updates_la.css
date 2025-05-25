@@ -1,47 +1,76 @@
 
 /*PROGRESS BAR CART START*/
-.cart-drawer__shipping {
+/* .cart-drawer__shipping {
   display: flex;
   gap: 1rem;
   padding: 1rem;
   flex-direction: column;
-  margin: 0 1rem;
-  border-radius: 0.375rem;
+  border-bottom: 1px solid var(--colorDrawerBorder);
   animation: none;
   background: none;
-  border: 1px solid RED;
+  padding-bottom: 64px;
 }
 .cart-drawer__shipping-progress {
-  border: 0.5px solid yellow;
-  height: 0.5rem;
+  height: 10px;
   width: 100%;
   border-radius: 0.375rem;
-  position: relative;
-  background-color: black;
-}
+  background-color: #F4F4F4;
 
+}
+.progress-bar__svg{
+  padding: 8px;
+  border: 1px solid var(--colorInputText);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .cart-drawer__shipping-progress-bar {
-  background-color: green;
+  background-color: var(--colorInputText);
+  border-radius: 40px;
   height: 100%;
   border-radius: 0.375rem;
   transition: width 0.3s ease-in-out;
   position: relative;
+} */
+
+.shipping-progress-container {
+  position: relative;
+  margin-top: 0.5rem;
 }
 
-.cart-drawer__shipping-progress-bar svg {
+.shipping-progress-track {
+  background: #eee;
+  border-radius: 4px;
+  height: 0.5rem;
+  overflow: hidden;
+}
+
+.shipping-progress-fill {
+  background: #3a8;    /* free‐to‐sale gradient? */
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.shipping-progress-icon {
   position: absolute;
-  right: -10px;
-  top: -250%;
-  width: 2rem;
-  height: 2rem;
-  transition: transform 0.3s ease-in-out;
-  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+.shipping-progress-icon--sale {
+  /* optionally a different background or border */
 }
 
-.cart-drawer__shipping-progress-bar.done svg {
-  transform: scale(1.3);
-  top: -260%;
-}
+
+
+
+
 
 /*PROGRESS BAR CART END*/
 .drawer__title{

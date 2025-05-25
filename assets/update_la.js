@@ -299,5 +299,65 @@ customElements.define('video-slideshow', VideoSlideshow);
   customElements.define('quick-atc', QuickAtc);
 
 
+class ShippingBar extends HTMLElement {
+  constructor() {
+    super();
+    this._onCartUpdated = this._onCartUpdated.bind(this);
+  }
 
+  connectedCallback() {
+    // Grab elements inside this component
+    this.track    = this.querySelector('.shipping-progress-track');
+    this.fill     = this.querySelector('.shipping-progress-fill');
+    this.freeIcon = this.querySelector('.shipping-progress-icon--free');
+    this.saleIcon = this.querySelector('.shipping-progress-icon--sale');
+
+    // Read limits from attributes or data-attributes
+    this.freeLimit = parseInt(this.getAttribute('free-limit'), 10) ||
+                     parseInt(this.track.dataset.freeLimit, 10) || 0;
+    this.saleLimit = parseInt(this.getAttribute('sale-limit'), 10) ||
+                     parseInt(this.track.dataset.saleLimit, 10) || 0;
+
+    // Initial render
+    this._fetchAndUpdate();
+
+    // Listen for global cart updates
+    document.addEventListener('cart:updated', this._onCartUpdated);
+  }
+
+  disconnectedCallback() {
+    document.removeEventListener('cart:updated', this._onCartUpdated);
+  }
+
+  _onCartUpdated(evt) {
+    if (evt.detail && evt.detail.cart) {
+      this._updateProgress(evt.detail.cart);
+    } else {
+      this._fetchAndUpdate();
+    }
+  }
+
+  _fetchAndUpdate() {
+    fetch('/cart.js', { headers: { 'Accept': 'application/json' } })
+      .then(res => res.json())
+      .then(cart => this._updateProgress(cart))
+      .catch(console.error);
+  }
+
+  _updateProgress(cart) {
+    const total = cart.total_price;
+    // Fill percent toward saleLimit
+    const pct = Math.min((total / this.saleLimit) * 100, 100);
+    this.fill.style.width = pct + '%';
+
+    // Position free-limit marker
+    const freePct = Math.min((this.freeLimit / this.saleLimit) * 100, 100);
+    this.freeIcon.style.left = freePct + '%';
+    // Sale icon always at end
+    this.saleIcon.style.left = '100%';
+  }
+}
+
+// Define the custom element
+customElements.define('shipping-bar', ShippingBar);
 

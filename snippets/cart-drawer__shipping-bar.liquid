@@ -1,54 +1,67 @@
+{%- if settings.limit_free_shipping != blank and cart != empty -%}
+  {%- assign limits = settings.limit_free_shipping | split: ';' -%}
+  {%- assign free_limit = 0 -%}
+  {%- for item in limits -%}
+    {%- if item contains localization.country.iso_code -%}
+      {%- assign free_limit = item | split: ':' | last | times: 100 -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if free_limit == 0 -%}
+    {%- for item in limits -%}
+      {%- if item contains cart.currency.iso_code -%}
+        {%- assign free_limit = item | split: ':' | last | times: 100 -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
 
-{% if settings.limit_free_shipping != blank and cart != empty %}
-    {% assign limits = settings.limit_free_shipping | split: ';' %}
-  
-    {% assign limit = 0 %}
-    {% for item in limits %}
-      {% if item contains localization.country.iso_code %}
-        {% assign helper = item | split: ':' %}
-        {% assign limit = helper[1] | times: 100 %}
-      {% endif %}
-    {% endfor %}
-  
-    {% if limit == 0 %}
-      {% for item in limits %}
-        {% if item contains cart.currency.iso_code %}
-          {% assign helper = item | split: ':' %}
-          {% assign limit = helper[1] | times: 100 %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-    {% assign total_price = cart.total_price %}
-  
-    {% assign left_money_to_free = limit | minus: total_price %}
-    {% assign left_money_amount = left_money_to_free | money %}
-    {% if limit > 0 %}
-    <div class="cart-drawer__shipping {{ classes }}">
-      <div class="cart-drawer__shipping-text u-p2">
+  {%- assign sale_limit = free_limit | times: 120 | divided_by: 100 -%}   
+  {%- assign total_price  = cart.total_price -%}
 
-          {%- if left_money_to_free > 0  %}
-            {{ 'cart.general.free_shipping_left' | t: left_money: left_money_amount }}
-          {% else %}
-            {{ 'cart.general.free_shipping' | t }}
-          {% endif -%}
-  
-      </div>
-      <div class="cart-drawer__shipping-progress">
-        {% assign amount = total_price | times: 100 %}
-        {% assign width_percent = amount | divided_by: limit %}
-        <div data-percent="{{ width_percent }}"
-          data-limit-amount="{{ limit }}"
-          class="cart-drawer__shipping-progress-bar {% if width_percent < 100 %} active {% else %} done {% endif %}"
-          {% if left_money_to_free > -1 %}
-            style="width: {{ width_percent }}%;"
-          {% endif -%}
-          {% if left_money_to_free < 0 %}
-            style="width: 100%;"
-          {% endif %}
-        >
-        {% render 'icon_pack' with 'shipping-bar-free' %}
+  {%- comment -%} compute raw fill % toward sale_limit {%- endcomment -%}
+  {%- assign raw_fill_pct = total_price | times: 100 | divided_by: sale_limit | round: 2 -%}
+  {%- assign fill_pct = raw_fill_pct -%}
+  {%- if fill_pct > 100 -%}
+    {%- assign fill_pct = 100 -%}
+  {%- endif -%}
+
+  {%- comment -%} compute icon position for free_limit {%- endcomment -%}
+  {%- assign raw_free_pct = free_limit | times: 100 | divided_by: sale_limit | round: 2 -%}
+  {%- assign free_pct = raw_free_pct -%}
+  {%- if free_pct > 100 -%}
+    {%- assign free_pct = 100 -%}
+  {%- endif -%}
+
+  <div class="cart-drawer__shipping u-p2">
+    <div class="cart-drawer__shipping-text">
+      {%- if total_price < free_limit -%}
+        {{ 'cart.general.free_shipping_left' | t: left_money: free_limit | minus: total_price | money }}
+      {%- else -%}
+        {{ 'cart.general.free_shipping' | t }}
+      {%- endif -%}
+    </div>
+
+    <div class="shipping-progress-container">
+      <div 
+        class="shipping-progress-track" 
+        data-free-limit="{{ free_limit }}" 
+        data-sale-limit="{{ sale_limit }}">
+        <div 
+          class="shipping-progress-fill" 
+          style="width: {{ fill_pct }}%;">
         </div>
       </div>
+
+      <span 
+        class="shipping-progress-icon shipping-progress-icon--free" 
+        style="left: {{ free_pct }}%;">
+        {% render 'icon_pack' with 'shipping-bar-free' %}
+      </span>
+
+      <span 
+        class="shipping-progress-icon shipping-progress-icon--sale" 
+        style="left: 100%;">
+        {% render 'icon_pack' with 'progress-bar-sale' %}
+      </span>
     </div>
-    {% endif %}
-  {% endif %}
+  </div>
+{%- endif -%}

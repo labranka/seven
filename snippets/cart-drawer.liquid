@@ -23,8 +23,11 @@
       </div>
 
       <div class="drawer__inner">
-         {% render 'cart-drawer__shipping-bar' %}
+       
         <div class="drawer__scrollable">
+          <shipping-bar>
+            {% render 'cart-drawer__shipping-bar' %}
+            </shipping-bar>
           <div data-products class="appear-animation appear-delay-2"></div>
 
           {% if settings.cart_notes_enable %}
