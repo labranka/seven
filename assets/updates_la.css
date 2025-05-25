@@ -1291,6 +1291,11 @@ padding: 0;
 @media screen and (min-width: 1025px) {
     .drawer--right{
     width: 648px;
+    right: -648px;
+  }
+  
+  .drawer--right.drawer--is-open{
+    transform: translateX(-648px);
   }
   .collection-title{
     font-size: 42px;
