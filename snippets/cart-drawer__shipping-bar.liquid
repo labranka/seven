@@ -1,0 +1,54 @@
+
+{% if settings.limit_free_shipping != blank and cart != empty %}
+    {% assign limits = settings.limit_free_shipping | split: ';' %}
+  
+    {% assign limit = 0 %}
+    {% for item in limits %}
+      {% if item contains localization.country.iso_code %}
+        {% assign helper = item | split: ':' %}
+        {% assign limit = helper[1] | times: 100 %}
+      {% endif %}
+    {% endfor %}
+  
+    {% if limit == 0 %}
+      {% for item in limits %}
+        {% if item contains cart.currency.iso_code %}
+          {% assign helper = item | split: ':' %}
+          {% assign limit = helper[1] | times: 100 %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% assign total_price = cart.total_price %}
+  
+    {% assign left_money_to_free = limit | minus: total_price %}
+    {% assign left_money_amount = left_money_to_free | money %}
+    {% if limit > 0 %}
+    <div class="cart-drawer__shipping {{ classes }}">
+      <div class="cart-drawer__shipping-text u-p2">
+
+          {%- if left_money_to_free > 0  %}
+            {{ 'cart.general.free_shipping_left' | t: left_money: left_money_amount }}
+          {% else %}
+            {{ 'cart.general.free_shipping' | t }}
+          {% endif -%}
+  
+      </div>
+      <div class="cart-drawer__shipping-progress">
+        {% assign amount = total_price | times: 100 %}
+        {% assign width_percent = amount | divided_by: limit %}
+        <div data-percent="{{ width_percent }}"
+          data-limit-amount="{{ limit }}"
+          class="cart-drawer__shipping-progress-bar {% if width_percent < 100 %} active {% else %} done {% endif %}"
+          {% if left_money_to_free > -1 %}
+            style="width: {{ width_percent }}%;"
+          {% endif -%}
+          {% if left_money_to_free < 0 %}
+            style="width: 100%;"
+          {% endif %}
+        >
+        {% render 'icon_pack' with 'shipping-bar-free' %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  {% endif %}

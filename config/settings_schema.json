@@ -770,6 +770,32 @@
         "type": "url",
         "id": "cart_terms_conditions_page",
         "label": "t:settings_schema.cart.settings.cart_terms_conditions_page.label"
+      },
+      {
+        "type": "header",
+        "content": "Progress bar settings"
+      },
+       {
+        "type": "textarea",
+        "id": "limit_free_shipping",
+        "label": "Enter limit price",
+        "info": "Enter the limit price that the user must reach in order to receive free shipping in format EUR:150;USD:140;SEK:1000. (Leave 0 if you don't want this to be displayed)"
+      },
+        {
+        "type": "textarea",
+        "id": "limit_sale",
+        "label": "Enter sale price",
+        "info": "Enter the price that the user must reach in order to receive sale in format EUR:150;USD:140;SEK:1000. (Leave 0 if you don't want this to be displayed)"
+      },
+      {
+        "type": "range",
+        "id": "sale_range",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Sale %",
+        "default": 20
       }
     ]
   },

@@ -3512,6 +3512,9 @@
       "general": {
         "title": "Cart",
         "remove": "Remove",
+        "free_shipping": "Besplatna dostava!",
+        "free_shipping_left": "{{ left_money }} jos do besplatne dostave",
+         "sale_left": "{{ left_money }} do popusta",
         "note": "Order note",
         "subtotal": "Subtotal",
         "discounts": "Discounts",

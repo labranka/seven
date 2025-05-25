@@ -1,0 +1,23 @@
+{%- capture icon_class -%}Svg Svg--{{ icon_pack }}{%- endcapture -%}
+{%- case icon_pack -%}
+  {% when 'shipping-bar-free' %}
+    <svg class="{{ icon_class }} {{ spacing }}" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.875 17.5H17.25C18.3546 17.5 19.25 16.6046 19.25 15.5V11.0894C19.25 10.7839 19.18 10.4824 19.0453 10.2081L16.4242 4.86865C16.088 4.18391 15.3916 3.75 14.6288 3.75H12.9375M12.3125 17.5H10H7.6875M4.125 17.5H2.75C1.64543 17.5 0.75 16.6046 0.75 15.5V10.625" stroke="black" stroke-width="1.5"/>
+<path d="M0.75 2.74997C0.75 1.6454 1.64543 0.749969 2.75 0.749969H12C12.5523 0.749969 13 1.19768 13 1.74997V9.99997C13 11.1045 12.1046 12 11 12H0.75V2.74997Z" stroke="black" stroke-width="1.5"/>
+<path d="M16.75 12H18.25C18.8023 12 19.25 11.5523 19.25 11V10.9718C19.25 10.8257 19.218 10.6813 19.1562 10.5489L17.7693 7.57708C17.605 7.22501 17.2517 6.99997 16.8631 6.99997H16.75C16.1977 6.99997 15.75 7.44768 15.75 7.99997V11C15.75 11.5523 16.1977 12 16.75 12Z" stroke="black" stroke-width="1.5"/>
+<path d="M6.25 19.25C7.28553 19.25 8.125 18.4106 8.125 17.375C8.125 16.3395 7.28553 15.5 6.25 15.5C5.21447 15.5 4.375 16.3395 4.375 17.375C4.375 18.4106 5.21447 19.25 6.25 19.25Z" stroke="black" stroke-width="1.5"/>
+<path d="M13.75 19.25C14.7855 19.25 15.625 18.4106 15.625 17.375C15.625 16.3395 14.7855 15.5 13.75 15.5C12.7145 15.5 11.875 16.3395 11.875 17.375C11.875 18.4106 12.7145 19.25 13.75 19.25Z" stroke="black" stroke-width="1.5"/>
+</svg>
+
+{% when 'progress-bar-sale' %}
+   <svg class="{{ icon_class }} {{ spacing }}" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.334 5.00001V7.01667C18.334 8.33334 17.5006 9.16667 16.184 9.16667H13.334V3.34167C13.334 2.41667 14.0923 1.66667 15.0173 1.66667C15.9257 1.67501 16.759 2.04167 17.359 2.64167C17.959 3.25 18.334 4.08334 18.334 5.00001Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.66602 5.83334V17.5C1.66602 18.1917 2.44935 18.5833 2.99935 18.1667L4.42435 17.1C4.75768 16.85 5.22435 16.8833 5.52435 17.1833L6.90768 18.575C7.23268 18.9 7.76601 18.9 8.09101 18.575L9.49101 17.175C9.78268 16.8833 10.2493 16.85 10.5743 17.1L11.9993 18.1667C12.5493 18.575 13.3327 18.1833 13.3327 17.5V3.33334C13.3327 2.41667 14.0827 1.66667 14.9993 1.66667H5.83268H4.99935C2.49935 1.66667 1.66602 3.15834 1.66602 5.00001V5.83334Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.22461 11.4417L9.77461 6.89166" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.93748 11.25H9.94497" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.16209 7.08334H5.16957" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+
+{% endcase %}
