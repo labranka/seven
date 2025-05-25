@@ -921,6 +921,10 @@ padding: 0;
 .drawer .cart__item--details{
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.drawer .cart__item--details .cart__item--name{
+  width: 100%;
 }
 .drawer .cart__item--details .cart__item--qty{
   width: fit-content;
@@ -1039,6 +1043,7 @@ padding: 0;
 }
 
 @media only screen and (min-width: 590px) {
+
       .drawer__footer::after{
         width: 100%;
         left: 0;
@@ -1284,6 +1289,9 @@ padding: 0;
 }
 }
 @media screen and (min-width: 1025px) {
+    .drawer--right{
+    width: 648px;
+  }
   .collection-title{
     font-size: 42px;
     letter-spacing: -0.96px;
