@@ -109,11 +109,12 @@
         "sticker_LY79Bg": {
           "type": "sticker",
           "settings": {
+            "sticker_image": "shopify://shop_images/Vector.png",
             "sticker_x": 10,
             "sticker_y": 10,
             "width_icon": 40,
             "sticker_x_d": 10,
-            "sticker_y_d": 10,
+            "sticker_y_d": 94,
             "width_icon_d": 40
           }
         }
