@@ -57,7 +57,7 @@
 
   <div class="cart-drawer__shipping">
     
-    <div class="cart-drawer__shipping-text">
+    <div class="cart-drawer__shipping-text text-center">
       {%- if total_price < free_limit -%}
         {{ 'cart.general.free_shipping_left' | t: left_money: free_limit | minus: total_price | money }}
       {%- else -%}
@@ -80,13 +80,16 @@
         class="shipping-progress-icon shipping-progress-icon--free" 
         style="left: {{ free_pct }}%;">
         {% render 'icon_pack' with 'shipping-bar-free' %}
+        
       </span>
-
+      <span class='free-shipping-txt'> {{ 'cart.general.free_shipping' | t }}</span>
       <span 
         class="shipping-progress-icon shipping-progress-icon--sale" 
         style="left: 100%;">
         {% render 'icon_pack' with 'progress-bar-sale' %}
       </span>
+{% assign sale_amount = settings.sale_range %}
+        <span class='sale-amount-txt'> {{ 'cart.general.sale' | t: popust: sale_amount }}</span>
     </div>
   </div>
 {%- endif -%}

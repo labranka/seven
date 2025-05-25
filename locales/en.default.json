@@ -131,6 +131,7 @@
         "free_shipping": "Besplatna dostava!",
         "free_shipping_left": "{{ left_money }} jos do besplatne dostave",
          "sale_left": "{{ left_money }} do popusta",
+         "sale": "{{ popust }}% popusta",
       "note": "Order note",
       "subtotal": "Subtotal",
       "discounts": "Discounts",
