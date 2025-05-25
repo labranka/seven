@@ -1,7 +1,7 @@
 <div class="cart__item" data-key="{{ product.key }}">
   <div class="cart__item--image" data-aos>
     {% if product.image != blank %}
-      <a href="{{ product.url }}" class="image-wrap" style="display: block; height: 0; padding-bottom: {{ 100 | divided_by: product.image.aspect_ratio }}%;">
+      <a href="{{ product.url }}" class="image-wrap" style="display: block; aspect-ratio: 0.8;">
         {%- render 'image-element',
           img: product,
           alt: product.product.title,
@@ -20,11 +20,43 @@
         {{ product.product.title }}
       </a>
 
+        <div class="cart__item--price cart__item-price-col">
+      {%- if product.original_price != product.final_price -%}
+        <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+        <small class="cart__price cart__price--strikethrough">{{ product.original_price | money }}</small>
+        <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+        <span class="cart__price cart__discount">{{ product.final_price | money }}</span>
+      {%- else -%}
+        <span class="cart__price">{{ product.original_price | money }}</span>
+      {%- endif -%}
+
+      {%- if product.line_level_discount_allocations != blank -%}
+        {%- for discount_allocation in product.line_level_discount_allocations -%}
+          <small class="cart__discount">{{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})</small>
+        {%- endfor -%}
+      {%- endif -%}
+
+      {%- if product.unit_price_measurement -%}
+        {%- capture unit_price_base_unit -%}
+          <span class="unit-price-base">
+            {%- if product.unit_price_measurement -%}
+              {%- if product.unit_price_measurement.reference_value != 1 -%}
+                {{ product.unit_price_measurement.reference_value }}
+              {%- endif -%}
+              {{ product.unit_price_measurement.reference_unit }}
+            {%- endif -%}
+          </span>
+        {%- endcapture -%}
+
+        <div class="product__unit-price">{{ product.unit_price | money }}/{{ unit_price_base_unit }}</div>
+      {%- endif -%}
+    </div>
+
       {%- unless product.product.has_only_default_variant -%}
         <div class="cart__item--variants">
-          {%- for option in product.options_with_values -%}
-            <div><span>{{ option.name }}:</span> {{ option.value }}</div>
-          {%- endfor -%}
+         {%- for option in product.options_with_values -%}
+        <span>{{ option.value }}{% unless forloop.last %}<span class='cart-option-separator'>/</span>{% endunless %}</span>
+      {%- endfor -%}
         </div>
       {%- endunless -%}
       <div class="{% if product.selling_plan_allocation == empty %}hide {% endif %}">
@@ -73,36 +105,6 @@
         </button>
       </div>
     </div>
-    <div class="cart__item--price cart__item-price-col text-right">
-      {%- if product.original_price != product.final_price -%}
-        <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-        <small class="cart__price cart__price--strikethrough">{{ product.original_price | money }}</small>
-        <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-        <span class="cart__price cart__discount">{{ product.final_price | money }}</span>
-      {%- else -%}
-        <span class="cart__price">{{ product.original_price | money }}</span>
-      {%- endif -%}
-
-      {%- if product.line_level_discount_allocations != blank -%}
-        {%- for discount_allocation in product.line_level_discount_allocations -%}
-          <small class="cart__discount">{{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})</small>
-        {%- endfor -%}
-      {%- endif -%}
-
-      {%- if product.unit_price_measurement -%}
-        {%- capture unit_price_base_unit -%}
-          <span class="unit-price-base">
-            {%- if product.unit_price_measurement -%}
-              {%- if product.unit_price_measurement.reference_value != 1 -%}
-                {{ product.unit_price_measurement.reference_value }}
-              {%- endif -%}
-              {{ product.unit_price_measurement.reference_unit }}
-            {%- endif -%}
-          </span>
-        {%- endcapture -%}
-
-        <div class="product__unit-price">{{ product.unit_price | money }}/{{ unit_price_base_unit }}</div>
-      {%- endif -%}
-    </div>
+  
   </div>
 </div>
