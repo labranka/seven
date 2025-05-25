@@ -128,6 +128,7 @@
       ],
       "name": "Community Section",
       "settings": {
+        "background_color": "#f9f9f9",
         "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
         "main_text": "<p>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami...</p>",
         "image": "shopify://shop_images/western-capsule-hero-f_1.png",
