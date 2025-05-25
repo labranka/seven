@@ -61,6 +61,7 @@
         "sticker_UVKg8i": {
           "type": "sticker",
           "settings": {
+            "sticker_image": "shopify://shop_images/Vector.png",
             "sticker_x": 10,
             "sticker_y": 10,
             "width_icon": 40
@@ -72,6 +73,15 @@
             "sticker_image": "shopify://shop_images/Group_6125.png",
             "sticker_x": 46,
             "sticker_y": 24,
+            "width_icon": 40
+          }
+        },
+        "sticker_krGCtK": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Vector.png",
+            "sticker_x": 64,
+            "sticker_y": 10,
             "width_icon": 40
           }
         },
@@ -95,6 +105,7 @@
       "block_order": [
         "sticker_UVKg8i",
         "sticker_eAnaNM",
+        "sticker_krGCtK",
         "sticker_zYW9Ye",
         "sticker_LY79Bg"
       ],
