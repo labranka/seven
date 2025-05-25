@@ -2,7 +2,7 @@
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-<div class="page-width">
+<div class="page-width section-blog-showcase">
 
   {%- if section.settings.title != blank -%}
     <header class="section-header">
@@ -22,7 +22,7 @@
         <div class="grid__item medium-up--one-third" data-aos="row-of-3">
           {%- if article.image -%}
             <a href="{{ article.url }}" class="article__grid-image" aria-label="{{ article.title | escape }}">
-              <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: article.image.aspect_ratio }}%;">
+              <div class="image-wrap" style="aspect-ratio: 1;">
                 {%- render 'image-element',
                   img: article.image,
                   widths: '180, 360, 540, 720, 900, 1080',
@@ -34,7 +34,15 @@
           {%- endif -%}
 
           <div class="article__grid-meta">
-            {%- if section.settings.blog_show_date or article.tags.size > 0 or articles.comments_count > 0 -%}
+          
+
+            <a href="{{ article.url }}" class="article__title">{{ article.title }}</a>
+
+            <div class='article-card__content'>
+              {{ article.content }}
+            </div>
+
+              {%- if section.settings.blog_show_date or article.tags.size > 0 or articles.comments_count > 0 -%}
               <div class="article__date">
                 {%- if section.settings.blog_show_tags and article.tags.size > 0 -%}
                   {%- for tag in article.tags -%}
@@ -48,12 +56,19 @@
                   </a> &middot;
                 {%- endif -%}
                 {%- if section.settings.blog_show_date -%}
+                  <div class="article-date-icon-wrapper">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.37207 1.23975V4.11675M10.4551 1.23975V4.11675" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M14.3381 7.87176H1.49707L1.67607 3.30176L7.84007 2.85376L14.3371 3.30176V7.87176H14.3381Z" fill="#1A1A1A" fill-opacity="0.12"/>
+                        <path d="M1.331 7.44164H14.571M1.224 12.3126C1.407 13.9436 2.732 15.2376 4.371 15.3166C5.55216 15.373 6.7345 15.4006 7.917 15.3996C9.173 15.3996 10.33 15.3716 11.463 15.3166C13.102 15.2376 14.427 13.9426 14.609 12.3126C14.733 11.2136 14.834 10.0886 14.834 8.94264C14.834 7.79564 14.732 6.66964 14.609 5.57164C14.427 3.94064 13.102 2.64664 11.463 2.56764C10.2818 2.51135 9.0995 2.48367 7.917 2.48464C6.7345 2.48367 5.55216 2.51135 4.371 2.56764C2.732 2.64664 1.407 3.94164 1.224 5.57164C1.101 6.66964 1 7.79564 1 8.94264C1 10.0886 1.102 11.2146 1.224 12.3126Z" stroke="#1A1A1A" stroke-width="1.5"/>
+                        </svg>
+
+                 
                   {{ article.published_at | time_tag: format: 'month_day_year' }}
+                   </div>
                 {%- endif -%}
               </div>
             {%- endif -%}
-
-            <a href="{{ article.url }}" class="article__title">{{ article.title }}</a>
 
             {%- if section.settings.blog_show_author -%}
               <div class="article__author">by {{ article.author }}</div>
