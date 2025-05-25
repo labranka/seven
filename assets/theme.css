@@ -4800,7 +4800,7 @@ svg.icon-cart circle{
   }
 
 .drawer .cart__checkout{
-    background-color:var(--colorDrawerButton) !important;
+    background-color:var(--colorDrawerButton);
   }
 
 .drawer .cart__checkout{

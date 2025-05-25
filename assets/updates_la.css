@@ -10,6 +10,15 @@
   font-weight: bold;
 }
 
+[data-animate_buttons=true] .btn.cart__checkout:not(.btn--no-animate):not(.btn--tertiary):not(.btn--static),
+.drawer .cart__checkout{
+ background: var(--colorBtnPrimary) var(--urlButtonArrowPng) no-repeat 150% 35%;;
+   background-color:var(--colorCartDot) !important;
+}
+.cart__checkout-wrapper{
+
+}
+
 .cart__item--variants{
   opacity: 0.5;
   display: flex;
@@ -76,7 +85,8 @@
   overflow: hidden;
 }
 
-.article__title{
+.article__title,
+.cart__item-sub.cart__item-row{
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.5px;
@@ -1029,6 +1039,10 @@ padding: 0;
 }
 
 @media only screen and (min-width: 590px) {
+      .drawer__footer::after{
+        width: 100%;
+        left: 0;
+      }
   .section-blog-showcase .medium-up--one-third{
     width: unset;
   }
