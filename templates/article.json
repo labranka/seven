@@ -74,12 +74,12 @@
           "type": "sticker",
           "settings": {
             "sticker_image": "shopify://shop_images/Group_6125.png",
-            "sticker_x": 46,
+            "sticker_x": 55,
             "sticker_y": 24,
             "width_icon": 40,
-            "sticker_x_d": 10,
+            "sticker_x_d": 53,
             "sticker_y_d": 10,
-            "width_icon_d": 40
+            "width_icon_d": 60
           }
         },
         "sticker_krGCtK": {
@@ -89,7 +89,7 @@
             "sticker_x": 64,
             "sticker_y": 10,
             "width_icon": 40,
-            "sticker_x_d": 10,
+            "sticker_x_d": 91,
             "sticker_y_d": 10,
             "width_icon_d": 40
           }
