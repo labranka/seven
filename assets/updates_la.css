@@ -4,16 +4,41 @@
   display: flex;
   font-size: 14px;
   font-weight: bold;
+  font-family: var(--typeHeaderPrimary);
 }
 .recomm_card_price{
   font-size: 14px;
   opacity: 0.6;
 }
+.recomm-card__left{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .recomm_card_title{
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: var(--typeHeaderPrimary);
+}
+.recommended-slide {
+  flex: 0 0 auto;
+  width: 238px; /* match your visual */
+  scroll-snap-align: start;
+}
+.product-recommendations__swiper::-webkit-scrollbar {
+  display: none;
+}
+.product-recommendations__swiper {
+  scrollbar-width: none;
 }
 .product-recommendations__swiper{
-
+    display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
   display: flex;
   gap: 16px;
 }
