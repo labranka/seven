@@ -333,7 +333,7 @@
       "unavailable": "Unavailable",
       "quantity": "Quantity",
       "add_to_cart": "Dodaj u korpu",
-       "add_to_cart_short": "Dodaj u korpu",
+       "add_to_cart_short": "Dodaj",
       "preorder": "Pre-order",
       "include_taxes": "Tax included.",
       "shipping_policy_html": "<a href='{{ link }}'>Shipping</a> calculated at checkout.",
