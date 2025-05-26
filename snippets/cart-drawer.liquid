@@ -57,6 +57,11 @@
                           </div>
                           </donation-info>
           </div>
+
+          <div class="cart-drawer__recommendations">
+             <span class="cart-drawer__recomm-title">{{ 'cart.general.recommendation_title' | t }}</span>
+               <cart-recommendations id="cart-recommendations" data-url-template="/recommendations/products?section_id=cart-related-products&product_id=PRODUCT_ID&intent=related"></cart-recommendations>
+          </div>
         </div>
 
         <div class="drawer__footer appear-animation appear-delay-4">

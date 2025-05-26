@@ -1,0 +1,9 @@
+<section data-section-id="{{ section.id }}">
+{%- if recommendations.performed and recommendations.products_count > 0 -%}
+<div class="product-recommendations__swiper">
+  {% for product in recommendations.products %}
+    {% render 'product-card-recommended', product: product %}
+  {% endfor %}
+</div>
+{%- endif -%}
+</section>

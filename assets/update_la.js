@@ -462,3 +462,68 @@ class DonationInfo extends HTMLElement {
 }
 
 customElements.define('donation-info', DonationInfo);
+
+
+
+
+class CartRecommendations extends HTMLElement {
+  constructor() {
+    super();
+    this.container = this;
+    this.urlTemplate = this.dataset.urlTemplate;
+    this._onCartUpdated = this._onCartUpdated.bind(this);
+  }
+
+  connectedCallback() {
+    document.addEventListener('cart:updated', this._onCartUpdated);
+    this.loadFromFirstItem();
+  }
+
+  disconnectedCallback() {
+    document.removeEventListener('cart:updated', this._onCartUpdated);
+  }
+
+  _onCartUpdated(evt) {
+    const cart = evt.detail && evt.detail.cart;
+    if (!cart || !cart.items || !cart.items.length) return;
+
+    const firstProductId = cart.items[0].product_id;
+    this.loadRecommendations(firstProductId);
+  }
+
+  loadFromFirstItem() {
+    fetch('/cart.js')
+      .then(res => res.json())
+      .then(cart => {
+        if (cart.items.length > 0) {
+          this.loadRecommendations(cart.items[0].product_id);
+          console.log('branka ovde', cart.items[0]);
+        }
+      });
+  }
+
+  async loadRecommendations(productId) {
+    const url = this.urlTemplate.replace('PRODUCT_ID', productId);
+
+    console.log('url', url);
+    try {
+      const res = await fetch(url);
+      const html = await res.text();
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      const recommendationsHTML = doc.querySelector('.product-recommendations__swiper');
+
+      if (recommendationsHTML) {
+        this.container.innerHTML = '';
+        this.container.appendChild(recommendationsHTML);
+
+        if (typeof RevolutionSwiper === 'function') {
+          new RevolutionSwiper(recommendationsHTML);
+        }
+      }
+    } catch (err) {
+      console.error('Failed to load recommendations:', err);
+    }
+  }
+}
+
+customElements.define('cart-recommendations', CartRecommendations);

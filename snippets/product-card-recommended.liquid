@@ -1,0 +1,40 @@
+<div class="recommended-product-card recommended-slide">
+
+  
+      
+       
+         <div class="recomm_card_img aos-init aos-animate" data-aos="image-fade-in" data-aos-offset="150">
+            {% if product.featured_image != blank %}
+            <a href="{{ product.url }}" class="image-wrap" style="display: block; aspect-ratio: 0.8;">
+                {%- render 'image-element',
+                img: product.featured_image,
+                alt: product.title,
+                sizes: sizes,
+                sizeVariable: '500px',
+                fallback: fallback,
+                widths: '180, 360, 540',
+                -%}
+            </a>
+            {% endif %}
+        </div>
+
+
+        <div class="recomm_card_content">
+                <div class="recomm-card__left">
+                    <span class="h4 recomm_card_title">{{ product.title }}</span>
+                    <span class='recomm_card_price'>{{ product.selected_or_first_available_variant.price | money }}</span>
+                    <span class='recomm_card_price'>{{ product.first_available_variant.title }}</span> 
+                </div>
+                 <div class="recomm-card__right">
+                     <form method="post" action="/cart/add">
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                <button data-add-to-cart type="submit" class="btn recomm_card_quick_add add-to-cart">
+              {{ 'products.product.add_to_cart_short' | t }}
+                </button>
+            </form>
+                </div>
+        </div>
+      
+    
+
+</div>

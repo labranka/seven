@@ -1,4 +1,23 @@
 
+.cart-drawer__recomm-title{
+  padding: 16px 0;
+  display: flex;
+  font-size: 14px;
+}
+.recomm_card_content{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.recommended-product-card{
+  background-color: var(--color_background);
+  padding: 8px;
+  display: flex;
+  gap: 16px;
+}
+.recomm_card_img{
+  width: 70px;
+}
 /*PROGRESS BAR CART START*/
 .cart-drawer__shipping {
   display: flex;
