@@ -21,14 +21,14 @@
 
         <div class="recomm_card_content">
                 <div class="recomm-card__left">
-                    <span class="h4 recomm_card_title">{{ product.title }}</span>
+                    <span class=" recomm_card_title">{{ product.title }}</span>
                     <span class='recomm_card_price'>{{ product.selected_or_first_available_variant.price | money }}</span>
                     <span class='recomm_card_price'>{{ product.first_available_variant.title }}</span> 
                 </div>
                  <div class="recomm-card__right">
                      <form method="post" action="/cart/add">
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                <button data-add-to-cart type="submit" class="btn recomm_card_quick_add add-to-cart">
+                <button data-add-to-cart type="submit" class=" recomm_card_quick_add add-to-cart">
               {{ 'products.product.add_to_cart_short' | t }}
                 </button>
             </form>
