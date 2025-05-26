@@ -26,12 +26,11 @@
                     <span class='recomm_card_price'>{{ product.first_available_variant.title }}</span> 
                 </div>
                  <div class="recomm-card__right">
-                     <form method="post" action="/cart/add">
-                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                <button data-add-to-cart type="submit" class=" recomm_card_quick_add add-to-cart">
+                    
+                <button type="submit" class=" recomm_card_quick_add add-to-cart"  data-variant-id="{{ product.selected_or_first_available_variant.id }}">
               {{ 'products.product.add_to_cart_short' | t }}
                 </button>
-            </form>
+    
                 </div>
         </div>
       

@@ -481,6 +481,62 @@ class CartRecommendations extends HTMLElement {
   disconnectedCallback() {
     document.removeEventListener('cart:updated', this._onCartUpdated);
   }
+handleQuickAddClicks(container) {
+  const buttons = container.querySelectorAll('.recomm_card_quick_add');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const variantId = btn.dataset.variantId;
+      if (!variantId) return;
+
+      const card = btn.closest('.recommended-product-card');
+
+      // Add loading class
+      btn.classList.add('is-loading');
+
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          id: variantId,
+          quantity: 1
+        })
+      })
+        .then((res) => {
+          if (!res.ok) throw new Error('Add to cart failed');
+          return new Promise(resolve => setTimeout(resolve, 200));
+        })
+        .then(() => fetch('/cart.js'))
+        .then(res => res.json())
+        .then(cart => {
+          // Trigger cart update
+          document.dispatchEvent(new CustomEvent('cart:updated', {
+            detail: { cart }
+          }));
+
+          // Optional: also force rebuild
+          setTimeout(() => {
+            document.dispatchEvent(new CustomEvent('cart:build'));
+          }, 100);
+
+          // ✅ Remove card from recommendations
+          if (card) {
+            card.remove();
+          }
+        })
+        .catch(console.error)
+        .finally(() => {
+          btn.classList.remove('is-loading');
+        });
+    });
+  });
+}
+
 
   _onCartUpdated(evt) {
     const cart = evt.detail?.cart;
@@ -488,6 +544,7 @@ class CartRecommendations extends HTMLElement {
 
     const firstProductId = cart.items[0].product_id;
     this.loadRecommendations(firstProductId);
+   
   }
 
   loadFromFirstItem() {
@@ -514,6 +571,7 @@ class CartRecommendations extends HTMLElement {
         this.container.appendChild(recommendationsHTML);
 
         this.enableHorizontalDragScroll(recommendationsHTML);
+         this.handleQuickAddClicks(recommendationsHTML);
       }
     } catch (err) {
       console.error('Failed to load recommendations:', err);
@@ -550,6 +608,9 @@ class CartRecommendations extends HTMLElement {
       container.scrollLeft = scrollLeft - walk;
     });
   }
+
+
+
 }
 
 customElements.define('cart-recommendations', CartRecommendations);
