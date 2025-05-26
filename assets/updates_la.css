@@ -1317,9 +1317,7 @@ padding: 0;
 }
 /*Collecction section end*/
 @media only screen and (max-width: 589px) {
-  .product-section .grid{
-  display: flex;
-}
+ 
 .product-image-main image-element,
 .product-image-main .image-wrap{
   border-radius: 0;
@@ -1423,7 +1421,9 @@ padding: 0;
 
 @media only screen and (min-width: 590px) {
 
-
+ .product-section .grid{
+  display: flex;
+}
 
       .drawer__footer::after{
         width: 100%;
