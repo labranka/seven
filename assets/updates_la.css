@@ -1567,6 +1567,20 @@ padding: 0;
 }
 }
 @media screen and (min-width: 1025px) {
+  .main-cart-global{
+    max-width: 868px;
+    width: 50vw;
+    margin-left: 0;
+  }
+  .main-cart-global {
+    position: relative;
+  }
+  .main-cart-global .cart__footer{
+    position: absolute;
+    max-width: 380px;
+    right: -480px;
+    top: 100px;
+  }
   .drawer__header, .cart-drawer__shipping, .cart__items, .human-action-info__wrapper, .cart-drawer__recomm-title, .drawer__footer, .drawer__cart-empty{
     padding-inline: 32px;
   }
