@@ -34,7 +34,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "text": "<p>Molimo Vas da pripremite sledeće podatke:</p><ul><li>Broj Vašeg računa-otpremnice</li><li>Šifru artikla i veličinu koju želite da zamenite</li><li>Veličinu za koju želite da zamenite</li></ul><p>Tražene podatke možete dostaviti popunjavanjem formulara za zamenu ili kontaktiranjem na email: reklamacije@se7en.rs</p>"
           }
         }
       },
