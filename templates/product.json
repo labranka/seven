@@ -104,7 +104,7 @@
         "sku_enable": false,
         "image_size": "medium",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_height": "flexible",
         "thumbnail_arrows": false,
         "enable_video_looping": true,
