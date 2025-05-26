@@ -142,6 +142,7 @@
       "shipping_at_checkout": "Shipping, taxes, and discount codes calculated at checkout.",
       "update": "Update cart",
       "checkout": "Završi kupovinu",
+      "pregledaj_korpu": "Pregledaj korpu",
       "empty": "Your cart is currently empty.",
       "continue_browsing_html": "<a href='{{ url }}'>Continue shopping</a>",
       "close_cart": "Close cart",

@@ -7,6 +7,10 @@
   font-family: var(--typeHeaderPrimary);
 }
 
+.cart__link-cart-page{
+  margin-bottom: 16px;
+}
+
 .recomm_card_quick_add.is-loading {
   pointer-events: none;
   opacity: 0.6;

@@ -107,8 +107,12 @@
           {% endif %}
 
           <div class="cart__checkout-wrapper">
+              <a href='/cart' type="submit" name="checkout" class="btn cart__link-cart-page cart__checkout">
+               {{ 'cart.general.pregledaj_korpu' | t }}
+            </a>
             <button type="submit" name="checkout" data-terms-required="{{ settings.cart_terms_conditions_enable }}" class="btn cart__checkout">
-              {{ 'cart.general.checkout' | t }}
+             
+               {{ 'cart.general.checkout' | t }}
             </button>
 
             {% if additional_checkout_buttons and settings.cart_additional_buttons %}
