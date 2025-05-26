@@ -13,14 +13,13 @@
     <p>{{ 'cart.general.empty' | t }}</p>
   </div>
 
+    <shipping-bar>
+            {% render 'cart-drawer__shipping-bar' %}
+    </shipping-bar>
+
   {%- if cart.item_count > 0 -%}
     <form action="{{ routes.cart_url }}" method="post" novalidate data-location="page" id="CartPageForm">
-      <div class="cart__item cart__item--headers small--hide">
-        <div class="cart__item--details">
-          <div class="cart__item--qty">{{ 'cart.label.quantity' | t }}</div>
-          <div class="cart__item--price text-right">{{ 'cart.label.total' | t }}</div>
-        </div>
-      </div>
+    
 
       <div data-products>
         {%- for item in cart.items -%}
@@ -28,15 +27,35 @@
         {%- endfor -%}
       </div>
 
+         <div class="human-action-info__wrapper ">
+                          <div class="image-wrap aos-animate" style="aspect-ratio: {{ settings.image_donacija.aspect_ratio }};">
+                                        {%- render 'image-element',
+                                          img:  settings.image_donacija,
+                                          widths: '180, 360, 540, 720, 900, 1080'
+                                          sizeVariable: '300px',
+                                        -%}
+                        </div>
+                          {% assign pct = settings.donacija_range | default: 0 %}
+                          {% assign donation_cents = cart.total_price | times: pct | divided_by: 100 %}
+                          {% assign donation_amount = donation_cents | money %}
+                        <donation-info pct="{{ pct }}">
+                          <div class="human-action-info__text">
+                            {{ 'cart.general.humanitarian_action_info' 
+                                | t: amount: donation_amount }}
+                                   <span class="donation-amount" style="display:none;">{{ donation_amount }}</span>
+                          </div>
+                          </donation-info>
+          </div>
+
       <div class="cart__footer">
         <div class="grid">
           {%- if settings.cart_notes_enable -%}
-            <div class="grid__item medium-up--one-half">
+            <div class="grid__item ">
               <label for="CartNote">{{ 'cart.general.note' | t }}</label>
               <textarea name="note" class="input-full cart-notes" id="CartNote">{{ cart.note }}</textarea>
             </div>
           {%- endif -%}
-          <div class="grid__item medium-up--one-half text-center medium-up--text-right{% unless settings.cart_notes_enable %} medium-up--push-one-half{% endunless %}">
+          <div class="grid__item  ">
             <div data-discounts>
               {% if cart.cart_level_discount_applications != blank %}
                 <div class="cart__item-sub cart__item-row">
@@ -82,7 +101,7 @@
             {%- endif -%}
 
             <div class="cart__checkout-wrapper">
-              <button type="submit" name="checkout" {% if settings.cart_terms_conditions_enable %} data-terms="CartPageAgree"{% endif %} class="btn btn--no-animate cart__checkout">
+              <button type="submit" name="checkout" {% if settings.cart_terms_conditions_enable %} data-terms="CartPageAgree"{% endif %} class="btn  cart__checkout">
                 {{ 'cart.general.checkout' | t }}
               </button>
 
@@ -97,7 +116,10 @@
       </div>
 
     </form>
+
+     
   {%- endif -%}
+  
 </div>
 
 
