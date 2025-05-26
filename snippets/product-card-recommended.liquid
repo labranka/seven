@@ -3,7 +3,7 @@
   
       
        
-         <div class="recomm_card_img " >
+         <div class="recomm_card_img aos-init aos-animate" data-aos="image-fade-in" data-aos-offset="150">
             {% if product.featured_image != blank %}
             <a href="{{ product.url }}" class="image-wrap" style="display: block; aspect-ratio: 0.8;">
                 {%- render 'image-element',
