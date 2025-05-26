@@ -7,6 +7,11 @@
   font-family: var(--typeHeaderPrimary);
 }
 
+.main-cart-global .cart__item{
+  border-bottom: 1px solid var(--colorBorder);
+  margin-bottom: 32px;
+}
+
 .main-cart-global .cart__item--image{
   width: 96px;
 }
@@ -17,6 +22,7 @@
 }
 .main-cart-global .human-action-info__wrapper {
   margin-bottom: 16px;
+  border-top: none;
 }
 .cart__footer{
   padding: 16px;
