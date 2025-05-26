@@ -6,6 +6,9 @@
   font-weight: bold;
   font-family: var(--typeHeaderPrimary);
 }
+.cart-drawer__recommendations{
+  border-bottom: 1px solid var(--colorBorder);
+}
 .recomm_card_price{
   font-size: 14px;
   opacity: 0.6;
@@ -22,26 +25,28 @@
 }
 .recommended-slide {
   flex: 0 0 auto;
-  width: 238px; /* match your visual */
-  scroll-snap-align: start;
+  width: 238px;
+  scroll-snap-align: none;
 }
 .product-recommendations__swiper::-webkit-scrollbar {
   display: none;
 }
 .product-recommendations__swiper {
-  scrollbar-width: none;
-}
-.product-recommendations__swiper{
-    display: flex;
-  flex-direction: row;
+display: flex;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
   gap: 1rem;
-  padding-bottom: 1rem;
+ scroll-snap-type: none;
+  padding: 1rem 0;
   -webkit-overflow-scrolling: touch;
-  display: flex;
-  gap: 16px;
+  cursor: grab;
 }
+
+.product-recommendations__swiper.dragging {
+  cursor: grabbing;
+}
+
+
 .recomm_card_content{
   display: flex;
   align-items: center;

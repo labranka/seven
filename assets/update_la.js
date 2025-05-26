@@ -465,7 +465,6 @@ customElements.define('donation-info', DonationInfo);
 
 
 
-
 class CartRecommendations extends HTMLElement {
   constructor() {
     super();
@@ -484,8 +483,8 @@ class CartRecommendations extends HTMLElement {
   }
 
   _onCartUpdated(evt) {
-    const cart = evt.detail && evt.detail.cart;
-    if (!cart || !cart.items || !cart.items.length) return;
+    const cart = evt.detail?.cart;
+    if (!cart?.items?.length) return;
 
     const firstProductId = cart.items[0].product_id;
     this.loadRecommendations(firstProductId);
@@ -497,7 +496,6 @@ class CartRecommendations extends HTMLElement {
       .then(cart => {
         if (cart.items.length > 0) {
           this.loadRecommendations(cart.items[0].product_id);
-          console.log('branka ovde', cart.items[0]);
         }
       });
   }
@@ -505,7 +503,6 @@ class CartRecommendations extends HTMLElement {
   async loadRecommendations(productId) {
     const url = this.urlTemplate.replace('PRODUCT_ID', productId);
 
-    console.log('url', url);
     try {
       const res = await fetch(url);
       const html = await res.text();
@@ -516,14 +513,45 @@ class CartRecommendations extends HTMLElement {
         this.container.innerHTML = '';
         this.container.appendChild(recommendationsHTML);
 
-        if (typeof RevolutionSwiper === 'function') {
-          new RevolutionSwiper(recommendationsHTML);
-        }
+        this.enableHorizontalDragScroll(recommendationsHTML);
       }
     } catch (err) {
       console.error('Failed to load recommendations:', err);
     }
   }
+
+  enableHorizontalDragScroll(container) {
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
+
+    container.addEventListener('mousedown', (e) => {
+      isDown = true;
+      container.classList.add('dragging');
+      startX = e.pageX;
+      scrollLeft = container.scrollLeft;
+    });
+
+    container.addEventListener('mouseup', () => {
+      isDown = false;
+      container.classList.remove('dragging');
+    });
+
+    container.addEventListener('mouseleave', () => {
+      isDown = false;
+      container.classList.remove('dragging');
+    });
+
+    container.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX;
+      const walk = (x - startX) * 1.5;
+      container.scrollLeft = scrollLeft - walk;
+    });
+  }
 }
 
 customElements.define('cart-recommendations', CartRecommendations);
+
+
