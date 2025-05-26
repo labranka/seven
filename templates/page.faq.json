@@ -23,6 +23,13 @@
             "title": "Zamena i Reklamacije"
           }
         },
+        "text_mp9Yik": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>ZAMENA - PROCEDURA ZA ZAMENU VELIČINE ARTIKLA</strong></p>"
+          }
+        },
         "text_tJK9bH": {
           "type": "text",
           "settings": {
@@ -33,6 +40,7 @@
       },
       "block_order": [
         "heading_6AqVRw",
+        "text_mp9Yik",
         "text_tJK9bH"
       ],
       "name": "t:sections.rich-text.presets.rich_text.name",
