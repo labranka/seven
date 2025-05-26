@@ -13,6 +13,9 @@
 .product-section .product-single__meta{
 padding-inline: 16px;
 }
+.product-section .grid{
+  display: flex;
+}
 .product__thumbs--below .product__thumb-item{
   max-width: 64px;
 }
