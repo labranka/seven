@@ -6,7 +6,36 @@
   font-weight: bold;
   font-family: var(--typeHeaderPrimary);
 }
-
+.main-cart__global-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.main-cart-global .human-action-info__wrapper {
+  margin-bottom: 16px;
+}
+.cart__footer{
+  padding: 16px;
+ display: flex;
+  border: 1px solid var(--colorBorder);
+  border-radius: 10px;
+  width: 100%;
+}
+.cart__footer .grid{
+  margin-left: 0;
+  width: 100%;
+}
+#CartPageForm{
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.js-qty__adjust:hover{
+  border-radius: 10px;
+}
+#CartPageForm .grid__item{
+  padding-left: 0;
+}
 .cart__link-cart-page{
   margin-bottom: 16px;
 }

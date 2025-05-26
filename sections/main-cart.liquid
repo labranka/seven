@@ -1,7 +1,8 @@
-<div class="page-width page-width--narrow page-content{% if cart.item_count == 0 %} is-empty{% endif %}">
+<div class="page-width main-cart-global page-width--narrow page-content{% if cart.item_count == 0 %} is-empty{% endif %}">
 
   {%- render 'breadcrumbs' -%}
 
+  <div class="main-cart__left-part"></div>
   <header class="section-header text-center{% if cart.item_count == 0 %} section-header--404{% endif %}">
     <h1 class="section-header__title">{{ 'cart.general.title' | t }}</h1>
     <div class="rte text-spacing">
