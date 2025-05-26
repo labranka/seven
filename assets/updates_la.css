@@ -6,6 +6,10 @@
   font-weight: bold;
   font-family: var(--typeHeaderPrimary);
 }
+
+.main-cart-global .cart__item--image{
+  width: 96px;
+}
 .main-cart__global-wrapper{
   display: flex;
   flex-direction: column;
