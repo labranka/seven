@@ -36,12 +36,19 @@
             "enlarge_text": true,
             "text": "<p>Molimo Vas da pripremite sledeće podatke:</p><ul><li>Broj Vašeg računa-otpremnice</li><li>Šifru artikla i veličinu koju želite da zamenite</li><li>Veličinu za koju želite da zamenite</li></ul><p>Tražene podatke možete dostaviti popunjavanjem formulara za zamenu ili kontaktiranjem na email: reklamacije@se7en.rs</p>"
           }
+        },
+        "heading_YFgaJL": {
+          "type": "heading",
+          "settings": {
+            "title": "PROCEDURA ZA ZAMENU ARTIKLA ZA DRUGI"
+          }
         }
       },
       "block_order": [
         "heading_6AqVRw",
         "text_mp9Yik",
-        "text_tJK9bH"
+        "text_tJK9bH",
+        "heading_YFgaJL"
       ],
       "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
