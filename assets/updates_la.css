@@ -13,9 +13,7 @@
 .product-section .product-single__meta{
 padding-inline: 16px;
 }
-.product-section .grid{
-  display: flex;
-}
+
 .product__thumbs--below .product__thumb-item{
   max-width: 64px;
 }
@@ -1319,6 +1317,9 @@ padding: 0;
 }
 /*Collecction section end*/
 @media only screen and (max-width: 589px) {
+  .product-section .grid{
+  display: flex;
+}
 .product-image-main image-element,
 .product-image-main .image-wrap{
   border-radius: 0;
