@@ -86,10 +86,10 @@
          <a href="{{ product.url | within: collection }}"   class="grid-product__link">
         {%- if fixed_aspect_ratio -%}
           <div
-            class="grid__image-ratio grid__image-ratio--{% if image_style == 'circle' %}square{% else %}{{ settings.product_grid_image_size }}{% endif %}"
+            class="img--AspectRatio" style='aspect-ratio: 0.8; width: 100%'
           >
             {%- capture image_classes -%}
-              {% unless settings.product_grid_image_fill %} grid__image-contain{% endunless %} image-style--{{ image_style }}
+              
             {%- endcapture -%}
             {%- if preview_image != blank -%}
               {%- render 'image-element',
