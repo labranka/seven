@@ -37,7 +37,12 @@ padding-inline: 16px;
   font-weight: bold;
   font-family: var(--typeHeaderPrimary);
 }
-.product-slideshow .is-selected .product__photo-zoom{
+.pswp__button--close svg{ 
+  width: 15px;
+  height: 15px;
+}
+.product-slideshow .is-selected .product__photo-zoom,
+.pswp__button.btn{
   width: 45px;
   height: 45px;
   bottom: unset;
@@ -49,7 +54,8 @@ padding-inline: 16px;
   justify-content: center;
   border-radius: 100%!important;
 }
-.product-section .page-width{
+.product-section .page-width,
+.pswp__ui .btn{
   padding: 0;
 }
 .product-recommendations__slide{
