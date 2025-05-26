@@ -12,16 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "complementary_products_hjwpFV": {
-          "type": "complementary_products",
-          "settings": {
-            "product_complementary_heading": "Pairs well with",
-            "complementary_count": 4,
-            "per_slide": 2,
-            "control_type": "dots",
-            "image_style": "default"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -85,10 +75,19 @@
         "share": {
           "type": "share",
           "settings": {}
+        },
+        "complementary_products_hjwpFV": {
+          "type": "complementary_products",
+          "settings": {
+            "product_complementary_heading": "Pairs well with",
+            "complementary_count": 4,
+            "per_slide": 2,
+            "control_type": "dots",
+            "image_style": "default"
+          }
         }
       },
       "block_order": [
-        "complementary_products_hjwpFV",
         "price",
         "separator",
         "variant_picker",
@@ -98,7 +97,8 @@
         "description",
         "tab",
         "contact",
-        "share"
+        "share",
+        "complementary_products_hjwpFV"
       ],
       "settings": {
         "sku_enable": false,
