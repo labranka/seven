@@ -12,16 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "complementary_products_hjwpFV": {
-          "type": "complementary_products",
-          "settings": {
-            "product_complementary_heading": "Pairs well with",
-            "complementary_count": 4,
-            "per_slide": 2,
-            "control_type": "dots",
-            "image_style": "default"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -36,7 +26,7 @@
             "variant_labels": true,
             "picker_type": "button",
             "product_dynamic_variants_enable": true,
-            "color_swatches": false
+            "color_swatches": true
           }
         },
         "sales_point": {
@@ -85,10 +75,19 @@
         "share": {
           "type": "share",
           "settings": {}
+        },
+        "complementary_products_hjwpFV": {
+          "type": "complementary_products",
+          "settings": {
+            "product_complementary_heading": "Pairs well with",
+            "complementary_count": 4,
+            "per_slide": 2,
+            "control_type": "dots",
+            "image_style": "default"
+          }
         }
       },
       "block_order": [
-        "complementary_products_hjwpFV",
         "price",
         "separator",
         "variant_picker",
@@ -98,13 +97,14 @@
         "description",
         "tab",
         "contact",
-        "share"
+        "share",
+        "complementary_products_hjwpFV"
       ],
       "settings": {
         "sku_enable": false,
         "image_size": "medium",
         "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "thumbnail_position": "below",
         "thumbnail_height": "flexible",
         "thumbnail_arrows": false,
         "enable_video_looping": true,
@@ -113,12 +113,14 @@
     },
     "sub": {
       "type": "product-full-width",
+      "disabled": true,
       "settings": {
         "max_width": true
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "product_recommendations_heading": "You may also like",
         "related_count": 6,
@@ -127,6 +129,7 @@
     },
     "collection-return": {
       "type": "collection-return",
+      "disabled": true,
       "settings": {}
     }
   },
