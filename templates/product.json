@@ -150,12 +150,25 @@
       "type": "collection-return",
       "disabled": true,
       "settings": {}
+    },
+    "featured_collection_4Gq8TV": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "frontpage",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
     }
   },
   "order": [
     "main",
     "sub",
     "product-recommendations",
-    "collection-return"
+    "collection-return",
+    "featured_collection_4Gq8TV"
   ]
 }
