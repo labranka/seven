@@ -1,3 +1,8 @@
+product-recommendations .index-section{
+  display: flex;
+  flex-direction: column;
+}
+
 .pdp-two-icons{
   display: flex;
   justify-content: space-around;
