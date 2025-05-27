@@ -3,6 +3,10 @@ product-recommendations .index-section{
   flex-direction: column;
 }
 
+.mobile-nav{
+  margin-inline: 0;
+}
+
 .product-buy-btns .add-to-cart{
   font-style: italic;
   font-weight: bold;
