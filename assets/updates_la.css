@@ -3,6 +3,11 @@ product-recommendations .index-section{
   flex-direction: column;
 }
 
+.product-buy-btns .add-to-cart{
+  font-style: italic;
+  font-weight: bold;
+}
+
 .pdp-two-icons{
   display: flex;
   justify-content: space-around;
