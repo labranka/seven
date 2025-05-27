@@ -1,3 +1,56 @@
+.pdp-two-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.collapsible-trigger__icon {
+  right: 16px;
+  top: 30%;
+}
+.collapsible-trigger-btn svg{
+  transition: all 0.2s ease-in-out;
+}
+.collapsible-trigger-btn[aria-expanded='true'] svg{
+    transform: rotate(180deg);
+}
+[data-type_header_accent_transform=true] .label, [data-type_header_accent_transform=true] label{
+  text-transform: capitalize;
+}
+.collapsible-trigger-btn{
+  font-size: 14px!important;
+  font-weight: bold;
+  font-family: var(--typeHeaderPrimary);
+  text-transform: capitalize;
+  line-height: 130%;
+  letter-spacing: 0!important;
+}
+.product-block .rte ul{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 32;
+}
+
+.pdp-icons-txt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0%;
+}
+
+.pdp-two-icons-txt{
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.pdp-two-icons .image-wrap{
+  width: 30px;
+  height: 30px;
+}
 .product__thumb-item a.is-active::before,
 .product__thumb-item a:focus::before {
   content: "";

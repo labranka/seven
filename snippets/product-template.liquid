@@ -216,6 +216,31 @@
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
+                    {% when 'two_icons' %}
+                       <div class="product-block pdp-two-icons hide-for-modal" {{ block.shopify_attributes }}>
+                      <div class="aos-animate pdp-icons-txt" style="">
+                        <div class="image-wrap "style="aspect-ratio: {{ block.settings.icon_2.aspect_ratio }} ;">
+                          {%- render 'image-element',
+                            img: block.settings.icon_1,
+                            widths: '360, 540, 700, 1024',
+                            sizeVariable: product_description_width,
+                          -%}
+                        </div>
+                        <span class='pdp-two-icons-txt'>{{ block.settings.text_1 }}</span>
+                      </div>
+                       <div class="aos-animate pdp-icons-txt" style="">
+                        <div class="image-wrap " style="aspect-ratio: {{ block.settings.icon_2.aspect_ratio }};">
+                          {%- render 'image-element',
+                            img: block.settings.icon_2,
+                            widths: '360, 540, 700, 1024',
+                            sizeVariable: product_description_width,
+                          -%}
+                        </div>
+                         <span class='pdp-two-icons-txt'>{{ block.settings.text_2 }}</span>
+                      </div>
+                    </div>
+
+
                   {%- when 'separator' -%}
                     <div class="product-block " {{ block.shopify_attributes }}><hr></div>
                   {%- when 'text' -%}
