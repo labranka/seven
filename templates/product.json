@@ -20,15 +20,6 @@
           "type": "separator",
           "settings": {}
         },
-        "two_icons_fy8FaU": {
-          "type": "two_icons",
-          "settings": {
-            "icon_1": "shopify://shop_images/SVG_c3c0a934-c3ad-4c51-9ca1-9af156ec4a46.png",
-            "text_1": "Lak Povrat",
-            "icon_2": "shopify://shop_images/SVG_1ccd26be-20bc-4776-92f0-e82ed2da8522.png",
-            "text_2": "Brza Dostava"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -50,6 +41,15 @@
             "show_dynamic_checkout": false,
             "surface_pickup_enable": true,
             "show_gift_card_recipient": false
+          }
+        },
+        "two_icons_fy8FaU": {
+          "type": "two_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/SVG_c3c0a934-c3ad-4c51-9ca1-9af156ec4a46.png",
+            "text_1": "Lak Povrat",
+            "icon_2": "shopify://shop_images/SVG_1ccd26be-20bc-4776-92f0-e82ed2da8522.png",
+            "text_2": "Brza Dostava"
           }
         },
         "description": {
@@ -98,8 +98,8 @@
           "type": "complementary_products",
           "settings": {
             "product_complementary_heading": "Pairs well with",
-            "complementary_count": 4,
-            "per_slide": 2,
+            "complementary_count": 6,
+            "per_slide": 3,
             "control_type": "dots",
             "image_style": "default"
           }
@@ -108,10 +108,10 @@
       "block_order": [
         "price",
         "separator",
-        "two_icons_fy8FaU",
         "variant_picker",
         "size_chart_BfafxA",
         "buy_buttons",
+        "two_icons_fy8FaU",
         "description",
         "tab_VWXnDH",
         "tab_MybVzb",
