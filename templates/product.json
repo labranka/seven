@@ -35,20 +35,6 @@
             "size_chart": "sizes"
           }
         },
-        "sales_point": {
-          "type": "sales_point",
-          "settings": {
-            "icon": "globe",
-            "text": "Free worldwide shipping"
-          }
-        },
-        "inventory_status": {
-          "type": "inventory_status",
-          "settings": {
-            "inventory_threshold": 10,
-            "inventory_transfers_enable": true
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -71,13 +57,6 @@
             "page": ""
           }
         },
-        "contact": {
-          "type": "contact",
-          "settings": {
-            "title": "Ask a question",
-            "phone": false
-          }
-        },
         "share": {
           "type": "share",
           "settings": {}
@@ -98,12 +77,9 @@
         "separator",
         "variant_picker",
         "size_chart_BfafxA",
-        "sales_point",
-        "inventory_status",
         "buy_buttons",
         "description",
         "tab",
-        "contact",
         "share",
         "complementary_products_hjwpFV"
       ],
