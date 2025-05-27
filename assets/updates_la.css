@@ -70,7 +70,8 @@ product-recommendations .index-section{
   line-height: 130%;
   letter-spacing: 0!important;
 }
-.product-block .rte ul{
+.product-block .rte ul,
+.theme-block .rte ul{
   display: flex;
   flex-direction: column;
   gap: 4px;
