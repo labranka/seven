@@ -13,6 +13,10 @@ product-recommendations .index-section{
   right:30px;
   top: 8px;
 }
+.mobile-nav__social,
+.megamenu__promo--mobile{
+  padding-inline: 16px;
+}
 .mobile-nav__toggle button{
  display: flex;
  align-items: center;
