@@ -6,7 +6,21 @@ product-recommendations .index-section{
 .mobile-nav{
   margin-inline: 0;
 }
-
+.mobile-nav__toggle  .collapsible-trigger__icon{
+  position: absolute;
+  transform: unset;
+  left: unset;
+  right:30px;
+  top: 8px;
+}
+.mobile-nav__toggle button{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.mobile-nav__item .mobile-nav__faux-link:active, .mobile-nav__item a:active, .mobile-nav__toggle button:active{
+  background-color: transparent;
+}
 .product-buy-btns .add-to-cart{
   font-style: italic;
   font-weight: bold;
