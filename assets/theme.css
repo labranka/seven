@@ -12368,22 +12368,20 @@ iframe.zoid-component-frame{
   margin-top:11px;
 }
 
-@media only screen and (min-width:590px){
 
-.product__thumbs--below{
+
+
+
+@media only screen and (min-width:590px){
+  .product__thumbs--below{
     margin-top:20px;
 }
-  }
-
-.product__thumbs--beside{
+.product__thumbs--below{
   flex:0 0 60px;
   margin-left:11px;
   max-width:60px;
 }
-
-@media only screen and (min-width:590px){
-
-.product__thumbs--beside{
+.product__thumbs--below{
     flex:0 0 80px;
     margin-left:0;
     margin-right:20px;
@@ -12407,7 +12405,7 @@ iframe.zoid-component-frame{
     white-space:nowrap;
 }
 
-.product__thumbs--beside .product__thumbs--scroller{
+.product__thumbs--below .product__thumbs--scroller{
     bottom:0;
     left:0;
     overflow-y:scroll;
