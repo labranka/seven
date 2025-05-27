@@ -3,6 +3,10 @@ product-recommendations .index-section{
   flex-direction: column;
 }
 
+.section-richtext{
+  padding: 32px 16px;
+}
+
 .mobile-nav{
   margin-inline: 0;
 }
@@ -1795,6 +1799,10 @@ padding: 0;
 }
 }
 @media screen and (min-width: 1025px) {
+  .section-richtext{
+  padding: 64px;
+  max-width: 850px;
+}
   .main-cart-global{
     max-width: 868px;
     width: 50vw;
