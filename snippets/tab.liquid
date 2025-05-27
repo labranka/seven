@@ -6,9 +6,21 @@
 -%}
 {%- if output_tab -%}
   <div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
+
+              
+
     <button type="button"
       class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height{% if force_open %} is-open{% endif %}" aria-controls="Product-content-{{ id }}"
       {% if force_open %}aria-expanded="true"{% endif %}>
+         <div class=" pdp-icon-dropdown">
+                        <div class="image-wrap "style="aspect-ratio: {{ block.settings.icon.aspect_ratio }} ;">
+                          {%- render 'image-element',
+                            img: block.settings.icon,
+                            widths: '360, 540, 700, 1024',
+                            sizeVariable: product_description_width,
+                          -%}
+                        </div>
+                      </div>     
       {{ title }}
       {%- render 'collapsible-icons' -%}
     </button>

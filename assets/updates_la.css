@@ -8,6 +8,15 @@
   right: 16px;
   top: 30%;
 }
+.product-block .collapsible-trigger-btn{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pdp-icon-dropdown{
+  width: 24px;
+  height: 24px;
+}
 .collapsible-trigger-btn svg{
   transition: all 0.2s ease-in-out;
 }
