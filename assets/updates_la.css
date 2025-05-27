@@ -1802,6 +1802,7 @@ padding: 0;
   .section-richtext{
   padding: 64px;
   max-width: 850px;
+  margin-left: 0;
 }
   .main-cart-global{
     max-width: 868px;
