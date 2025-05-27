@@ -29,6 +29,12 @@
             "color_swatches": true
           }
         },
+        "size_chart_BfafxA": {
+          "type": "size_chart",
+          "settings": {
+            "size_chart": "sizes"
+          }
+        },
         "sales_point": {
           "type": "sales_point",
           "settings": {
@@ -91,6 +97,7 @@
         "price",
         "separator",
         "variant_picker",
+        "size_chart_BfafxA",
         "sales_point",
         "inventory_status",
         "buy_buttons",
