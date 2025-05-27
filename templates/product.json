@@ -85,10 +85,6 @@
             "page": ""
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {}
-        },
         "complementary_products_hjwpFV": {
           "type": "complementary_products",
           "settings": {
@@ -111,7 +107,6 @@
         "tab_MybVzb",
         "tab",
         "tab_pD9HiH",
-        "share",
         "complementary_products_hjwpFV"
       ],
       "settings": {
