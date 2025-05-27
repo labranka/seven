@@ -20,6 +20,15 @@
           "type": "separator",
           "settings": {}
         },
+        "two_icons_fy8FaU": {
+          "type": "two_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/free_returns_4dc0507e-7e1a-42f2-b16a-5207cfbac06a_png.png",
+            "text_1": "Lak Povrat",
+            "icon_2": "shopify://shop_images/SVG.png",
+            "text_2": "Brza Dostava"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -99,6 +108,7 @@
       "block_order": [
         "price",
         "separator",
+        "two_icons_fy8FaU",
         "variant_picker",
         "size_chart_BfafxA",
         "buy_buttons",
