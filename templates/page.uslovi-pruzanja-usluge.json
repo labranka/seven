@@ -29,11 +29,19 @@
             "enlarge_text": true,
             "text": "<p></p><p><strong>VILIMONOVIC DOO 36000 Kraljevo, </strong></p><p><strong>Cara Lazara 8G </strong></p><p><strong>Matični broj: 21685968 </strong></p><p><strong>PIB: 112492308</strong></p>"
           }
+        },
+        "text_RdimtA": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p></p><p>Poštovani korisnici,</p><p>Molimo vas da pre korišćenja naših usluga, pažljivo pročitate sledeće uslove.</p><p>Svaka poseta našem sajtu, kao i kupovina, znači da ste ove uslove pročitali i da se slažete sa njima u potpunosti. Ukoliko su uslovi za vas neprihvatljivi, molimo vas da ne koristite sajt  se7en.rsOvim opštim uslovima korišćenja usluga Internet prodaje 925 srebrnog nakita propisana su osnovna pravila čijim će poštovanjem od strane Vilimonović Doo, 36000 Kraljevo,  šifra delatnosti: 4791 – Trgovina na malo posredstvom pošte ili interneta,  matični broj: 21685968, PIB: 112492308, web adresa: se7en.rs, kontakt e- mail: reklamacije@se7en.rs, adresa za prijem pošte: Kraljevo, Cara Lazara 10, (u daljem tekstu: Prodavac) i krajnjeg korisnika (u daljem tekstu: Kupac) biti obezbeđeno uspešno okončanje prodajnih transakcija putem online prodaja internet prodavnice.Ovde propisani opšti uslovi korišćenja i prodaje služe da kupac na jasan i nedvosmislen način bude upoznat sa uslovima pod kojima može doći do zaključenja ugovora o prodaji na daljinu i načinom zaključenja takvog ugovora, svim pravima i obavezama kupca prilikom kupovine robe, kao i obaveštenjima koje prodavac dužan da uputi kupcima pre zaključenja ugovora.</p>"
+          }
         }
       },
       "block_order": [
         "heading_Lb997z",
-        "text_nW6V7y"
+        "text_nW6V7y",
+        "text_RdimtA"
       ],
       "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
