@@ -9,6 +9,9 @@ product-recommendations .index-section{
 .section-richtext .theme-block .rte ul{
   gap: 10px;
 }
+.section-richtext .rte p{
+  font-size: 16px;
+}
 .mobile-nav{
   margin-inline: 0;
 }
