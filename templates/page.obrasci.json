@@ -27,7 +27,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Prikažite ili preuzmite željeni obrazac klikom na njega.</p><p></p><ul><li>Obrazac za zamenu</li><li>Obrazac za reklamaciju</li><li>Obrazac za raskid ugovora</li><li>Ugovor o prodaji na daljinu</li><li>Pravilnik o reklamaciji</li></ul>"
+            "text": "<p>Prikažite ili preuzmite željeni obrazac klikom na njega.</p><p></p><ul><li><a href=\"/policies/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\"><strong>Obrazac za zamenu</strong></a></li><li><a href=\"/policies/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\"><strong>Obrazac za reklamaciju</strong></a></li><li><a href=\"/blogs/news/pratite-nas-ukoro-vise-detalja\" target=\"_blank\" title=\"PRATITE NAS, UKORO VIŠE DETALJA\"><strong>Obrazac za raskid ugovora</strong></a></li><li><a href=\"/blogs/news/pratite-nas-ukoro-vise-detalja\" target=\"_blank\" title=\"PRATITE NAS, UKORO VIŠE DETALJA\"><strong>Ugovor o prodaji na daljinu</strong></a></li><li><a href=\"/policies/privacy-policy\" title=\"Privacy Policy\"><strong>Pravilnik o reklamaciji</strong></a></li></ul>"
           }
         }
       },
