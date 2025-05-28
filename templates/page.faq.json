@@ -27,7 +27,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<h5>ZAMENA - PROCEDURA ZA ZAMENU VELIČINE ARTIKLA</h5>"
+            "text": "<h5></h5><h5>ZAMENA - PROCEDURA ZA ZAMENU VELIČINE ARTIKLA</h5>"
           }
         },
         "text_tJK9bH": {
@@ -41,7 +41,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<h5>PROCEDURA ZA ZAMENU ARTIKLA ZA DRUGI</h5>"
+            "text": "<h5></h5><h5>PROCEDURA ZA ZAMENU ARTIKLA ZA DRUGI</h5>"
           }
         },
         "text_iQeyaN": {
