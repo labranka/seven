@@ -13,9 +13,38 @@
       "type": "main-page",
       "disabled": true,
       "settings": {}
+    },
+    "rich_text_nEzMqW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rQjWkU": {
+          "type": "heading",
+          "settings": {
+            "title": "Pravila zaštite privatnosti"
+          }
+        },
+        "text_qiYNRq": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rQjWkU",
+        "text_qiYNRq"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_nEzMqW"
   ]
 }
