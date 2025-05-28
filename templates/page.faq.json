@@ -69,7 +69,14 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<h5>NAPOMENA: Potvrdom porudžbine, klikom na dugme POTVRDI PORUDŽBINU, saglasni ste sa uslovima reklamacije.</h5><p>U slučaju odustanka od ugovora, potrošač ima pravo na povraćaj novca ili na zamenu za drugi proizvod. Cena se kupcu vraća po prijemu proizvoda. Trgovac je dužan da potrošaču bez odlaganja vrati iznos koji je potrošač platio po osnovu ugovora, a najkasnije u roku od 14 dana od dana prijema izjave o odustanku, a nakon prijema proizvoda. Troškove vraćanja robe i novca snosi kupac, sem u slučajevima kada kupac dobije neispravan ili pogrešan artikal.</p>"
+            "text": "<h5></h5><h5>NAPOMENA: Potvrdom porudžbine, klikom na dugme POTVRDI PORUDŽBINU, saglasni ste sa uslovima reklamacije.</h5><p>U slučaju odustanka od ugovora, potrošač ima pravo na povraćaj novca ili na zamenu za drugi proizvod. Cena se kupcu vraća po prijemu proizvoda. Trgovac je dužan da potrošaču bez odlaganja vrati iznos koji je potrošač platio po osnovu ugovora, a najkasnije u roku od 14 dana od dana prijema izjave o odustanku, a nakon prijema proizvoda. Troškove vraćanja robe i novca snosi kupac, sem u slučajevima kada kupac dobije neispravan ili pogrešan artikal.</p>"
+          }
+        },
+        "text_neczxX": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h5>POVRAĆAJ SREDSTAVA I PROCEDURA ZA POVRAĆAJ SREDSTAVA</h5>"
           }
         }
       },
@@ -81,7 +88,8 @@
         "text_iQeyaN",
         "text_PX7dX4",
         "text_4YnLbh",
-        "text_hdqFkp"
+        "text_hdqFkp",
+        "text_neczxX"
       ],
       "settings": {
         "align_text": "left",
