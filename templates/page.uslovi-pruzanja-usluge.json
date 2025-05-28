@@ -27,7 +27,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p></p><p><strong>VILIMONOVIC DOO 36000 Kraljevo, </strong></p><p><strong>Cara Lazara 8G </strong></p><p><strong>Matični broj: 21685968 </strong></p><p><strong>PIB: 112492308</strong></p>"
+            "text": "<p></p><ul><li><strong>VILIMONOVIC DOO 36000 Kraljevo, </strong></li><li><strong>Cara Lazara 8G </strong></li><li><strong>Matični broj: 21685968 </strong></li><li><strong>PIB: 112492308</strong></li></ul>"
           }
         },
         "text_RdimtA": {
