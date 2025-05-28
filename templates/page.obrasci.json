@@ -29,11 +29,51 @@
             "enlarge_text": true,
             "text": "<p>Prikažite ili preuzmite željeni obrazac klikom na njega.</p>"
           }
+        },
+        "form_U9Bcra": {
+          "type": "form",
+          "settings": {
+            "label": "Obrazac za reklamaciju",
+            "pdf_url": "https://cdn.shopify.com/s/files/1/0915/0821/2090/files/REKLAMACIJA-Vilimonovic-Doo-Kraljevo_1.pdf?v=1748473709"
+          }
+        },
+        "form_VCCLNg": {
+          "type": "form",
+          "settings": {
+            "label": "New form",
+            "pdf_url": ""
+          }
+        },
+        "form_63KDjz": {
+          "type": "form",
+          "settings": {
+            "label": "New form",
+            "pdf_url": ""
+          }
+        },
+        "form_ByHXxC": {
+          "type": "form",
+          "settings": {
+            "label": "New form",
+            "pdf_url": ""
+          }
+        },
+        "form_68DQCf": {
+          "type": "form",
+          "settings": {
+            "label": "New form",
+            "pdf_url": ""
+          }
         }
       },
       "block_order": [
         "heading_HjdWRf",
-        "text_PHR3xX"
+        "text_PHR3xX",
+        "form_U9Bcra",
+        "form_VCCLNg",
+        "form_63KDjz",
+        "form_ByHXxC",
+        "form_68DQCf"
       ],
       "settings": {
         "align_text": "left",
