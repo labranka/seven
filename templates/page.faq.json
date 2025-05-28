@@ -76,7 +76,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<h5>POVRAĆAJ SREDSTAVA I PROCEDURA ZA POVRAĆAJ SREDSTAVA</h5>"
+            "text": "<h5></h5><h5>POVRAĆAJ SREDSTAVA I PROCEDURA ZA POVRAĆAJ SREDSTAVA</h5>"
           }
         }
       },
