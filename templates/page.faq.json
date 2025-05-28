@@ -41,7 +41,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p><strong>PROCEDURA ZA ZAMENU ARTIKLA ZA DRUGI</strong></p>"
+            "text": "<h5>PROCEDURA ZA ZAMENU ARTIKLA ZA DRUGI</h5>"
           }
         },
         "text_iQeyaN": {
