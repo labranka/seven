@@ -57,6 +57,13 @@
             "enlarge_text": true,
             "text": "<h5><strong>ROK ZAMENE</strong></h5><p>Rok za zamenu veličine artikla ili zamene za drugi je 14 dana od trenutka podnošenja zahteva od strane kupca, a nakon prijema proizvoda.</p><h5>TROŠKOVI ZAMENE</h5><p>Direktne troškove vraćanja robe snosi potrošač, izuzev u slučajevima kada potrošač od trgovca dobije neispravan ili pogrešan proizvod.</p><p>NAPOMENA: Potvrdom porudžbine, klikom na dugme POTVRDI PORUDŽBINU, saglasni ste sa uslovima zamene veličine artikla i zamene artikla za drugi.</p>"
           }
+        },
+        "text_4YnLbh": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h5>REKLAMACIJA</h5><p>Ukoliko ste robu kupili u online prodavnici, prilikom preuzimanja pošiljke molimo Vas da u prisustvu kurira proverite svoj paket. Ukoliko na njemu ima vidljivih oštećenja (pocepani delovi i ugnječenje) paket ne bi trebalo da preuzmete. U ovom slučaju molimo Vas da nas kontaktirate putem emaila: reklamacije@se7en.rs . U najkraćem mogućem roku obavestićemo Vas o daljem postupanju.</p><p>Ukoliko ste primili pošiljku i nakon otvaranja kutije ustanovili da isporučena roba ne odgovara naručenoj ili podaci na računu nisu odgovarajući, molimo Vas da, najkasnije u roku od 24h od trenutka prijema pošiljke, kontaktirate našu korisničku podršku putem email adrese reklamacije@se7en.rs . Ukoliko se na kupljenom proizvodu pojave neusaglašenosti u smislu odredbi Zakona o zaštiti potrošača.Molimo Vas da pripremite sledeće podatke:Broj Vašeg računa-otpremniceŠifru artikla i veličinu koju želite da reklamirateOpis problema koji imateTražene podatke možete dostaviti popunjavanjem formulara za reklamacije  ili putem emaila: reklamacije@se7en.rsU najkraćem mogućem roku, a najkasnije u roku od 8 dana od dana prijema reklamacije pisanim putem ili elektronskim, odgovorićemo Vam na izjavljenu reklamaciju i obavestićemo Vas o daljem postupanju. Rok za rešavanje reklamacije je 15 dana od trenutka podnošenja iste.Zvaničan Pravilnik o reklamaciji potrošača za robu kupljenu putem internet prodavnice možete pronaći ovde.Reklamacioni list možete preuzeti ovde.U slučaju vraćanja robe kupcu koji je prethodno robu platio kuriru tj. pouzećem, troškove vraćanja robe ne snosi Vilimonović Doo Kraljevo već trošak pada na teret kupca.</p>"
+          }
         }
       },
       "block_order": [
@@ -65,7 +72,8 @@
         "text_tJK9bH",
         "text_wDKVqf",
         "text_iQeyaN",
-        "text_PX7dX4"
+        "text_PX7dX4",
+        "text_4YnLbh"
       ],
       "settings": {
         "align_text": "left",
