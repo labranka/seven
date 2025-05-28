@@ -27,53 +27,13 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Prikažite ili preuzmite željeni obrazac klikom na njega.</p>"
-          }
-        },
-        "form_VCCLNg": {
-          "type": "form",
-          "settings": {
-            "label": "Obrazac za zamenu",
-            "pdf_url": "https://cdn.shopify.com/s/files/1/0688/0890/0794/files/ZAMENA-Vilimonovic-Doo-Kraljevo.pdf?v=1737685201"
-          }
-        },
-        "form_U9Bcra": {
-          "type": "form",
-          "settings": {
-            "label": "Obrazac za reklamaciju",
-            "pdf_url": "https://cdn.shopify.com/s/files/1/0915/0821/2090/files/REKLAMACIJA-Vilimonovic-Doo-Kraljevo_1.pdf?v=1748473709"
-          }
-        },
-        "form_63KDjz": {
-          "type": "form",
-          "settings": {
-            "label": "Obrazac za raskid ugovora",
-            "pdf_url": "https://cdn.shopify.com/s/files/1/0915/0821/2090/files/RASKID-Vilimonovic-Doo-Kraljevo.pdf?v=1748473709"
-          }
-        },
-        "form_ByHXxC": {
-          "type": "form",
-          "settings": {
-            "label": "Ugovor o prodaji na daljinu",
-            "pdf_url": "https://cdn.shopify.com/s/files/1/0915/0821/2090/files/Ugovor_o_prodaji_na_daljinu-Vilimonovic-Doo-Kraljevo.pdf?v=1748473709"
-          }
-        },
-        "form_68DQCf": {
-          "type": "form",
-          "settings": {
-            "label": "Pravilnik o reklamaciji",
-            "pdf_url": "https://cdn.shopify.com/s/files/1/0915/0821/2090/files/pravilnik_reklamacija-Vilimonovic-Doo-Kraljevo.pdf?v=1748473709"
+            "text": "<p>Prikažite ili preuzmite željeni obrazac klikom na njega.</p><p></p><p>Obrazac za zamenu</p><p>Obrazac za reklamaciju</p><p>Obrazac za raskid ugovora</p><p>Ugovor o prodaji na daljinu</p><p>Pravilnik o reklamaciji</p>"
           }
         }
       },
       "block_order": [
         "heading_HjdWRf",
-        "text_PHR3xX",
-        "form_VCCLNg",
-        "form_U9Bcra",
-        "form_63KDjz",
-        "form_ByHXxC",
-        "form_68DQCf"
+        "text_PHR3xX"
       ],
       "settings": {
         "align_text": "left",
