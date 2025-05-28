@@ -6,7 +6,9 @@ product-recommendations .index-section{
 .section-richtext{
   padding: 32px 16px;
 }
-
+.section-richtext .theme-block .rte ul{
+  gap: 10px;
+}
 .mobile-nav{
   margin-inline: 0;
 }
