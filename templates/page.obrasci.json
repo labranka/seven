@@ -11,10 +11,40 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {}
+    },
+    "rich_text_TVCA9d": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HjdWRf": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "text_PHR3xX": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HjdWRf",
+        "text_PHR3xX"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_TVCA9d"
   ]
 }
