@@ -50,6 +50,13 @@
             "enlarge_text": true,
             "text": "<p>Molimo Vas da pripremite sledeće podatke:</p><ul><li>Broj Vašeg računa-otpremnice</li><li>Šifru artikla i veličinu koju želite da zamenite</li></ul><p>Tražene podatke možete dostaviti popunjavanjem formulara za zamenu ili kontaktiranjem na email: reklamacije@se7en.rsNakon toga, vrši se fizička provera u kom objektu je dostupna željena veličina, odnosno željeni artikal nakon čega dobijate instrukcije na Vašu email adresu gde će Vam biti objašnjen čitav proces zamene veličine za odgovarajuću, odnosno zamena artikla za drugi.</p><p>Poručeni artikal, bez prethodnog kontakta i dogovora sa operaterima korisničke podrške putem emaila ili popunjavanjem formulara na linku koji je gore naveden, ne možete samoinicijativno menjati za drugu veličinu ili slati na adrese koje su navedene na računu-otpremnici.</p>"
           }
+        },
+        "text_PX7dX4": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h5><strong>ROK ZAMENE</strong></h5><p>Rok za zamenu veličine artikla ili zamene za drugi je 14 dana od trenutka podnošenja zahteva od strane kupca, a nakon prijema proizvoda.</p>"
+          }
         }
       },
       "block_order": [
@@ -57,9 +64,9 @@
         "text_mp9Yik",
         "text_tJK9bH",
         "text_wDKVqf",
-        "text_iQeyaN"
+        "text_iQeyaN",
+        "text_PX7dX4"
       ],
-      "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
         "align_text": "left",
         "narrow_column": true,
