@@ -14,6 +14,14 @@
               {{ 'home_page.onboarding.no_content' | t }}
             {%- endif -%}
           </div>
+
+           {%- when 'form' -%}
+             {% assign url = block.settings.pdf_url | file_url %}
+              <p>
+                <a href="{{ url }}" download>
+                  {{ block.settings.label }}
+                </a>
+              </p>
         {%- when 'text' -%}
           <div class="rte">
             {%- if block.settings.text != blank -%}
@@ -132,6 +140,24 @@
           "type": "page",
           "label": "t:sections.rich-text.blocks.page.settings.page_text.label"
         }
+      ]
+    },
+    {
+      "type": "form",
+      "name": "Form",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Link text",
+          "default": "New form"
+        },
+       {
+      "type": "url",
+      "id":   "pdf_url",
+      "label":"PDF file URL",
+      "info": "Upload your PDF in Settings > Files and paste the URL here"
+}
       ]
     }
   ],
