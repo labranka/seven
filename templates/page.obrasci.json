@@ -27,7 +27,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "text": "<p>Prikažite ili preuzmite željeni obrazac klikom na njega.</p><p></p><ul><li>Obrazac za zamenu</li><li>Obrazac za reklamaciju</li><li>Obrazac za raskid ugovora</li><li>Ugovor o prodaji na daljinu</li><li>Pravilnik o reklamaciji</li></ul>"
           }
         }
       },
