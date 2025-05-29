@@ -17,6 +17,12 @@
     "rich-text": {
       "type": "rich-text",
       "blocks": {
+        "heading_m8HyXU": {
+          "type": "heading",
+          "settings": {
+            "title": "Kontaktiraj nas"
+          }
+        },
         "text": {
           "type": "text",
           "settings": {
@@ -26,6 +32,7 @@
         }
       },
       "block_order": [
+        "heading_m8HyXU",
         "text"
       ],
       "settings": {
