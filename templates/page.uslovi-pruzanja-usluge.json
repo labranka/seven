@@ -62,7 +62,14 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<h4></h4><h4>IZBOR ARTIKALA</h4><p>Na vrhu svake stranice nalazi se padajući meni sa kategorijama artikala, klikom na željenu kategoriju otvoriće Vam se nova stranica sa artiklima iz odabrane kategorije. Sa leve strane ove stranice nalaze se svi filteri, klikom na jedan ili više filtera dobićete željeni rezultat filtracije. Ukoliko ne znate kojoj kategoriji pripada artikal koji Vas interesuje, možete iskoristiti polje za pretragu koje se nalazi u vrhu svake stranice sa desne strane. U polje možete ukucati šifru artikla, naziv artikla, namenu, naziv kolekcije i sl. Ukoliko ste izlistali grupu artikala koja Vas interesuje, dodatne informacije o konkretnom artiklu možete videti klikom na fotografiju artikla. Izborom željene veličine artikal možete stavtiti u korpu klilkom na dugme Kupite.</p><p></p><h4>SADRŽAJ KORPE</h4><p>Sadržaj vaše korpe možete pogledati u svakom trenutku klikom na sličicu korpe sa desne strane svake stranice. Artikle možete unostiti u korpu sve dok ne naručite sve što želite. Artikle koje ste uneli u korpu možete izbaciti pojedinačno klikom na link Izbacite iz korpe.</p><h4></h4><h4>PORUČIVANJE ARTIKALA IZ KORPE</h4><p>Da biste poručili artikle unete u korpu potrebno je da kliknete na dugme Potvrdi. Nakon ove operacije stićiće Vam potvrdni mejl. Potrebno je da prilikom kupovine navedete sve neophodne podatke:</p><ul><li>Ime i prezime</li><li>Mejl adresa i kontakt telefon</li><li>Mesto i poštanski broj</li><li>Ulicu i broj</li></ul>"
+            "text": "<h4></h4><h4>IZBOR ARTIKALA</h4><p>Na vrhu svake stranice nalazi se padajući meni sa kategorijama artikala, klikom na željenu kategoriju otvoriće Vam se nova stranica sa artiklima iz odabrane kategorije. Sa leve strane ove stranice nalaze se svi filteri, klikom na jedan ili više filtera dobićete željeni rezultat filtracije. Ukoliko ne znate kojoj kategoriji pripada artikal koji Vas interesuje, možete iskoristiti polje za pretragu koje se nalazi u vrhu svake stranice sa desne strane. U polje možete ukucati šifru artikla, naziv artikla, namenu, naziv kolekcije i sl. Ukoliko ste izlistali grupu artikala koja Vas interesuje, dodatne informacije o konkretnom artiklu možete videti klikom na fotografiju artikla. Izborom željene veličine artikal možete stavtiti u korpu klilkom na dugme Kupite.</p><p></p><h4>SADRŽAJ KORPE</h4><p>Sadržaj vaše korpe možete pogledati u svakom trenutku klikom na sličicu korpe sa desne strane svake stranice. Artikle možete unostiti u korpu sve dok ne naručite sve što želite. Artikle koje ste uneli u korpu možete izbaciti pojedinačno klikom na link Izbacite iz korpe.</p><h4></h4><h4>PORUČIVANJE ARTIKALA IZ KORPE</h4><p>Da biste poručili artikle unete u korpu potrebno je da kliknete na dugme Potvrdi. Nakon ove operacije stićiće Vam potvrdni mejl. Potrebno je da prilikom kupovine navedete sve neophodne podatke:</p><ul><li>Ime i prezime</li><li>Mejl adresa i kontakt telefon</li><li>Mesto i poštanski broj</li><li>Ulicu i broj</li></ul><h4>ODABIR NAČINA PLAĆANJA</h4><p>U mogućnosti ste da odaberete:</p><ul><li>plaćanje pouzećem gotovinski u trenutku isporukeplatnim </li><li>karticama tokom procesa kupovine na sajtu</li></ul>"
+          }
+        },
+        "text_49nDHb": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h4></h4><h4>ZAVRŠETAK PORUČIVANJA</h4><p>Klikom na dugme Prihvatam, prikazaće Vam se obaveštenje o uspešno poslatoj porudžbini. Na mejl adresu koju ste ostavili prilikom popunjavanja formulara uskoro ćemo Vam poslati potvrdu za poručene artikle, a nakon obrade porudžbine dobićete sve naknadne informacije na mejl adresu.</p><p>Za sva dodatna pitanja možete nas kontaktirati putem emaila: info@se7en.rs</p>"
           }
         }
       },
@@ -73,7 +80,8 @@
         "text_AiBbGr",
         "text_BwDBR8",
         "text_UHjnHN",
-        "text_7QCtUm"
+        "text_7QCtUm",
+        "text_49nDHb"
       ],
       "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
