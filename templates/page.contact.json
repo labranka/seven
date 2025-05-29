@@ -22,18 +22,10 @@
           "settings": {
             "title": "Kontaktiraj nas"
           }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
         }
       },
       "block_order": [
-        "heading_m8HyXU",
-        "text"
+        "heading_m8HyXU"
       ],
       "settings": {
         "align_text": "left",
@@ -44,7 +36,7 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "title": "Contact us",
+        "title": "",
         "text": "",
         "show_phone": false,
         "narrow_column": true
