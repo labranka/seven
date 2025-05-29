@@ -78,6 +78,13 @@
             "enlarge_text": true,
             "text": "<h4></h4><h4>PREUZIMANJE POŠILJKE</h4><p>Vilimonović Doo Kraljevo sarađuje sa nezavisnom kurirskom službom Bex Express i Post Express.. Kurirska služba pošiljke donosi na adresu za isporuku radnim danima u periodu od 8-16h. Molimo Vas da u tom periodu obezbedite da na adresi bude osoba koja može preuzeti pošiljku.</p><p>Prilikom preuzimanja pošiljke potrebno je da vizuelno pregledate paket da slučajno ne postoje neka vidna oštećenja. Ukoliko primetite da je transportna kutija značajno oštećena i posumnjate da je proizvod možda oštećen, odbijte prijem pošiljke i odmah nas obavestite putem email-a: reklamacije@se7en.rs</p><p>Ukoliko je pošiljka naizgled bez oštećenja slobodno preuzmite pošiljku i potpišite kuriru adresnicu. Kurir svaku pošiljku pokušava da uruči u dva navrata. Uobičajena praksa je da ukoliko Vas kurir ne pronađe na adresi, da vas pozove na telefon koji ste ostavili prilikom kreiranja porudžbenice i ugovori novi termin isporuke. Ukoliko Vas i tada ne pronađe na adresi, pošiljka nam se vraća.</p><p></p><h4>CENA ISPORUKE</h4><p>Isporuka na kućnu adresu za sve porudžbine na teritoriji Republike Srbije je besplatna ukoliko je iznos veći od 5,000 RSD.</p><p><strong>NAPOMENA: Potvrdom porudžbine, klikom na dugme POTVRDI PORUDŽBINU, saglasni ste sa uslovima isporuke.</strong></p><p>Ukoliko ste nakon prijema probali artikal i utvrdili da Vam veličina ne odgovara ili želite da zamenite artikal za drugi, molimo Vas da postupite po niže opisanim procedurama.</p>"
           }
+        },
+        "text_bpPdkW": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h4>ZAMENA</h4><p><strong>PROCEDURA ZA ZAMENU VELIČINE ARTIKLA</strong></p><p>Molimo Vas da pripremite sledeće podatke:</p><ul><li>Broj Vašeg računa-otpremnice</li><li>Šifru artikla i veličinu koju želite da zamenite</li><li>Veličinu za koju želite da zamenite</li></ul><p>Tražene podatke možete dostaviti popunjavanjem formulara za zamenu ili kontaktiranjem na email: reklamacije@se7en.rs</p><p><strong>PROCEDURA ZA ZAMENU ARTIKLA ZA DRUGI</strong></p><p>Molimo Vas da pripremite sledeće podatke:</p><p>Broj Vašeg računa-otpremnice</p><p>Šifru artikla i veličinu koju želite da zamenite</p><p>Tražene podatke možete dostaviti popunjavanjem formulara za zamenu ili kontaktiranjem na email: reklamacije@se7en.rs. Nakon toga, vrši se fizička provera u kom objektu je dostupna željena veličina, odnosno željeni artikal nakon čega dobijate instrukcije na Vašu email adresu gde će Vam biti objašnjen čitav proces zamene veličine za odgovarajuću, odnosno zamena artikla za drugi.</p><p>Poručeni artikal, bez prethodnog kontakta i dogovora sa operaterima korisničke podrške putem emaila ili popunjavanjem formulara na linku koji je gore naveden, ne možete samoinicijativno menjati za drugu veličinu ili slati na adrese koje su navedene na računu-otpremnici.</p>"
+          }
         }
       },
       "block_order": [
@@ -89,7 +96,8 @@
         "text_UHjnHN",
         "text_7QCtUm",
         "text_49nDHb",
-        "text_Thwryt"
+        "text_Thwryt",
+        "text_bpPdkW"
       ],
       "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
