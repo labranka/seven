@@ -6,6 +6,7 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 .site-header__search predictive-search .icon{
 height: 16px;
