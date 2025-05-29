@@ -71,6 +71,13 @@
             "enlarge_text": true,
             "text": "<h4></h4><h4>ZAVRŠETAK PORUČIVANJA</h4><p>Klikom na dugme Prihvatam, prikazaće Vam se obaveštenje o uspešno poslatoj porudžbini. Na mejl adresu koju ste ostavili prilikom popunjavanja formulara uskoro ćemo Vam poslati potvrdu za poručene artikle, a nakon obrade porudžbine dobićete sve naknadne informacije na mejl adresu.</p><p>Za sva dodatna pitanja možete nas kontaktirati putem emaila: info@se7en.rs</p><h4>IZJAVA O KONVERZIJI VALUTA</h4><p>Sva plaćanja biće izvršena u lokalnoj valuti Republike Srbije – dinar (RSD). Za informativni prikaz cena u drugim valutama koristi se kurs 120rsd/1eur. Iznos za koji će biti zadužena Vaša platna kartica biće izražen u Vašoj lokalnoj valuti kroz konverziju u istu po kursu koji koriste kartičarske organizacije, a koji nama u trenutku transakcije ne može biti poznat. Kao rezultat ove konverzije postoji mogućnost neznatne razlike od originalne cene navedene na našem sajtu.</p><h4>DOSTAVA I USLOVI ISPORUKE</h4><p>Za proizvode koje poručite u online prodavnici Vilimonović Doo Kraljevo možete odabrati regularnu isporuku tj. isporuku na adresu</p><h4>REGULARNA ISPORUKA I ROK ISPORUKE</h4><p>Nakon evidentiranja porudžbine, vaša porudžbina ulazi u proces obrade u kome se utvrđuje da li je traženi proizvod dostupan. Nakon obrade porudžbine, na vašu e-mail adresu stići će obaveštenje o statusu porudžbine.</p><p>Period obrade porudžbine je najčešće 2-3 radna dana. Porudžbine kreirane petkom i vikendom će kurirska služba preuzimati tek naredne nedelje. Ukoliko vaša porudžbina sadrži više od jednog artikla koje ne možemo da pošaljemo sa jedne lokacije, porudžbinu ćemo vam poslati u više pošiljki, a o intervalima dostave istih će vas obavestiti kurirska služba.</p>"
           }
+        },
+        "text_Thwryt": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h4></h4><h4>PREUZIMANJE POŠILJKE</h4>"
+          }
         }
       },
       "block_order": [
@@ -81,7 +88,8 @@
         "text_BwDBR8",
         "text_UHjnHN",
         "text_7QCtUm",
-        "text_49nDHb"
+        "text_49nDHb",
+        "text_Thwryt"
       ],
       "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
