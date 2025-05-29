@@ -37,7 +37,8 @@ product-recommendations .index-section{
   width: 16px;
   height: 16px;
 }
-.section-richtext{
+.section-richtext,
+.page-width.section-richtext {
   padding: 32px 16px;
 }
 .section-richtext .theme-block .rte ul{
