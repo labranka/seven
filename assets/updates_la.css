@@ -2,7 +2,9 @@
 .form-vertical input, .form-vertical select, .form-vertical textarea{
   border-radius: 10px;
 }
+.site-header__search predictive-search .icon{
 
+}
 .site-header__search-container {
   position: absolute;
   left: 0;
