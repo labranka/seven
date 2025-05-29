@@ -2,6 +2,11 @@
 .form-vertical input, .form-vertical select, .form-vertical textarea{
   border-radius: 10px;
 }
+.index-section.section-contact-form{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .site-header__search predictive-search .icon{
 height: 16px;
 width: 16px;

@@ -6196,11 +6196,7 @@ predictive-search .predictive__screen{
   right:0;
   z-index:6;
 }
-.index-section.section-contact-form{
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .header-wrapper--overlay .site-header:not(.site-header--stuck){
     background:none;
   }
