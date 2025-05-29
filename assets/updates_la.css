@@ -3,7 +3,8 @@
   border-radius: 10px;
 }
 .site-header__search predictive-search .icon{
-
+height: 16px;
+width: 16px;
 }
 .site-header__search-container {
   position: absolute;
