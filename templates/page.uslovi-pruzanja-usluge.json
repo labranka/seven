@@ -92,6 +92,13 @@
             "enlarge_text": true,
             "text": "<h4></h4><h4>REKLAMACIJA</h4><p>Ukoliko ste robu kupili u online prodavnici, prilikom preuzimanja pošiljke molimo Vas da u prisustvu kurira proverite svoj paket. Ukoliko na njemu ima vidljivih oštećenja (pocepani delovi i ugnječenje) paket ne bi trebalo da preuzmete. U ovom slučaju molimo Vas da nas kontaktirate putem emaila: reklamacije@se7en.rs . U najkraćem mogućem roku obavestićemo Vas o daljem postupanju.<br/><br/>Ukoliko ste primili pošiljku i nakon otvaranja kutije ustanovili da isporučena roba ne odgovara naručenoj ili podaci na računu nisu odgovarajući, molimo Vas da, najkasnije u roku od 24h od trenutka prijema pošiljke, kontaktirate našu korisničku podršku putem email adrese reklamacije@se7en.rs . Ukoliko se na kupljenom proizvodu pojave neusaglašenosti u smislu odredbi Zakona o zaštiti potrošača.<br/><br/>Molimo Vas da pripremite sledeće podatke:</p><ul><li>Broj Vašeg računa-otpremnice</li><li>Šifru artikla i veličinu koju želite da reklamirate</li><li>Opis problema koji imate</li></ul><p></p><p>Tražene podatke možete dostaviti popunjavanjem formulara za reklamacije  ili putem emaila: reklamacije@se7en.rs<br/>U najkraćem mogućem roku, a najkasnije u roku od 8 dana od dana prijema reklamacije pisanim putem ili elektronskim, odgovorićemo Vam na izjavljenu reklamaciju i obavestićemo Vas o daljem postupanju. Rok za rešavanje reklamacije je 15 dana od trenutka podnošenja iste.<br/><br/>Zvaničan Pravilnik o reklamaciji potrošača za robu kupljenu putem internet prodavnice možete pronaći ovde.<br/>Reklamacioni list možete preuzeti ovde.<br/><br/>U slučaju vraćanja robe kupcu koji je prethodno robu platio kuriru tj. pouzećem, troškove vraćanja robe ne snosi Vilimonović Doo Kraljevo već trošak pada na teret kupca.<br/><br/><strong>NAPOMENA: Potvrdom porudžbine, klikom na dugme POTVRDI PORUDŽBINU, saglasni ste sa uslovima reklamacije.</strong><br/><br/>U slučaju odustanka od ugovora, potrošač ima pravo na povraćaj novca ili na zamenu za drugi proizvod. Cena se kupcu vraća po prijemu proizvoda. Trgovac je dužan da potrošaču bez odlaganja vrati iznos koji je potrošač platio po osnovu ugovora, a najkasnije u roku od 14 dana od dana prijema izjave o odustanku, a nakon prijema proizvoda. Troškove vraćanja robe i novca snosi kupac, sem u slučajevima kada kupac dobije neispravan ili pogrešan artikal.</p>"
           }
+        },
+        "text_E9mUMc": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h4></h4><h4>POVRAĆAJ SREDSTAVA</h4>"
+          }
         }
       },
       "block_order": [
@@ -105,7 +112,8 @@
         "text_49nDHb",
         "text_Thwryt",
         "text_bpPdkW",
-        "text_mry7BQ"
+        "text_mry7BQ",
+        "text_E9mUMc"
       ],
       "name": "t:sections.rich-text.presets.rich_text.name",
       "settings": {
