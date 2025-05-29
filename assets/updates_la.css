@@ -5,7 +5,10 @@ product-recommendations .index-section{
 .btn--search svg{
   opacity: 0.5;
 }
-
+.btn--close-search svg{
+  width: 16px;
+  height: 16px;
+}
 .section-richtext{
   padding: 32px 16px;
 }
@@ -1424,7 +1427,10 @@ padding: 0;
 }
 /*Collecction section end*/
 @media only screen and (max-width: 589px) {
- 
+   .site-header__search .btn--close-search svg{
+  width: 16px;
+  height: 16px;
+}
 .product-image-main image-element,
 .product-image-main .image-wrap{
   border-radius: 0;
