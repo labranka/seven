@@ -14,29 +14,10 @@
       "disabled": true,
       "settings": {}
     },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_m8HyXU": {
-          "type": "heading",
-          "settings": {
-            "title": "Kontaktiraj nas"
-          }
-        }
-      },
-      "block_order": [
-        "heading_m8HyXU"
-      ],
-      "settings": {
-        "align_text": "left",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
     "form": {
       "type": "contact-form",
       "settings": {
-        "title": "",
+        "title": "Kontaktiraj nas!",
         "text": "",
         "show_phone": false,
         "narrow_column": true
@@ -45,7 +26,6 @@
   },
   "order": [
     "main",
-    "rich-text",
     "form"
   ]
 }
