@@ -2,6 +2,9 @@ product-recommendations .index-section{
   display: flex;
   flex-direction: column;
 }
+.btn--search svg{
+  opacity: 0.5;
+}
 
 .section-richtext{
   padding: 32px 16px;
