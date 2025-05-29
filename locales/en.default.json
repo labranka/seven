@@ -142,7 +142,7 @@
       "update": "Update cart",
       "checkout": "Završi kupovinu",
       "pregledaj_korpu": "Pregledaj korpu",
-      "empty": "Your cart is currently empty.",
+      "empty": "Tvoja korpa je trenutno prazna!",
       "continue_browsing_html": "<a href='{{ url }}'>Continue shopping</a>",
       "close_cart": "Close cart",
       "savings_html": "You're saving {{ savings }}",
