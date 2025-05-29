@@ -20,7 +20,7 @@
             "title": "<h1><em><strong>777 Oversized – nosimo sreću i delimo je</strong></em></h1>",
             "title_size": 79,
             "subheading": "<ul><li><strong>Od igle do etikete – made in Serbia</strong></li><li><strong>Od igle do etikete – made in Serbia.</strong></li><li><strong>High - Print Tehnologija</strong></li></ul>",
-            "link": "",
+            "link": "shopify://collections",
             "link_text": "POGLEDAJ ASORTIMAN",
             "text_align": "vertical-bottom horizontal-left",
             "image": "shopify://shop_images/western-capsule-hero-f_1.png",
@@ -32,7 +32,6 @@
       "block_order": [
         "image_49pGBH"
       ],
-      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
       "settings": {
         "section_height": "650px",
         "mobile_height": "500px",
@@ -79,7 +78,7 @@
         "button_d3RDti": {
           "type": "button",
           "settings": {
-            "button_link": "",
+            "button_link": "shopify://blogs/news/pratite-nas-ukoro-vise-detalja",
             "button": "Saznaj Više",
             "button_style": "solid"
           }
@@ -91,7 +90,6 @@
         "content_yJwwdN",
         "button_d3RDti"
       ],
-      "name": "t:sections.countdown.presets.countdown.name",
       "settings": {
         "layout": "banner",
         "full_width": false,
@@ -104,7 +102,6 @@
     },
     "featured_collection_PkRkqy": {
       "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.featured_collection.name",
       "settings": {
         "title": "Majice",
         "home_featured_products": "frontpage",
@@ -119,7 +116,6 @@
       "blocks": {
         "video_shopify_yzQetA": {
           "type": "_video-shopify",
-          "name": "Video shopify",
           "settings": {
             "slide_index": 0,
             "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
@@ -129,7 +125,6 @@
         },
         "video_shopify_zT3gLd": {
           "type": "_video-shopify",
-          "name": "Video shopify",
           "settings": {
             "slide_index": 1,
             "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
@@ -139,7 +134,6 @@
         },
         "video_shopify_kH36a6": {
           "type": "_video-shopify",
-          "name": "Video shopify",
           "settings": {
             "slide_index": 3,
             "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
@@ -149,7 +143,6 @@
         },
         "video_shopify_hW8nGx": {
           "type": "_video-shopify",
-          "name": "Video shopify",
           "settings": {
             "slide_index": 4,
             "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
@@ -159,7 +152,6 @@
         },
         "video_shopify_ikbRVm": {
           "type": "_video-shopify",
-          "name": "Video shopify",
           "settings": {
             "slide_index": 5,
             "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
@@ -169,7 +161,6 @@
         },
         "video_shopify_jyHAne": {
           "type": "_video-shopify",
-          "name": "Video shopify",
           "settings": {
             "slide_index": 6,
             "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
@@ -179,7 +170,6 @@
         },
         "video_shopify_RdJE7Y": {
           "type": "_video-shopify",
-          "name": "Video shopify",
           "settings": {
             "slide_index": 7,
             "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
@@ -189,7 +179,6 @@
         },
         "video_shopify_WLEj9U": {
           "type": "_video-shopify",
-          "name": "Video shopify",
           "settings": {
             "slide_index": 8,
             "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
@@ -199,7 +188,6 @@
         },
         "video_shopify_rdbr43": {
           "type": "_video-shopify",
-          "name": "Video shopify",
           "settings": {
             "slide_index": 9,
             "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
@@ -209,7 +197,6 @@
         },
         "video_shopify_nLA8BE": {
           "type": "_video-shopify",
-          "name": "Video shopify",
           "settings": {
             "slide_index": 10,
             "video": "shopify://files/videos/5ffc7ed03de047cf8fef057035b1c604.mp4",
@@ -230,7 +217,6 @@
         "video_shopify_rdbr43",
         "video_shopify_nLA8BE"
       ],
-      "name": "Video slideshow",
       "settings": {
         "title": "<p><em><strong>SHOP THE LOOK</strong></em></p>"
       }
@@ -277,7 +263,6 @@
         "text_block_6hhj9y",
         "text_block_WeKRVU"
       ],
-      "name": "t:common.text_with_icons.presets.text_with_icons.name",
       "settings": {
         "title": "",
         "align_text": "center"
@@ -315,7 +300,6 @@
         "form_AHUt7k",
         "text_atzj9m"
       ],
-      "name": "t:sections.newsletter.presets.email_signup.name",
       "settings": {
         "align_text": "left",
         "image": "shopify://shop_images/image_11.png",
@@ -330,7 +314,6 @@
       "blocks": {
         "faq_dropdown_zQd8Vh": {
           "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
           "settings": {
             "title": "Koliko traje dostava i koja je cena?",
             "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
@@ -339,7 +322,6 @@
         },
         "faq_dropdown_Nywf3Q": {
           "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
           "settings": {
             "title": "Mogu li vratiti ili zameniti majicu ako mi ne odgovara?",
             "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
@@ -348,7 +330,6 @@
         },
         "faq_dropdown_zGQQPB": {
           "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
           "settings": {
             "title": "Koje veličine su dostupne i kako da izaberem pravu?",
             "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
@@ -357,7 +338,6 @@
         },
         "faq_dropdown_QtAE4g": {
           "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
           "settings": {
             "title": "Od kog materijala su majice napravljene?",
             "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
@@ -366,7 +346,6 @@
         },
         "faq_dropdown_AXGVjw": {
           "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
           "settings": {
             "title": "Da li imate personalizovane majice?",
             "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
@@ -375,7 +354,6 @@
         },
         "faq_dropdown_KeTLzP": {
           "type": "faq-dropdown",
-          "name": "FAQ Dropdown",
           "settings": {
             "title": "Kako da perem majicu da se ne upropasti?",
             "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
@@ -391,7 +369,6 @@
         "faq_dropdown_AXGVjw",
         "faq_dropdown_KeTLzP"
       ],
-      "name": "FAQ section",
       "settings": {
         "title": "<p><em><strong>IMAŠ PITANJE? TU SMO DA </strong></em></p><p><em><strong>ODGOVORIMO</strong></em></p>",
         "text": "<p>Proveri koja su najčešća pitanja koja su nam korisnici postavljali i pronadji odgovor!</p>",
