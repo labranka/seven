@@ -4,8 +4,8 @@
 }
 .index-section.section-contact-form{
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto!important;
+  margin-right: auto!important;
   justify-content: center;
 }
 .site-header__search predictive-search .icon{
