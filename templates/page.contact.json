@@ -40,7 +40,7 @@
       "settings": {
         "title": "Kontaktiraj nas!",
         "text": "",
-        "show_phone": false,
+        "show_phone": true,
         "narrow_column": true
       }
     }
