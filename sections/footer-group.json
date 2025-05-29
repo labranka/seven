@@ -76,7 +76,7 @@
           "type": "menu",
           "settings": {
             "show_footer_title": true,
-            "menu": "informacije"
+            "menu": "footer"
           }
         },
         "menu_info_cgYEWB": {

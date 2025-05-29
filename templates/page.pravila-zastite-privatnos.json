@@ -1,0 +1,58 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_nEzMqW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rQjWkU": {
+          "type": "heading",
+          "settings": {
+            "title": "Pravila zaštite privatnosti"
+          }
+        },
+        "text_qiYNRq": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h5>VAŠA PORUDŽBINA JE POTPUNA SIGURNA!</h5><p>U kompaniji Vilimonović Doo Kraljevo („777“) cenimo Vašu privatnost, zato o Vašim podacima izuzetno pažljivo brinemo. Sve posredovane informacije su sigurne, nećemo ih ni pod kojim uslovima ustupati trećem licu, što Vam osigurava potpuno sigurno i bezbedno poslovanje i saradnju sa kompanijom Vilimonović Doo Kraljevo.</p><p></p><h5>ZAŠTITA PRIVATNOSTI PODATAKA</h5><p>Da bismo uspešno obradili Vašu narudžbinu potrebni su nam Vaše ime i prezime, adresa, e-mail i telefon. Uz pomoć tih podataka bićemo u mogućnosti da Vam isporučimo željenu robu, kao i da Vas obavestimo o trenutnom statusu narudžbine. Prikupljamo samo neophodne, osnovne podatke o kupcima/korisnicima i podatke neophodne za poslovanje i informisanje korisnika u skladu sa dobrim poslovnim običajima i u cilju pružanja kvalitetne usluge, koristeći naše usluge podrazumeva saglasnost korisnika da mu šaljemo email, sms i viber obaveštenja. Dajemo kupcima mogućnost izbora uključujući mogućnost odluke da li žele ili ne da se izbrišu sa mailing, sms i viber lista koje koriste za marketinške kampanje.</p><p>Kompanija Vilimonović Doo Kraljevo će Vaše lične podatke koristiti isključivo u svrhe tehničke administracije web sajta kako bi vam dala pristup posebnim informacijama ili za komunikaciju sa Vama. Vilimonović Doo Kraljevo neće prodati podatke koje poseduje trećim licima, niti na tržištu. Zaposleni u kompaniji Vilimonović Doo Kraljevo su obavezni da poštuju poverljivost vaših podataka. Nikada i ni na koji način nećemo zloupotrebiti vaše privatne informacije. Nećemo predati Vaše podatke za kontakt trećim licima, sem ukoliko se to od nas bude zahtevalo zakonom. Pored navedenih prikupljamo, analiziramo i obrađujemo podatke o proizvodima koje naši posetioci traže i kupuju, kao i o stranicama koje posećuju. Te podatke koristimo da bismo poboljšali ponudu i izgled naših stranica, i omogućili Vam jednostavnije korišćenje, sigurniju i udobniju kupovinu.</p>"
+          }
+        },
+        "text_YNXYND": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h5></h5><h5>KOLAČIĆI (COOKIES)</h5><p>Naš sajt koristi „cookies“ (kolačiće) da Vam pomogne da prilagodite korišćenje interneta Vašim potrebama. Cookie je tekstualni fajl koji je smešten na Vašem hard disku od strane web servera. Cookies ne mogu biti korišćeni da pokrenu program ili da isporuče virus Vašem računaru. Cookies su jedinstveno dodeljeni Vama, i jedino mogu biti pročitani od strane web servera u domenu koji Vam ih je poslao. Jedna od osnovnih svrha cookies je da obezbedi pogodnosti koje će Vam uštedeti vreme.</p><p></p><h5>SAGLASNOST I PROMENA USLOVA</h5><p>Korišćenje naših servisa podrazumeva saglasnost korisnika sa navedenim uslovima korišćenja. Vilimonović Doo Kraljevo se obavezuje da će se pridržavati svega navedenog, a sve promene uslova postaju važeće tek nakon objavljivanja na ovoj strani i slanja e-mail obaveštenja svim registrovanim korisnicima.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rQjWkU",
+        "text_qiYNRq",
+        "text_YNXYND"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_nEzMqW"
+  ]
+}
