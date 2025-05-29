@@ -1,3 +1,31 @@
+
+.site-header__search-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  
+  /* start off 100% above its normal position: */
+  transform: translateY(-100%);
+  visibility: hidden;
+  
+  /* animate transform, and delay hiding until after the slide-up */
+  transition:
+    transform 0.3s cubic-bezier(0, 0, 0.38, 1),
+    visibility 0s linear 0.3s;
+  z-index: 28;
+}
+
+.site-header__search-container.is-active {
+  transform: translateY(0);
+  visibility: visible;
+  
+  /* make visibility take effect immediately on open */
+  transition:
+    transform 0.3s cubic-bezier(0, 0, 0.38, 1),
+    visibility 0s;
+}
 product-recommendations .index-section{
   display: flex;
   flex-direction: column;
