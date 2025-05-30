@@ -1,3 +1,12 @@
+.tool-tip__inner{
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tool-tip__content{
+  text-align: center;
+}
+
 .drawer .filter-form{
   padding-inline: 0 16px;
   margin-left: 16px;
@@ -159,7 +168,8 @@ product-recommendations .index-section{
 [data-type_header_accent_transform=true] .label, [data-type_header_accent_transform=true] label{
   text-transform: capitalize;
 }
-.collapsible-trigger-btn{
+.collapsible-trigger-btn,
+.tool-tip__content span{
   font-size: 14px!important;
   font-weight: bold;
   font-family: var(--typeHeaderPrimary);
