@@ -1,3 +1,17 @@
+.pdp-variants-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tool-tip-trigger__title{
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 23px;
+ opacity: 0.7;
+
+}
+
 .tool-tip__inner strong{
   font-weight: bold;
   font-style: italic;

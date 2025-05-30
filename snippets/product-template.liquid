@@ -341,6 +341,12 @@
                       </div>
                     </div>
                   {%- when 'size_chart' -%}
+                     {% assign indexNext = forloop.index0 | plus: 1 %}
+                      {% assign indexPrev = forloop.index0 | minus: 1 %}
+                       {% if section.blocks[indexPrev].type != 'size_chart' and section.blocks[indexPrev].type != 'variant_picker'  %}
+                        <div class="pdp-variants-chart">
+                      {% endif %}
+
                     {% if connect_to_sizechart == false %}
                       {%- capture size_chart_title -%}
                         {{ 'products.general.size_chart' | t }}<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-size-chart" viewBox="0 0 64 64"><path d="M22.39 33.53c-7.46 0-13.5-3.9-13.5-8.72s6-8.72 13.5-8.72 13.5 3.9 13.5 8.72a12 12 0 0 1-.22 1.73"/><ellipse cx="22.39" cy="24.81" rx="3.28" ry="2.12"/><path d="M8.89 24.81V38.5c0 7.9 6.4 9.41 14.3 9.41h31.92V33.53H22.39m24.39 0v7.44m-8.13-7.44v7.44m-8.13-7.44v7.44m-8.13-7.44v7.44"/></svg>
@@ -364,7 +370,16 @@
                         {% endstyle %}
                       </div>
                     {% endif %}
+                     {% if section.blocks[indexNext].type != 'size_chart' and section.blocks[indexNext].type != 'variant_picker'%}
+                            </div>
+                    {% endif %}
                   {%- when 'variant_picker' -%}
+                      {% assign indexNext = forloop.index0 | plus: 1 %}
+                      {% assign indexPrev = forloop.index0 | minus: 1 %}
+                      {% if section.blocks[indexPrev].type != 'size_chart' and section.blocks[indexPrev].type != 'variant_picker' %}
+
+                        <div class="pdp-variants-chart ">
+                      {% endif %}
                     <div class="product-block" {% if block.settings.product_dynamic_variants_enable %}data-dynamic-variants-enabled{% endif %} {{ block.shopify_attributes }}>
                       {% unless product.has_only_default_variant %}
                         {%- for option in product.options_with_values -%}
@@ -412,6 +427,11 @@
                         {%- endfor -%}
                       {% endunless %}
                     </div>
+                 
+                  {% if section.blocks[indexNext].type != 'size_chart' and section.blocks[indexNext].type != 'variant_picker'%}
+                            </div>
+                    {% endif %}
+
                   {%- when 'buy_buttons' -%}
                     <div class="product-block product-buy-btns" {{ block.shopify_attributes }}>
                       {%- unless product.empty? -%}
