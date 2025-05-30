@@ -165,22 +165,6 @@
         "view_all": true,
         "divider": false
       }
-    },
-    "1748608892fb82724d": {
-      "type": "apps",
-      "blocks": {
-        "justviewed_recently_products_app_block_6KzibE": {
-          "type": "shopify://apps/justviewed-recently-products/blocks/app-block/80a91fd8-2907-4af6-b142-fe30fd256c36",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "justviewed_recently_products_app_block_6KzibE"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
     }
   },
   "order": [
@@ -189,7 +173,6 @@
     "product-recommendations",
     "collection-return",
     "17486074357eaaf379",
-    "featured_collection_w9tJA3",
-    "1748608892fb82724d"
+    "featured_collection_w9tJA3"
   ]
 }
