@@ -621,7 +621,7 @@ class RecentlyViewedRecorder extends HTMLElement {
   constructor() {
     super();
     this.storageKey = 'viewedProducts';
-    this.maxItems   = 4;
+    this.maxItems   = 5;
   }
 
   connectedCallback() {
@@ -653,7 +653,7 @@ class RecentlyViewedProducts extends HTMLElement {
     this.container   = this.querySelector('.search-product-list');
     this.storageKey  = 'viewedProducts';                      // ← use the same key your recorder writes to
     this.maxItems    = parseInt(this.dataset.maxItems, 10)    // ← pulls from data-max-items
-                          || 4;
+                          || 5;
     this.current     = this.dataset.currentHandle;            // ← pulls from data-current-handle
   }
 
@@ -662,18 +662,21 @@ class RecentlyViewedProducts extends HTMLElement {
   }
 
   // Read your array of {id,handle} and return just the handles
-  getStoredHandles() {
-    try {
-      const items = JSON.parse(localStorage.getItem(this.storageKey)) || [];
-      return items
-        .map(item => item.handle)                 // extract the handle
-        .filter(h => h && h !== this.current)     // drop falsy & the current page
-        .slice(0, this.maxItems);                 // cap at maxItems
-    } catch (e) {
-      console.error('RV load failed', e);
-      return [];
-    }
+getStoredHandles() {
+  try {
+    // 1) pull back your array of {id,handle}
+    const items = JSON.parse(localStorage.getItem(this.storageKey)) || [];
+    // 2) turn it into an array of just handles
+    const handles = items.map(item => item.handle);
+    // 3) (optional) if you still want to filter out the current page, uncomment the next line
+    //    return handles.filter(h => h && h !== this.current).slice(0, this.maxItems);
+    // 4) otherwise, just return every non-empty handle:
+    return handles.filter(h => h).slice(0, this.maxItems);
+  } catch (e) {
+    console.error('RV load failed', e);
+    return [];
   }
+}
 
   clear() {
     this.container.innerHTML = '';
