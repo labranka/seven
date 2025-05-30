@@ -1,7 +1,19 @@
 /*APP CSS OVERRIDE*/
 .ultimate-recently-viewed-image-wrap{
   border-radius: 10px!important;
-  overflow: hidden;
+  overflow: hidden!important;
+  aspect-ratio: 0.8!important;
+}
+
+.ultimate-recently-viewed-info .ultimate-recently-viewed-vendor{
+  order: 1!important;
+}
+
+.ultimate-recently-viewed-info .ultimate-recently-viewed-type{
+  order: 2!important;
+}
+.ultimate-recently-viewed-price-wrap{
+  order: 3!important
 }
 /*APP CSS OVERRIDE END*/
 .form-vertical input, .form-vertical select, .form-vertical textarea{
