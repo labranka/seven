@@ -1,3 +1,44 @@
+.tool-tip__inner strong{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 17.5px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  font-family: var(--typeHeaderPrimary);
+}
+
+.tool-tip__inner ol{
+  text-align: start;
+}
+
+/*TABLE*/
+.tool-tip__inner table {
+  border-collapse: collapse;
+  width: 100%;
+  border: none; 
+}
+
+.tool-tip__inner table th,
+.tool-tip__inner table td {
+  padding: 0.5em;
+  border-bottom: 1px solid var(--colorBorder); 
+  text-align: center;
+}
+
+
+.tool-tip__inner table tr:last-child th,
+.tool-tip__inner table tr:last-child td {
+  border-bottom: none;
+}
+
+.tool-tip__inner table td:first-child,
+.tool-tip__inner table th:first-child,
+.tool-tip__inner table tr:first-child th,
+.tool-tip__inner table tr:first-child td {
+  font-weight: bold;
+}
+/*TABLE END*/
+
 .tool-tip__inner{
   border-radius: 10px;
   overflow: hidden;
