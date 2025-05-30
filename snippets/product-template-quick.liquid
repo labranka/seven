@@ -5,7 +5,7 @@
 
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
-
+  assign connect_to_sizechart     = false
  
 -%}
 
@@ -84,55 +84,40 @@
                 </p>
 
                   <div class="product-block product-block--price product-module-price" {{ block.shopify_attributes }}>
-                      {%- assign hide_sale_price = true -%}
-                      {%- if product.compare_at_price_max > product.price -%}
-                        {%- if current_variant.compare_at_price -%}
-                          {%- assign hide_sale_price = false -%}
-                        {%- endif -%}
-                        <span
-                          data-a11y-price
-                          class="visually-hidden"
-                          aria-hidden="{{ hide_sale_price }}">
-                            {{ 'products.general.regular_price' | t }}
-                        </span>
-                        <span data-product-price-wrap class="{% if hide_sale_price %}hide{% endif %}">
-                          <span data-compare-price class="product__price product__price--compare">
-                            {%- if current_variant.compare_at_price > current_variant.price -%}
-                              {{ current_variant.compare_at_price | money }}
-                            {%- endif -%}
-                          </span>
-                        </span>
-                        <span data-compare-price-a11y class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
-                      {%- else -%}
-                        <span data-a11y-price class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-                      {%- endif -%}
+  {%- comment -%} Screen-reader label {% endcomment -%}
+  <span data-a11y-price class="visually-hidden">
+    {{ 'products.general.regular_price' | t }}
+  </span>
 
-                      <span data-product-price
-                        class="product__price{% if current_variant.compare_at_price > current_variant.price %} sale-price{% endif %}">
-                        {%- unless product.empty? -%}
-                          {{ current_variant.price | money }}
-                        {%- else -%}
-                          {{ 1999 | money }}
-                        {%- endunless -%}
-                      </span>
+  {%- comment -%} Only compare-at price is wrapped/toggled {% endcomment -%}
+  <div
+    data-product-price-wrap
+    class="{% if current_variant.compare_at_price <= current_variant.price %}hide{% endif %}">
+    <span data-compare-price class="product__price product__price--compare">
+      {{ current_variant.compare_at_price | money }}
+    </span>
+  </div>
 
-                      <div data-unit-price-wrapper class="product__unit-price{% unless current_variant.unit_price_measurement %} hide{% endunless %}">
-                        {%- capture unit_price_base_unit -%}
-                          <span data-unit-base>
-                            {%- if current_variant.unit_price_measurement -%}
-                              {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
-                                {{ current_variant.unit_price_measurement.reference_value }}
-                              {%- endif -%}
-                              {{ current_variant.unit_price_measurement.reference_unit }}
-                            {%- endif -%}
-                          </span>
-                        {%- endcapture -%}
+  <span data-compare-price-a11y class="visually-hidden">
+    {{ 'products.general.sale_price' | t }}
+  </span>
 
-                        <span data-unit-price>{{ current_variant.unit_price | money }}</span>/{{ unit_price_base_unit }}
-                      </div>
+  {%- comment -%} Your always-visible actual price {% endcomment -%}
+  <span
+    data-product-price
+    class="product__price{% if current_variant.compare_at_price > current_variant.price %} sale-price{% endif %}">
+    {{ current_variant.price | money }}
+  </span>
 
-                    
-                    </div>
+  {%- comment -%} Unit price if needed… {% endcomment -%}
+  <div
+    data-unit-price-wrapper
+    class="product__unit-price{% unless current_variant.unit_price_measurement %} hide{% endunless %}">
+    …  
+  </div>
+</div>
+
+
                     </div>
              
               {%- endif -%}

@@ -256,6 +256,7 @@ customElements.define('video-slideshow', VideoSlideshow);
     }
 
     updatePrice(v) {
+       
       this.priceEl.innerHTML = theme.Currency.formatMoney(v.price, theme.settings.moneyFormat);
       if (v.compare_at_price > v.price) {
         this.compareEl.innerHTML = theme.Currency.formatMoney(v.compare_at_price, theme.settings.moneyFormat);
