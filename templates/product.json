@@ -149,22 +149,6 @@
     },
     "17486074357eaaf379": {
       "type": "apps",
-      "blocks": {
-        "ultimate_recently_viewed_recently_viewed_T6RT8t": {
-          "type": "shopify://apps/ultimate-recently-viewed/blocks/recently-viewed/b33bd8dd-4a93-43a7-b989-694e289aa9e8",
-          "settings": {
-            "headline": "Poslednje pregledano",
-            "product_title_enabled": true,
-            "product_price_enabled": true,
-            "product_type_enabled": true,
-            "product_vendor_enabled": true,
-            "quick_add_button_enabled": false
-          }
-        }
-      },
-      "block_order": [
-        "ultimate_recently_viewed_recently_viewed_T6RT8t"
-      ],
       "settings": {
         "full_width": false,
         "space_around": true
