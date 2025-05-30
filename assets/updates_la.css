@@ -1,5 +1,6 @@
 .drawer .filter-form{
   padding-inline: 0 16px;
+  margin-left: 16px;
 }
 #FilterDrawer .tag-list--active-tags{
   display: grid;
