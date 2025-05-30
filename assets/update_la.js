@@ -616,9 +616,15 @@ handleQuickAddClicks(container) {
 
 customElements.define('cart-recommendations', CartRecommendations);
 
+/* update_la.js */
+
+//
+// 1) Recording logic (max 10, drop oldest beyond 10)
+//
 const RecentlyViewed = {
   key: 'recentlyViewed',
   max: 10,
+
   record(handle) {
     try {
       let list = JSON.parse(localStorage.getItem(this.key)) || [];
@@ -631,13 +637,13 @@ const RecentlyViewed = {
       console.error('RV record error:', e);
     }
   },
+
   recordCurrent() {
-    console.log('product kliknut');
     // 1) strip trailing slash
     let path = window.location.pathname.replace(/\/$/, '');
-    // 2) bail if not a product page
+    // 2) only on /products/<handle>
     if (!path.startsWith('/products/')) return;
-    // 3) last segment is the handle
+    // 3) extract handle
     const parts = path.split('/');
     const handle = parts[parts.length - 1];
     console.log('RV recording handle:', handle);
@@ -645,18 +651,17 @@ const RecentlyViewed = {
   }
 };
 
-// wire it up as before
-document.addEventListener('DOMContentLoaded', () => RecentlyViewed.recordCurrent());
-document.addEventListener('shopify:section:load', () => RecentlyViewed.recordCurrent());
-window.addEventListener('popstate', () => RecentlyViewed.recordCurrent());
 
+//
+// 2) Widget logic (clears + re-renders on demand)
+//
 class RecentlyViewedProducts extends HTMLElement {
   constructor() {
     super();
-    this.container   = this.querySelector('.search-product-list');
-    this.storageKey  = RecentlyViewed.key;
-    this.maxItems    = parseInt(this.dataset.maxItems, 10) || RecentlyViewed.max;
-    this.current     = this.dataset.currentHandle;
+    this.container  = this.querySelector('.search-product-list');
+    this.storageKey = RecentlyViewed.key;
+    this.maxItems   = parseInt(this.dataset.maxItems, 10) || RecentlyViewed.max;
+    this.current    = this.dataset.currentHandle;
   }
 
   connectedCallback() {
@@ -666,14 +671,20 @@ class RecentlyViewedProducts extends HTMLElement {
   getStoredHandles() {
     try {
       const arr = JSON.parse(localStorage.getItem(this.storageKey)) || [];
-      return arr.filter(h => h && h !== this.current).slice(0, this.maxItems);
+      return arr.filter(h => h && h !== this.current)
+                .slice(0, this.maxItems);
     } catch (e) {
       console.error('RV load failed', e);
       return [];
     }
   }
 
+  clear() {
+    this.container.innerHTML = '';
+  }
+
   async loadAndRender() {
+    this.clear();
     const handles = this.getStoredHandles();
     if (!handles.length) return;
     const snippets = await Promise.all(
@@ -688,3 +699,18 @@ class RecentlyViewedProducts extends HTMLElement {
   }
 }
 customElements.define('recently-view-products', RecentlyViewedProducts);
+
+
+//
+// 3) Hook it all up on every kind of navigation
+//
+function doUpdate() {
+  RecentlyViewed.recordCurrent();
+  const widget = document.querySelector('recently-view-products');
+  if (widget) widget.loadAndRender();
+}
+
+document.addEventListener('DOMContentLoaded', doUpdate);
+document.addEventListener('shopify:section:load', doUpdate);
+window.addEventListener('popstate', doUpdate);
+
