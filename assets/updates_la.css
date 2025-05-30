@@ -10,6 +10,10 @@
   gap: 8px;
   padding: 16px;
 }
+
+.tag-list--active-tags .btn.btn--small{
+  font-size: 12px;
+}
 .search-product-list{
   display: grid;
   grid-template-columns: 1fr 1fr;
