@@ -615,12 +615,9 @@ handleQuickAddClicks(container) {
 }
 
 customElements.define('cart-recommendations', CartRecommendations);
-
 /* update_la.js */
 
-//
-// 1) Recording logic (max 10, drop oldest beyond 10)
-//
+// 1) Recording logic (max 10, skip duplicates)
 const RecentlyViewed = {
   key: 'recentlyViewed',
   max: 10,
@@ -628,7 +625,8 @@ const RecentlyViewed = {
   record(handle) {
     try {
       let list = JSON.parse(localStorage.getItem(this.key)) || [];
-      list = list.filter(h => h !== handle);
+      // skip if we've already got it
+      if (list.includes(handle)) return;
       list.unshift(handle);
       if (list.length > this.max) list = list.slice(0, this.max);
       localStorage.setItem(this.key, JSON.stringify(list));
@@ -638,23 +636,30 @@ const RecentlyViewed = {
     }
   },
 
-  recordCurrent() {
-    // 1) strip trailing slash
-    let path = window.location.pathname.replace(/\/$/, '');
-    // 2) only on /products/<handle>
-    if (!path.startsWith('/products/')) return;
-    // 3) extract handle
-    const parts = path.split('/');
-    const handle = parts[parts.length - 1];
-    console.log('RV recording handle:', handle);
-    this.record(handle);
+  // grab handle from any /products/<handle> URL
+  extractHandleFromPath(path) {
+    path = path.replace(/\/$/, '');               // strip trailing slash
+    if (!path.startsWith('/products/')) return '';
+    return path.split('/').pop();
   }
 };
 
+// 2) Record on page load (if you land directly on a product)
+document.addEventListener('DOMContentLoaded', () => {
+  const handle = RecentlyViewed.extractHandleFromPath(window.location.pathname);
+  if (handle) RecentlyViewed.record(handle);
+});
 
-//
-// 2) Widget logic (clears + re-renders on demand)
-//
+// 3) ALSO record when you *click* a product link anywhere
+document.addEventListener('click', event => {
+  const a = event.target.closest('a[href^="/products/"]');
+  if (!a) return;
+  const url = new URL(a.getAttribute('href'), window.location.origin);
+  const handle = RecentlyViewed.extractHandleFromPath(url.pathname);
+  if (handle) RecentlyViewed.record(handle);
+});
+
+// 4) Your existing custom element to render the widget
 class RecentlyViewedProducts extends HTMLElement {
   constructor() {
     super();
@@ -699,18 +704,3 @@ class RecentlyViewedProducts extends HTMLElement {
   }
 }
 customElements.define('recently-view-products', RecentlyViewedProducts);
-
-
-//
-// 3) Hook it all up on every kind of navigation
-//
-function doUpdate() {
-  RecentlyViewed.recordCurrent();
-  const widget = document.querySelector('recently-view-products');
-  if (widget) widget.loadAndRender();
-}
-
-document.addEventListener('DOMContentLoaded', doUpdate);
-document.addEventListener('shopify:section:load', doUpdate);
-window.addEventListener('popstate', doUpdate);
-
