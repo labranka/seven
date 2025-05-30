@@ -53,8 +53,11 @@
 .tool-tip__inner{
   border-radius: 10px;
   overflow: hidden;
+ 
 }
-
+tool-tip[data-tool-tip-open=true] .tool-tip__inner{
+ max-width: 648px;
+}
 .tool-tip__content{
   text-align: center;
 }
