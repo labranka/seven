@@ -616,4 +616,75 @@ handleQuickAddClicks(container) {
 
 customElements.define('cart-recommendations', CartRecommendations);
 
+const RecentlyViewed = {
+  key: 'recentlyViewed',
+  max: 10,
+  record(handle) {
+    try {
+      let list = JSON.parse(localStorage.getItem(this.key)) || [];
+      list = list.filter(h => h !== handle);
+      list.unshift(handle);
+      if (list.length > this.max) list = list.slice(0, this.max);
+      localStorage.setItem(this.key, JSON.stringify(list));
+      console.log('RV list now:', list);
+    } catch (e) {
+      console.error('RV record error:', e);
+    }
+  },
+  recordCurrent() {
+    console.log('product kliknut');
+    // 1) strip trailing slash
+    let path = window.location.pathname.replace(/\/$/, '');
+    // 2) bail if not a product page
+    if (!path.startsWith('/products/')) return;
+    // 3) last segment is the handle
+    const parts = path.split('/');
+    const handle = parts[parts.length - 1];
+    console.log('RV recording handle:', handle);
+    this.record(handle);
+  }
+};
 
+// wire it up as before
+document.addEventListener('DOMContentLoaded', () => RecentlyViewed.recordCurrent());
+document.addEventListener('shopify:section:load', () => RecentlyViewed.recordCurrent());
+window.addEventListener('popstate', () => RecentlyViewed.recordCurrent());
+
+class RecentlyViewedProducts extends HTMLElement {
+  constructor() {
+    super();
+    this.container   = this.querySelector('.search-product-list');
+    this.storageKey  = RecentlyViewed.key;
+    this.maxItems    = parseInt(this.dataset.maxItems, 10) || RecentlyViewed.max;
+    this.current     = this.dataset.currentHandle;
+  }
+
+  connectedCallback() {
+    this.loadAndRender();
+  }
+
+  getStoredHandles() {
+    try {
+      const arr = JSON.parse(localStorage.getItem(this.storageKey)) || [];
+      return arr.filter(h => h && h !== this.current).slice(0, this.maxItems);
+    } catch (e) {
+      console.error('RV load failed', e);
+      return [];
+    }
+  }
+
+  async loadAndRender() {
+    const handles = this.getStoredHandles();
+    if (!handles.length) return;
+    const snippets = await Promise.all(
+      handles.map(h =>
+        fetch(`/products/${h}?view=recent`)
+          .then(r => r.ok ? r.text() : '')
+      )
+    );
+    snippets.forEach(html => {
+      if (html) this.container.insertAdjacentHTML('beforeend', html);
+    });
+  }
+}
+customElements.define('recently-view-products', RecentlyViewedProducts);

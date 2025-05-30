@@ -1,0 +1,24 @@
+<recently-view-products class="recently-view-products index-section"
+     data-current-handle="{{ product.handle | escape }}"
+     data-max-items="6">
+  <h2 class="section-heading">{{ section.settings.title }}</h2>
+  <div class="search-product-list"></div>
+  {% schema %}
+  {
+    "name": "Recently viewed products",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title",
+        "default": "Recently viewed"
+      }
+    ],
+    "presets": [
+      { "name": "Recently viewed products" }
+    ]
+  }
+  {% endschema %}
+</recently-view-products>
+

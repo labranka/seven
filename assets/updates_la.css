@@ -1,28 +1,6 @@
-/*APP CSS OVERRIDE*/
-.ultimate-recently-viewed-image-wrap{
-  border-radius: 10px!important;
-  overflow: hidden!important;
-  aspect-ratio: 0.8!important;
-}
-
-.ultimate-recently-viewed-image-wrap img{
-  height: 100%!important;
-  width: 100%!important;
-}
-
-.ultimate-recently-viewed-info .ultimate-recently-viewed-vendor{
-  order: 1!important;
-  opacity: 0.6!important;
-}
-
-.ultimate-recently-viewed-info .ultimate-recently-viewed-title{
-  order: 2!important;
-  font-size: 14px!important;
-  font-weight: bold!important;
-  
-}
-.ultimate-recently-viewed-price-wrap{
-  order: 3!important
+.recently-view-products{
+  display: flex;
+  flex-direction: column;
 }
 /*APP CSS OVERRIDE END*/
 .form-vertical input, .form-vertical select, .form-vertical textarea{
@@ -1882,6 +1860,11 @@ padding: 0;
 }
 }
 @media screen and (min-width: 1025px) {
+  .recently-viewed-grid-items{
+ 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
   .section-richtext{
   padding: 64px;
   max-width: 850px;
