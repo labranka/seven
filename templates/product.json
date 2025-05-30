@@ -46,9 +46,9 @@
         "two_icons_fy8FaU": {
           "type": "two_icons",
           "settings": {
-            "icon_1": "shopify://shop_images/SVG.png",
+            "icon_1": "shopify://shop_images/SVG_c3c0a934-c3ad-4c51-9ca1-9af156ec4a46.png",
             "text_1": "Lak Povrat",
-            "icon_2": "shopify://shop_images/SVG2.png",
+            "icon_2": "shopify://shop_images/SVG_1ccd26be-20bc-4776-92f0-e82ed2da8522.png",
             "text_2": "Brza Dostava"
           }
         },
@@ -61,7 +61,6 @@
         "tab_VWXnDH": {
           "type": "tab",
           "settings": {
-            "icon": "shopify://shop_images/SVG_c36c2b0d-cd68-4f2b-a562-eb2a165a42c7.png",
             "title": "Veličina",
             "content": "<p>Dostavu vrši BEX kurirska služba, a na zahtev možemo poslati i putem PostExpress-a. Rok isporuke je <strong>1–2 radna dana</strong>.</p><p><br/> Koliko košta dostava? Cena dostave je 420 dinara. Dostava je besplatna za sve porudžbine koje sadrže bilo koja 2 ili više artikla.  Da li mogu da preuzmem lično? Da, lično preuzimanje je moguće u Kraljevu. Naručite putem sajta, DM-a ili pozivom na 011 4220 444.  Prilikom porudžbine, naglasite da želite lično preuzimanje kako bismo dogovorili termin sa operaterom.</p>",
             "page": ""
@@ -70,7 +69,6 @@
         "tab_MybVzb": {
           "type": "tab",
           "settings": {
-            "icon": "shopify://shop_images/SVG_7f45b9f7-be58-4b3d-934f-1517cf9ec504.png",
             "title": "Ko vrši dostavu i koliko traje?",
             "content": "<p>Dostavu vrši BEX kurirska služba, a na zahtev možemo poslati i putem PostExpress-a. Rok isporuke je 1–2 radna dana. Koliko košta dostava? Cena dostave je 420 dinara. Dostava je besplatna za sve porudžbine koje sadrže bilo koja 2 ili više artikla.  Da li mogu da preuzmem lično? Da, lično preuzimanje je moguće u Kraljevu. Naručite putem sajta, DM-a ili pozivom na 011 4220 444.  Prilikom porudžbine, naglasite da želite lično preuzimanje kako bismo dogovorili termin sa operaterom.</p>",
             "page": ""
@@ -79,7 +77,6 @@
         "tab": {
           "type": "tab",
           "settings": {
-            "icon": "shopify://shop_images/SVG_68e3df4f-9426-450c-bdaa-533767914468.png",
             "title": "Povraćaj robe i reklamacije",
             "content": "<p>Kupujte sigurno – bez stresa. Ukoliko niste zadovoljni kupovinom, imate pravo da vratite proizvod u roku od 14 dana od prijema paketa. Proizvod mora biti nekorišćen i u originalnom pakovanju.  </p><ul><li>Povraćaj proizvoda (bez reklamacije):</li><li>Pošaljite nam email na reklamacije@se7en.rs ili poruku putem Instagrama u roku od 14 dana od prijema paketa.</li><li>U poruci navedite broj porudžbine i razlog povrata.Kada primimo vaš zahtev, zakazujemo kurira – vi samo zapakujte proizvod. </li><li>Kurir dolazi na vašu adresu i preuzima paket.</li><li>Povraćaj novca biće izvršen u roku od 7 radnih dana od dana prijema vraćene robe.</li><li>Troškove povrata snosi kupac.</li></ul><p></p><p><strong>Reklamacije (npr. oštećen artikal):</strong></p><ul><li>Kontaktirajte nas putem emaila ili Instagrama odmah po prijemu pošiljke.</li><li>Pošaljite fotografiju oštećenja i broj porudžbine.</li><li>Naš tim će izvršiti procenu u roku od 2 radna dana.</li><li>Ukoliko je reklamacija osnovana, nudimo: Besplatnu zamenu artikla, ili Puni povraćaj novca</li><li>U slučaju reklamacije, troškove poštarine snosimo mi.</li></ul><p>Za zamenu proizvoda ili dodatna pitanja, slobodno nas kontaktirajte putem emaila: reklamacije@se7en.rs ili putem poruke na Instagramu.</p>",
             "page": ""
@@ -88,7 +85,6 @@
         "tab_pD9HiH": {
           "type": "tab",
           "settings": {
-            "icon": "shopify://shop_images/SVG_0734c88b-ba34-4414-87cc-fcbdfeb910a0.png",
             "title": "Pamuk bez filtera. Stav bez kompromisa.",
             "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
             "page": ""
