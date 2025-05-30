@@ -10,6 +10,10 @@
   width: 16px;
   height: 16px;
 }
+
+.tool-tip__close{
+  padding: 20px;
+}
 .tool-tip__inner ol{
   text-align: start;
 }
