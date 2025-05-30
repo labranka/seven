@@ -169,6 +169,18 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "featured_collection_w9tJA3": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection.name",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "frontpage",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
     }
   },
   "order": [
@@ -176,6 +188,7 @@
     "sub",
     "product-recommendations",
     "collection-return",
-    "17486074357eaaf379"
+    "17486074357eaaf379",
+    "featured_collection_w9tJA3"
   ]
 }
