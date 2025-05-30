@@ -615,69 +615,60 @@ handleQuickAddClicks(container) {
 }
 
 customElements.define('cart-recommendations', CartRecommendations);
-/* update_la.js */
 
-// 1) Recording logic (max 10, skip duplicates)
-const RecentlyViewed = {
-  key: 'recentlyViewed',
-  max: 10,
 
-  record(handle) {
-    try {
-      let list = JSON.parse(localStorage.getItem(this.key)) || [];
-      // skip if we've already got it
-      if (list.includes(handle)) return;
-      list.unshift(handle);
-      if (list.length > this.max) list = list.slice(0, this.max);
-      localStorage.setItem(this.key, JSON.stringify(list));
-      console.log('RV list now:', list);
-    } catch (e) {
-      console.error('RV record error:', e);
-    }
-  },
-
-  // grab handle from any /products/<handle> URL
-  extractHandleFromPath(path) {
-    path = path.replace(/\/$/, '');               // strip trailing slash
-    if (!path.startsWith('/products/')) return '';
-    return path.split('/').pop();
+class RecentlyViewedRecorder extends HTMLElement {
+  constructor() {
+    super();
+    this.storageKey = 'viewedProducts';
+    this.maxItems   = 4;
   }
-};
 
-// 2) Record on page load (if you land directly on a product)
-document.addEventListener('DOMContentLoaded', () => {
-  const handle = RecentlyViewed.extractHandleFromPath(window.location.pathname);
-  if (handle) RecentlyViewed.record(handle);
-});
+  connectedCallback() {
+    // grab id & handle from data-attrs
+    const id     = this.dataset.productId;
+    const handle = this.dataset.productHandle;
+    if (!id || !handle) return;
 
-// 3) ALSO record when you *click* a product link anywhere
-document.addEventListener('click', event => {
-  const a = event.target.closest('a[href^="/products/"]');
-  if (!a) return;
-  const url = new URL(a.getAttribute('href'), window.location.origin);
-  const handle = RecentlyViewed.extractHandleFromPath(url.pathname);
-  if (handle) RecentlyViewed.record(handle);
-});
+    // load existing
+    let list = JSON.parse(localStorage.getItem(this.storageKey) || '[]');
+    // drop any existing
+    list = list.filter(p => p.id !== id);
+    // add newest
+    list.unshift({ id, handle });
+    // cap at maxItems
+    if (list.length > this.maxItems) {
+      list = list.slice(0, this.maxItems);
+    }
+    localStorage.setItem(this.storageKey, JSON.stringify(list));
+    console.log('RV stored:', list);
+  }
+}
 
-// 4) Your existing custom element to render the widget
+customElements.define('recently-viewed-recorder', RecentlyViewedRecorder);
+
 class RecentlyViewedProducts extends HTMLElement {
   constructor() {
     super();
-    this.container  = this.querySelector('.search-product-list');
-    this.storageKey = RecentlyViewed.key;
-    this.maxItems   = parseInt(this.dataset.maxItems, 10) || RecentlyViewed.max;
-    this.current    = this.dataset.currentHandle;
+    this.container   = this.querySelector('.search-product-list');
+    this.storageKey  = 'viewedProducts';                      // ← use the same key your recorder writes to
+    this.maxItems    = parseInt(this.dataset.maxItems, 10)    // ← pulls from data-max-items
+                          || 4;
+    this.current     = this.dataset.currentHandle;            // ← pulls from data-current-handle
   }
 
   connectedCallback() {
     this.loadAndRender();
   }
 
+  // Read your array of {id,handle} and return just the handles
   getStoredHandles() {
     try {
-      const arr = JSON.parse(localStorage.getItem(this.storageKey)) || [];
-      return arr.filter(h => h && h !== this.current)
-                .slice(0, this.maxItems);
+      const items = JSON.parse(localStorage.getItem(this.storageKey)) || [];
+      return items
+        .map(item => item.handle)                 // extract the handle
+        .filter(h => h && h !== this.current)     // drop falsy & the current page
+        .slice(0, this.maxItems);                 // cap at maxItems
     } catch (e) {
       console.error('RV load failed', e);
       return [];
@@ -703,4 +694,5 @@ class RecentlyViewedProducts extends HTMLElement {
     });
   }
 }
+
 customElements.define('recently-view-products', RecentlyViewedProducts);

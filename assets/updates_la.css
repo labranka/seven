@@ -1,6 +1,18 @@
+.search-product-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.search-product-list .grid__item{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 .recently-view-products{
   display: flex;
   flex-direction: column;
+  padding: 24px 16px;
+  
 }
 /*APP CSS OVERRIDE END*/
 .form-vertical input, .form-vertical select, .form-vertical textarea{

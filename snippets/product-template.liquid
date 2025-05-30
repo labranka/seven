@@ -52,7 +52,10 @@
     endif
   endfor
 -%}
-
+<recently-viewed-recorder
+  data-product-id="{{ product.id }}"
+  data-product-handle="{{ product.handle }}"
+></recently-viewed-recorder>
 <div id="ProductSection-{{ section_id }}"
   class="product-section"
   data-section-id="{{ section_id }}"
