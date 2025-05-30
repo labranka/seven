@@ -1,3 +1,6 @@
+.drawer .filter-form{
+  padding-inline: 0 16px;
+}
 .search-product-list{
   display: grid;
   grid-template-columns: 1fr 1fr;
