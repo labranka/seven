@@ -154,8 +154,8 @@
       "max_quantity": "You can only have {{ quantity }} of {{ title }} in your cart."
     },
     "label": {
-      "quantity": "Quantity",
-      "total": "Total"
+      "quantity": "Količina",
+      "total": "Ukupno"
     }
   },
   "collections": {
