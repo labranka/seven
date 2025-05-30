@@ -6,9 +6,13 @@
   letter-spacing: -0.4px;
   font-family: var(--typeHeaderPrimary);
 }
-
+.tool-tip-trigger{
+  text-transform: capitalize;
+}
 .tool-tip__inner img{
   margin-block: 32px;
+  size: 12px;
+  font-weight: normal;
 }
 .tool-tip__close .icon{
   width: 16px;
