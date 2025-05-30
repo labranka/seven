@@ -312,8 +312,6 @@
   "products": {
     "general": {
       "color_swatch_trigger": "Boja",
-      "size_trigger": "Size",
-      "color_swatch_trigger": "Boja",
       "size_trigger": "Veličina",
       "size_chart": "Size chart",
       "save_html": "Save {{ saved_amount }}",
