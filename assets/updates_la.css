@@ -2,6 +2,14 @@
   padding-inline: 0 16px;
   margin-left: 16px;
 }
+.tag-list .tag__checkbox:before,
+.tag--active .tag__checkbox:after, input:checked~.tag__checkbox:after{
+  border-radius: 4px;
+}
+.tag-list .tag__checkbox:after, .tag-list .tag__checkbox:before{
+  border-radius: 4px;
+}
+
 #FilterDrawer .tag-list--active-tags{
   display: grid;
   grid-template-columns: 1fr 1fr;
