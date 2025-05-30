@@ -6,7 +6,8 @@
 }
 
 .ultimate-recently-viewed-image-wrap img{
-  height: 100%;
+  height: 100%!important;
+  width: 100%!important;
 }
 
 .ultimate-recently-viewed-info .ultimate-recently-viewed-vendor{
