@@ -1,6 +1,13 @@
 .drawer .filter-form{
   padding-inline: 0 16px;
 }
+#FilterDrawer .tag-list--active-tags{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 8px;
+  padding: 16px;
+}
 .search-product-list{
   display: grid;
   grid-template-columns: 1fr 1fr;
