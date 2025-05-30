@@ -104,16 +104,16 @@
   },
   "blogs": {
     "article": {
-      "view_all": "View all",
+      "view_all": "Pogledaj sve",
       "tags": "Tags",
       "read_more": "Continue reading",
       "back_to_blog": "Back to {{ title }}"
     },
     "comments": {
       "title": "Leave a comment",
-      "name": "Name",
+      "name": "Ime",
       "email": "Email",
-      "message": "Message",
+      "message": "Poruka",
       "post": "Post comment",
       "moderated": "Please note, comments must be approved before they are published",
       "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
