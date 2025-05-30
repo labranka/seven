@@ -1,4 +1,9 @@
-
+/*APP CSS OVERRIDE*/
+.ultimate-recently-viewed-image-wrap{
+  border-radius: 10px!important;
+  overflow: hidden;
+}
+/*APP CSS OVERRIDE END*/
 .form-vertical input, .form-vertical select, .form-vertical textarea{
   border-radius: 10px;
 }
