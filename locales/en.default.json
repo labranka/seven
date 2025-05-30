@@ -312,7 +312,7 @@
   },
   "products": {
     "general": {
-      "color_swatch_trigger": "Color",
+      "color_swatch_trigger": "Boja",
       "size_trigger": "Size",
       "size_chart": "Size chart",
       "save_html": "Save {{ saved_amount }}",
