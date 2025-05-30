@@ -313,7 +313,7 @@
     "general": {
       "color_swatch_trigger": "Boja",
       "size_trigger": "Veličina",
-      "size_chart": "Size chart",
+      "size_chart": "Pogledaj mere",
       "save_html": "Save {{ saved_amount }}",
       "collection_return": "Back to {{ collection }}",
       "next_product": "Next: {{ title }}",
