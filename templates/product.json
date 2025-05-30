@@ -46,7 +46,9 @@
         "two_icons_fy8FaU": {
           "type": "two_icons",
           "settings": {
+            "icon_1": "shopify://shop_images/SVG.png",
             "text_1": "Lak Povrat",
+            "icon_2": "shopify://shop_images/SVG2.png",
             "text_2": "Brza Dostava"
           }
         },
