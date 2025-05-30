@@ -104,16 +104,16 @@
   },
   "blogs": {
     "article": {
-      "view_all": "View all",
+      "view_all": "Pogledaj sve",
       "tags": "Tags",
       "read_more": "Continue reading",
       "back_to_blog": "Back to {{ title }}"
     },
     "comments": {
       "title": "Leave a comment",
-      "name": "Name",
+      "name": "Ime",
       "email": "Email",
-      "message": "Message",
+      "message": "Poruka",
       "post": "Post comment",
       "moderated": "Please note, comments must be approved before they are published",
       "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
@@ -128,22 +128,21 @@
     "general": {
       "title": "Korpa",
       "recommendation_title": "Mozda ti se svidi i ovo",
-      "remove": "Remove",
-        "free_shipping": "Besplatna dostava!",
-        "free_shipping_left": "{{ left_money }} jos do besplatne dostave",
-         "sale_left": "{{ left_money }} do popusta",
-
-         "sale": "{{ popust }}% popusta",
-         "humanitarian_action_info": "Sa ovom porudžbinom, {{ amount }} dinara ide direktno u humanitarne svrhe",
+      "remove": "Ukloni",
+      "free_shipping": "Besplatna dostava!",
+      "free_shipping_left": "{{ left_money }} jos do besplatne dostave",
+      "sale_left": "{{ left_money }} do popusta",
+      "sale": "{{ popust }}% popusta",
+      "humanitarian_action_info": "Sa ovom porudžbinom, {{ amount }} dinara ide direktno u humanitarne svrhe",
       "note": "Order note",
       "recommendations_title": "Mozda ti se svidi i ovo",
-      "subtotal": "Subtotal",
-      "discounts": "Discounts",
-      "shipping_at_checkout": "Shipping, taxes, and discount codes calculated at checkout.",
+      "subtotal": "UKUPNO",
+      "discounts": "Popust",
+      "shipping_at_checkout": "Takse su uključene.",
       "update": "Update cart",
       "checkout": "Završi kupovinu",
       "pregledaj_korpu": "Pregledaj korpu",
-      "empty": "Your cart is currently empty.",
+      "empty": "Tvoja korpa je trenutno prazna!",
       "continue_browsing_html": "<a href='{{ url }}'>Continue shopping</a>",
       "close_cart": "Close cart",
       "savings_html": "You're saving {{ savings }}",
@@ -155,8 +154,8 @@
       "max_quantity": "You can only have {{ quantity }} of {{ title }} in your cart."
     },
     "label": {
-      "quantity": "Quantity",
-      "total": "Total"
+      "quantity": "Količina",
+      "total": "Ukupno"
     }
   },
   "collections": {
@@ -314,6 +313,8 @@
     "general": {
       "color_swatch_trigger": "Boja",
       "size_trigger": "Size",
+      "color_swatch_trigger": "Boja",
+      "size_trigger": "Veličina",
       "size_chart": "Size chart",
       "save_html": "Save {{ saved_amount }}",
       "collection_return": "Back to {{ collection }}",
@@ -324,7 +325,7 @@
       "reviews": "Reviews"
     },
     "product": {
-      "description": "Description",
+      "description": "Opis",
       "in_stock_label": "In stock, ready to ship",
       "stock_label": {
         "one": "Low stock - {{ count }} item left",
@@ -334,7 +335,7 @@
       "unavailable": "Unavailable",
       "quantity": "Quantity",
       "add_to_cart": "Dodaj u korpu",
-       "add_to_cart_short": "Dodaj",
+      "add_to_cart_short": "Dodaj",
       "preorder": "Pre-order",
       "include_taxes": "Tax included.",
       "shipping_policy_html": "<a href='{{ link }}'>Shipping</a> calculated at checkout.",
