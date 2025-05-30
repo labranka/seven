@@ -1761,6 +1761,7 @@ padding: 0;
 @media screen and (min-width: 769px) {
   .search-product-list{
     grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
   }
   .human-action-info__wrapper{
   gap: 64px;
@@ -1882,7 +1883,7 @@ padding: 0;
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: grid;
   }
   .search-product-list{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
