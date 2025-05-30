@@ -6,6 +6,10 @@
   letter-spacing: -0.4px;
   font-family: var(--typeHeaderPrimary);
 }
+
+.tool-tip__inner img{
+  margin-block: 32px;
+}
 .tool-tip__close .icon{
   width: 16px;
   height: 16px;
