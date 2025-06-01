@@ -7,11 +7,6 @@ class FAQDropdown extends HTMLElement {
     this.isOpen = false;
   }
 
-  connectedCallback() {
-    if (this.trigger && this.content && this.innerContent) {
-      this.trigger.addEventListener('click', this.toggleDropdown.bind(this));
-    }
-  }
 
   toggleDropdown() {
     this.isOpen = !this.isOpen;
@@ -31,7 +26,19 @@ class FAQDropdown extends HTMLElement {
 
 customElements.define('faq-dropdown', FAQDropdown);
 
+document.addEventListener('click', function (e) {
+  const trigger = e.target.closest('.collapsible-trigger');
+  if (!trigger) return;
 
+ 
+  const faqEl = trigger.closest('faq-dropdown');
+  if (!faqEl) return;
+
+
+  e.preventDefault();
+
+  faqEl.toggleDropdown();
+});
 class VideoSlideshow extends HTMLElement {
   constructor() {
     super();
