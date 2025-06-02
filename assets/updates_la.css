@@ -3,6 +3,11 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.page-width.main-search-template{
+  display: flex;
+  flex-direction: column;
+}
 .drawer__scrollable {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
