@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.drawer__scrollable {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
 .tool-tip-trigger__title{
   font-size: 13px;
   font-weight: normal;
