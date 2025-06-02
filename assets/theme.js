@@ -2350,28 +2350,46 @@ theme.collapsibles = (function() {
       },
   
       bindEvents: function() {
-        // Clicking out of drawer closes it
-        window.on('click' + this.config.namespace, function(evt) {
-          this.close(evt)
-          return;
-        }.bind(this));
-  
-        // Pressing escape closes drawer
-        window.on('keyup' + this.config.namespace, function(evt) {
-          if (evt.keyCode === 27) {
-            this.close();
-          }
-        }.bind(this));
-  
-        theme.a11y.lockMobileScrolling(this.config.namespace, this.nodes.page);
-      },
-  
-      unbindEvents: function() {
-        window.off('click' + this.config.namespace);
-        window.off('keyup' + this.config.namespace);
-  
-        theme.a11y.unlockMobileScrolling(this.config.namespace, this.nodes.page);
+    // Clicking out of drawer closes it
+    window.on('click' + this.config.namespace, function(evt) {
+      this.close(evt);
+      return;
+    }.bind(this));
+
+    // Pressing escape closes drawer
+    window.on('keyup' + this.config.namespace, function(evt) {
+      if (evt.keyCode === 27) {
+        this.close();
       }
+    }.bind(this));
+
+    theme.a11y.lockMobileScrolling(this.config.namespace, this.nodes.page);
+
+    // ─── iOS: prevent background scroll except inside .drawer__scrollable ───────────
+    this._touchLockHandler = function(e) {
+      // If the touch is not inside this drawer’s ".drawer__scrollable", block it
+      if (!e.target.closest('#' + this.config.id + ' .drawer__scrollable')) {
+        e.preventDefault();
+      }
+    }.bind(this);
+
+    document.body.addEventListener('touchmove', this._touchLockHandler, { passive: false });
+    // ───────────────────────────────────────────────────────────────────────────────
+  },
+  
+     unbindEvents: function() {
+    window.off('click' + this.config.namespace);
+    window.off('keyup' + this.config.namespace);
+
+    theme.a11y.unlockMobileScrolling(this.config.namespace, this.nodes.page);
+
+    // ─── remove the iOS scroll‐lock listener ─────────────────────────────────────
+    if (this._touchLockHandler) {
+      document.body.removeEventListener('touchmove', this._touchLockHandler, { passive: false });
+      this._touchLockHandler = null;
+    }
+    // ───────────────────────────────────────────────────────────────────────────────
+  }
     });
   
     return Drawers;
