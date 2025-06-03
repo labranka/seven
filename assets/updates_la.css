@@ -148,7 +148,9 @@ tool-tip[data-tool-tip-open=true] .tool-tip__inner{
 height: 16px;
 width: 16px;
 }
-
+#FilterDrawerTrigger{
+  margin-bottom: 16px;
+}
 .results li:hover{
   border-radius: 10px;
 }
