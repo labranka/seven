@@ -2290,15 +2290,11 @@ img{
     margin:0;
 }
 
-.predictive-overflow-hidden{
-  overflow:hidden;
-}
+
 
 @media only screen and (max-width:589px){
 
-.predictive-overflow-hidden{
-    overflow:auto;
-}
+
   }
 
 predictive-search{

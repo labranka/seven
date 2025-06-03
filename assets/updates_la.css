@@ -148,13 +148,18 @@ tool-tip[data-tool-tip-open=true] .tool-tip__inner{
 height: 16px;
 width: 16px;
 }
+
+.results li:hover{
+  border-radius: 10px;
+}
 .site-header__search-container {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
-  height: 100%;
+  bottom: unset;
+  top: 0;
   
+  height: 52px;
   /* start off 100% above its normal position: */
   transform: translateY(-100%);
   visibility: hidden;

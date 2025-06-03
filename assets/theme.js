@@ -4106,17 +4106,29 @@ theme.preloadProductModal = function(handle, productId, btn) {
       this.closeBtn = this.querySelector('.btn--close-search');
       this.screen = this.querySelector('[data-screen]');
       this.SearchModal = this.closest('#SearchModal') || null;
+
+       this._savedScrollY = 0;
   
-      // Open events
-      document.addEventListener('predictive-search:open', e => {
-        if (e.detail.context !== this.context) return;
-        this.classList.add('is-active');
-  
-        // Wait for opening events to finish then apply focus
-        setTimeout(() => { this.input.focus(); }, 100);
-  
-        document.body.classList.add('predictive-overflow-hidden');
-      });
+        // Open events
+    document.addEventListener('predictive-search:open', e => {
+      if (e.detail.context !== this.context) return;
+
+      // 1) SAVE current scrollY:
+      this._savedScrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+      // 2) PIN the body in place:
+      document.body.style.position = 'fixed';
+      document.body.style.top      = `-${this._savedScrollY}px`;
+      document.body.style.width    = '100%';
+
+      this.classList.add('is-active');
+
+      // Focus input after a short delay:
+      setTimeout(() => { this.input.focus(); }, 100);
+
+      // (REMOVE the old class, since we’re inlining the pin)
+      // document.body.classList.add('predictive-overflow-hidden');
+    });
   
       // listen for class change of 'modal--is-active on this.SearchModal
       if (this.SearchModal) {
@@ -4197,13 +4209,22 @@ theme.preloadProductModal = function(handle, productId, btn) {
     }
   
     close() {
-      this.predictiveSearchResults.style.display = 'none';
-      this.predictiveSearchResults.innerHTML = '';
-      this.classList.remove('is-active');
-      document.body.classList.remove('predictive-overflow-hidden');
-  
-      document.dispatchEvent(new CustomEvent('predictive-search:close-all'));
-    }
+    // 1) HIDE the results container:
+    this.predictiveSearchResults.style.display = 'none';
+    this.predictiveSearchResults.innerHTML = '';
+    this.classList.remove('is-active');
+
+    // 2) UNPIN the body and jump back to saved scrollY:
+    document.body.style.position = '';
+    document.body.style.top      = '';
+    document.body.style.width    = '';
+    window.scrollTo(0, this._savedScrollY);
+
+    // (REMOVE the old class, if you still had CSS relying on it)
+    // document.body.classList.remove('predictive-overflow-hidden');
+
+    document.dispatchEvent(new CustomEvent('predictive-search:close-all'));
+  }
   
     debounce(fn, wait) {
       let t;
