@@ -687,6 +687,10 @@ display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--colorBody);
+  position: relative;
+  z-index: 33;
+
 }
 
 .drawer__close-button{
