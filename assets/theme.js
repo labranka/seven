@@ -2245,6 +2245,8 @@ theme.collapsibles = (function() {
   
       this.drawer = document.querySelector('#' + id);
       this.isOpen = false;
+       this.scrollY     = 0;     
+      this._touchLockHandler = null;
   
       if (!this.drawer) {
         return;
@@ -2270,127 +2272,134 @@ theme.collapsibles = (function() {
       },
   
       open: function(evt, returnFocusEl) {
-        if (evt) {
-          evt.preventDefault();
-        }
-  
-        if (this.isOpen) {
-          return;
-        }
-  
-        // Without this the drawer opens, the click event bubbles up to $nodes.page which closes the drawer.
-        if (evt && evt.stopPropagation) {
-          evt.stopPropagation();
-          // save the source of the click, we'll focus to this on close
-          evt.currentTarget.setAttribute('aria-expanded', 'true');
-          this.activeSource = evt.currentTarget;
-        } else if (returnFocusEl) {
-          returnFocusEl.setAttribute('aria-expanded', 'true');
-          this.activeSource = returnFocusEl;
-        }
-  
-        theme.utils.prepareTransition(this.drawer, function() {
-          this.drawer.classList.add(this.config.activeDrawer);
-        }.bind(this));
-  
-        document.documentElement.classList.add(this.config.openClass);
-        this.isOpen = true;
-  
-        theme.a11y.trapFocus({
-          container: this.drawer,
-          namespace: 'drawer_focus'
-        });
-  
-        document.dispatchEvent(new CustomEvent('drawerOpen'));
-        document.dispatchEvent(new CustomEvent('drawerOpen.' + this.config.id));
-  
-        this.bindEvents();
-      },
+      if (evt)          evt.preventDefault();
+      if (this.isOpen) return;
+
+      // Prevent the click from bubbling up and immediately closing
+      if (evt && evt.stopPropagation) {
+        evt.stopPropagation();
+        evt.currentTarget.setAttribute('aria-expanded', 'true');
+        this.activeSource = evt.currentTarget;
+      } else if (returnFocusEl) {
+        returnFocusEl.setAttribute('aria-expanded', 'true');
+        this.activeSource = returnFocusEl;
+      }
+
+      // 1) Capture current scroll position:
+      this.scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+      // 2) Add the “body‐pin” styles:
+      document.body.style.position = 'fixed';
+      document.body.style.top      = `-${this.scrollY}px`;
+      document.body.style.width    = '100%';
+
+      // 3) Open the drawer’s CSS class:
+      theme.utils.prepareTransition(this.drawer, function() {
+        this.drawer.classList.add(this.config.activeDrawer);
+      }.bind(this));
+
+      document.documentElement.classList.add(this.config.openClass);
+      this.isOpen = true;
+
+      theme.a11y.trapFocus({
+        container: this.drawer,
+        namespace: 'drawer_focus'
+      });
+
+      document.dispatchEvent(new CustomEvent('drawerOpen'));
+      document.dispatchEvent(new CustomEvent('drawerOpen.' + this.config.id));
+
+      this.bindEvents();
+    },
+
   
       close: function(evt) {
-        if (!this.isOpen) {
+      if (!this.isOpen) return;
+
+      // If the click happened INSIDE the drawer (but not on the close‐button), bail out
+      if (evt) {
+        if (evt.target.closest('.js-drawer-close')) {
+          // allow close
+        } else if (evt.target.closest('.drawer')) {
           return;
         }
-  
-        // Do not close if click event came from inside drawer
-        if (evt) {
-          if (evt.target.closest('.js-drawer-close')) {
-            // Do not close if using the drawer close button
-          } else if (evt.target.closest('.drawer')) {
-            return;
-          }
+      }
+
+      // Blur active form element
+      document.activeElement.blur();
+
+      // 4) Remove the drawer’s “open” class
+      theme.utils.prepareTransition(this.drawer, function() {
+        this.drawer.classList.remove(this.config.activeDrawer);
+      }.bind(this));
+
+      document.documentElement.classList.remove(this.config.openClass);
+      document.documentElement.classList.add(this.config.closingClass);
+
+      window.setTimeout(function() {
+        document.documentElement.classList.remove(this.config.closingClass);
+        if (this.activeSource && this.activeSource.getAttribute('aria-expanded')) {
+          this.activeSource.setAttribute('aria-expanded', 'false');
+          this.activeSource.focus();
         }
-  
-        // deselect any focused form elements
-        document.activeElement.blur();
-  
-        theme.utils.prepareTransition(this.drawer, function() {
-          this.drawer.classList.remove(this.config.activeDrawer);
-        }.bind(this));
-  
-        document.documentElement.classList.remove(this.config.openClass);
-        document.documentElement.classList.add(this.config.closingClass);
-  
-        window.setTimeout(function() {
-          document.documentElement.classList.remove(this.config.closingClass);
-          if (this.activeSource && this.activeSource.getAttribute('aria-expanded')) {
-            this.activeSource.setAttribute('aria-expanded', 'false');
-            this.activeSource.focus();
-          }
-        }.bind(this), 500);
-  
-        this.isOpen = false;
-  
-        theme.a11y.removeTrapFocus({
-          container: this.drawer,
-          namespace: 'drawer_focus'
-        });
-  
-        this.unbindEvents();
-      },
+      }.bind(this), 500);
+
+      // 5) “Unpin” the body and restore scroll position:
+      document.body.style.position = '';
+      document.body.style.top      = '';
+      document.body.style.width    = '';
+      window.scrollTo(0, this.scrollY);
+
+      this.isOpen = false;
+
+      theme.a11y.removeTrapFocus({
+        container: this.drawer,
+        namespace: 'drawer_focus'
+      });
+
+      this.unbindEvents();
+    },
   
       bindEvents: function() {
-    // Clicking out of drawer closes it
-    window.on('click' + this.config.namespace, function(evt) {
-      this.close(evt);
-      return;
-    }.bind(this));
+      // Clicking outside the drawer closes it
+      window.on('click' + this.config.namespace, function(evt) {
+        this.close(evt);
+      }.bind(this));
 
-    // Pressing escape closes drawer
-    window.on('keyup' + this.config.namespace, function(evt) {
-      if (evt.keyCode === 27) {
-        this.close();
-      }
-    }.bind(this));
+      // Pressing ESC closes the drawer
+      window.on('keyup' + this.config.namespace, function(evt) {
+        if (evt.keyCode === 27) {
+          this.close();
+        }
+      }.bind(this));
 
-    theme.a11y.lockMobileScrolling(this.config.namespace, this.nodes.page);
+      theme.a11y.lockMobileScrolling(this.config.namespace, this.nodes.page);
 
-    // ─── iOS: prevent background scroll except inside .drawer__scrollable ───────────
-    this._touchLockHandler = function(e) {
-      // If the touch is not inside this drawer’s ".drawer__scrollable", block it
-      if (!e.target.closest('#' + this.config.id + ' .drawer__scrollable')) {
-        e.preventDefault();
-      }
-    }.bind(this);
+      // ─── iOS: prevent background scroll except inside .drawer__scrollable ───────────
+      this._touchLockHandler = function(e) {
+        // If the touch is not inside the drawer’s “.drawer__scrollable”, block it
+        if (!e.target.closest('#' + this.config.id + ' .drawer__scrollable')) {
+          e.preventDefault();
+        }
+      }.bind(this);
 
-    document.body.addEventListener('touchmove', this._touchLockHandler, { passive: false });
-    // ───────────────────────────────────────────────────────────────────────────────
-  },
+      document.body.addEventListener('touchmove', this._touchLockHandler, { passive: false });
+      // ───────────────────────────────────────────────────────────────────────────────
+    },
   
-     unbindEvents: function() {
-    window.off('click' + this.config.namespace);
-    window.off('keyup' + this.config.namespace);
+      unbindEvents: function() {
+      window.off('click' + this.config.namespace);
+      window.off('keyup' + this.config.namespace);
 
-    theme.a11y.unlockMobileScrolling(this.config.namespace, this.nodes.page);
+      theme.a11y.unlockMobileScrolling(this.config.namespace, this.nodes.page);
 
-    // ─── remove the iOS scroll‐lock listener ─────────────────────────────────────
-    if (this._touchLockHandler) {
-      document.body.removeEventListener('touchmove', this._touchLockHandler, { passive: false });
-      this._touchLockHandler = null;
+      // Remove the iOS scroll‐lock listener
+      if (this._touchLockHandler) {
+        document.body.removeEventListener('touchmove', this._touchLockHandler, { passive: false });
+        this._touchLockHandler = null;
+      }
     }
-    // ───────────────────────────────────────────────────────────────────────────────
-  }
-    });
+  });
   
     return Drawers;
   })();
