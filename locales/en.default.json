@@ -420,7 +420,8 @@
         "subtotal_label": "Ukupno",
         "total_savings": "Ukupna ušteda",
         "free_total_label": "Besplatno",
-        "free_shipping_total_label": "Besplatno"
+        "free_shipping_total_label": "Besplatno",
+        "free_shipping_discount_label": "Besplatno"
       },
       "thank_you": {
         "return_to_store_link_label": "Nastavi kupovinu"
