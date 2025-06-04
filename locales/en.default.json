@@ -424,7 +424,9 @@
         "free_total_label": "Besplatno",
         "free_shipping_total_label": "Besplatno",
         "free_shipping_discount_label": "Besplatno",
-        "shipping_label": "Dostava"
+        "shipping_label": "Dostava",
+        "order_total_label": "Ukupno",
+        "total_label": "Ukupno"
       },
       "thank_you": {
         "return_to_store_link_label": "Nastavi kupovinu"
