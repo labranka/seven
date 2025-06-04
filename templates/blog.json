@@ -27,7 +27,6 @@
         "image_MYNzgF": {
           "type": "image",
           "settings": {
-            "image_icon": "shopify://shop_images/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
             "review_txt": "",
             "title": "",
             "title_size": 80,
@@ -35,8 +34,6 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
-            "image_mobile": "shopify://shop_images/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -64,7 +61,11 @@
           "settings": {
             "sticker_image": "shopify://shop_images/Vector.png",
             "sticker_x": 10,
-            "sticker_y": 10
+            "sticker_y": 10,
+            "width_icon": 40,
+            "sticker_x_d": 10,
+            "sticker_y_d": 10,
+            "width_icon_d": 40
           }
         },
         "sticker_kaUYFQ": {
@@ -72,14 +73,22 @@
           "settings": {
             "sticker_image": "shopify://shop_images/Vector.png",
             "sticker_x": 56,
-            "sticker_y": 10
+            "sticker_y": 10,
+            "width_icon": 40,
+            "sticker_x_d": 10,
+            "sticker_y_d": 10,
+            "width_icon_d": 40
           }
         },
         "sticker_CrQb8P": {
           "type": "sticker",
           "settings": {
             "sticker_x": 42,
-            "sticker_y": 23
+            "sticker_y": 23,
+            "width_icon": 40,
+            "sticker_x_d": 10,
+            "sticker_y_d": 10,
+            "width_icon_d": 40
           }
         }
       },
@@ -90,8 +99,9 @@
       ],
       "name": "Community Section",
       "settings": {
+        "background_color": "",
         "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
-        "main_text": "<p>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami...</p>",
+        "main_text": "<p><strong>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami, posvećeni pružanju pomoći onima kojima je najpotrebnija. Kroz vreme, planiramo da uključimo i vas – našu zajednicu.</strong></p>",
         "image": "shopify://shop_images/image_11.png",
         "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
         "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
