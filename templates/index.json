@@ -315,16 +315,16 @@
         "faq_dropdown_zQd8Vh": {
           "type": "faq-dropdown",
           "settings": {
-            "title": "Koliko traje dostava i koja je cena?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+            "title": "Koliko košta dostava i koliko traje isporuka?",
+            "text": "<p>Cena dostave je 420 dinara, a isporuka traje 1 do 2 radna dana.</p>"
           },
           "blocks": {}
         },
         "faq_dropdown_Nywf3Q": {
           "type": "faq-dropdown",
           "settings": {
-            "title": "Mogu li vratiti ili zameniti majicu ako mi ne odgovara?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+            "title": "Da li je dostava besplatna ako poručim više artikala?",
+            "text": "<p>Da, dostava je besplatna za sve porudžbine koje sadrže dva ili više artikla.</p>"
           },
           "blocks": {}
         },
