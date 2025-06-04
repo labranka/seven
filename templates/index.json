@@ -331,8 +331,8 @@
         "faq_dropdown_zGQQPB": {
           "type": "faq-dropdown",
           "settings": {
-            "title": "Koje veličine su dostupne i kako da izaberem pravu?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+            "title": "Da li mogu da platim pouzećem?",
+            "text": "<p>Da, plaćanje se vrši pouzećem, prilikom preuzimanja paketa od kurira.</p>"
           },
           "blocks": {}
         },
