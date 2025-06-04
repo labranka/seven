@@ -56,6 +56,18 @@
     "custom_comunity_ENqBPz": {
       "type": "custom_comunity",
       "blocks": {
+        "sticker_TFVizC": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Group_6125.png",
+            "sticker_x": 10,
+            "sticker_y": 10,
+            "width_icon": 40,
+            "sticker_x_d": 50,
+            "sticker_y_d": 3,
+            "width_icon_d": 50
+          }
+        },
         "sticker_YJq6VX": {
           "type": "sticker",
           "settings": {
@@ -118,6 +130,7 @@
         }
       },
       "block_order": [
+        "sticker_TFVizC",
         "sticker_YJq6VX",
         "sticker_LmtqGL",
         "sticker_kaUYFQ",
