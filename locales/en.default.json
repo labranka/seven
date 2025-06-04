@@ -425,6 +425,9 @@
       "general": {
         "back_to_contact_information": "Povratak na kontakt informacije",
         "contact_us_html": "Kontaktiraj nas"
+      },
+      "customer_account": {
+        "save_my_information_label": "Sačuvaj informacije za sledeću kupovinu"
       }
     },
     "page_titles": {
