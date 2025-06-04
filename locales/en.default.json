@@ -444,7 +444,8 @@
         "delivery_title": "Dostava"
       },
       "payment": {
-        "title": "Metod plaćanja"
+        "title": "Metod plaćanja",
+        "card_security_notice": "Adresa za naplatu evidentirana za vaš način plaćanja mora biti ista kao adresa za dostavu. Hvala Vam na poverenju. Sva plaćanja su sigurna i zaštićena"
       }
     },
     "page_titles": {
