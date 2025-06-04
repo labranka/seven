@@ -355,8 +355,17 @@
         "faq_dropdown_KeTLzP": {
           "type": "faq-dropdown",
           "settings": {
-            "title": "Kako da perem majicu da se ne upropasti?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+            "title": "Da li su majice uniseks?",
+            "text": "<p>Ne, naši modeli su krojeni i dizajnirani kao ženske oversize majice.</p><p><br/></p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_JzjcYf": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Šta da radim ako dobijem oštećen proizvod?",
+            "text": "<p>Ukoliko primite oštećen artikal, kontaktirajte nas putem emaila ili Instagrama. Naš tim će odmah reagovati i pronaći odgovarajuće rešenje.</p>"
           },
           "blocks": {}
         }
@@ -367,7 +376,8 @@
         "faq_dropdown_zGQQPB",
         "faq_dropdown_QtAE4g",
         "faq_dropdown_AXGVjw",
-        "faq_dropdown_KeTLzP"
+        "faq_dropdown_KeTLzP",
+        "faq_dropdown_JzjcYf"
       ],
       "settings": {
         "title": "<p><em><strong>IMAŠ PITANJE? TU SMO DA </strong></em></p><p><em><strong>ODGOVORIMO</strong></em></p>",
