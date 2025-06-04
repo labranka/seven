@@ -99,9 +99,9 @@
             "sticker_x": 10,
             "sticker_y": 10,
             "width_icon": 40,
-            "sticker_x_d": 10,
-            "sticker_y_d": 10,
-            "width_icon_d": 40
+            "sticker_x_d": 74,
+            "sticker_y_d": 89,
+            "width_icon_d": 26
           }
         }
       },
