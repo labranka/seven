@@ -391,6 +391,18 @@
       "stock": {
         "product_column_header": "Svi proizvodi"
       }
+    },
+    "page_titles": {
+      "products": "Svi proizvodi"
+    }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_list": {
+        "column_headers": {
+          "products_accessibility_label": "Proizvodi"
+        }
+      }
     }
   }
 }
