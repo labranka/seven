@@ -411,7 +411,8 @@
         "optional_phone_label": "Telefon",
         "phone_placeholder": "Telefon",
         "zip_code_label": "Poštanski broj",
-        "postal_code_placeholder": "Poštanski broj"
+        "postal_code_placeholder": "Poštanski broj",
+        "postal_code_label": "Poštanski broj"
       },
       "stock": {
         "product_column_header": "Svi proizvodi"
