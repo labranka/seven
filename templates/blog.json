@@ -83,8 +83,21 @@
         "sticker_CrQb8P": {
           "type": "sticker",
           "settings": {
+            "sticker_image": "shopify://shop_images/Vector.png",
             "sticker_x": 42,
             "sticker_y": 23,
+            "width_icon": 40,
+            "sticker_x_d": 10,
+            "sticker_y_d": 10,
+            "width_icon_d": 40
+          }
+        },
+        "sticker_gpfCUi": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
+            "sticker_x": 10,
+            "sticker_y": 10,
             "width_icon": 40,
             "sticker_x_d": 10,
             "sticker_y_d": 10,
@@ -95,7 +108,8 @@
       "block_order": [
         "sticker_LmtqGL",
         "sticker_kaUYFQ",
-        "sticker_CrQb8P"
+        "sticker_CrQb8P",
+        "sticker_gpfCUi"
       ],
       "name": "Community Section",
       "settings": {
@@ -105,7 +119,7 @@
         "image": "shopify://shop_images/image_11_b2cd6212-b728-477a-bfb7-678b64c904e8.png",
         "image_d": "shopify://shop_images/image_11_b2cd6212-b728-477a-bfb7-678b64c904e8.png",
         "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
-        "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
+        "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo.<br/><br/>Uskoro ćemo omogućiti i formu na sajtu putem koje možete predlagati kome da pomognemo sledeće. Kada forma bude spremna, obavestićemo vas preko naših društvenih mreža, jer verujemo da zajedno možemo postići mnogo više.</p>",
         "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
         "details": "#ffc1bf"
       }
