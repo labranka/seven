@@ -430,7 +430,8 @@
       },
       "general": {
         "back_to_contact_information": "Povratak na kontakt informacije",
-        "contact_us_html": "Kontaktiraj nas"
+        "contact_us_html": "Kontaktiraj nas",
+        "complete_purchase_button_label": "ZAVRŠI KUPOVINU"
       },
       "customer_account": {
         "save_my_information_label": "Sačuvaj informacije za sledeću kupovinu"
