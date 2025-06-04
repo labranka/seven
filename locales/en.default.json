@@ -403,7 +403,6 @@
         "company_label": "Kompanija",
         "address1_label": "Adresa",
         "address2_label": "Broj",
-        "optional_address2_label": "Adreasa 2",
         "city_label": "Grad",
         "country_label": "Zemlja",
         "country_code": "Poštanski broj",
