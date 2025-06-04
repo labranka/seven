@@ -260,7 +260,7 @@
       "quantity": "Quantity",
       "total": "Total",
       "fulfilled_at_html": "Fulfilled {{ date }}",
-      "subtotal": "Subtotal"
+      "subtotal": "Ukupno"
     },
     "recover_password": {
       "title": "Reset your password",
@@ -390,6 +390,9 @@
       },
       "stock": {
         "product_column_header": "Svi proizvodi"
+      },
+      "order_summary": {
+        "subtotal_label": "Ukupno"
       }
     },
     "page_titles": {
@@ -403,6 +406,9 @@
           "products_accessibility_label": "Proizvodi"
         }
       }
+    },
+    "order_details": {
+      "subtotal": "Ukupno"
     }
   }
 }
