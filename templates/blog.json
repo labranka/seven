@@ -60,8 +60,8 @@
           "type": "sticker",
           "settings": {
             "sticker_image": "shopify://shop_images/Group_6125.png",
-            "sticker_x": 10,
-            "sticker_y": 10,
+            "sticker_x": 50,
+            "sticker_y": 2,
             "width_icon": 40,
             "sticker_x_d": 50,
             "sticker_y_d": 3,
@@ -144,8 +144,8 @@
           "type": "sticker",
           "settings": {
             "sticker_image": "shopify://shop_images/Group_6129.png",
-            "sticker_x": 10,
-            "sticker_y": 10,
+            "sticker_x": 50,
+            "sticker_y": 97,
             "width_icon": 40,
             "sticker_x_d": 50,
             "sticker_y_d": 96,
