@@ -417,7 +417,8 @@
         "product_column_header": "Svi proizvodi"
       },
       "order_summary": {
-        "subtotal_label": "Ukupno"
+        "subtotal_label": "Ukupno",
+        "total_savings": "Ukupna ušteda"
       },
       "thank_you": {
         "return_to_store_link_label": "Nastavi kupovinu"
