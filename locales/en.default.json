@@ -387,6 +387,9 @@
     "checkout": {
       "contact": {
         "email_placeholder": "Vaša email adresa..."
+      },
+      "stock": {
+        "product_column_header": "Svi proizvodi"
       }
     }
   }
