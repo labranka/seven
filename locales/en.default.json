@@ -143,7 +143,7 @@
       "checkout": "Završi kupovinu",
       "pregledaj_korpu": "Pregledaj korpu",
       "empty": "Tvoja korpa je trenutno prazna!",
-      "continue_browsing_html": "<a href='{{ url }}'>Continue shopping</a>",
+      "continue_browsing_html": "<a href='{{ url }}'>Nastavi kupovinu</a>",
       "close_cart": "Close cart",
       "savings_html": "You're saving {{ savings }}",
       "reduce_quantity": "Reduce item quantity by one",
@@ -393,6 +393,9 @@
       },
       "order_summary": {
         "subtotal_label": "Ukupno"
+      },
+      "thank_you": {
+        "return_to_store_link_label": "Nastavi kupovinu"
       }
     },
     "page_titles": {
