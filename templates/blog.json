@@ -127,6 +127,18 @@
             "sticker_y_d": 89,
             "width_icon_d": 26
           }
+        },
+        "sticker_cVqXDz": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Group_6129.png",
+            "sticker_x": 10,
+            "sticker_y": 10,
+            "width_icon": 40,
+            "sticker_x_d": 50,
+            "sticker_y_d": 96,
+            "width_icon_d": 40
+          }
         }
       },
       "block_order": [
@@ -135,7 +147,8 @@
         "sticker_LmtqGL",
         "sticker_kaUYFQ",
         "sticker_CrQb8P",
-        "sticker_gpfCUi"
+        "sticker_gpfCUi",
+        "sticker_cVqXDz"
       ],
       "name": "Community Section",
       "settings": {
