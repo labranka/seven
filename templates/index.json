@@ -340,7 +340,7 @@
           "type": "faq-dropdown",
           "settings": {
             "title": "Da li mogu da zamenim majicu ako mi ne odgovara?",
-            "text": "<p>Naravno. Ukoliko vam majica ne odgovara, možete je zameniti. Molimo vas da nas kontaktirate kako bismo dogovorili zamenu.</p><p><br/></p>"
+            "text": "<p>Naravno. Ukoliko vam majica ne odgovara, možete je zameniti. Molimo vas da nas kontaktirate kako bismo dogovorili zamenu.</p>"
           },
           "blocks": {}
         },
@@ -348,7 +348,7 @@
           "type": "faq-dropdown",
           "settings": {
             "title": "Da li izrađujete personalizovane majice po želji?",
-            "text": "<p>Trenutno ne nudimo izradu po meri ili želji. U ponudi su isključivo modeli i dizajni koji se nalaze na sajtu.</p><p><br/></p>"
+            "text": "<p>Trenutno ne nudimo izradu po meri ili želji. U ponudi su isključivo modeli i dizajni koji se nalaze na sajtu.</p>"
           },
           "blocks": {}
         },
@@ -356,7 +356,7 @@
           "type": "faq-dropdown",
           "settings": {
             "title": "Da li su majice uniseks?",
-            "text": "<p>Ne, naši modeli su krojeni i dizajnirani kao ženske oversize majice.</p><p><br/></p>"
+            "text": "<p>Ne, naši modeli su krojeni i dizajnirani kao ženske oversize majice.</p>"
           },
           "blocks": {}
         },
