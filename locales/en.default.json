@@ -55,7 +55,7 @@
     "newsletter_form": {
       "newsletter_email": "Vaša email adresa...",
       "newsletter_confirmation": "Thanks for subscribing",
-      "submit": "Subscribe"
+      "submit": "Prijavi se"
     },
     "search": {
       "view_more": "Show all results for \"{{ terms }}\"",
