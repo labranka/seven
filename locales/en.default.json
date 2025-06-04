@@ -441,8 +441,7 @@
         "shipping_method_title": "Način dostave",
         "free_rate_label": "Besplatno",
         "title": "Dostava",
-        "delivery_title": "Dostava",
-        "shipping_method_notice": "Adresa za naplatu evidentirana"
+        "delivery_title": "Dostava"
       }
     },
     "page_titles": {
