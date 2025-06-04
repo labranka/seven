@@ -412,7 +412,8 @@
         "phone_placeholder": "Telefon",
         "zip_code_label": "Poštanski broj",
         "postal_code_placeholder": "Poštanski broj",
-        "postal_code_label": "Poštanski broj"
+        "postal_code_label": "Poštanski broj",
+        "shipping_used_as_billing_notice": "Ovu adresu upotrijebit ćemo i kao adresu za naplatu za ovu narudžbu."
       },
       "stock": {
         "product_column_header": "Svi proizvodi"
@@ -443,7 +444,8 @@
         "shipping_method_title": "Način dostave",
         "free_rate_label": "Besplatno",
         "title": "Dostava",
-        "delivery_title": "Dostava"
+        "delivery_title": "Dostava",
+        "shipping_used_as_billing_notice": "Ovu adresu upotrijebit ćemo i kao adresu za naplatu za ovu narudžbu."
       },
       "payment": {
         "title": "Metod plaćanja",
