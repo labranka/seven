@@ -120,9 +120,9 @@
           "type": "sticker",
           "settings": {
             "sticker_image": "shopify://shop_images/Vector.png",
-            "sticker_x": 42,
+            "sticker_x": 15,
             "sticker_y": 23,
-            "width_icon": 40,
+            "width_icon": 16,
             "sticker_x_d": 10,
             "sticker_y_d": 87,
             "width_icon_d": 40
