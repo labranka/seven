@@ -108,9 +108,9 @@
           "type": "sticker",
           "settings": {
             "sticker_image": "shopify://shop_images/Vector.png",
-            "sticker_x": 56,
-            "sticker_y": 10,
-            "width_icon": 40,
+            "sticker_x": 7,
+            "sticker_y": 88,
+            "width_icon": 22,
             "sticker_x_d": 25,
             "sticker_y_d": 31,
             "width_icon_d": 26
