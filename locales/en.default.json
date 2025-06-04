@@ -386,7 +386,33 @@
   "shopify": {
     "checkout": {
       "contact": {
-        "email_placeholder": "Vaša email adresa..."
+        "email_placeholder": "Vaša email adresa...",
+        "title": "Informacije",
+        "address_title": "Adresa",
+        "delivery_option_title": "Način dostave",
+        "contact_method_title": "Kontakt",
+        "email_label": "E-mail",
+        "email_or_phone_label": "E-mail ili telefon",
+        "email_or_phone_placeholder": "E-mail ili telefon",
+        "stored_addresses_label": "Sačuvane adrese",
+        "available_addresses_label": "Dostupne adrese",
+        "new_address_label": "Koristi novu adresu",
+        "first_name_label": "Ime",
+        "optional_first_name_label": "Ime",
+        "last_name_label": "Prezive",
+        "company_label": "Kompanija",
+        "address1_label": "Adresa",
+        "address2_label": "Broj",
+        "optional_address2_label": "Adreasa 2",
+        "city_label": "Grad",
+        "country_label": "Zemlja",
+        "country_code": "Poštanski broj",
+        "county_placeholder": "Zemlja",
+        "phone_label": "Telefon",
+        "optional_phone_label": "Telefon",
+        "phone_placeholder": "Telefon",
+        "zip_code_label": "Poštanski broj",
+        "postal_code_placeholder": "Poštanski broj"
       },
       "stock": {
         "product_column_header": "Svi proizvodi"
@@ -396,6 +422,10 @@
       },
       "thank_you": {
         "return_to_store_link_label": "Nastavi kupovinu"
+      },
+      "general": {
+        "back_to_contact_information": "Povratak na kontakt informacije",
+        "contact_us_html": "Kontaktiraj nas"
       }
     },
     "page_titles": {
