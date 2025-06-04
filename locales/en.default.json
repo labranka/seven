@@ -432,6 +432,9 @@
       },
       "delivery_options": {
         "free_total_label": "Free"
+      },
+      "shipping": {
+        "shipping_method_title": "Način dostave"
       }
     },
     "page_titles": {
