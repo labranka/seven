@@ -434,7 +434,8 @@
         "save_my_information_label": "Sačuvaj informacije za sledeću kupovinu"
       },
       "delivery_options": {
-        "free_total_label": "Besplatno"
+        "free_total_label": "Besplatno",
+        "none_method_definition": "Adresa za naplatu evidentirana za vaš način plaćanja mora biti ista kao adresa za dostavu."
       },
       "shipping": {
         "shipping_method_title": "Način dostave",
