@@ -177,12 +177,12 @@
   },
   "contact": {
     "form": {
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone number",
-      "message": "Message",
-      "send": "Send",
-      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
+      "name": "Ime",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "message": "Poruka",
+      "send": "Pošalji",
+      "post_success": "Hvala! Primili smo tvoju poruku, odgovaramo u najkraćem roku."
     }
   },
   "customer": {
