@@ -418,7 +418,8 @@
       },
       "order_summary": {
         "subtotal_label": "Ukupno",
-        "total_savings": "Ukupna ušteda"
+        "total_savings": "Ukupna ušteda",
+        "free_shipping_discount_label": "420 RSD"
       },
       "thank_you": {
         "return_to_store_link_label": "Nastavi kupovinu"
@@ -429,6 +430,9 @@
       },
       "customer_account": {
         "save_my_information_label": "Sačuvaj informacije za sledeću kupovinu"
+      },
+      "delivery_options": {
+        "free_total_label": "Free"
       }
     },
     "page_titles": {
