@@ -34,6 +34,8 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/image_12.png",
+            "image_mobile": "shopify://shop_images/image_12_b8f566ab-f500-4641-adcd-83270e4adcc8.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
