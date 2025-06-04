@@ -446,10 +446,18 @@
       "payment": {
         "title": "Metod plaćanja",
         "card_security_notice": "Adresa za naplatu evidentirana za vaš način plaćanja mora biti ista kao adresa za dostavu. Hvala Vam na poverenju. Sva plaćanja su sigurna i zaštićena"
+      },
+      "payment_gateway": {
+        "cash_on_delivery_label": "Plaćanje kuriru kada vam preda paket"
       }
     },
     "page_titles": {
       "products": "Svi proizvodi"
+    },
+    "notices": {
+      "order": {
+        "cash_on_delivery": "Plaćanje kuriru kada vam preda paket"
+      }
     }
   },
   "customer_accounts": {
@@ -461,7 +469,15 @@
       }
     },
     "order_details": {
-      "subtotal": "Ukupno"
+      "subtotal": "Ukupno",
+      "payment": {
+        "payment_type": {
+          "cash_on_delivery": "Plaćanje kuriru kada vam preda paket"
+        },
+        "manual_payment_methods": {
+          "cash_on_delivery": "Plaćanje kuriru kada vam preda paket"
+        }
+      }
     }
   }
 }
