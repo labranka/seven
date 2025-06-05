@@ -1319,10 +1319,20 @@ h2,
 .footer__menu_txt p,
 .collapsible-content__inner,
 .product-single__vendor {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 25px;
   letter-spacing: 0;
   text-transform: none;
+}
+
+.footer-newsletter-title{
+  font-size: 28px!important;
+  font-style: italic;
+  letter-spacing: -0.8px;
+  line-height: 130%;
+}
+.footer__link-list h5{
+  font-family: var(--typeHeaderPrimary);
 }
 .product-single__vendor{
   margin-bottom: 0;
