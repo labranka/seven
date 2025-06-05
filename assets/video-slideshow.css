@@ -4,6 +4,9 @@
 .video-slideshow-section{
   background-color: var(--color-body);
   color: var(--colorInputText);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 .video-slideshow-title{
 max-width: 1329px;
