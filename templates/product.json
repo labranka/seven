@@ -72,7 +72,7 @@
           "settings": {
             "icon": "shopify://shop_images/SVG3.png",
             "title": "Ko vrši dostavu i koliko traje?",
-            "content": "<p>Dostavu vrši BEX kurirska služba, a na zahtev možemo poslati i putem PostExpress-a. Rok isporuke je 1–2 radna dana. Koliko košta dostava? Cena dostave je 420 dinara. Dostava je besplatna za sve porudžbine koje sadrže bilo koja 2 ili više artikla.  Da li mogu da preuzmem lično? Da, lično preuzimanje je moguće u Kraljevu. Naručite putem sajta, DM-a ili pozivom na 011 4220 444.  Prilikom porudžbine, naglasite da želite lično preuzimanje kako bismo dogovorili termin sa operaterom.</p>",
+            "content": "<p>Dostavu vrši BEX kurirska služba, a na zahtev možemo poslati i putem PostExpress-a.</p><p>Rok isporuke je<strong> 1–2 radna dana</strong>. </p><p></p><p>Koliko košta dostava? </p><p>Cena dostave je <strong>420 dinara</strong>. </p><p>Dostava je besplatna za sve porudžbine koje sadrže bilo koja 2 ili više artikla.  </p><p>Da li mogu da preuzmem lično? Da, lično preuzimanje je moguće u Kraljevu. Naručite putem sajta, DM-a ili pozivom na <strong>011 4220 444.  </strong></p><p></p><p>Prilikom porudžbine, naglasite da želite lično preuzimanje kako bismo dogovorili termin sa operaterom.</p>",
             "page": ""
           }
         },
@@ -81,7 +81,7 @@
           "settings": {
             "icon": "shopify://shop_images/SVG4.png",
             "title": "Povraćaj robe i reklamacije",
-            "content": "<p>Kupujte sigurno – bez stresa. Ukoliko niste zadovoljni kupovinom, imate pravo da vratite proizvod u roku od 14 dana od prijema paketa. Proizvod mora biti nekorišćen i u originalnom pakovanju.  </p><ul><li>Povraćaj proizvoda (bez reklamacije):</li><li>Pošaljite nam email na reklamacije@se7en.rs ili poruku putem Instagrama u roku od 14 dana od prijema paketa.</li><li>U poruci navedite broj porudžbine i razlog povrata.Kada primimo vaš zahtev, zakazujemo kurira – vi samo zapakujte proizvod. </li><li>Kurir dolazi na vašu adresu i preuzima paket.</li><li>Povraćaj novca biće izvršen u roku od 7 radnih dana od dana prijema vraćene robe.</li><li>Troškove povrata snosi kupac.</li></ul><p></p><p><strong>Reklamacije (npr. oštećen artikal):</strong></p><ul><li>Kontaktirajte nas putem emaila ili Instagrama odmah po prijemu pošiljke.</li><li>Pošaljite fotografiju oštećenja i broj porudžbine.</li><li>Naš tim će izvršiti procenu u roku od 2 radna dana.</li><li>Ukoliko je reklamacija osnovana, nudimo: Besplatnu zamenu artikla, ili Puni povraćaj novca</li><li>U slučaju reklamacije, troškove poštarine snosimo mi.</li></ul><p>Za zamenu proizvoda ili dodatna pitanja, slobodno nas kontaktirajte putem emaila: reklamacije@se7en.rs ili putem poruke na Instagramu.</p>",
+            "content": "<p>Kupujte sigurno – bez stresa. Ukoliko niste zadovoljni kupovinom, imate pravo da vratite proizvod u roku od 14 dana od prijema paketa. </p><p>Proizvod mora biti nekorišćen i u originalnom pakovanju.  </p><p></p><p>Povraćaj proizvoda (bez reklamacije):</p><ul><li>Pošaljite nam email na <strong>reklamacije@se7en.rs</strong> ili poruku putem Instagrama u roku od 14 dana od prijema paketa.</li><li>U poruci navedite broj porudžbine i razlog povrata.Kada primimo vaš zahtev, zakazujemo kurira – vi samo zapakujte proizvod. </li><li>Kurir dolazi na vašu adresu i preuzima paket.</li><li>Povraćaj novca biće izvršen u roku od 7 radnih dana od dana prijema vraćene robe.</li><li>Troškove povrata snosi kupac.</li></ul><p></p><p><strong>Reklamacije (npr. oštećen artikal):</strong></p><ul><li>Kontaktirajte nas putem emaila ili Instagrama odmah po prijemu pošiljke.</li><li>Pošaljite fotografiju oštećenja i broj porudžbine.</li><li>Naš tim će izvršiti procenu u roku od<strong> 2 radna dana.</strong></li><li>Ukoliko je reklamacija osnovana, nudimo: Besplatnu zamenu artikla, ili Puni povraćaj novca</li><li>U slučaju reklamacije, troškove poštarine snosimo mi.</li></ul><p></p><p>Za zamenu proizvoda ili dodatna pitanja, slobodno nas kontaktirajte putem emaila: <strong>reklamacije@se7en.rs</strong> ili putem poruke na Instagramu.</p>",
             "page": ""
           }
         },
@@ -90,7 +90,7 @@
           "settings": {
             "icon": "shopify://shop_images/SVG5.png",
             "title": "Pamuk bez filtera. Stav bez kompromisa.",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
+            "content": "<p>Naše majice izrađene su od nebrušenog pamuka - raw edition, koji prolazi kroz manje industrijskih procesa i zato je ekološki odgovorniji izbor. Manje obrade – više prirodnog karaktera. Brza moda? To nije naša priča.  </p><p>Naš materijal je gust, izdržljiv i zamišljen da traje. Svaka serija se proizvodi odgovorno, bez žrtvovanja kvaliteta radi kvantiteta. Majice dolaze iz proverenih lokalnih pogona.</p>",
             "page": ""
           }
         },

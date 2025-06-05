@@ -14,7 +14,7 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "settings": {
-        "announcement_text": "<p>5% SVAKE KUPOVINE IDE U HUMANITARNE SVRHE – <a href=\"/collections/all\" target=\"_blank\" title=\"All products\"><strong>SAZNAJTE VIŠE</strong></a></p>",
+        "announcement_text": "<p>5% SVAKE KUPOVINE IDE U HUMANITARNE SVRHE – <a href=\"/blogs/news\" target=\"_blank\" title=\"News\"><strong>SAZNAJTE VIŠE</strong></a></p>",
         "announcement_closable": false
       }
     },
@@ -25,7 +25,6 @@
           "type": "megamenu",
           "settings": {
             "menu_item": "Home",
-            "promo_image_1": "shopify://shop_images/pexels-rdne-7362919.jpg",
             "promo_heading_1": "Branka test",
             "promo_text_1": "test",
             "promo_url_1": "",

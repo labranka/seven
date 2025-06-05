@@ -34,8 +34,8 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/western-capsule-hero-f_1.png",
-            "image_mobile": "shopify://shop_images/western-capsule-hero-f_1.png",
+            "image": "shopify://shop_images/blog_banner_desk.png",
+            "image_mobile": "shopify://shop_images/blog_banner_mob.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -131,8 +131,8 @@
         "background_color": "#f9f9f9",
         "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
         "main_text": "<p>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami...</p>",
-        "image": "shopify://shop_images/western-capsule-hero-f_1.png",
-        "image_d": "shopify://shop_images/western-capsule-hero-f_1.png",
+        "image": "shopify://shop_images/comunity.png",
+        "image_d": "shopify://shop_images/comunity.png",
         "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
         "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
         "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",

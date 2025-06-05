@@ -23,7 +23,8 @@
             "link": "shopify://collections/frontpage",
             "link_text": "POGLEDAJ ASORTIMAN",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/western-capsule-hero-f_1.png",
+            "image": "shopify://shop_images/banner_desk_main.png",
+            "image_mobile": "shopify://shop_images/banner_mob_main.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -33,8 +34,8 @@
         "image_49pGBH"
       ],
       "settings": {
-        "section_height": "650px",
-        "mobile_height": "500px",
+        "section_height": "550px",
+        "mobile_height": "100vh",
         "parallax": true,
         "style": "arrows",
         "autoplay": true,
@@ -218,7 +219,7 @@
         "video_shopify_nLA8BE"
       ],
       "settings": {
-        "title": "<p><em><strong>SHOP THE LOOK</strong></em></p>"
+        "title": "<p><em><strong>TV</strong></em></p>"
       }
     },
     "text_with_icons_U8WQKe": {
@@ -302,8 +303,8 @@
       ],
       "settings": {
         "align_text": "left",
-        "image": "shopify://shop_images/image_11.png",
-        "image_d": "shopify://shop_images/image_11.png",
+        "image": "shopify://shop_images/email_singup.png",
+        "image_d": "shopify://shop_images/email_singup.png",
         "image_position": "left",
         "color_background": "#f2f2f2",
         "color_text": "#1a1a1a"
@@ -315,48 +316,57 @@
         "faq_dropdown_zQd8Vh": {
           "type": "faq-dropdown",
           "settings": {
-            "title": "Koliko traje dostava i koja je cena?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+            "title": "Koliko košta dostava i koliko traje isporuka?",
+            "text": "<p>Cena dostave je 420 dinara, a isporuka traje 1 do 2 radna dana.</p>"
           },
           "blocks": {}
         },
         "faq_dropdown_Nywf3Q": {
           "type": "faq-dropdown",
           "settings": {
-            "title": "Mogu li vratiti ili zameniti majicu ako mi ne odgovara?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+            "title": "Da li je dostava besplatna ako poručim više artikala?",
+            "text": "<p>Da, dostava je besplatna za sve porudžbine koje sadrže dva ili više artikla.</p>"
           },
           "blocks": {}
         },
         "faq_dropdown_zGQQPB": {
           "type": "faq-dropdown",
           "settings": {
-            "title": "Koje veličine su dostupne i kako da izaberem pravu?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+            "title": "Da li mogu da platim pouzećem?",
+            "text": "<p>Da, plaćanje se vrši pouzećem, prilikom preuzimanja paketa od kurira.</p>"
           },
           "blocks": {}
         },
         "faq_dropdown_QtAE4g": {
           "type": "faq-dropdown",
           "settings": {
-            "title": "Od kog materijala su majice napravljene?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+            "title": "Da li mogu da zamenim majicu ako mi ne odgovara?",
+            "text": "<p>Naravno. Ukoliko vam majica ne odgovara, možete je zameniti. Molimo vas da nas kontaktirate kako bismo dogovorili zamenu.</p>"
           },
           "blocks": {}
         },
         "faq_dropdown_AXGVjw": {
           "type": "faq-dropdown",
           "settings": {
-            "title": "Da li imate personalizovane majice?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+            "title": "Da li izrađujete personalizovane majice po želji?",
+            "text": "<p>Trenutno ne nudimo izradu po meri ili želji. U ponudi su isključivo modeli i dizajni koji se nalaze na sajtu.</p>"
           },
           "blocks": {}
         },
         "faq_dropdown_KeTLzP": {
           "type": "faq-dropdown",
           "settings": {
-            "title": "Kako da perem majicu da se ne upropasti?",
-            "text": "<p>Prijavi se na naš newsletter i budi deo zajednice koja pomaže svakom kupovinom. Prvi saznaj za nove kolekcije, ekskluzivne ponude i naše humanitarne akcije. Pridruži se sada!</p>"
+            "title": "Da li su majice uniseks?",
+            "text": "<p>Ne, naši modeli su krojeni i dizajnirani kao ženske oversize majice.</p>"
+          },
+          "blocks": {}
+        },
+        "faq_dropdown_JzjcYf": {
+          "type": "faq-dropdown",
+          "name": "FAQ Dropdown",
+          "settings": {
+            "title": "Šta da radim ako dobijem oštećen proizvod?",
+            "text": "<p>Ukoliko primite oštećen artikal, kontaktirajte nas putem emaila ili Instagrama. Naš tim će odmah reagovati i pronaći odgovarajuće rešenje.</p>"
           },
           "blocks": {}
         }
@@ -367,7 +377,8 @@
         "faq_dropdown_zGQQPB",
         "faq_dropdown_QtAE4g",
         "faq_dropdown_AXGVjw",
-        "faq_dropdown_KeTLzP"
+        "faq_dropdown_KeTLzP",
+        "faq_dropdown_JzjcYf"
       ],
       "settings": {
         "title": "<p><em><strong>IMAŠ PITANJE? TU SMO DA </strong></em></p><p><em><strong>ODGOVORIMO</strong></em></p>",

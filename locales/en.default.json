@@ -11,7 +11,7 @@
   "general": {
     "404": {
       "title": "404 Page Not Found",
-      "subtext_html": "<p>The page you were looking for does not exist.</p><p><a href='{{ url }}'>Continue shopping</a></p>"
+      "subtext_html": "<p>Stranica ne postoji</p><p><a href='{{ url }}'>Nastavi kupovinu</a></p>"
     },
     "accessibility": {
       "skip_to_content": "Skip to content",
@@ -55,7 +55,7 @@
     "newsletter_form": {
       "newsletter_email": "Vaša email adresa...",
       "newsletter_confirmation": "Thanks for subscribing",
-      "submit": "Subscribe"
+      "submit": "Prijavi se"
     },
     "search": {
       "view_more": "Show all results for \"{{ terms }}\"",
@@ -143,7 +143,7 @@
       "checkout": "Završi kupovinu",
       "pregledaj_korpu": "Pregledaj korpu",
       "empty": "Tvoja korpa je trenutno prazna!",
-      "continue_browsing_html": "<a href='{{ url }}'>Continue shopping</a>",
+      "continue_browsing_html": "<a href='{{ url }}'>Nastavi kupovinu</a>",
       "close_cart": "Close cart",
       "savings_html": "You're saving {{ savings }}",
       "reduce_quantity": "Reduce item quantity by one",
@@ -177,12 +177,12 @@
   },
   "contact": {
     "form": {
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone number",
-      "message": "Message",
-      "send": "Send",
-      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
+      "name": "Ime",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "message": "Poruka",
+      "send": "Pošalji",
+      "post_success": "Hvala! Primili smo tvoju poruku, odgovaramo u najkraćem roku."
     }
   },
   "customer": {
@@ -260,7 +260,7 @@
       "quantity": "Quantity",
       "total": "Total",
       "fulfilled_at_html": "Fulfilled {{ date }}",
-      "subtotal": "Subtotal"
+      "subtotal": "Ukupno"
     },
     "recover_password": {
       "title": "Reset your password",
@@ -317,8 +317,8 @@
       "save_html": "Save {{ saved_amount }}",
       "collection_return": "Back to {{ collection }}",
       "next_product": "Next: {{ title }}",
-      "sale_price": "Sale price",
-      "regular_price": "Regular price",
+      "sale_price": "Sale cena",
+      "regular_price": "Regularna cena",
       "from_text_html": "from {{ price }}",
       "reviews": "Reviews"
     },
@@ -329,13 +329,13 @@
         "one": "Low stock - {{ count }} item left",
         "other": "Low stock - {{ count }} items left"
       },
-      "sold_out": "Sold Out",
+      "sold_out": "Prodato",
       "unavailable": "Unavailable",
-      "quantity": "Quantity",
+      "quantity": "Količina",
       "add_to_cart": "Dodaj u korpu",
       "add_to_cart_short": "Dodaj",
       "preorder": "Pre-order",
-      "include_taxes": "Tax included.",
+      "include_taxes": "Takse uključene.",
       "shipping_policy_html": "<a href='{{ link }}'>Shipping</a> calculated at checkout.",
       "will_not_ship_until": "Ready to ship {{ date }}",
       "will_be_in_stock_after": "Back in stock {{ date }}",
@@ -386,7 +386,104 @@
   "shopify": {
     "checkout": {
       "contact": {
-        "email_placeholder": "Vaša email adresa..."
+        "email_placeholder": "Vaša email adresa...",
+        "title": "Informacije",
+        "address_title": "Adresa",
+        "delivery_option_title": "Način dostave",
+        "contact_method_title": "Kontakt",
+        "email_label": "E-mail",
+        "email_or_phone_label": "E-mail ili telefon",
+        "email_or_phone_placeholder": "E-mail ili telefon",
+        "stored_addresses_label": "Sačuvane adrese",
+        "available_addresses_label": "Dostupne adrese",
+        "new_address_label": "Koristi novu adresu",
+        "first_name_label": "Ime",
+        "optional_first_name_label": "Ime",
+        "last_name_label": "Prezime",
+        "company_label": "Kompanija",
+        "address1_label": "Adresa",
+        "address2_label": "Broj",
+        "city_label": "Grad",
+        "country_label": "Zemlja",
+        "country_code": "Poštanski broj",
+        "county_placeholder": "Zemlja",
+        "phone_label": "Telefon",
+        "optional_phone_label": "Telefon",
+        "phone_placeholder": "Telefon",
+        "zip_code_label": "Poštanski broj",
+        "postal_code_placeholder": "Poštanski broj",
+        "postal_code_label": "Poštanski broj",
+        "shipping_used_as_billing_notice": "Ovu adresu upotrijebit ćemo i kao adresu za naplatu za ovu narudžbu."
+      },
+      "stock": {
+        "product_column_header": "Svi proizvodi"
+      },
+      "order_summary": {
+        "subtotal_label": "Ukupno",
+        "total_savings": "Ukupna ušteda",
+        "free_total_label": "Besplatno",
+        "free_shipping_total_label": "Besplatno",
+        "free_shipping_discount_label": "Besplatno",
+        "shipping_label": "Dostava",
+        "order_total_label": "Ukupno",
+        "total_label": "Ukupno"
+      },
+      "thank_you": {
+        "return_to_store_link_label": "Nastavi kupovinu"
+      },
+      "general": {
+        "back_to_contact_information": "Povratak na kontakt informacije",
+        "contact_us_html": "Kontaktiraj nas",
+        "complete_purchase_button_label": "ZAVRŠI KUPOVINU"
+      },
+      "customer_account": {
+        "save_my_information_label": "Sačuvaj informacije za sledeću kupovinu"
+      },
+      "delivery_options": {
+        "free_total_label": "Besplatno"
+      },
+      "shipping": {
+        "shipping_method_title": "Način dostave",
+        "free_rate_label": "Besplatno",
+        "title": "Dostava",
+        "delivery_title": "Dostava",
+        "shipping_used_as_billing_notice": "Ovu adresu upotrijebit ćemo i kao adresu za naplatu za ovu narudžbu."
+      },
+      "payment": {
+        "title": "Metod plaćanja",
+        "card_security_notice": "Adresa za naplatu evidentirana za vaš način plaćanja mora biti ista kao adresa za dostavu. Hvala Vam na poverenju. Sva plaćanja su sigurna i zaštićena",
+        "billing_must_match_shipping_notice": "Adresa za naplatu evidentirana za vaš način plaćanja mora biti ista kao adresa za dostavu. Hvala Vam na poverenju. Sva plaćanja su sigurna i zaštićena"
+      },
+      "payment_gateway": {
+        "cash_on_delivery_label": "Plaćanje kuriru kada vam preda paket"
+      }
+    },
+    "page_titles": {
+      "products": "Svi proizvodi"
+    },
+    "notices": {
+      "order": {
+        "cash_on_delivery": "Plaćanje kuriru kada vam preda paket"
+      }
+    }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_list": {
+        "column_headers": {
+          "products_accessibility_label": "Proizvodi"
+        }
+      }
+    },
+    "order_details": {
+      "subtotal": "Ukupno",
+      "payment": {
+        "payment_type": {
+          "cash_on_delivery": "Plaćanje kuriru kada vam preda paket"
+        },
+        "manual_payment_methods": {
+          "cash_on_delivery": "Plaćanje kuriru kada vam preda paket"
+        }
       }
     }
   }

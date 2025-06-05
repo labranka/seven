@@ -27,7 +27,6 @@
         "image_MYNzgF": {
           "type": "image",
           "settings": {
-            "image_icon": "shopify://shop_images/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
             "review_txt": "",
             "title": "",
             "title_size": 80,
@@ -35,8 +34,8 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
-            "image_mobile": "shopify://shop_images/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
+            "image": "shopify://shop_images/blog_banner_desk.png",
+            "image_mobile": "shopify://shop_images/blog_banner_mob.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -59,42 +58,118 @@
     "custom_comunity_ENqBPz": {
       "type": "custom_comunity",
       "blocks": {
+        "sticker_TFVizC": {
+          "type": "sticker",
+          "settings": {
+            "sticker_image": "shopify://shop_images/Group_6125.png",
+            "sticker_x": 50,
+            "sticker_y": 2,
+            "width_icon": 40,
+            "sticker_x_d": 50,
+            "sticker_y_d": 3,
+            "width_icon_d": 50
+          }
+        },
+        "sticker_qJXPqd": {
+          "type": "sticker",
+          "settings": {
+            "sticker_x": 79,
+            "sticker_y": 10,
+            "width_icon": 12,
+            "sticker_x_d": 75,
+            "sticker_y_d": 10,
+            "width_icon_d": 14
+          }
+        },
+        "sticker_YJq6VX": {
+          "type": "sticker",
+          "settings": {
+            "sticker_x": 84,
+            "sticker_y": 32,
+            "width_icon": 40,
+            "sticker_x_d": 79,
+            "sticker_y_d": 30,
+            "width_icon_d": 40
+          }
+        },
         "sticker_LmtqGL": {
           "type": "sticker",
           "settings": {
             "sticker_image": "shopify://shop_images/Vector.png",
             "sticker_x": 10,
-            "sticker_y": 10
+            "sticker_y": 10,
+            "width_icon": 40,
+            "sticker_x_d": 10,
+            "sticker_y_d": 10,
+            "width_icon_d": 40
           }
         },
         "sticker_kaUYFQ": {
           "type": "sticker",
           "settings": {
             "sticker_image": "shopify://shop_images/Vector.png",
-            "sticker_x": 56,
-            "sticker_y": 10
+            "sticker_x": 7,
+            "sticker_y": 88,
+            "width_icon": 22,
+            "sticker_x_d": 25,
+            "sticker_y_d": 31,
+            "width_icon_d": 26
           }
         },
         "sticker_CrQb8P": {
           "type": "sticker",
           "settings": {
-            "sticker_x": 42,
-            "sticker_y": 23
+            "sticker_image": "shopify://shop_images/Vector.png",
+            "sticker_x": 15,
+            "sticker_y": 23,
+            "width_icon": 16,
+            "sticker_x_d": 10,
+            "sticker_y_d": 87,
+            "width_icon_d": 40
+          }
+        },
+        "sticker_gpfCUi": {
+          "type": "sticker",
+          "settings": {
+            "sticker_x": 82,
+            "sticker_y": 96,
+            "width_icon": 24,
+            "sticker_x_d": 74,
+            "sticker_y_d": 89,
+            "width_icon_d": 26
+          }
+        },
+        "sticker_cVqXDz": {
+          "type": "sticker",
+          "settings": {
+            "sticker_x": 50,
+            "sticker_y": 97,
+            "width_icon": 40,
+            "sticker_x_d": 50,
+            "sticker_y_d": 96,
+            "width_icon_d": 40
           }
         }
       },
       "block_order": [
+        "sticker_TFVizC",
+        "sticker_qJXPqd",
+        "sticker_YJq6VX",
         "sticker_LmtqGL",
         "sticker_kaUYFQ",
-        "sticker_CrQb8P"
+        "sticker_CrQb8P",
+        "sticker_gpfCUi",
+        "sticker_cVqXDz"
       ],
       "name": "Community Section",
       "settings": {
+        "background_color": "#f9f9f9",
         "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
-        "main_text": "<p>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami...</p>",
-        "image": "shopify://shop_images/image_11.png",
+        "main_text": "<p><strong>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami, posvećeni pružanju pomoći onima kojima je najpotrebnija. Kroz vreme, planiramo da uključimo i vas – našu zajednicu.</strong></p>",
+        "image": "shopify://shop_images/comunity.png",
+        "image_d": "shopify://shop_images/comunity.png",
         "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
-        "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo...</p>",
+        "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo.<br/><br/>Uskoro ćemo omogućiti i formu na sajtu putem koje možete predlagati kome da pomognemo sledeće. Kada forma bude spremna, obavestićemo vas preko naših društvenih mreža, jer verujemo da zajedno možemo postići mnogo više.</p>",
         "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
         "details": "#ffc1bf"
       }
