@@ -34,8 +34,8 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/image_12.png",
-            "image_mobile": "shopify://shop_images/image_12_b8f566ab-f500-4641-adcd-83270e4adcc8.png",
+            "image": "shopify://shop_images/blog_banner_desk.png",
+            "image_mobile": "shopify://shop_images/blog_banner_mob.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -73,7 +73,6 @@
         "sticker_qJXPqd": {
           "type": "sticker",
           "settings": {
-            "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
             "sticker_x": 79,
             "sticker_y": 10,
             "width_icon": 12,
@@ -85,7 +84,6 @@
         "sticker_YJq6VX": {
           "type": "sticker",
           "settings": {
-            "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
             "sticker_x": 84,
             "sticker_y": 32,
             "width_icon": 40,
@@ -133,7 +131,6 @@
         "sticker_gpfCUi": {
           "type": "sticker",
           "settings": {
-            "sticker_image": "shopify://shop_images/Vector_1761d994-ac2a-4df4-b1a2-7635cfaab148.png",
             "sticker_x": 82,
             "sticker_y": 96,
             "width_icon": 24,
@@ -145,7 +142,6 @@
         "sticker_cVqXDz": {
           "type": "sticker",
           "settings": {
-            "sticker_image": "shopify://shop_images/Group_6129.png",
             "sticker_x": 50,
             "sticker_y": 97,
             "width_icon": 40,
@@ -170,8 +166,6 @@
         "background_color": "#f9f9f9",
         "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
         "main_text": "<p><strong>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami, posvećeni pružanju pomoći onima kojima je najpotrebnija. Kroz vreme, planiramo da uključimo i vas – našu zajednicu.</strong></p>",
-        "image": "shopify://shop_images/image_11_b2cd6212-b728-477a-bfb7-678b64c904e8.png",
-        "image_d": "shopify://shop_images/image_11_b2cd6212-b728-477a-bfb7-678b64c904e8.png",
         "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
         "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo.<br/><br/>Uskoro ćemo omogućiti i formu na sajtu putem koje možete predlagati kome da pomognemo sledeće. Kada forma bude spremna, obavestićemo vas preko naših društvenih mreža, jer verujemo da zajedno možemo postići mnogo više.</p>",
         "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
