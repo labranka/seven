@@ -229,7 +229,13 @@ product-recommendations .index-section{
   font-style: italic;
   font-weight: bold;
 }
+quick-atc .add-to-cart{
+  background-color: var(--colorCartDot);
+}
 
+.modal--square .modal__centered-content{
+  padding: 20px;
+}
 .pdp-two-icons{
   display: flex;
   justify-content: space-around;
@@ -1429,6 +1435,9 @@ h2,
 .product__price--compare{
   opacity: 0.5;
 }
+quick-atc .product__price{
+  opacity: 0.8;
+}
 .modal__close .icon,
 .modal__fake-close .icon{
   width: 16px;
@@ -1467,6 +1476,19 @@ stroke-linecap: round;
 
 .modal--quick-shop .modal__inner{
   max-width: 528px;
+  width: 100%;
+  margin-inline: 8px;
+}
+
+.modal--quick-shop .modal__centered,
+.modal--quick-shop .modal__centered .grid,
+.modal--quick-shop .modal__centered .grid__item {
+  max-width: 100%;
+  width: 100%;
+  flex: 1!important;
+}
+.modal--quick-shop .product-single__meta{
+  padding-inline: 0!important;
 }
 
 .grid-product__tag{

@@ -129,6 +129,10 @@
 }
 
 @media (min-width: 769px) {
+
+  .community-section{
+    padding-block: 80px!important;
+  }
     .section-footer-comuniry{
   margin-top: 0px;
 }
