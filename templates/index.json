@@ -23,7 +23,8 @@
             "link": "shopify://collections/frontpage",
             "link_text": "POGLEDAJ ASORTIMAN",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/western-capsule-hero-f_1.png",
+            "image": "shopify://shop_images/banner_desk_main.png",
+            "image_mobile": "shopify://shop_images/banner_mob_main.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
