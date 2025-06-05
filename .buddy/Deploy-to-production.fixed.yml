@@ -12,5 +12,7 @@
     theme: Seven/main
     deployment_excludes:
     - '*.json'
+    - assets/*.svg
+    - assets/theme.css
     deployment_includes:
     - settings_schema.json
