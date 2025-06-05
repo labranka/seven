@@ -34,8 +34,8 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/western-capsule-hero-f_1.png",
-            "image_mobile": "shopify://shop_images/western-capsule-hero-f_1.png",
+            "image": "shopify://shop_images/blog_banner_desk.png",
+            "image_mobile": "shopify://shop_images/blog_banner_mob.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
