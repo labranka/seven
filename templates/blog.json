@@ -166,6 +166,8 @@
         "background_color": "#f9f9f9",
         "main_heading": "VIŠE OD MODE - SRCEM ZA ZAJEDNICU",
         "main_text": "<p><strong>Naša misija je da činimo više od same mode. Od svakog prodatog komada, 5% odlazi na humanitarne svrhe. Prvih nekoliko donacija biramo sami, posvećeni pružanju pomoći onima kojima je najpotrebnija. Kroz vreme, planiramo da uključimo i vas – našu zajednicu.</strong></p>",
+        "image": "shopify://shop_images/comunity.png",
+        "image_d": "shopify://shop_images/comunity.png",
         "donation_heading": "<p>PRAĆENJE DONACIJE</p>",
         "donation_text": "<p>Na našoj posebnoj stranici možete pratiti svaku donaciju: od priče iza svake akcije, preko fotografija i dokaza o transakcijama, do ličnih poseta i susreta sa onima kojima pomažemo.<br/><br/>Uskoro ćemo omogućiti i formu na sajtu putem koje možete predlagati kome da pomognemo sledeće. Kada forma bude spremna, obavestićemo vas preko naših društvenih mreža, jer verujemo da zajedno možemo postići mnogo više.</p>",
         "footer_text": "<p>HVALA TI ŠTO SI DEO NAŠE PRIČE I ŠTO ZAJEDNO GRADIMO BOLJE SUTRA.</p>",
