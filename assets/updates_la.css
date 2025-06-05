@@ -1,5 +1,9 @@
-
-
+.modal-open .modal:before{
+  z-index: 99;
+}
+.modal-open .modal .modal__inner{
+  z-index: 100;
+}
 .pdp-variants-chart {
   display: flex;
   justify-content: space-between;
