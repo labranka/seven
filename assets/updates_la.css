@@ -1306,7 +1306,7 @@ h2,
 .footer__link-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 32px 24px;
 }
 
 .footer__links-wrapper {
@@ -1324,7 +1324,9 @@ h2,
   letter-spacing: 0;
   text-transform: none;
 }
-
+.footer__menu_txt p{
+  margin-bottom: 4px;
+}
 .footer-newsletter-title{
   font-size: 28px!important;
   font-style: italic;
