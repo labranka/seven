@@ -5,3 +5,12 @@
   events:
   - type: PUSH
   fail_on_prepare_env_warning: true
+  actions:
+  - action: Transfer to Shopify/Seven/main
+    type: SHOPIFY
+    integration: seven777
+    theme: Seven/main
+    deployment_excludes:
+    - '*.json'
+    deployment_includes:
+    - settings_schema.json
