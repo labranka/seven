@@ -5439,9 +5439,6 @@ predictive-search .predictive__screen{
     padding:7px 36px 7px 10px;
   }
 
-.site-footer select{
-    background-image:var(--urlIcoSelectFooterSvg);
-  }
 
 .site-footer a{
     color:currentColor;
