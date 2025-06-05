@@ -1,0 +1,7 @@
+- pipeline: deploy_to_production
+  name: Deploy to production
+  refs:
+  - refs/heads/development
+  events:
+  - type: PUSH
+  fail_on_prepare_env_warning: true
