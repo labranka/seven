@@ -303,8 +303,8 @@
       ],
       "settings": {
         "align_text": "left",
-        "image": "shopify://shop_images/image_11.png",
-        "image_d": "shopify://shop_images/image_11.png",
+        "image": "shopify://shop_images/email_singup.png",
+        "image_d": "shopify://shop_images/email_singup.png",
         "image_position": "left",
         "color_background": "#f2f2f2",
         "color_text": "#1a1a1a"
