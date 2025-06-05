@@ -1,6 +1,10 @@
 .modal-open .modal:before{
   z-index: 99;
 }
+
+.shopify-section{
+  position: relative;
+}
 .modal-open .modal .modal__inner{
   z-index: 100;
 }
