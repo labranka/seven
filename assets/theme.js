@@ -2536,7 +2536,7 @@ theme.collapsibles = (function() {
         if (this.activeSource && this.activeSource.getAttribute('aria-expanded')) {
           this.activeSource.setAttribute('aria-expanded', 'false').focus();
         }
-      }.bind(this), 500); // modal close css transition
+      }.bind(this), 200); // modal close css transition
   
       if (this.isSolid) {
         document.documentElement.classList.remove(this.config.bodyOpenSolidClass);

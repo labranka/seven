@@ -1,3 +1,281 @@
+/* ============================
+   OPEN ANIMATION (with prefixes)
+   ============================ */
+.modal-open .modal .modal__inner {
+  /* WebKit‐prefixed */
+  -webkit-animation: modal-open 0.2s ease-out forwards;
+     -moz-animation: modal-open 0.2s ease-out forwards;
+       -o-animation: modal-open 0.2s ease-out forwards;
+          animation: modal-open 0.2s ease-out forwards;
+}
+
+/* Overlay fade‐in */
+.modal-open .modal:before {
+  /* WebKit‐prefixed */
+  -webkit-animation: overlay-on 0.2s ease-out forwards;
+     -moz-animation: overlay-on 0.2s ease-out forwards;
+       -o-animation: overlay-on 0.2s ease-out forwards;
+          animation: overlay-on 0.2s ease-out forwards;
+  background-color: var(--colorModalBg);
+  content: "";
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* ============================
+   CLOSE ANIMATION (with prefixes)
+   ============================ */
+.modal-closing .modal .modal__inner {
+  /* WebKit‐prefixed */
+  -webkit-animation: modal-closing 0.2s ease-out forwards;
+     -moz-animation: modal-closing 0.2s ease-out forwards;
+       -o-animation: modal-closing 0.2s ease-out forwards;
+          animation: modal-closing 0.2s ease-out forwards;
+}
+
+/* Overlay fade‐out */
+.modal-closing .modal:before {
+  /* WebKit‐prefixed */
+  -webkit-animation: overlay-off 0.2s ease-out forwards;
+     -moz-animation: overlay-off 0.2s ease-out forwards;
+       -o-animation: overlay-off 0.2s ease-out forwards;
+          animation: overlay-off 0.2s ease-out forwards;
+  background-color: var(--colorModalBg);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* (Optional) If you’re using “solid” variants */
+.modal-open--solid .modal:before {
+  background-color: var(--colorModalBg);
+}
+.modal-open .modal--solid:before {
+  /* WebKit‐prefixed */
+  -webkit-animation: full-overlay-on 0.2s ease-out forwards;
+     -moz-animation: full-overlay-on 0.2s ease-out forwards;
+       -o-animation: full-overlay-on 0.2s ease-out forwards;
+          animation: full-overlay-on 0.2s ease-out forwards;
+  background-color: #000;
+}
+.modal-closing .modal--solid:before {
+  /* WebKit‐prefixed */
+  -webkit-animation: full-overlay-off 0.2s ease-out forwards;
+     -moz-animation: full-overlay-off 0.2s ease-out forwards;
+       -o-animation: full-overlay-off 0.2s ease-out forwards;
+          animation: full-overlay-off 0.2s ease-out forwards;
+  background-color: #000;
+}
+
+/* ============================
+   KEEP THE MODAL VISIBLE DURING CLOSING
+   ============================ */
+.modal--is-closing {
+  display: flex !important;
+  overflow: hidden;
+}
+
+.modal--is-active {
+  display: flex !important;
+  overflow: hidden;
+}
+
+/* ============================
+   KEYFRAMES (with -webkit- prefixes)
+   ============================ */
+
+/* OPEN: fade in and slide up */
+@-webkit-keyframes modal-open {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-moz-keyframes modal-open {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(30px);
+         transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+         transform: translateY(0);
+  }
+}
+@-o-keyframes modal-open {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(30px);
+        transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+        transform: translateY(0);
+  }
+}
+@keyframes modal-open {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/* CLOSE: fade out and scale down slightly */
+@-webkit-keyframes modal-closing {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+@-moz-keyframes modal-closing {
+  0% {
+    opacity: 1;
+    -moz-transform: scale(1);
+         transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(0.9);
+         transform: scale(0.9);
+  }
+}
+@-o-keyframes modal-closing {
+  0% {
+    opacity: 1;
+    -o-transform: scale(1);
+        transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -o-transform: scale(0.9);
+        transform: scale(0.9);
+  }
+}
+@keyframes modal-closing {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+/* OVERLAY fade-in */
+@-webkit-keyframes overlay-on {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes overlay-on {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes overlay-on {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes overlay-on {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* OVERLAY fade-out */
+@-webkit-keyframes overlay-off {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes overlay-off {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes overlay-off {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes overlay-off {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* FULL OVERLAY (solid) fade-in */
+@-webkit-keyframes full-overlay-on {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes full-overlay-on {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes full-overlay-on {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes full-overlay-on {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* FULL OVERLAY (solid) fade-out */
+@-webkit-keyframes full-overlay-off {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes full-overlay-off {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes full-overlay-off {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes full-overlay-off {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ============================
+   FORCE GPU COMPOSITING ON IOS
+   ============================ */
+.modal__inner {
+  /* Force GPU compositing on iOS WebKit */
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+
 .pdp-variants-chart {
   display: flex;
   justify-content: space-between;
