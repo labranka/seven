@@ -61,7 +61,7 @@
                   {% if isModal %}
                     {%- if product.media.size > 0 and product.media[0].preview_image != blank -%}
                           <div class="product-img-module">
-                                  <div class="image-wrap aos-animate article__featured-image loaded" style="aspect-ratio:0.8;">
+                                  <div class="image-wrap article__featured-image loaded" style="aspect-ratio:0.8;">
                                     {%- render 'image-element',
                                       img: product.media[0].preview_image,
                                       alt: product.media[0].alt | escape | split: '#' | first,
