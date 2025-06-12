@@ -48,7 +48,7 @@
     "animate_sections_text_style": "rise-up",
     "animate_images": true,
     "animate_images_style": "zoom-fade",
-    "animate_buttons": false,
+    "animate_buttons": true,
     "animate_underlines": true,
     "vendor_enable": true,
     "product_grid_image_size": "portrait",
