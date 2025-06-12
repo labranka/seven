@@ -812,12 +812,18 @@ display: flex;
   :not(.btn--tertiary)
   :not(.btn--static)
   :not(.cart__link-cart-page),
-.drawer .cart__checkout:not(.cart__link-cart-page){
+.drawer .cart__checkout:not(.cart__link-cart-page),
+.cart__checkout{
  background: var(--colorBtnPrimary) var(--urlButtonArrowPng) no-repeat 150% 35%;
    background-color:var(--colorCartDot) !important;
 }
-
-.drawer .cart__checkout{
+[data-type_header_accent_transform=true] .cart__subtotal,
+.cart__item-sub [data-subtotal]{
+  letter-spacing: 0;
+  font-size: 17px;
+}
+.drawer .cart__checkout,
+.cart__checkout{
   font-family: var(--typeHeaderPrimary);
   font-style: italic;
   font-size: 14px;
