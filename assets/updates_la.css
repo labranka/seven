@@ -816,6 +816,12 @@ display: flex;
  background: var(--colorBtnPrimary) var(--urlButtonArrowPng) no-repeat 150% 35%;
    background-color:var(--colorCartDot) !important;
 }
+
+.drawer .cart__checkout{
+  font-family: var(--typeHeaderPrimary);
+  font-style: italic;
+  font-size: 14px;
+}
 .cart__link-cart-page{
   background-color: transparent !important;
   color: var(--colorCartDot)!important;
