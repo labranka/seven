@@ -806,18 +806,27 @@ display: flex;
   width: fit-content;
   font-weight: bold;
 }
-
-[data-animate_buttons=true] .btn.cart__checkout:not(.btn--no-animate):not(.btn--tertiary):not(.btn--static),
+[data-animate_buttons=true] 
+.btn.cart__checkout
+  :not(.btn--no-animate)
+  :not(.btn--tertiary)
+  :not(.btn--static)
+  :not(.cart__link-cart-page),
 .drawer .cart__checkout:not(.cart__link-cart-page){
- background: var(--colorBtnPrimary) var(--urlButtonArrowPng) no-repeat 150% 35%;;
+ background: var(--colorBtnPrimary) var(--urlButtonArrowPng) no-repeat 150% 35%;
    background-color:var(--colorCartDot) !important;
 }
 .cart__link-cart-page{
   background-color: transparent !important;
   color: var(--colorCartDot)!important;
-  background: var(--colorBtnPrimary) var(--urlButtonArrowPng) no-repeat 150% 35%;;
+  background: transparent var(--urlButtonArrowPngBlue) no-repeat 150% 35%!important;
   border-color: var(--colorCartDot);
 }
+.cart__link-cart-page:hover{
+      background-position: 91% 35%!important;
+  
+}
+
 
 .cart__item--variants{
   opacity: 0.5;
