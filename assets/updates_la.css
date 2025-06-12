@@ -828,8 +828,8 @@ display: flex;
   font-style: italic;
   font-size: 14px;
 }
-.cart__link-cart-page{
-  background-color: transparent !important;
+.drawer .cart__link-cart-page{
+  background-color: transparent!important;
   color: var(--colorCartDot)!important;
   background: transparent var(--urlButtonArrowPngBlue) no-repeat 150% 35%!important;
   border-color: var(--colorCartDot);
