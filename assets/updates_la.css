@@ -828,7 +828,7 @@ display: flex;
   font-style: italic;
   font-size: 14px;
 }
-.drawer .cart__link-cart-page{
+.drawer .cart__link-cart-page.cart__checkout{
   background-color: transparent!important;
   color: var(--colorCartDot)!important;
   background: transparent var(--urlButtonArrowPngBlue) no-repeat 150% 35%!important;
