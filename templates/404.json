@@ -34,7 +34,7 @@
           "settings": {
             "title": "Radimo na nečemu sjajnom. Vidimo se uskoro!",
             "title_size": 80,
-            "subheading": "",
+            
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-left",
@@ -47,7 +47,7 @@
           "settings": {
             "title": "Two line\nslide titles.",
             "title_size": 80,
-            "subheading": "And big, beautiful imagery",
+           
             "link": "",
             "link_text": "Optional button",
             "text_align": "vertical-bottom horizontal-left",
