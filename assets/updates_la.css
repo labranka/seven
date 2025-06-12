@@ -2214,6 +2214,10 @@ padding: 0;
 }
 }
 @media screen and (min-width: 1025px) {
+  .drawer .cart__checkout{
+
+  font-size: 14px;
+}
   .recently-view-products>*{
     max-width: 1500px;
     margin-left: auto;
