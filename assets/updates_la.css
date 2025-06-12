@@ -569,7 +569,7 @@ product-recommendations[data-intent=complementary] .grid-product__link{
 #CartPageForm{
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 16px 0;
 }
 .js-qty__adjust:hover{
   border-radius: 10px;
@@ -2220,6 +2220,11 @@ padding: 0;
 }
 }
 @media screen and (min-width: 1025px) {
+  #CartPageForm{
+  display: flex;
+  flex-direction: column;
+  padding: 16px 32px;
+}
   .drawer .cart__checkout{
 
   font-size: 14px;
