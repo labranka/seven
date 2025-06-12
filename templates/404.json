@@ -18,7 +18,7 @@
       "type": "featured-collection",
       "disabled": true,
       "settings": {
-        "title": "Popular picks",
+      
         "home_featured_products": "",
         "per_row": 4,
         "rows": 1,
@@ -32,8 +32,8 @@
         "image_M6APmN": {
           "type": "image",
           "settings": {
-            "title": "Radimo na nečemu sjajnom. Vidimo se uskoro!",
-            "title_size": 80,
+          
+          
             
             "link": "",
             "link_text": "",
@@ -45,8 +45,8 @@
         "image_fCJKAm": {
           "type": "image",
           "settings": {
-            "title": "Two line\nslide titles.",
-            "title_size": 80,
+           
+          
            
             "link": "",
             "link_text": "Optional button",
