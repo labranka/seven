@@ -1940,7 +1940,13 @@ padding: 0;
     left: unset;
     right: 4px;
     top: 0;
-    opacity: 1!important;
+   
+  }
+
+  .product__photo-zoom{
+    opacity: 1;
+    right: 16px;
+    left: unset;
   }
 .product-section .product__photos{
   display: flex!important;
