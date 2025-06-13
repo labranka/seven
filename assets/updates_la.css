@@ -1935,6 +1935,13 @@ padding: 0;
 }
 
 @media only screen and (min-width: 590px) {
+  .product__photo-zoom span, .product__photo-zoom svg{
+    display: flex;
+    left: unset;
+    right: 4px;
+    top: 0;
+    opacity: 1!important;
+  }
 .product-section .product__photos{
   display: flex!important;
     width: 100%!important;
