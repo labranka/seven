@@ -1646,8 +1646,6 @@ stroke-linecap: round;
   width: 16px;
 }
 .modal__fake-close{
- 
-
   z-index: 2;
   background-color: var(--colorBody);
   border-radius: 100%;
@@ -1658,6 +1656,12 @@ stroke-linecap: round;
   width: 52px;
   height: 52px;
 }
+quick-atc .variant-wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+} 
 .modal--quick-shop .product-single__meta{
   padding-left: 0;
 }
