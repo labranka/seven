@@ -1035,7 +1035,15 @@ p{
   font-size: 16px;
   line-height: 130%;
   letter-spacing: 0;
+  font-family: var(--typeBase);
+  font-weight: var(--typeBaseWeight);
+}
 
+
+.faq-dropdown__content-wrapper .collapsible-trigger span{
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0;
   font-family: var(--typeBaseBold);
   font-weight: var(--typeBaseBoldWeight);
 }
