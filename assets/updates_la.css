@@ -1088,7 +1088,7 @@ h2,
   font-style: italic;
   letter-spacing: -0.8px;
   line-height: 130%;
-  font-weight: bold;
+  font-weight: var(--typeHeaderWeight);
 }
 .shopify-pc__banner__body-title,
 .shopify-pc__banner__dialog h2{
