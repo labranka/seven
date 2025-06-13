@@ -1,3 +1,7 @@
+.section-richtext a{
+  pointer-events: none;
+}
+
 .grid-product__title{
   font-family: var(--typeBaseBold);
   font-weight: var(--typeBaseBoldWeight);
@@ -2311,6 +2315,8 @@ padding: 0;
   max-width: 850px;
   margin-left: 0;
 }
+
+
   .main-cart-global{
     max-width: 868px;
     width: 50vw;
