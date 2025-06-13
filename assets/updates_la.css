@@ -1646,10 +1646,8 @@ stroke-linecap: round;
   width: 16px;
 }
 .modal__fake-close{
-  position: absolute;
-  top: -60px;
-  left: 50%;
-  transform: translateX(-50%);
+ 
+
   z-index: 2;
   background-color: var(--colorBody);
   border-radius: 100%;
