@@ -436,7 +436,7 @@ quick-atc .add-to-cart{
   align-items: center;
   gap: 8px;
   font-family: var(--typeBaseBold);
-  font-weight: var(--typeBaseWeight);
+  font-weight: var(--typeBaseBoldWeight);
 }
 .pdp-icon-dropdown{
   width: 24px;
