@@ -323,7 +323,17 @@
       },
       {
         "type": "header",
+        "content": "Body text bold"
+      },
+      {
+        "type": "header",
         "content": "t:settings_schema.typography.settings.header_body_text"
+      },
+       {
+        "type": "font_picker",
+        "id": "type_base_font_bold_family",
+        "label": "Font bold",
+        "default": "chivo_n4"
       },
       {
         "type": "font_picker",
