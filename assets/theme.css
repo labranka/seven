@@ -9816,16 +9816,8 @@ select .variant-input{
   display:block;
   font-style:normal;
   margin-bottom:10px;
-  font-size: 14.5px;
-  letter-spacing: 0;
-  font-weight: 500;
 }
-[data-type_header_accent_transform=true] .label, [data-type_header_accent_transform=true] label{
-    font-size: 14.5px;
-  letter-spacing: 0;
-  font-weight: 500;
 
-}
 .variant__label-info{
   font-family:var(--typeBasePrimary), var(--typeBaseFallback);
   font-weight:var(--typeBaseWeight);

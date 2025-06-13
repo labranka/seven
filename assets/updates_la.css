@@ -10,8 +10,23 @@
 }
 .variant__label{
   color: grey;
-  font-size: 14px;
+
+ cursor:default;
+  display:block;
+  font-style:normal;
+  margin-bottom:10px;
+  font-size: 14.5px;
+  letter-spacing: 0;
+  font-weight: 500;
 }
+
+[data-type_header_accent_transform=true] .label, [data-type_header_accent_transform=true] label{
+    font-size: 14.5px;
+  letter-spacing: 0;
+  font-weight: 500;
+
+}
+
 /* ==========================================================================
    2) FULLSCREEN Container + Z‐INDEX (floats above everything)
    --------------------------------------------------------------------------
@@ -1572,6 +1587,7 @@ h2,
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0;
+ 
 }
 
 .modal--quick-shop .hide-for-modal,
