@@ -1,5 +1,9 @@
 .grid-product__title{
   font-family: var(--typeBaseBold);
+  font-weight: var(--typeBaseBoldWeight);
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 0.875rem;
 }
 
 /* ==========================================================================
