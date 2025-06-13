@@ -4,7 +4,14 @@
 .modal:not(.modal--is-active):not(.modal--is-closing) {
   display: none !important;
 }
-
+.variant__label-info{
+  font-weight: bold;
+  color: var(--colorTextBody);
+}
+.variant__label{
+  color: grey;
+  font-size: 14px;
+}
 /* ==========================================================================
    2) FULLSCREEN Container + Z‐INDEX (floats above everything)
    --------------------------------------------------------------------------
@@ -1661,6 +1668,8 @@ quick-atc .variant-wrapper{
   margin-right: auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 } 
 .modal--quick-shop .product-single__meta{
   padding-left: 0;

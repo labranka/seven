@@ -230,6 +230,8 @@ customElements.define('video-slideshow', VideoSlideshow);
           return acc;
         }, []);
 
+         this.updateVariantLabels(selections);
+
       const variant = this.product.variants.find(v =>
         selections.every((sel, j) => v[`option${j+1}`] === sel)
       );
@@ -261,6 +263,17 @@ customElements.define('video-slideshow', VideoSlideshow);
       // 5) Now re–compute which labels should be “disabled”
       this.updateDynamicLabels(selections);
     }
+
+     updateVariantLabels(selections) {
+      console.log('ovde sam');
+    selections.forEach((value, idx) => {
+      // find the <span data-option-index="{idx}"> inside the variant__label-info
+      const labelSpan = this.querySelector(
+        `.variant__label-info [data-option-index="${idx}"]`
+      );
+      if (labelSpan) labelSpan.textContent = value;
+    });
+  }
 
     updatePrice(v) {
        

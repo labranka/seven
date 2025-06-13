@@ -20,10 +20,9 @@
 <div class="variant-wrapper js" data-type="button">
   <label class="variant__label{% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}{% unless variant_labels %} hidden-label{% endunless %}"
     for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}">
-    {{ option.name }}
+    {{ option.name }}:
     {%- if connect_to_sizechart and is_size -%}
       <span class="variant__label-info">
-        &mdash;
         {%- render
           'tool-tip-trigger',
           title: size_chart_title,
@@ -34,7 +33,6 @@
     {%- endif -%}
     {%- if is_color -%}
       <span class="variant__label-info">
-        &mdash;
         <span
           data-variant-color-label
           data-index="{{ forloop.index0 }}"
