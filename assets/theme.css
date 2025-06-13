@@ -6431,7 +6431,9 @@ predictive-search .predictive__screen{
 .section-header{
   margin-bottom:30px;
 }
-
+.section-blog-showcase .section-header{
+  margin-left: 0;
+}
 @media only screen and (min-width:590px){
 
 .section-header{
