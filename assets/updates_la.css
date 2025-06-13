@@ -1035,6 +1035,9 @@ p{
   font-size: 16px;
   line-height: 130%;
   letter-spacing: 0;
+
+  font-family: var(--typeBaseBold);
+  font-weight: var(--typeBaseBoldWeight);
 }
 .theme-block{
   margin-block: 16px;
@@ -1595,6 +1598,9 @@ h2,
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0;
+  font-family: var(--typeBaseBold);
+  font-style: normal;
+  font-weight: var(--typeBaseBoldWeight);
  
 }
 
@@ -2268,6 +2274,9 @@ padding: 0;
 }
 }
 @media screen and (min-width: 1025px) {
+  .grid-product__title{
+    font-size: 14.5px;
+  }
   #CartPageForm{
   display: flex;
   flex-direction: column;
