@@ -1,5 +1,5 @@
 .section-richtext a{
-  pointer-events: none;
+  pointer-events: none; /* dok se ne nabave pdf fajlovi ostaje bloknuto*/
 }
 
 .grid-product__title{
