@@ -34,6 +34,7 @@
     "type_header_line_height": 1.3,
     "type_header_capitalize": true,
     "type_header_accent_transform": true,
+    "type_base_font_bold_family": "din_next_n7",
     "type_base_font_family": "din_next_n4",
     "type_base_spacing": "0",
     "type_base_size": 16,
