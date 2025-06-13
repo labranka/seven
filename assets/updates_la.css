@@ -1501,7 +1501,10 @@ h2,
   line-height: 140%;
   letter-spacing: -0.8px;
   margin-bottom: 0;
+  font-family: var(--typeBaseBold);
+  font-weight: var(--typeBaseBoldWeight);
 }
+
 
 .countdown__content {
   background-color: var(--colorBody);
