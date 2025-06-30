@@ -323,6 +323,10 @@ tool-tip[data-tool-tip-open=true] .tool-tip__inner{
 .form-vertical input, .form-vertical select, .form-vertical textarea{
   border-radius: 10px;
 }
+
+.skrim__link{
+  border-radius: 10px;
+}
 .index-section.section-contact-form{
   max-width: 800px;
   margin-left: auto!important;
