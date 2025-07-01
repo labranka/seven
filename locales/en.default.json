@@ -325,6 +325,7 @@
     "product": {
       "description": "Opis",
       "in_stock_label": "In stock, ready to ship",
+      "reviews": "Recenzije/recenzija",
       "stock_label": {
         "one": "Low stock - {{ count }} item left",
         "other": "Low stock - {{ count }} items left"

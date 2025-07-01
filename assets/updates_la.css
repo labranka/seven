@@ -2,6 +2,12 @@
   pointer-events: none; /* dok se ne nabave pdf fajlovi ostaje bloknuto*/
 }
 
+.ProductInfo--Ratings{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 .grid-product__title{
   font-family: var(--typeBaseBold);
   font-weight: var(--typeBaseBoldWeight);
