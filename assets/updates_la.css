@@ -1,3 +1,9 @@
+/* reviews css */
+.jdgm-carousel-title{
+  padding-bottom: 2rem!important;
+}
+/* reviews css end*/
+
 .section-richtext a{
   pointer-events: none; /* dok se ne nabave pdf fajlovi ostaje bloknuto*/
 }
