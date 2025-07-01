@@ -12,6 +12,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "judge_me_reviews_review_widget_WAKRLq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -46,9 +50,7 @@
         "two_icons_fy8FaU": {
           "type": "two_icons",
           "settings": {
-            "icon_1": "shopify://shop_images/SVG_c3c0a934-c3ad-4c51-9ca1-9af156ec4a46.png",
             "text_1": "Lak Povrat",
-            "icon_2": "shopify://shop_images/SVG_1ccd26be-20bc-4776-92f0-e82ed2da8522.png",
             "text_2": "Brza Dostava"
           }
         },
@@ -70,7 +72,6 @@
         "tab_MybVzb": {
           "type": "tab",
           "settings": {
-            "icon": "shopify://shop_images/SVG3.png",
             "title": "Ko vrši dostavu i koliko traje?",
             "content": "<p>Dostavu vrši BEX kurirska služba, a na zahtev možemo poslati i putem PostExpress-a.</p><p>Rok isporuke je<strong> 1–2 radna dana</strong>. </p><p></p><p>Koliko košta dostava? </p><p>Cena dostave je <strong>420 dinara</strong>. </p><p>Dostava je besplatna za sve porudžbine koje sadrže bilo koja 2 ili više artikla.  </p><p>Da li mogu da preuzmem lično? Da, lično preuzimanje je moguće u Kraljevu. Naručite putem sajta, DM-a ili pozivom na <strong>011 4220 444.  </strong></p><p></p><p>Prilikom porudžbine, naglasite da želite lično preuzimanje kako bismo dogovorili termin sa operaterom.</p>",
             "page": ""
@@ -79,7 +80,6 @@
         "tab": {
           "type": "tab",
           "settings": {
-            "icon": "shopify://shop_images/SVG4.png",
             "title": "Povraćaj robe i reklamacije",
             "content": "<p>Kupujte sigurno – bez stresa. Ukoliko niste zadovoljni kupovinom, imate pravo da vratite proizvod u roku od 14 dana od prijema paketa. </p><p>Proizvod mora biti nekorišćen i u originalnom pakovanju.  </p><p></p><p>Povraćaj proizvoda (bez reklamacije):</p><ul><li>Pošaljite nam email na <strong>reklamacije@se7en.rs</strong> ili poruku putem Instagrama u roku od 14 dana od prijema paketa.</li><li>U poruci navedite broj porudžbine i razlog povrata.Kada primimo vaš zahtev, zakazujemo kurira – vi samo zapakujte proizvod. </li><li>Kurir dolazi na vašu adresu i preuzima paket.</li><li>Povraćaj novca biće izvršen u roku od 7 radnih dana od dana prijema vraćene robe.</li><li>Troškove povrata snosi kupac.</li></ul><p></p><p><strong>Reklamacije (npr. oštećen artikal):</strong></p><ul><li>Kontaktirajte nas putem emaila ili Instagrama odmah po prijemu pošiljke.</li><li>Pošaljite fotografiju oštećenja i broj porudžbine.</li><li>Naš tim će izvršiti procenu u roku od<strong> 2 radna dana.</strong></li><li>Ukoliko je reklamacija osnovana, nudimo: Besplatnu zamenu artikla, ili Puni povraćaj novca</li><li>U slučaju reklamacije, troškove poštarine snosimo mi.</li></ul><p></p><p>Za zamenu proizvoda ili dodatna pitanja, slobodno nas kontaktirajte putem emaila: <strong>reklamacije@se7en.rs</strong> ili putem poruke na Instagramu.</p>",
             "page": ""
@@ -88,7 +88,6 @@
         "tab_pD9HiH": {
           "type": "tab",
           "settings": {
-            "icon": "shopify://shop_images/SVG5.png",
             "title": "Pamuk bez filtera. Stav bez kompromisa.",
             "content": "<p>Naše majice izrađene su od nebrušenog pamuka - raw edition, koji prolazi kroz manje industrijskih procesa i zato je ekološki odgovorniji izbor. Manje obrade – više prirodnog karaktera. Brza moda? To nije naša priča.  </p><p>Naš materijal je gust, izdržljiv i zamišljen da traje. Svaka serija se proizvodi odgovorno, bez žrtvovanja kvaliteta radi kvantiteta. Majice dolaze iz proverenih lokalnih pogona.</p>",
             "page": ""
@@ -103,9 +102,14 @@
             "control_type": "dots",
             "image_style": "default"
           }
+        },
+        "judge_me_reviews_preview_badge_YDrydR": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
+        "judge_me_reviews_review_widget_WAKRLq",
         "price",
         "separator",
         "variant_picker",
@@ -117,7 +121,8 @@
         "tab_MybVzb",
         "tab",
         "tab_pD9HiH",
-        "complementary_products_hjwpFV"
+        "complementary_products_hjwpFV",
+        "judge_me_reviews_preview_badge_YDrydR"
       ],
       "settings": {
         "sku_enable": false,
