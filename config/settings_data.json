@@ -83,7 +83,14 @@
     "checkout_banner_background_color": "#ffffff",
     "checkout_call_to_action_color": "#a26b25",
     "checkout_use_header_image": false,
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "presets": {
     "Classic": {
