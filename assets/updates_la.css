@@ -1385,6 +1385,7 @@ h2,
   color: var(--colorSaleTag);
   text-transform: uppercase;
   margin-bottom: 0;
+  letter-spacing: 0.25rem;
 }
 
 .countdown__block--content {
