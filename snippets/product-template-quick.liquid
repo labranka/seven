@@ -62,14 +62,7 @@
                     {%- if product.media.size > 0 and product.media[0].preview_image != blank -%}
                           <div class="product-img-module">
                                   <div class="image-wrap article__featured-image loaded" style="aspect-ratio:0.8;">
-                                    {%- render 'image-element',
-                                      img: product.media[0].preview_image,
-                                      alt: product.media[0].alt | escape | split: '#' | first,
-                                      widths: '100, 360, 540',
-                                      classes: image_classes,
-                                      sizeVariable: '150px',
-                                      loading: loading
-                                    -%}
+                                    {%- render 'image-element', img: product.media[0].preview_image, alt: product.media[0].alt, split: '#', widths: '100, 360, 540', classes: image_classes, sizeVariable: '150px', loading: loading -%}
                                   </div>
                           </div>
                       {%- endif -%}
@@ -193,3 +186,23 @@
     </div>
   </div>
 </quick-atc>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%- render 'image-element',
+                                          img: product.media[0].preview_image,
+                                          alt: product.media[0].alt | escape | split: '#' | first,
+                                          widths: '100, 360, 540',
+                                          classes: image_classes,
+                                          sizeVariable: '150px',
+                                          loading: loading
+                                        -%}
+  to: "{%- render 'image-element', img: product.media[0].preview_image, alt: product.media[0].alt,
+    split: '#', widths: '100, 360, 540', classes: image_classes, sizeVariable: '150px',
+    loading: loading -%}"
+  position: 2116..2312
+{% endcomment %}
